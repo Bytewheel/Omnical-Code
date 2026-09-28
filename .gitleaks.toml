@@ -1,0 +1,76 @@
+# Omnical — gitleaks configuration
+#
+# The defaults are used unchanged. This file exists for exactly one entry, and
+# the entry exists because a heuristic fired on a line that has never contained
+# a credential. Read this before adding a second one.
+#
+# ── Why there is a config at all ─────────────────────────────────────────────
+#
+# The scan runs in `.github/workflows/hygiene.yml` over the FULL history
+# (`fetch-depth: 0`, `gitleaks detect`), because that is the property §5.1 is
+# about: the live Let's Encrypt private key and 15 real CalDAV app tokens sat in
+# this repository's history for months, and a working-tree-only scan would not
+# have found either of them. That scan must stay on.
+#
+# `gitleaks/gitleaks-action@v2` cannot be used any more: it refuses
+# organisation-owned repositories without a paid licence key and dies before
+# scanning a byte ("[Bytewheel] is an organization. License key is required").
+# The scanner itself is still free, so the workflow runs the CLI from a pinned
+# image instead. If this config ever becomes unnecessary, the scan must not be
+# deleted with it.
+#
+# ── The one entry ────────────────────────────────────────────────────────────
+#
+# Rule `curl-auth-user`, on `scripts/selfhost-gate.sh`, in five commits:
+#
+#   code="$(curl -s -o /dev/null -w '%{http_code}' -u "$auth" -X PROPFIND …)"
+#
+# `"$auth"` is the *name* of a shell variable. Its value is a token the same
+# script mints a few lines earlier and holds only in memory. No credential has
+# ever been written to that line, and the manual sweep of every blob in every
+# commit found no private key, no `ghp_`/`gho_` token, no cloud key and no JWT.
+#
+# The code is fixed regardless: all ten call sites now go through one
+# `auth_curl` helper that sends an `Authorization` header, so the token is no
+# longer in the process table either — a real improvement `curl -u` was making
+# impossible. These commits are the *past*, kept for the provenance of the
+# repository's own development, and they are listed explicitly rather than
+# excluded by path so that a genuine secret in the same file today would still
+# fail the build.
+#
+# The five commits below are exactly the ones whose tree contains the line:
+# 51b6e0c introduced it, f5d3029 removed it, and the three in between still had
+# it. Verified with:
+#   git rev-list --all | while read c; do
+#     git show "$c:scripts/selfhost-gate.sh" 2>/dev/null | grep -q '\-u "\$auth"' && echo "$c"
+#   done
+#
+# If a future finding is a real secret: fix the exposure first, then decide
+# separately whether the commit can be rewritten. Do not add it here on the
+# grounds that it looks like a test value.
+
+title = "Omnical gitleaks configuration"
+
+[extend]
+useDefault = true
+
+# `condition = "AND"` with a path as well as the commits: the exemption means
+# "this construct, in this file, in these commits" and not "anything in these
+# commits". Verified by planting a real `github-pat` string — in another file,
+# then inside one of these commits, then inside this file inside one of these
+# commits — and confirming all three are still reported. A commit-scoped
+# allowlist alone is broader than it looks; the residual gap is five
+# already-published commits whose contents were swept by hand (no private key,
+# no ghp_/gho_, no cloud key, no JWT), and the path condition makes even that
+# irrelevant.
+[[allowlists]]
+description = "curl -u \"$auth\" — a shell variable name, not a credential; code fixed in f5d3029"
+commits = [
+    "51b6e0c4584107a1f45dd340b14e6953db245afa",
+    "026485bc9c1311b9d66150e835933fa6fc5266bb",
+    "439598830231bc358901486420a1b0c13fc40820",
+    "5188b3a18912e038cfc12198134f46ecea350c55",
+    "e9acf39ff1d8de1c91e48994954e4615c9c54647",
+]
+paths = ['''scripts/selfhost-gate\.sh''']
+condition = "AND"

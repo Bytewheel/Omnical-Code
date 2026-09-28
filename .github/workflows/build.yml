@@ -29,6 +29,18 @@ jobs:
         with:
           submodules: recursive
 
+      # The runner ships a Rust, but not this one and not this target. Without
+      # them the cross build dies with `can't find crate for core` / `the
+      # aarch64-unknown-linux-musl target may not be installed` — which reads
+      # like a broken toolchain recipe rather than a missing std component, and
+      # only appears once the earlier failures in this job are out of the way.
+      # Pinned to 1.97.0 like every other job, because `rustical/Cargo.toml`
+      # declares `rust-version = 1.97` and an unpinned `stable` would drift.
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.0
+          targets: aarch64-unknown-linux-musl
+
       # build-rust.sh:69 harvests musl include dirs from `zig libc` because
       # plain clang has no musl sysroot on a generic host and silently falls
       # back to glibc headers, which breaks aws-lc-sys. See its header comment

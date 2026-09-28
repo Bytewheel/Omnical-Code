@@ -54,10 +54,15 @@ jobs:
       - name: gitleaks scan (full history)
         run: |
           set -euo pipefail
+          # --config is explicit on purpose. gitleaks auto-loads .gitleaks.toml
+          # from the source directory, and relying on that means a config that
+          # fails to be found turns the scan into a *silently different* scan
+          # rather than an error — the one thing a secret scanner must never be.
           docker run --rm \
             -v "$PWD:/repo" \
             zricethezav/gitleaks:v8.28.0 \
-            detect --source=/repo --redact --verbose --no-banner
+            detect --source=/repo --config=/repo/.gitleaks.toml \
+              --redact --verbose --no-banner
 
       # trufflehog is pinned to a tag rather than `@main`: a third-party action
       # tracked to a moving branch is a supply-chain hole in the one workflow
