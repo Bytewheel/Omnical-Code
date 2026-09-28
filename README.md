@@ -2,7 +2,35 @@
 
 CalDAV (calendar + VTODO tasks) / CardDAV (contacts) server for the libreCMC
 router (`192.168.10.1`), public at `https://0115d8cf.duckdns.org:8443`.
-Plan + progress: `~/Documents/ByteWheel/omnical/PLAN.md`.
+Plan + progress: `~/Documents/ByteWheel/omnical/PLAN.md` (that repo is
+`Bytewheel/Omnical`).
+
+## The three repositories
+
+| Repository | What it is |
+|---|---|
+| `Bytewheel/Omnical` | plans, runbooks, decisions — `PLAN*.md` |
+| `Bytewheel/Omnical-Code` | **this repo** — CI, build, deploy, packaging |
+| `Bytewheel/Omnical-Server` | the server itself, as a submodule at `rustical/` (fork of `lennart-k/rustical` v0.16.1, AGPL-3.0-or-later) |
+
+All three are public, and all three have to be: the product is AGPL-3.0, and the
+source of the thing that actually runs is the submodule, not this one.
+
+The submodule URL in `.gitmodules` is **relative** (`../Omnical-Server.git`), so
+it resolves against this repo's own remote and keeps the owner — a fork of this
+repo resolves to the fork owner's own server repo, with nothing hardcoded. It
+must match the server repository's name exactly; a relative URL is not a default.
+If you rename one, change that one line in the other.
+
+```sh
+git clone --recurse-submodules https://github.com/Bytewheel/Omnical-Code.git
+# or, in an existing clone:
+git submodule update --init --recursive
+```
+
+An empty `rustical/` after cloning means the submodule did not resolve — check
+the repository name against `.gitmodules`. `hygiene.yml`'s
+`submodule-url-exists` job reports exactly this.
 
 ## Running your own copy
 

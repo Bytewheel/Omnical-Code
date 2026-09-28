@@ -1,22 +1,44 @@
-# Omnical — router-dav submodules
+# Omnical — the server submodule
 #
-# The whole CalDAV/CardDAV server lives in this submodule. The parent repo is
-# the packaging/deploy/orchestration layer; the submodule is the product.
+# The whole CalDAV/CardDAV server lives in this submodule. This repo is the
+# packaging/deploy/orchestration layer; the submodule is the product.
 #
-# The URL is RELATIVE ("../rustical.git"). Git resolves it against the
-# superproject's own remote, so once you set a remote on this repo
-# (`git remote add origin git@github.com:<OWNER>/router-dav.git`) the submodule
-# automatically points at `github.com:<OWNER>/rustical.git` — the same owner.
-# No hardcoded fork URL to keep in sync.
+# ── The three repositories ───────────────────────────────────────────────────
 #
-#   git remote add origin git@github.com:<OWNER>/router-dav.git
-#   git submodule sync && git submodule update --init --recursive
+#   Bytewheel/Omnical          this file's sibling: plans, runbooks, decisions
+#   Bytewheel/Omnical-Code     THIS repo — CI, build, deploy, packaging
+#   Bytewheel/Omnical-Server   the submodule — the server itself
+#                              (fork of lennart-k/rustical v0.16.1, AGPL-3.0)
+#
+# All three must be public. PLAN_DEPLOYMENTS.md §10 / D2: the product is
+# AGPL-3.0-or-later, so the source of the thing that actually runs has to be
+# offered to the network. The running source is the submodule, not this repo.
+#
+# ── The URL is RELATIVE, and that is load-bearing ────────────────────────────
+#
+# `../Omnical-Server.git` resolves against this repo's own remote, keeping the
+# OWNER and replacing only the last path segment:
+#
+#   https://github.com/Bytewheel/Omnical-Code.git
+#     -> https://github.com/Bytewheel/Omnical-Server.git
+#
+# So there is no owner hardcoded anywhere, and a fork of the fork resolves to the
+# fork owner's own server repo rather than back to ours. That is the point.
+#
+# IT MUST MATCH THE NAME OF THE SERVER REPOSITORY, exactly. A relative URL is
+# not a default — git does not fall back to anything, it just builds a URL from
+# it. If the two disagree, every workflow that checks out submodules dies at
+# the `actions/checkout` step with `repository not found`, and a clean
+# `git clone` produces an EMPTY `rustical/`. The `submodule-url-exists` job in
+# `.github/workflows/hygiene.yml` exists to turn that into one sentence; it was
+# added after exactly this happened on 2026-09-28.
 #
 # Per PLAN_DEPLOYMENTS.md §5.2.4 the previous state of this repo was a gitlink
-# with NO .gitmodules, so `git clone` produced an EMPTY rustical/ and the build
-# could not start at all. This file is what fixes that.
+# with NO .gitmodules, so `git clone` produced an empty `rustical/` and the
+# build could not start at all. This file is what fixes that — but only if the
+# repository it names actually exists.
 
 [submodule "rustical"]
 	path = rustical
-	url = ../rustical.git
+	url = ../Omnical-Server.git
 	branch = omnical-scheduling

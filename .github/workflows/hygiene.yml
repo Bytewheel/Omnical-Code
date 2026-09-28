@@ -126,3 +126,85 @@ jobs:
             exit 1
           fi
           echo "ok: .git is $((bytes/1024/1024)) MiB (under the 500 MiB guard)"
+
+  # ── 3. The submodule URL must actually exist ─────────────────────────────
+  # Added 2026-09-28, after the first public push. `.gitmodules` pointed at a
+  # repository that had never been created, and all three workflows died in
+  # 11-19s with `fatal: repository '.../rustical.git' not found` buried inside
+  # a checkout step.
+  #
+  # That failure is loud but nearly useless: the message names a file nobody
+  # editing the packaging repo has ever looked at, and the actual mistake — a
+  # third repository was never created — is nowhere in it. This job is the one
+  # place that can say so in a sentence.
+  #
+  # It has to live in a job that does NOT check out submodules (hence
+  # `submodules: false`, as on the secrets job above): in every other workflow
+  # the submodule is already populated by the time a step could run, so the
+  # checkout fails first and this never gets a chance to explain.
+  #
+  # Fails only on a definitive "not found", never on a network error, so a
+  # transient outage cannot break the build. That distinction is the whole
+  # design: a check that goes red for reasons outside the repo teaches people
+  # to ignore it, which is how a real failure gets ignored too.
+  submodule-url-exists:
+    name: submodule remote is reachable
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+          persist-credentials: false
+
+      - name: The rustical submodule URL resolves to a repository
+        run: |
+          set -euo pipefail
+          url="$(git config -f .gitmodules --get submodule.rustical.url)"
+          remote="$(git config --get remote.origin.url)"
+          echo "superproject remote: $remote"
+          echo "rustical submodule URL (as written): $url"
+
+          # Resolve the relative form the way git does. `../rustical.git`
+          # against `https://github.com/Bytewheel/Omnical-Code.git` is
+          # `https://github.com/Bytewheel/rustical.git` — the OWNER is kept and
+          # only the last path segment is replaced. Stripping everything up to
+          # `../` instead (the obvious shortcut) yields
+          # `https://github.com/rustical.git`, which is a different repository
+          # entirely: this check would then report a healthy setup as broken,
+          # or a broken one as healthy. It resolves against *our* remote rather
+          # than assuming github.com, so a mirror or a self-hosted forge works.
+          case "$url" in
+            ../*)
+              base="${remote%.git}"        # drop the .git suffix
+              base="${base%/*}"            # drop the last path segment = the repo name
+              url="${base}/${url#../}"     # …and append the submodule's
+              ;;
+          esac
+          echo "resolved to: $url"
+          # git-over-SSH needs a key the runner has not got; a submodule URL in
+          # that form is still checked by the checkout in every other workflow,
+          # and the point of this job is the not-found case.
+          case "$url" in
+            *@*:*)
+              echo "::warning::submodule URL is git-over-SSH ($url) and cannot be probed"
+              echo "::warning::without a deploy key here; skipping rather than failing on it"
+              exit 0
+              ;;
+          esac
+
+          out="$(git ls-remote --exit-code "$url" HEAD 2>&1)" && rc=0 || rc=$?
+          if [ "$rc" = 0 ]; then
+            echo "ok: $url is reachable ($(echo "$out" | cut -f1 | cut -c1-12))"
+            exit 0
+          fi
+          # A transport failure is not this check's business.
+          if echo "$out" | grep -qiE 'could not resolve|temporary failure|timeout|proxy|network is unreachable|Connection refused'; then
+            echo "::warning::could not reach $url (transport), skipping — this is not a missing repository"
+            exit 0
+          fi
+          echo "::error::the rustical submodule URL does not exist: $url"
+          echo "::error::$out"
+          echo "::error::Every workflow that checks out submodules fails at the checkout"
+          echo "::error::step until that repository exists AND the gitlink commit"
+          echo "::error::($(git ls-tree HEAD rustical | awk '{print $3}')) is pushed to it."
+          exit 1
