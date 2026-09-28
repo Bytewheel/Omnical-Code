@@ -4,14 +4,65 @@ CalDAV (calendar + VTODO tasks) / CardDAV (contacts) server for the libreCMC
 router (`192.168.10.1`), public at `https://0115d8cf.duckdns.org:8443`.
 Plan + progress: `~/Documents/ByteWheel/omnical/PLAN.md`.
 
+## Running your own copy
+
+This repository builds and deploys Omnical three ways. Two of them are
+self-hosting channels you can use right now; the third (a hosted SaaS) is not
+built yet. `PLAN_DEPLOYMENTS.md` §7-§9 is the design, §18.7 is what shipped.
+
+**Docker Compose (primary):**
+
+```sh
+printf 'OMNICAL_SETUP_ADMIN_EMAIL=you@example.com\nOMNICAL_SETUP_ADMIN_PASSWORD=…\n' > .env
+chmod 600 .env
+docker compose -f compose.omnical.yml up -d
+docker compose -f compose.omnical.yml logs omnical-setup   # the wizard's output
+```
+
+That builds the image from `rustical/`, runs `rustical setup`, creates the
+administrator and serves on `127.0.0.1:4000`. `compose.omnical.yml`'s header
+documents every variable; `rustical setup --help` is the reference for what
+they mean. You still have to put a TLS-terminating proxy in front of it — the
+server speaks plain HTTP and says so.
+
+**Native tarball + systemd:**
+
+```sh
+./scripts/build-rust.sh x86_64-unknown-linux-gnu
+sudo ./packaging/native/install.sh --from-file out/x86_64-unknown-linux-gnu/rustical
+```
+
+`install.sh` verifies the artefact, installs the binary and the unit, runs the
+wizard as the service user, starts the service and health-gates it. Re-running
+it is the supported upgrade path; it will not clobber the config, the database
+or the administrator. `install.sh --help` is the reference; `--uninstall` takes
+it away again and `--purge` deletes the data.
+
+Both channels generate their configuration with **the same command**
+(`rustical setup`), from the same `OMNICAL_SETUP_*` answers. Neither contains a
+hand-written `config.toml` — that is deliberate, and
+`scripts/selfhost-gate.sh` fails if the two ever disagree.
+
+```sh
+./scripts/selfhost-gate.sh out/x86_64-unknown-linux-gnu/rustical
+```
+
+installs, boots, round-trips a real CalDAV write/read, registers a user through
+the invite flow, syncs as that user and re-runs the installer over the result.
+It is the `selfhost` job in CI.
+
+**The hosted, multi-tenant SaaS is not built.** No image is published and
+`rustical/Dockerfile` is still upstream's, used only as the self-host build.
+
 ## Layout
 
-- `rustical/` — upstream [RustiCal](https://github.com/lennart-k/rustical) pinned at `v0.16.1`, local branch `omnical-scheduling` (adds RFC 6638-style scheduling + token-URL public export feeds; uncommitted)
+- `rustical/` — upstream [RustiCal](https://github.com/lennart-k/rustical) pinned at `v0.16.1`, fork branch `omnical-scheduling` (adds RFC 6638-style scheduling, token-URL public export feeds, invite-gated registration, a first-run wizard, and in-binary backup/restore)
 - `dav-tls/` — the one custom component: minimal rustls TLS tunnel (`192.168.1.21:8443` → `127.0.0.1:4000`, ALPN `http/1.1` only, byte-splice after handshake)
 - `router/` — overlay tree deployed onto the router (`etc/rustical`, `etc/init.d/*`, `usr/bin/rustical-watchdog`)
+- `packaging/native/` — the tarball channel: `install.sh` + the `omnical.service` template (§8.1)
 - `out/` — build artifacts (`rustical`, `dav-tls` = static aarch64-musl; `out/<target>/` for host builds)
 - `build/bin/` — zig-musl-cc wrappers (copied from router-nym) used as the cross C toolchain
-- `scripts/` — `build-rust.sh` (cross/host builds), `render-router-config.sh` (injects SMTP secrets from `pass`; rendered output never touches dev disk), `nightly-backup.sh` (02:30 cron on the dev machine)
+- `scripts/` — `build-rust.sh` (cross/host builds), `render-router-config.sh` (injects SMTP secrets from `pass`; rendered output never touches dev disk), `nightly-backup.sh` (02:30 cron on the dev machine), `selfhost-gate.sh` (the rows 40-41 gate)
 
 ## Commands
 
@@ -19,6 +70,8 @@ Plan + progress: `~/Documents/ByteWheel/omnical/PLAN.md`.
 scripts/build-rust.sh                            # aarch64-unknown-linux-musl (router target)
 scripts/build-rust.sh x86_64-unknown-linux-gnu   # host build for smoke tests
 ./deploy.sh                                      # push + enable on the router (idempotent; also THE post-sysupgrade restore)
+./packaging/native/install.sh --help             # the tarball channel
+./scripts/selfhost-gate.sh out/x86_64-unknown-linux-gnu/rustical
 ```
 
 ## Sysupgrade runbook (Phase 8.3)

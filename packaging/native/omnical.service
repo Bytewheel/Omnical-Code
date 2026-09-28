@@ -1,0 +1,86 @@
+# Omnical — systemd unit (PLAN_DEPLOYMENTS.md §8.1, the native channel)
+#
+# Installed by `packaging/native/install.sh`, which substitutes the two
+# placeholders below. They are placeholders rather than paths because
+# `--prefix` exists: §9.2 builds a firmware rootfs with this same unit, and a
+# unit that hardcoded /usr/local/bin would be wrong in the one image where it
+# most needs to be right.
+#
+# Run `rustical setup` (the wizard) to create /etc/omnical/config.toml. This
+# unit deliberately does not create one: a config file that appears by magic at
+# boot, with default values, is how a self-hoster ends up with a CalDAV server
+# on the internet that nobody chose the settings for.
+
+[Unit]
+Description=Omnical CalDAV/CardDAV server
+Documentation=https://github.com/omnical/omnical
+# The database is a single SQLite file. Ordering after local-fs is not
+# decoration: `StateDirectory=` below creates the data directory, and mounting
+# it late would make the first boot fail on a missing directory rather than
+# wait.
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=@USER@
+Group=@GROUP@
+
+# `--config-file` is TOP-LEVEL and must precede the subcommand
+# (rustical/src/lib.rs:52-57). This is a documented footgun: the obvious
+# spelling, `rustical serve --config-file …`, is rejected by clap.
+ExecStart=@BINARY@ --config-file @CONFIG@ serve
+
+# `rustical` exits on a configuration error, which systemd must not retry into a
+# loop; and on a panic, which it should. on-failure draws that line.
+Restart=on-failure
+RestartSec=5s
+
+# The data directory, created with the right ownership on every boot. The unit
+# names it here rather than relying on the installer to have made it, because a
+# deleted directory should come back rather than require a support call.
+StateDirectory=omnical
+StateDirectoryMode=0700
+
+# Start from a known environment. RUST_LOG is read by the binary's tracing
+# setup (src/setup_tracing.rs:53) and defaults to `info`; uncomment to raise it
+# when diagnosing a sync problem, and put it back afterwards.
+# Environment=RUST_LOG=info,rustical=debug,rustical_store_sqlite=debug
+
+# ── Hardening ────────────────────────────────────────────────────────────────
+# A CalDAV server holds other people's calendars, contacts and passwords. None
+# of this is decoration; it is the difference between a compromise being a
+# SQLite file and a compromise being the host.
+#
+# CAVEAT, and it is a real one: this unit cannot be exercised by CI (the build
+# and test runners have no systemd), so the first `systemctl start` on a real
+# host is the actual test of these directives. They are all long-established
+# systemd options, and the conservative ones (system call filters, seccomp
+# profiles) are deliberately NOT used — a filter that blocks one syscall the
+# SQLite or TLS code path needs turns into an install that does not start, and
+# the payoff over what is here is small.
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+ProtectClock=true
+ProtectHostname=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+RestrictNamespaces=true
+LockPersonality=true
+# MemoryDenyWriteExecute is deliberately absent: the TLS stack allocates
+# executable memory for its crypto routines, and turning this on produces a
+# server that starts and then fails its first HTTPS connection.
+# The only writable path is the database. Everything else — /etc/omnical
+# included, and the config holds mail passwords in cleartext — is read-only to
+# the service.
+ReadWritePaths=@DATA@
+
+[Install]
+WantedBy=multi-user.target

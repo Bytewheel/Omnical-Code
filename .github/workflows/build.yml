@@ -138,3 +138,79 @@ jobs:
           name: binaries-x86_64-gnu
           path: out/x86_64-unknown-linux-gnu
           retention-days: 14
+
+  # ── The self-hosting channels ─────────────────────────────────────────────
+  # PLAN_DEPLOYMENTS.md §8.1, verification-matrix rows 40 and 41. A GitHub
+  # runner is the "bare VM" row 41 asks for, so this job installs with
+  # packaging/native/install.sh and then actually uses the result: boots the
+  # server on the config the wizard wrote, drives a CalDAV round trip, and
+  # registers a user through the invite flow.
+  #
+  # It is here rather than in test.yml because it needs the *release* binary,
+  # and build.yml is the workflow that already produces one per target.
+  #
+  # What it does NOT do is run Docker (row 40's literal method). It checks the
+  # part of the Compose channel that is ours and that actually rots — the two
+  # files' wizard variables and data paths agreeing — and says so in its
+  # output rather than implying a container was started.
+  selfhost:
+    name: self-host channels (rows 40-41)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.0
+
+      - name: Cache cargo target dir
+        uses: actions/cache@v4
+        with:
+          path: build/cargo-target
+          key: build-x86_64-${{ hashFiles('rustical/Cargo.lock', 'dav-tls/Cargo.lock') }}
+          restore-keys: build-x86_64-
+
+      - name: Build the host release binary
+        run: ./scripts/build-rust.sh x86_64-unknown-linux-gnu
+
+      - name: The install, the wizard, the server, a client, a registration
+        run: |
+          set -euo pipefail
+          ./scripts/selfhost-gate.sh out/x86_64-unknown-linux-gnu/rustical
+
+      - name: The Compose file is valid YAML and declares both services
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import sys, yaml
+          doc = yaml.safe_load(open("compose.omnical.yml"))
+          services = doc.get("services", {})
+          missing = {"omnical-setup", "omnical"} - set(services)
+          if missing:
+              sys.exit(f"compose.omnical.yml is missing services: {sorted(missing)}")
+          setup = services["omnical-setup"]
+          # The gate, restated where the Compose runtime will read it: the server
+          # must wait for the wizard, or the first request races it.
+          cond = services["omnical"].get("depends_on", {}).get(
+              "omnical-setup", {}).get("condition")
+          if cond != "service_completed_successfully":
+              sys.exit(f"the server does not wait for setup (condition={cond!r})")
+          if "--unattended" not in setup.get("command", []):
+              sys.exit("the setup service does not run `setup --unattended`")
+          print("ok: compose.omnical.yml parses, declares both services, and orders them")
+          PY
+
+      - name: The shell scripts are syntactically valid
+        run: |
+          set -euo pipefail
+          for f in packaging/native/install.sh scripts/selfhost-gate.sh; do
+            bash -n "$f"
+            echo "ok: $f"
+          done
+          # shellcheck is not preinstalled on the runner and apt-installing a
+          # linter for a two-file gate is not worth the supply chain; bash -n
+          # plus actually running the scripts is the stronger check anyway.
+          test -x packaging/native/install.sh || { echo "::error::install.sh is not executable"; exit 1; }
+          test -x scripts/selfhost-gate.sh   || { echo "::error::selfhost-gate.sh is not executable"; exit 1; }
