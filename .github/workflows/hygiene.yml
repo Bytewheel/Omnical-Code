@@ -1,0 +1,128 @@
+# Omnical — repo hygiene
+#
+# This is the workflow that would have caught PLAN_DEPLOYMENTS.md §5.1's H1 and
+# H2 before they were committed: a live Let's Encrypt PRIVATE KEY in out/tls/
+# and 15 real CalDAV/CardDAV app tokens in out/omnical-iphone.mobileconfig,
+# both tracked for months. Since the AGPL-3.0 §13 decision
+# (PLAN_DEPLOYMENTS.md §10) this repository must be PUBLISHABLE — the hosted
+# deployment has to offer the running source to every network user. A
+# credential in the history of a public repo is a disclosure incident, not a
+# mess to tidy later.
+#
+# So: anything that is a build product or a credential must never be tracked.
+# This workflow enforces that on every push and PR.
+
+name: hygiene
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  # ── 1. No secrets anywhere in the tree or the history ──────────────────────
+  secrets:
+    name: secret scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history: a secret that was committed and later deleted is still
+          # in the history. This is exactly how H1/H2 would have been found.
+          fetch-depth: 0
+          submodules: false
+
+      - name: gitleaks scan (full history)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Fail the build rather than only reporting.
+          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: "false"
+        with:
+          args: --redact --verbose
+
+      - name: trufflehog scan (filesystem, uncommitted included)
+        uses: trufflesecurity/trufflehog@main
+        with:
+          extra_args: --only-verified --results=verified,unknown
+
+  # ── 2. The tracked-file policy, asserted directly ─────────────────────────
+  tracked-files:
+    name: tracked-file policy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Assert no build artefacts are tracked
+        run: |
+          set -euo pipefail
+          fail=0
+          check() { # <label> <regex>
+            local label="$1" re="$2" hits
+            hits=$(git ls-files | grep -E "$re" || true)
+            if [ -n "$hits" ]; then
+              echo "::error::$label must not be tracked:"; echo "$hits" | head -20
+              fail=1
+            else
+              echo "ok: $label not tracked"
+            fi
+          }
+          # H3: 33,998 files of build/cargo-target/ (3.3 GB of .git)
+          check "build/cargo-target/" '(^|/)build/cargo-target/'
+          check "any cargo target dir" '(^|/)target/'
+          # H5: compiled binaries
+          check "out/ build output"        '^out/'
+          check "zig cache"                 '(^|/)\.zig-cache/'
+          # H1/H2 classes
+          check "TLS private key material" '\.key$|\.key\.pem$|^out/tls/'
+          check "Apple profiles (app tokens)" '\.mobileconfig$'
+          check "secret stores"             '^(secrets|pass)/|^\.env'
+          # NOTE: *.pem is intentionally NOT blanket-checked. One public CA
+          # cert must stay tracked — see the allowlist assertion below.
+          exit $fail
+
+      - name: Assert the one allowed .pem is a public trust anchor
+        run: |
+          set -euo pipefail
+          pem=router/etc/rustical/certs/imap-novo-ordo.pem
+          git ls-files | grep -E '\.pem$' | while read -r f; do
+            [ "$f" = "$pem" ] || { echo "::error::unexpected tracked .pem: $f"; exit 1; }
+          done
+          # Must parse as a CERTIFICATE, and must be signed by a public CA.
+          # If this ever parses as a private key, the allowlist has rotted.
+          openssl x509 -in "$pem" -noout -text >/dev/null
+          if grep -q "PRIVATE KEY" "$pem"; then
+            echo "::error::$pem contains a PRIVATE KEY — remove it and the allowlist entry"
+            exit 1
+          fi
+          echo "ok: $pem is a public certificate ($(openssl x509 -in "$pem" -noout -subject))"
+
+      - name: Assert the submodule is properly declared  # H4
+        run: |
+          set -euo pipefail
+          # Pre-H4 this repo had a gitlink and NO .gitmodules, so `git clone`
+          # produced an EMPTY rustical/ and the build could not start at all.
+          test -f .gitmodules || { echo "::error::.gitmodules missing (H4 regression)"; exit 1; }
+          grep -q 'submodule "rustical"' .gitmodules || { echo "::error::rustical submodule not declared"; exit 1; }
+          # The submodule must actually be checked out in CI, not empty.
+          test -f rustical/Cargo.toml || { echo "::error::rustical/ is EMPTY — submodule not initialised"; exit 1; }
+          test -d rustical/crates || { echo "::error::rustical/crates missing"; exit 1; }
+          echo "ok: submodule declared and populated ($(ls rustical/crates | wc -l) crates)"
+
+      - name: Report repo size (regression guard for H3)
+        run: |
+          set -euo pipefail
+          size=$(git count-objects -vH | awk '/^size-pack:/ {print $2}')
+          echo "packed repo size: ${size:-unknown}"
+          # The pre-cleanup repo was 3.3 GB. Fail loudly if artefacts creep back.
+          bytes=$(du -sb .git | cut -f1)
+          if [ "$bytes" -gt 524288000 ]; then
+            echo "::error::.git is $((bytes/1024/1024)) MiB — build artefacts are being tracked again"
+            exit 1
+          fi
+          echo "ok: .git is $((bytes/1024/1024)) MiB (under the 500 MiB guard)"

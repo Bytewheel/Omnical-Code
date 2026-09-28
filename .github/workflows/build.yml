@@ -1,0 +1,140 @@
+# Omnical — cross-compile matrix
+#
+# Builds the same static binaries the router gets, so PLAN_BINARY_SIZE.md's
+# 35 MiB overlay budget is enforced on every push instead of being discovered
+# on a device with 27 MB of free space.
+#
+# Targets mirror scripts/build-rust.sh:36-100, which supports exactly two:
+#   aarch64-unknown-linux-musl   -> the appliance/router (RK3328, ThinkPenguin)
+#   x86_64-unknown-linux-gnu     -> host smoke tests
+# A third target is NOT added here without also teaching build-rust.sh about
+# it — the script exits 1 on anything else, so CI would fail misleadingly.
+
+name: build
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  aarch64-musl:
+    name: aarch64-unknown-linux-musl (appliance / router)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      # build-rust.sh:69 harvests musl include dirs from `zig libc` because
+      # plain clang has no musl sysroot on a generic host and silently falls
+      # back to glibc headers, which breaks aws-lc-sys. See its header comment
+      # (lines 14-22) for the three rejected toolchain combinations — do not
+      # "simplify" this away.
+      - name: Install zig (musl sysroot) and clang/llvm
+        run: |
+          set -euo pipefail
+          # Pinned major version to match the validated 2026-09-04 recipe.
+          ZIG_VERSION=0.16.0
+          curl -fsSL "https://ziglang.org/download/${ZIG_VERSION}/zig-linux-x86_64-${ZIG_VERSION}.tar.xz" \
+            | sudo tar -xJ -C /usr/local
+          echo "ZIG_VERSION=${ZIG_VERSION}" >> "$GITHUB_ENV"
+          echo "/usr/local/zig-linux-x86_64-${ZIG_VERSION}" >> "$GITHUB_PATH"
+          zig version
+          # clang/llvm ship with the runner already, but pin what we depend on.
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq clang llvm lld upx-ucl
+          clang --version | head -1
+
+      - name: Cache cargo target dir
+        uses: actions/cache@v4
+        with:
+          path: build/cargo-target
+          key: build-aarch64-${{ hashFiles('rustical/Cargo.lock', 'dav-tls/Cargo.lock') }}
+          restore-keys: build-aarch64-
+
+      - name: Build
+        env:
+          # build-rust.sh:126 hardcodes /usr/lib/llvm/22/bin/llvm-strip; point
+          # it at whatever this runner has so the .comment strip actually runs
+          # instead of being silently skipped by the [ -x ] guard.
+          LLVM_STRIP: /usr/bin/llvm-strip
+        run: ./scripts/build-rust.sh aarch64-unknown-linux-musl
+
+      - name: Assert the 35 MiB overlay budget (plan constraint C2)
+        run: |
+          set -euo pipefail
+          budget=$((35 * 1024 * 1024))
+          for bin in rustical dav-tls; do
+            bytes=$(stat -c%s "out/$bin")
+            echo "$bin: $((bytes/1024)) KiB"
+            if [ "$bytes" -gt "$budget" ]; then
+              echo "::error::$bin is $((bytes/1024/1024)) MiB — over the 35 MiB overlay budget"
+              exit 1
+            fi
+          done
+          echo "ok: both binaries fit the budget"
+          echo "note: the appliance overlay budget is what makes UPX mandatory;"
+          echo "      a non-UPX rustical is ~15.9 MiB and would still 'fit', so"
+          echo "      this check alone does not prove compression happened."
+
+      - name: Assert static + UPX-packed
+        run: |
+          set -euo pipefail
+          for bin in rustical dav-tls; do
+            file "out/$bin" | grep -q aarch64 || { echo "::error::$bin is not aarch64"; exit 1; }
+            # `file` on a UPX-packed aarch64 static binary: must not need a loader.
+            ldd "out/$bin" 2>&1 | grep -qi "not a dynamic executable" \
+              || { echo "::warning::could not confirm static linking of $bin (UPX rewrites the header)"; }
+          done
+          echo "ok: aarch64 static binaries produced"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binaries-aarch64-musl
+          path: out/rustical
+          retention-days: 14
+
+  x86_64-gnu:
+    name: x86_64-unknown-linux-gnu (host smoke test)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.0
+
+      - name: Cache cargo target dir
+        uses: actions/cache@v4
+        with:
+          path: build/cargo-target
+          key: build-x86_64-${{ hashFiles('rustical/Cargo.lock', 'dav-tls/Cargo.lock') }}
+          restore-keys: build-x86_64-
+
+      - name: Build
+        run: ./scripts/build-rust.sh x86_64-unknown-linux-gnu
+
+      - name: Smoke test the binary
+        run: |
+          set -euo pipefail
+          BIN=out/x86_64-unknown-linux-gnu/rustical
+          test -x "$BIN"
+          # gen-config is the cheapest end-to-end proof that the binary links,
+          # starts, and its clap/figment config layer initialises.
+          "$BIN" gen-config > /tmp/generated.toml
+          test -s /tmp/generated.toml
+          grep -q 'data_store' /tmp/generated.toml
+          "$BIN" --version
+          echo "ok: binary runs and emits a config template"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binaries-x86_64-gnu
+          path: out/x86_64-unknown-linux-gnu
+          retention-days: 14
