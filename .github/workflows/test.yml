@@ -1,10 +1,24 @@
 # Omnical — test + lint
 #
-# Runs the fork's own test suite. The integration baseline is 96 tests in
-# tests/run_integration_tests.rs (PLAN.md §17.16, 2026-09-23). That number is
-# the safety net for the tenancy refactor in PLAN_DEPLOYMENTS.md §6.1: the
-# `make_app` -> `make_app_for` extraction MUST pass it with zero test edits.
-# A test edit during a refactor means behaviour changed.
+# Runs the fork's own test suite. The integration baseline is **98** tests in
+# tests/run_integration_tests.rs, verified at the fork's pinned commit
+# `dba08b2f` on 2026-09-28. That number is the safety net for the tenancy
+# refactor in PLAN_DEPLOYMENTS.md §6.1: the `make_app` -> `make_app_for`
+# extraction MUST pass it with zero test edits. A test edit during a refactor
+# means behaviour changed.
+#
+# ON THE NUMBER, because it was wrong for a while and the wrongness mattered.
+# This file asserted 96, citing PLAN.md §17.16 (2026-09-23). That figure was a
+# mid-day snapshot on the same day the suite last grew: the last commits
+# touching tests/integration_tests/ are 3d2f4249 and dba08b2f, both 2026-09-23,
+# and by `dba08b2f` the suite is 98. So the assertion was not merely stale
+# documentation — it was a FLOOR set two tests below reality, which means a
+# refactor that quietly deleted two tests would have passed this check. That is
+# the exact failure the check exists to catch, so the floor is now the real
+# count. Re-derive it with
+#   cargo test --test run_integration_tests -- --list | tail -1
+# if the suite ever changes on purpose, and update this number in the same
+# commit.
 #
 # SQLX_OFFLINE=true is REQUIRED, not optional: 42 compile-time-checked
 # `sqlx::query!` macros exist and the .sqlx/ query cache (70 files) is
@@ -104,15 +118,50 @@ jobs:
           # A silent drop in test count is how a refactor quietly deletes
           # coverage. The integration runner is a separate test target, so
           # assert it directly rather than inferring from the workspace run.
+          #
+          # 98, not 96 — see the header for why the old floor was two tests
+          # below reality, which made this check unable to catch the loss it
+          # exists to catch. `listed` is cross-checked against `n` so a
+          # *renamed* or *removed* test is caught even if a replacement keeps
+          # the count up: the tenancy refactor's promise is "zero test edits",
+          # and an edit that swaps one test for another is still an edit.
           cargo test --test run_integration_tests 2>&1 | tee /tmp/integration.log
           grep -E "^test result:" /tmp/integration.log
           n=$(grep -oE "^test result: ok\. [0-9]+" /tmp/integration.log \
               | awk '{s+=$4} END {print s+0}')
           echo "integration tests passed: $n"
-          if [ "$n" -lt 96 ]; then
-            echo "::error::only $n integration tests passed — the 96-test baseline regressed"
+          if [ "$n" -ne 98 ]; then
+            echo "::error::the integration baseline is 98 tests; $n ran. A refactor must"
+            echo "::error::not change this number, and a change here means a test was"
+            echo "::error::added, deleted or renamed. Update this file in the same commit"
+            echo "::error::if that was deliberate."
             exit 1
           fi
+          # The test *names* are the refactor's real gate, so pin them too. A
+          # count alone cannot catch a delete-and-replace that holds the total
+          # at 98, and §6.1's promise is "zero test edits" — an edit that swaps
+          # one test for another is still an edit. The digest is over the sorted
+          # test names, which do not depend on the toolchain, so this is stable
+          # until a test is deliberately added, deleted or renamed.
+          expected_digest=126adac6258f6916afe257375fc1aa9757296e0af6ee20bec22ed051d5631239
+          listed=$(cargo test --test run_integration_tests -- --list 2>/dev/null \
+              | grep -oE '^integration_tests::.*: test$' | sort)
+          count=$(printf '%s\n' "$listed" | grep -c .)
+          if [ "$count" -ne "$n" ]; then
+            echo "::error::--list reports $count tests but the run reported $n"
+            exit 1
+          fi
+          actual_digest=$(printf '%s\n' "$listed" | sha256sum | cut -d' ' -f1)
+          echo "integration test-name digest: $actual_digest"
+          if [ "$actual_digest" != "$expected_digest" ]; then
+            echo "::error::the set of integration test NAMES changed (expected"
+            echo "::error::$expected_digest, got $actual_digest)."
+            echo "::error::§6.1's refactor gate is 'zero test edits'. If a test was"
+            echo "::error::deliberately added, deleted or renamed, update"
+            echo "::error::expected_digest in this file in the same commit."
+            exit 1
+          fi
+          echo "ok: $n integration tests, names match the pinned digest"
 
   fmt:
     name: cargo fmt

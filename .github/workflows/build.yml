@@ -149,10 +149,12 @@ jobs:
   # It is here rather than in test.yml because it needs the *release* binary,
   # and build.yml is the workflow that already produces one per target.
   #
-  # What it does NOT do is run Docker (row 40's literal method). It checks the
-  # part of the Compose channel that is ours and that actually rots — the two
-  # files' wizard variables and data paths agreeing — and says so in its
-  # output rather than implying a container was started.
+  # This job runs no container on purpose. Executing a container runtime is a
+  # stretch goal (§18.7): the self-host channel stands on its own, and the job
+  # instead asserts everything in compose.omnical.yml that can rot without one —
+  # the wizard variable set in both directions, the data-dir/db-url pairing, the
+  # service ordering — plus the substance of row 40 run against the release
+  # binary. See scripts/selfhost-gate.sh.
   selfhost:
     name: self-host channels (rows 40-41)
     runs-on: ubuntu-latest

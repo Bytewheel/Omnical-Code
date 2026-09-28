@@ -51,6 +51,11 @@ installs, boots, round-trips a real CalDAV write/read, registers a user through
 the invite flow, syncs as that user and re-runs the installer over the result.
 It is the `selfhost` job in CI.
 
+Neither channel depends on the other: the native path reaches the identical end
+state with no container anywhere, and the compose file is a *packaging* of the
+same install. Actually running the Compose channel under Docker or Podman is a
+**stretch goal** (`PLAN_DEPLOYMENTS.md` §18.7), not a gate.
+
 **The hosted, multi-tenant SaaS is not built.** No image is published and
 `rustical/Dockerfile` is still upstream's, used only as the self-host build.
 

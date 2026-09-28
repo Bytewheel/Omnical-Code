@@ -9,12 +9,17 @@
 # `packaging/native/install.sh`, boots the server on the config the wizard
 # produced, and drives a real client round trip and a real registration.
 #
-# Row 40 is the Compose path, and Docker is not available in every environment
-# this has to run in. What is checked here instead is the part that can go wrong
-# without Docker, and it is the part that is ours: **the two channels answer the
-# wizard with the same variables, and produce the same config.** The Docker
-# runtime itself is the only thing left unproven, and that is said out loud
-# rather than glossed.
+# Row 40 is the Compose path. **Running a container runtime is a stretch goal,
+# not a gate** (PLAN_DEPLOYMENTS.md §18.7, user decision 2026-09-28): the
+# self-host channel has to stand on its own, and `packaging/native/install.sh`
+# reaches the identical end state with no container in the picture.
+#
+# So this script does not need Docker, and deliberately does not pretend to
+# check it. What it checks instead is the part of the Compose channel that is
+# ours and that actually rots without a runtime — that `compose.omnical.yml`
+# and the wizard still agree on every answer, on where the database lives, and
+# on the order the two services start in — plus the whole substance of the row,
+# run against the release binary with the same answers the container is given.
 #
 # Nothing here is a mock. The binary under test is the release build, the
 # database is a real SQLite file, and the requests are real HTTP.
@@ -507,8 +512,14 @@ if [ "$fails" -eq 0 ]; then
 $(printf '\033[1;32mself-host gate: PASS\033[0m')
 
   row 41  native path    install.sh -> wizard -> server -> DAV round trip
-  row 40  compose path   the two channels' wizard variables and data paths agree
-                         (the Docker runtime itself is not exercised here)
+  row 40  compose path   unattended install, registration and client sync, all
+                         driven by the same wizard answers the container gets,
+                         plus every container-free assertion in the compose file
+
+  Running a container runtime is a stretch goal, not a gate
+  (PLAN_DEPLOYMENTS.md §18.7). The self-host channel stands on its own: the
+  native path above reaches the identical end state with no container, which is
+  why row 40 was never allowed to depend on one.
 EOF
 	exit 0
 fi
