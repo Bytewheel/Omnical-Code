@@ -1,0 +1,22 @@
+# Omnical — router-dav submodules
+#
+# The whole CalDAV/CardDAV server lives in this submodule. The parent repo is
+# the packaging/deploy/orchestration layer; the submodule is the product.
+#
+# The URL is RELATIVE ("../rustical.git"). Git resolves it against the
+# superproject's own remote, so once you set a remote on this repo
+# (`git remote add origin git@github.com:<OWNER>/router-dav.git`) the submodule
+# automatically points at `github.com:<OWNER>/rustical.git` — the same owner.
+# No hardcoded fork URL to keep in sync.
+#
+#   git remote add origin git@github.com:<OWNER>/router-dav.git
+#   git submodule sync && git submodule update --init --recursive
+#
+# Per PLAN_DEPLOYMENTS.md §5.2.4 the previous state of this repo was a gitlink
+# with NO .gitmodules, so `git clone` produced an EMPTY rustical/ and the build
+# could not start at all. This file is what fixes that.
+
+[submodule "rustical"]
+	path = rustical
+	url = ../rustical.git
+	branch = omnical-scheduling

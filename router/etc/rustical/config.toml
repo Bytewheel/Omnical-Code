@@ -1,0 +1,18 @@
+# /etc/rustical/config.toml — Omnical (RustiCal 0.16.1) on the libreCMC router.
+# Authoritative key names: `rustical gen-config`. Env overrides: RUSTICAL_* (figment,
+# sections split by "__", e.g. RUSTICAL_DATA_STORE__SQLITE__DB_URL).
+
+[http]
+# Do NOT set http.host here: in RustiCal 0.16.1 it is a DEPRECATED BIND OVERRIDE
+# (takes precedence over `bind`, would make rustical try to bind
+# 0115d8cf.duckdns.org:4000 and fail). URLs in responses are generated from each
+# request's Host header, which correctly carries 0115d8cf.duckdns.org:8443 via dav-tls.
+bind = "127.0.0.1:4000"          # only dav-tls (and local curl) talk to it
+payload_limit_mb = 32
+
+[data_store.sqlite]
+db_url = "file:/usr/local/share/rustical/db.sqlite3"   # persistent overlay — NOT /var (tmpfs!)
+
+# [dav_push] — defaults for now; enable WebSocket/WebPush transport after Phase 7 tests.
+
+# [nextcloud_login] — enabled by default; required for the DAVx5 login flow.

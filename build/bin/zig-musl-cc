@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+# zig-musl-cc — C/C++ compiler + linker wrapper for aarch64-unknown-linux-musl.
+#
+# rustc and cc-rs pass their own --target=<rust-triple> (e.g.
+# aarch64-unknown-linux-musl) which Zig 0.16 cannot parse.  This wrapper
+# strips those and forces Zig's own triple (aarch64-linux-musl).
+#
+# Dispatch: create symlinks named zig-musl-ar / zig-musl-ranlib / zig-musl-nm
+# to this script to get the matching archive/utility subcommand; otherwise it
+# acts as a C compiler/linker.
+#
+# Usage (via env):
+#   CC_aarch64_unknown_linux_musl=$PWD/zig-musl-cc
+#   CXX_aarch64_unknown_linux_musl=$PWD/zig-musl-cc
+#   AR=$PWD/zig-musl-ar
+#   RANLIB=$PWD/zig-musl-ranlib
+#   NM=$PWD/zig-musl-nm
+#   CARGO_TARGET_AARCH64_UNKNOWN_LINUX_MUSL_LINKER=$PWD/zig-musl-cc
+#
+# Also honors: ZIG_MUSL_CC=zig  (path to the zig binary)
+set -euo pipefail
+
+ZIG="${ZIG_MUSL_CC:-zig}"
+ZIG_TARGET="${ZIG_MUSL_TARGET:-aarch64-linux-musl}"
+
+name="$(basename "$0")"
+MODE="cc"
+case "$name" in
+	*ar*) MODE="ar" ;;
+	*ranlib*) MODE="ranlib" ;;
+	*nm*) MODE="nm" ;;
+	*objcopy*) MODE="objcopy" ;;
+	*ld*) MODE="ld" ;;
+	cc|c++|gcc|clang|zig-musl-cc) MODE="cc" ;;
+	*) MODE="${1:-cc}" ;;
+esac
+
+case "$MODE" in
+	cc|c++|gcc|clang) MODE="cc" ;;
+esac
+
+args=()
+skip_next=0
+for a in "$@"; do
+	if [ "$skip_next" -eq 1 ]; then
+		skip_next=0
+		continue
+	fi
+	case "$a" in
+		--target=*) continue ;;                     # strip rust triple
+		--target|-target) skip_next=1 ; continue ;; # strip "--target <val>"
+		# rustc >= 1.8x emits this GNU-ld erratum flag for aarch64 musl; zig's
+		# in-house ELF linker rejects it.  Same situation as every zig-linked
+		# binary already running on this RK3328 (router-nym stack).
+		-Wl,--fix-cortex-a53-843419) continue ;;
+		*) args+=("$a") ;;
+	esac
+done
+
+case "$MODE" in
+	ar) exec "$ZIG" ar "${args[@]}" ;;
+	ranlib) exec "$ZIG" ranlib "${args[@]}" ;;
+	nm) exec "$ZIG" nm "${args[@]}" ;;
+	objcopy) exec "$ZIG" objcopy "${args[@]}" ;;
+	ld) exec "$ZIG" cc -target "$ZIG_TARGET" -nostdlib "${args[@]}" ;;
+	*) exec "$ZIG" cc -target "$ZIG_TARGET" "${args[@]}" ;;
+esac

@@ -1,0 +1,56 @@
+#!/bin/sh
+# rustical-watchdog — 5-minute health watchdog for the omnical stack.
+#
+# Belt-and-braces BEYOND procd respawn (both services already set
+# `respawn 3600 5 0`): respawn only covers a process that EXITED; these
+# checks catch a RUNNING-but-broken service (a hung rustical event loop
+# that no longer answers /ping; dav-tls no longer listening on the WAN
+# :8443).  Every correction is logged; a healthy system produces NO log
+# lines (screech-watchdog pattern).
+#
+# Cron entry (managed by deploy.sh):
+#   */5 * * * * /usr/bin/rustical-watchdog
+#
+# Checks:
+#   1. rustical health — GETs http://127.0.0.1:4000/ping (bind address
+#      taken from /etc/rustical/config.toml; silent, exit 0 on success).
+#      On failure: restart the service (its init script re-checks the
+#      binary + config and logs loudly if they are missing — e.g. after
+#      a sysupgrade that wiped /usr/sbin).
+#   2. dav-tls listening — a LISTEN socket on :8443 (the public TLS
+#      front end; port is dedicated to dav-tls by design — uhttpd stays
+#      on LAN :443).  On failure: restart it (its init script re-checks
+#      certs + the pinned WAN IP and logs loudly if the environment is
+#      wrong).  Port-based on purpose: fewer dependencies than
+#      netstat -p process resolution, no false restarts of the public
+#      front end.
+#   0. Deploy fence — deploy.sh holds /tmp/rustical-deploy.lock during
+#      its stop/rm/cp binary swap.  While the lock exists we do NOTHING:
+#      the rustical health check EXECs /usr/sbin/rustical, and one fired
+#      mid-swap (2026-09-08 17:20): the exec'd process held the old
+#      binary's inode, so the deploy's rm freed no space and its cp died
+#      with ENOSPC — leaving a truncated binary and the service down.
+#      The lock lives in tmpfs (/tmp): a hard-crashed deploy leaves it
+#      until reboot or the next deploy, which is exactly when the
+#      watchdog should stay quiet.
+
+TAG="rustical-watchdog"
+
+if [ -f /tmp/rustical-deploy.lock ]; then
+	exit 0
+fi
+
+# 1. rustical answering?  NB: --config-file is a TOP-LEVEL clap option
+#    and must precede the subcommand (Phase 2 finding).
+if ! /usr/sbin/rustical --config-file /etc/rustical/config.toml health >/dev/null 2>&1; then
+	logger -t "$TAG" "rustical health FAILED — restarting service"
+	/etc/init.d/rustical restart >/dev/null 2>&1
+fi
+
+# 2. dav-tls listening on the public port?
+if ! netstat -tln 2>/dev/null | grep -q ':8443 '; then
+	logger -t "$TAG" "dav-tls not LISTENing on :8443 — restarting service"
+	/etc/init.d/dav-tls restart >/dev/null 2>&1
+fi
+
+exit 0

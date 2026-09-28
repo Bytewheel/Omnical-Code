@@ -1,0 +1,7 @@
+# Append these lines to /etc/sysupgrade.conf so Omnical data survives firmware
+# upgrades (deploy.sh installs them idempotently).  Note: /etc/init.d/* are
+# preserved as conffiles by default, but /usr/sbin binaries are NOT — re-run
+# ~/router-dav/deploy.sh after any sysupgrade.
+
+/etc/rustical
+/usr/local/share/rustical

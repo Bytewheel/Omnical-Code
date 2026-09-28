@@ -1,0 +1,89 @@
+# Omnical — router-dav build & deploy repo
+#
+# Context: this repo was reconstructed fresh on 2026-09-28 (PLAN_DEPLOYMENTS.md
+# §5, Workstream 0). The previous history tracked 33,998 build artefacts and
+# two sets of LIVE SECRETS (a Let's Encrypt private key in out/tls/, and 15
+# real CalDAV/CardDAV app tokens in out/omnical-iphone.mobileconfig). It is
+# archived at ~/omnical-archive/router-dav-dotgit-2026-09-28 and the secrets
+# are rotated on a schedule — see the "deferred rotation" runbook at the end
+# of PLAN_DEPLOYMENTS.md §18.
+#
+# RULE OF THUMB: if it is a build product or a credential, it does not belong
+# in git. The repo must stay publishable, because AGPL-3.0 §13 requires us to
+# offer the running source to network users (PLAN_DEPLOYMENTS.md §10).
+
+# ─── Rust build output ──────────────────────────────────────────────────────
+# CARGO_TARGET_DIR scratch (build-rust.sh:33). This alone was 33,377 tracked
+# files and ~3.3 GB of .git.
+/build/cargo-target/
+/build/**/cargo-target/
+
+# Any target/ dir. rustical/ is a submodule so it has its own ignore rules;
+# these cover dav-tls/ and anything else in-tree.
+/target/
+**/target/
+
+# zig-CC build leftovers (the legacy TOOLCHAIN=zig path)
+/zig-cache/
+/.zig-cache/
+
+# ─── Build & release artefacts (out/) ───────────────────────────────────────
+# EVERYTHING in out/ is either a compiled binary or a live credential. There is
+# nothing in it worth tracking:
+#   out/rustical, out/dav-tls              compiled, UPX-packed binaries
+#   out/x86_64-unknown-linux-gnu/          compiled host smoke-test binaries
+#   out/tls/{key,fullchain}.pem            LIVE Let's Encrypt private key
+#   out/*.mobileconfig                     15 LIVE CalDAV/CardDAV app tokens
+/out/
+# Distribution + release staging (PLAN_DEPLOYMENTS.md §5.4 release.yml)
+/dist/
+*.tar
+*.tar.gz
+*.tgz
+*.sha256
+*.sig
+*.pem.bak
+
+# ─── Credentials ────────────────────────────────────────────────────────────
+# Secrets never touch this repo. render-router-config.sh renders SMTP/IMAP
+# passwords straight to stdout so they are piped into the destination and never
+# land on the operator's disk (see its header, lines 9-12) — keep it that way.
+/secrets/
+/pass/
+*.age
+*.gpg
+*.kdbx
+.env
+.env.*
+
+# Private keys, in any directory.
+/*.key
+/**/*.key
+*.key.pem
+
+# Certificate material is ignored by default. The ONE exception is the public
+# Sectigo intermediate CA that deploy.sh pushes to /etc/rustical/certs/ — it is
+# a trust anchor, not a secret, and the app needs it to poll imap.novo-ordo.com
+# (its server omits the intermediate, so every poll fails with UnknownIssuer —
+# documented in render-router-config.sh:44-50 and referenced by the ca_file
+# column there). Dropping it from the tree breaks inbound iMIP reply ingestion.
+*.pem
+*.crt
+!router/etc/rustical/certs/*.pem
+
+# Stashed-away copies of a previous .git. The pre-2026-09-28 history is kept at
+# ~/omnical-archive/router-dav-dotgit-2026-09-28 — NEVER leave a .git.old* (or
+# any other nested .git) inside the working tree, or `git add -A` will spend
+# minutes trying to stage 33,998 objects of it.
+/.git.old*/
+/.git.*.old*/
+/**/.git.old*/
+
+# ─── Editor / OS noise ──────────────────────────────────────────────────────
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

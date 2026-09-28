@@ -1,0 +1,33 @@
+[package]
+name = "dav-tls"
+version = "0.1.0"
+edition = "2024"
+description = "Minimal rustls TLS tunnel (TCP/TLS -> plain TCP) for RustiCal on libreCMC"
+license = "AGPL-3.0-or-later"
+publish = false
+
+[dependencies]
+tokio = { version = "1", features = [
+    "rt-multi-thread",
+    "net",
+    "io-util",
+    "signal",
+    "macros",
+    "time",
+    "sync",
+] }
+tokio-rustls = { version = "0.26", default-features = false, features = [
+    "ring",
+    "tls12",
+    "logging",
+] }
+rustls-pki-types = "1"
+rustls-pemfile = "2"
+socket2 = "0.6"
+libc = "0.2"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true
