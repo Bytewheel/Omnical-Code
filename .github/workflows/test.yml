@@ -76,6 +76,25 @@ jobs:
             exit 1
           fi
 
+      # PLAN_DEPLOYMENTS.md §8.2 / §12 row 44: the wizard must be re-runnable.
+      # The gate is the second run — a re-run that edits rather than clobbers,
+      # keeping the database, the administrator and its password. A wizard
+      # test that only ever does a first run cannot see the bug this exists to
+      # prevent, so this is its own step with its own floor.
+      - name: Setup wizard idempotence (row 44)
+        env:
+          SQLX_OFFLINE: "true"
+        run: |
+          set -euo pipefail
+          cargo test --test setup_wizard 2>&1 | tee /tmp/setup.log
+          n=$(grep -oE "^test result: ok\. [0-9]+" /tmp/setup.log \
+              | awk '{s+=$4} END {print s+0}')
+          echo "setup wizard tests passed: $n"
+          if [ "$n" -lt 8 ]; then
+            echo "::error::only $n setup wizard tests passed — the idempotence gate shrank"
+            exit 1
+          fi
+
       - name: Assert the integration baseline did not shrink
         if: always()
         env:
