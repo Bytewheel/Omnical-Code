@@ -61,8 +61,16 @@ jobs:
           echo "${ZIG_SHA256}  /tmp/zig.tar.xz" | sha256sum --check --strict
           sudo tar -xJf /tmp/zig.tar.xz -C /usr/local
 
+          # $GITHUB_PATH takes effect for LATER steps only, so exporting here is
+          # what makes `zig version` work in *this* step, and writing
+          # $GITHUB_PATH is what makes it work in the build step. Doing only one
+          # of the two is a trap the original step fell into: it wrote
+          # $GITHUB_PATH and then immediately called `zig version`, which could
+          # never resolve. It only looked plausible because the step died one
+          # line earlier, on the 404.
           echo "ZIG_VERSION=${ZIG_VERSION}" >> "$GITHUB_ENV"
           echo "/usr/local/${ZIG_PKG}" >> "$GITHUB_PATH"
+          export PATH="/usr/local/${ZIG_PKG}:$PATH"
           zig version
           # clang/llvm ship with the runner already, but pin what we depend on.
           sudo apt-get update -qq
