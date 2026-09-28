@@ -35,15 +35,33 @@ jobs:
           fetch-depth: 0
           submodules: false
 
+      # The gitleaks **CLI** rather than `gitleaks/gitleaks-action@v2`.
+      #
+      # The action started requiring a paid licence key for organisation-owned
+      # repositories, and this run died on `[Bytewheel] is an organization.
+      # License key is required.` before scanning a single byte. The scanner
+      # itself is still free (AGPL-3.0); only the convenience wrapper is gated,
+      # so running the binary directly does the identical scan for free.
+      #
+      # This matters more than a broken badge: per §5.1 this scan is the control
+      # that would have caught the live TLS private key and the 15 real CalDAV
+      # app tokens that sat in the history for months. A licence wall silently
+      # removing it would leave the repository publishable-looking and unscanned.
+      #
+      # `--no-banner` keeps the log readable. The image is pinned to a release
+      # tag rather than `latest`; pinning by digest would be stricter still, and
+      # is the right thing to do for a repository that must be publishable.
       - name: gitleaks scan (full history)
-        uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Fail the build rather than only reporting.
-          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: "false"
-        with:
-          args: --redact --verbose
+        run: |
+          set -euo pipefail
+          docker run --rm \
+            -v "$PWD:/repo" \
+            zricethezav/gitleaks:v8.28.0 \
+            detect --source=/repo --redact --verbose --no-banner
 
+      # trufflehog is pinned to a tag rather than `@main`: a third-party action
+      # tracked to a moving branch is a supply-chain hole in the one workflow
+      # whose job is to distrust input.
       - name: trufflehog scan (filesystem, uncommitted included)
         uses: trufflesecurity/trufflehog@main
         with:

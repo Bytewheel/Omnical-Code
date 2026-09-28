@@ -37,12 +37,32 @@ jobs:
       - name: Install zig (musl sysroot) and clang/llvm
         run: |
           set -euo pipefail
-          # Pinned major version to match the validated 2026-09-04 recipe.
+          # Pinned to the version the 2026-09-04 recipe was validated against, and
+          # the one scripts/build-rust.sh is known to work with locally.
           ZIG_VERSION=0.16.0
-          curl -fsSL "https://ziglang.org/download/${ZIG_VERSION}/zig-linux-x86_64-${ZIG_VERSION}.tar.xz" \
-            | sudo tar -xJ -C /usr/local
+          # The archive name is `zig-<arch>-<os>-<version>`, NOT the pre-0.12
+          # `zig-<os>-<arch>-<version>`. Zig reordered those components in 0.12,
+          # and this step kept the old spelling, so the URL 404'd and the job
+          # died on `xz: (stdin): File format not recognized` — a tarball that
+          # was never a tarball, piped straight from curl into tar. The same
+          # reordering applies to the extracted directory name below, so getting
+          # only one of the two right moves the failure rather than fixing it.
+          ZIG_PKG="zig-x86_64-linux-${ZIG_VERSION}"
+          ZIG_URL="https://ziglang.org/download/${ZIG_VERSION}/${ZIG_PKG}.tar.xz"
+          # Pinned from ziglang.org/download/index.json and verified against the
+          # downloaded bytes. Downloading a whole toolchain over TLS and running
+          # whatever arrives is a supply-chain hole in a repository that has to be
+          # publishable (AGPL §13), and this is the one place in CI that fetches
+          # an executable. A digest fetched from the same host as the tarball
+          # would prove nothing, so the expected value is a literal here.
+          ZIG_SHA256=70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00
+
+          curl -fsSL -o /tmp/zig.tar.xz "$ZIG_URL"
+          echo "${ZIG_SHA256}  /tmp/zig.tar.xz" | sha256sum --check --strict
+          sudo tar -xJf /tmp/zig.tar.xz -C /usr/local
+
           echo "ZIG_VERSION=${ZIG_VERSION}" >> "$GITHUB_ENV"
-          echo "/usr/local/zig-linux-x86_64-${ZIG_VERSION}" >> "$GITHUB_PATH"
+          echo "/usr/local/${ZIG_PKG}" >> "$GITHUB_PATH"
           zig version
           # clang/llvm ship with the runner already, but pin what we depend on.
           sudo apt-get update -qq

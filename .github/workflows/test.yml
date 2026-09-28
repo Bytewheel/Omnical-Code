@@ -140,12 +140,19 @@ jobs:
           # The test *names* are the refactor's real gate, so pin them too. A
           # count alone cannot catch a delete-and-replace that holds the total
           # at 98, and §6.1's promise is "zero test edits" — an edit that swaps
-          # one test for another is still an edit. The digest is over the sorted
-          # test names, which do not depend on the toolchain, so this is stable
-          # until a test is deliberately added, deleted or renamed.
-          expected_digest=126adac6258f6916afe257375fc1aa9757296e0af6ee20bec22ed051d5631239
+          # one test for another is still an edit.
+          #
+          # LC_ALL=C is not optional, and this was proved the hard way: the first
+          # CI run of this check reported the right count (98) and the wrong
+          # digest. `sort` is locale-sensitive and these names are full of
+          # underscores and mixed case, which collate differently under
+          # en_US.UTF-8 than under C — the same 98 tests hashed to two different
+          # values, so a pin computed in one locale was unpassable in the other.
+          # Byte order has no such opinions and is identical everywhere, which is
+          # the whole requirement for a value that gets pasted between machines.
+          expected_digest=e7760b76f4aff9a233ed59fcade2518c9692e5296e4af7b0850ef200f64fad9e
           listed=$(cargo test --test run_integration_tests -- --list 2>/dev/null \
-              | grep -oE '^integration_tests::.*: test$' | sort)
+              | grep -oE '^integration_tests::.*: test$' | LC_ALL=C sort)
           count=$(printf '%s\n' "$listed" | grep -c .)
           if [ "$count" -ne "$n" ]; then
             echo "::error::--list reports $count tests but the run reported $n"
