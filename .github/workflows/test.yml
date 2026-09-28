@@ -56,6 +56,26 @@ jobs:
           echo "=== summary ==="
           grep -E "^test result:" /tmp/test.log
 
+      # PLAN_DEPLOYMENTS.md §8.4 / §12 row 43: the §14 row-18 restore drill,
+      # promoted from a manual exercise to a release gate. Run as its own step
+      # so a backup regression is legible in the CI log instead of buried in
+      # the workspace run above — this is the test that says "a backup taken by
+      # this binary restores on another machine", which is the only claim
+      # anybody makes about a backup.
+      - name: Backup/restore drill (row 43)
+        env:
+          SQLX_OFFLINE: "true"
+        run: |
+          set -euo pipefail
+          cargo test --test backup_restore 2>&1 | tee /tmp/backup.log
+          n=$(grep -oE "^test result: ok\. [0-9]+" /tmp/backup.log \
+              | awk '{s+=$4} END {print s+0}')
+          echo "backup/restore tests passed: $n"
+          if [ "$n" -lt 12 ]; then
+            echo "::error::only $n backup/restore tests passed — the restore drill shrank"
+            exit 1
+          fi
+
       - name: Assert the integration baseline did not shrink
         if: always()
         env:
