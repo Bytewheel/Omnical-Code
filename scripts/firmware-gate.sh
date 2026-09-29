@@ -161,9 +161,17 @@ else
 	fail "postinst failed on a factory root"
 fi
 
-[ -f "$W1/etc/rustical/config.toml" ] &&
-	pass "seeds config.toml when there is none" ||
-	fail "no config seeded on a factory flash — a fresh unit has no config and no way to get one"
+# The REVERSAL of §9.2's original design, and the reason §9.3's
+# should_enter_setup_mode has two reasons rather than three. A seeded base config
+# makes "has a config" and "is configured" different states, and the server then
+# has to guess — which it did, wrongly, by treating "tenancy on, no tenants" as
+# unconfigured. That swallowed the error from a config that parses but resolves
+# no Host, so a server with a bad base_domain offered the setup wizard to anyone
+# on the LAN instead of naming the fix. The wizard writes the config instead, so
+# it is configured for the answers rather than for a guess.
+[ ! -f "$W1/etc/rustical/config.toml" ] &&
+	pass "seeds NO config.toml — 'no config' and 'not configured' are one state" ||
+	fail "a factory flash seeds a config.toml, which makes setup mode ambiguous (see §9.3)"
 
 for line in /etc/rustical /usr/local/share/rustical; do
 	grep -qxF "$line" "$W1/etc/sysupgrade.conf" &&
@@ -179,8 +187,31 @@ grep -qF '/usr/bin/rustical-watchdog' "$W1/etc/crontabs/root" &&
 	pass "database directory created under /usr/local (not /var, which is tmpfs)" ||
 	fail "no /usr/local/share/rustical — /var is tmpfs and the DB would not survive a reboot"
 
-perm="$(wc -c < "$W1/etc/rustical/config.toml" 2>/dev/null || echo 0)"
-[ "$perm" -gt 0 ] && pass "seeded config is non-empty" || fail "seeded config is empty"
+[ -d "$W1/etc/rustical/tls" ] &&
+    pass "the config directory exists with an empty tls/ subdir" ||
+    fail "no /etc/rustical/tls — the wizard has nowhere to put certificates"
+mode=$(wc -c < /dev/null; ls -ld "$W1/etc/rustical" | cut -c1-10)
+[ "$(stat -c %a "$W1/etc/rustical" 2>/dev/null || echo 700)" = "700" ] &&
+    pass "the config directory is 0700 (it will hold the RSVP secret)" ||
+    fail "the config directory is not 0700"
+
+# ── 3b. the init script must START with no config ───────────────────────────
+# A factory unit has no config.toml. If the init script refuses to start without
+# one — which is what it used to do, and what every init script in this repo does
+# — then setup mode is unreachable and the device is a brick with a DB.
+section "3b. the init script starts with no config (or the wizard is unreachable)"
+INITD="$ROOT/router/etc/init.d/rustical"
+if grep -qE '^\s*\[ -f "\$CONFIG" \] \|\|' "$INITD"; then
+    fail "init.d refuses to start without a config — a factory unit could never reach the wizard"
+else
+    pass "init.d has no 'config must exist' pre-flight"
+fi
+grep -q 'OMNICAL_SETUP_BIND' "$INITD" &&
+    pass "init.d passes OMNICAL_SETUP_BIND so the wizard's listen address is configurable" ||
+    fail "init.d does not pass OMNICAL_SETUP_BIND"
+grep -q 'config.toml missing' "$INITD" &&
+    fail "init.d still errors on a missing config" ||
+    pass "no remaining 'config.toml missing' error path"
 
 # ── 4. the test that matters: a preserved config survives ───────────────────
 section "4. postinst on a UPGRADED unit (config must survive byte-identical)"

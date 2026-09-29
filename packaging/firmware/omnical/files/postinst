@@ -34,28 +34,31 @@ for line in /etc/rustical /usr/local/share/rustical; do
 	grep -qxF "$line" "$CONF_FILE" || echo "$line" >> "$CONF_FILE"
 done
 
-# ── 2. The base config, seeded only when there is nothing to preserve ──────
-# This is the one line of this script that could destroy a customer's data, so
-# it is the one line the gate tests hardest. A preserved config is *theirs*: it
-# holds per-tenant SMTP credentials and the RSVP signing secret, and both are
-# rotated by hand. Overwriting it with the sample on a post-flash boot would
-# silently reconfigure a production unit to defaults, and the SMTP failure would
-# show up as bounced invites minutes later with no obvious cause.
+# ── 2. No base config is seeded, and that is deliberate ────────────────────
+# An earlier version of this script copied a sample `config.toml` in when none
+# existed. It had to be removed, and the reason is worth keeping.
 #
-# `opkg` lists /etc/rustical/config.toml as a conffile, which makes opkg itself
-# preserve it across a package upgrade; this is the belt to that suspenders, and
-# the reason the copy is `cp -n`-equivalent (tested, not assumed).
-CONF_DIR="$(etc)/rustical"
-mkdir -p "$CONF_DIR"
-if [ -f "$CONF_DIR/config.toml" ]; then
-	CONFIGURED=yes
-else
-	cp /etc/omnical-config.toml.sample "$CONF_DIR/config.toml" 2>/dev/null ||
-		cp "$R/etc/omnical-config.toml.sample" "$CONF_DIR/config.toml" 2>/dev/null || true
-	CONFIGURED=no
-fi
-# 0600: §6.6.8 — the config now carries SMTP passwords and the RSVP secret.
-chmod 600 "$CONF_DIR/config.toml" 2>/dev/null || true
+# With a seeded config, "the box has a config file" and "the box is configured"
+# are different states, so the server had to guess which it was looking at — and
+# `src/setup_mode.rs` had to grow a "tenancy on, but no tenants" branch to
+# cover the gap. That branch then swallowed the error from a config that parses
+# but cannot resolve any Host: a server with a bad `base_domain` sat there
+# offering the setup wizard to anyone on the LAN, which is the administrator
+# takeover §9.3 exists to prevent, performed by the device itself.
+#
+# So the two states are made identical instead. A factory unit has NO config,
+# the server sees no config, and setup mode is unambiguous. The wizard writes
+# the config the unit will actually run on, which is better than a generic
+# default anyway: it is configured for the answers, not for a guess.
+#
+# Consequence for the init script: it must START with no config rather than
+# refusing, or a factory unit never reaches the wizard. That is the `rustical`
+# entry in `router/etc/init.d/rustical`.
+CONFIGURED=no
+[ -f "$(etc)/rustical/config.toml" ] && CONFIGURED=yes
+mkdir -p "$(etc)/rustical" "$(etc)/rustical/tls"
+# 0700: the directory holds the RSVP secret and any SMTP password once written.
+chmod 700 "$(etc)/rustical" 2>/dev/null || true
 
 # ── 3. The database directory must exist and be persistent ─────────────────
 # /var is tmpfs on this platform, so /usr/local/share is the only durable place
@@ -91,9 +94,11 @@ if [ "$CONFIGURED" = yes ]; then
 		/etc/init.d/dav-tls restart 2>/dev/null || true
 	}
 else
-	# Unconfigured. Once §9.3 (item 13) ships, rustical serves a LAN-only setup
-	# portal in exactly this state, so this is a normal state and not an error.
-	logger -t omnical "no config yet — first-boot setup mode (see §9.3)"
+	# No config, and that is a NORMAL state, not an error: rustical serves a
+	# LAN-only setup portal (§9.3) until the wizard writes one. Starting it here
+	# is the whole point — a factory unit has to reach the wizard somehow.
+	[ -n "$R" ] || /etc/init.d/rustical start 2>/dev/null || true
+	logger -t omnical "no config yet — starting first-boot setup mode (see §9.3)"
 fi
 
 if [ "$CONFIGURED" = yes ]; then

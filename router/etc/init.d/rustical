@@ -17,15 +17,28 @@ start_service() {
 		logger -t rustical "ERROR: $PROG missing — re-run ~/router-dav/deploy.sh (after sysupgrade)"
 		return 1
 	}
-	[ -f "$CONFIG" ] || {
-		logger -t rustical "ERROR: $CONFIG missing"
-		return 1
-	}
+	# NO "config must exist" check here. §9.3 (item 13): a factory flash has no
+	# config.toml, and rustical serves a LAN-only setup wizard in exactly that
+	# state. Refusing to start would make the wizard unreachable, so the one
+	# thing that looks like a missing-config error is now the normal path.
+	#
+	# The pre-flight that still matters is the binary, because a sysupgrade wipes
+	# /usr/sbin and the failure mode there is a service that respawns forever.
+	# (The omnical package owns both files, so a flash restores them — §9.2.)
 	mkdir -p /usr/local/share/rustical
 
 	procd_open_instance
 	# NB: --config-file is a top-level clap option — it MUST precede the subcommand
+	# --config-file names a file that may not exist yet. That is deliberate:
+	# setup mode is entered when the file is absent (§9.3), so passing the path
+	# unconditionally is what lets one command line serve both the unconfigured
+	# and the configured case. The wizard writes this exact path.
+	#
+	# OMNICAL_SETUP_BIND overrides the wizard's default listen address. It must
+	# be a LAN address; setup mode refuses non-LAN peers per request regardless,
+	# but binding wide is pointless when the device knows its own subnet.
 	procd_set_param command "$PROG" --config-file "$CONFIG" serve
+	procd_set_param env "OMNICAL_SETUP_BIND=${OMNICAL_SETUP_BIND:-192.168.1.1:8080}"
 	procd_set_param respawn 3600 5 0
 	# hard cap well under free RAM (raw rlimit bytes = 256 MiB)
 	procd_set_param limits memory="268435456"

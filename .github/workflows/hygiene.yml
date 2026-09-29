@@ -200,14 +200,84 @@ jobs:
           # Makefile, so deleting the install line it was supposed to be testing
           # still reported ok.
           cp packaging/firmware/omnical/files/postinst /tmp/postinst.orig
-          sed -i 's|^if \[ -f "$CONF_DIR/config.toml" \]; then|if false; then|' \
-            packaging/firmware/omnical/files/postinst
+          cp router/etc/init.d/rustical /tmp/initd.orig
+
+          # Three mutations, applied with **python3 and exact string
+          # replacement** rather than sed. Two earlier versions used sed and both
+          # were wrong in ways this step cannot afford:
+          #
+          #   1. The pattern was taken from an older revision of the postinst, so
+          #      it matched nothing, silently applied nothing, and then reported
+          #      "the gate passed with a clobbering postinst" — the worst possible
+          #      outcome, because it reads as "the gate is broken" when the
+          #      mutation was simply never made.
+          #   2. The replacement contained unescaped `|`, which is sed's
+          #      delimiter, so sed died with "unknown option to `s`".
+          #
+          # So: replace on an exact line, and **assert the replacement happened**
+          # before running the gate. A mutation step that cannot tell whether it
+          # mutated anything is not a test.
+
+          mutate() { # <file> <exact line to replace> <replacement>
+            python3 - "$1" "$2" "$3" <<'PY'
+          import sys
+          path, old, new = sys.argv[1], sys.argv[2], sys.argv[3]
+          body = open(path).read()
+          if old not in body:
+              sys.exit(f"::error::the text to mutate is not in {path!r}: {old!r}")
+          if body.count(old) != 1:
+              sys.exit(f"::error::{old!r} appears {body.count(old)} times in {path!r}, not once")
+          open(path, "w").write(body.replace(old, new, 1))
+          PY
+          }
+
+          # (a) A postinst that overwrites a preserved config — the bug that
+          #     would silently revert a production unit to defaults, losing its
+          #     SMTP credentials and RSVP secret.
+          mutate packaging/firmware/omnical/files/postinst \
+            '[ -f "$(etc)/rustical/config.toml" ] && CONFIGURED=yes' \
+            'if true; then CONFIGURED=yes; else CONFIGURED=yes; fi
+          cp "$R/etc/omnical-config.toml.sample" "$(etc)/rustical/config.toml" 2>/dev/null || true'
           if ./scripts/firmware-gate.sh >/dev/null 2>&1; then
             echo "::error::the firmware gate passed with a clobbering postinst — it is not testing anything"
             exit 1
           fi
-          echo "ok: the gate rejects a postinst that overwrites a preserved config"
+          echo "ok: rejects a postinst that overwrites a preserved config"
           cp /tmp/postinst.orig packaging/firmware/omnical/files/postinst
+
+          # (b) A postinst that re-seeds the base config on a factory flash.
+          #     This is the bug item 13 was built to expose: seeding makes "has a
+          #     config" and "is configured" different states, and the server's
+          #     guess about which one it is looking at is what swallowed a
+          #     misconfiguration and offered the setup wizard to the LAN.
+          mutate packaging/firmware/omnical/files/postinst \
+            'CONFIGURED=no' \
+            'CONFIGURED=no
+          if [ ! -f "$(etc)/rustical/config.toml" ]; then
+              cp "$R/etc/omnical-config.toml.sample" "$(etc)/rustical/config.toml" 2>/dev/null || true
+          fi'
+          if ./scripts/firmware-gate.sh >/dev/null 2>&1; then
+            echo "::error::the gate passed with a base-config-seeding postinst — setup mode would be ambiguous"
+            exit 1
+          fi
+          echo "ok: rejects a postinst that seeds a base config"
+          cp /tmp/postinst.orig packaging/firmware/omnical/files/postinst
+
+          # (c) An init script that refuses to start without a config. Every init
+          #     script in this repo does exactly that and it is correct everywhere
+          #     else: a factory unit has no config.toml, so this check makes the
+          #     setup wizard unreachable and the device a brick with a database.
+          mutate router/etc/init.d/rustical \
+            '	mkdir -p /usr/local/share/rustical' \
+            '	[ -f "$CONFIG" ] || { logger -t rustical "ERROR: $CONFIG missing"; return 1; }
+          	mkdir -p /usr/local/share/rustical'
+          if ./scripts/firmware-gate.sh >/dev/null 2>&1; then
+            echo "::error::the gate passed with an init.d that needs a config — the wizard is unreachable"
+            exit 1
+          fi
+          echo "ok: rejects an init.d that requires a config to exist"
+          cp /tmp/initd.orig router/etc/init.d/rustical
+
           ./scripts/firmware-gate.sh >/dev/null
           echo "ok: restored, and green again"
 
