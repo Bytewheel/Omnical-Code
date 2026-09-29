@@ -51,3 +51,18 @@ reload_service() {
 	# Config changes are picked up by a restart (procd sends SIGTERM first).
 	restart
 }
+
+# §9.4 (item 14): a one-click diagnostics bundle, as a procd action rather than a
+# subcommand the owner has to know about. The bundle is written to
+# /tmp/support-bundle-*.txt, which is tmpfs and therefore disappears on the next
+# reboot — a support bundle on persistent storage is a file full of hostnames and
+# email addresses that nobody remembers to delete.
+#
+# Redaction is not this script's job: `rustical support-bundle` verifies that no
+# secret survived and writes nothing if one did (§9.4's gate, row 50).
+support_bundle() {
+	OUT="/tmp/support-bundle-$(date +%Y%m%d-%H%M%S).txt"
+	"$PROG" --config-file "$CONFIG" support-bundle --out-dir /tmp >/dev/null 2>&1
+	# The command prints the path; find the file it actually wrote.
+	ls -t /tmp/support-bundle-*.txt 2>/dev/null | head -1
+}

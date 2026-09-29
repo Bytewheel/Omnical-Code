@@ -213,6 +213,22 @@ grep -q 'config.toml missing' "$INITD" &&
     fail "init.d still errors on a missing config" ||
     pass "no remaining 'config.toml missing' error path"
 
+# ── 3c. §9.4's diagnostics bundle must be reachable from the init script ─────
+# "The single highest-leverage support feature in this whole plan" is worthless
+# if the owner has to know the subcommand name, and on a device with no terminal
+# and no docs the realistic answer is that they never find it.
+section "3c. the support bundle is one procd action away"
+grep -qE '^support_bundle\(\)' "$INITD" &&
+    pass "init.d exposes a support_bundle action" ||
+    fail "no support_bundle action — the highest-leverage support feature is unreachable"
+
+# …and it must land on tmpfs, not on persistent storage. A bundle holds
+# hostnames, tenant names and email addresses; on the overlay it is a file nobody
+# remembers to delete, and it survives a reboot that was supposed to clear it.
+grep -qE 'support-bundle.*out-dir /tmp|OUT="/tmp/support-bundle' "$INITD" &&
+    pass "the bundle is written to /tmp (tmpfs, cleared on reboot)" ||
+    fail "the support bundle is not written to /tmp — it would persist on the overlay"
+
 # ── 4. the test that matters: a preserved config survives ───────────────────
 section "4. postinst on a UPGRADED unit (config must survive byte-identical)"
 W2="$(new_root)"

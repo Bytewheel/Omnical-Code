@@ -276,6 +276,23 @@ jobs:
             exit 1
           fi
           echo "ok: rejects an init.d that requires a config to exist"
+
+          # (d) An init.d with no support_bundle action (§9.4). "The single
+          #     highest-leverage support feature in this whole plan" is
+          #     worthless if the owner has to know the subcommand name, and on a
+          #     device with no terminal they never find it.
+          python3 - <<'PY2'
+          p = "router/etc/init.d/rustical"
+          body = open(p).read()
+          start = body.index("support_bundle() {")
+          end = body.index("\n}\n", start) + 3
+          open(p, "w").write(body[:start].rstrip("\n") + "\n" + body[end:])
+          PY2
+          if ./scripts/firmware-gate.sh >/dev/null 2>&1; then
+            echo "::error::the gate passed with no support_bundle action — §9.4's best feature is unreachable"
+            exit 1
+          fi
+          echo "ok: rejects an init.d with no support_bundle action"
           cp /tmp/initd.orig router/etc/init.d/rustical
 
           ./scripts/firmware-gate.sh >/dev/null
