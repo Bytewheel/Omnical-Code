@@ -150,6 +150,67 @@ jobs:
           fi
           echo "ok: .git is $((bytes/1024/1024)) MiB (under the 500 MiB guard)"
 
+  # ── 4. The appliance firmware recipe and its postinst ─────────────────────
+  # PLAN_DEPLOYMENTS.md §9.2 (item 12). A sysupgrade wipes /usr/sbin/rustical,
+  # /usr/sbin/dav-tls, both custom init scripts and the watchdog, which is why
+  # every firmware update currently needs a laptop, SSH and the `pass` store.
+  # The fix is a sysupgrade image, and the postinst is the part that can silently
+  # destroy a customer's configuration — it runs on every flash, forever, with
+  # nobody watching. That is exactly the kind of code that ships broken if no
+  # test ever runs it, and it needs no hardware: the recipe and the postinst are
+  # committed text, so this is a two-second job.
+  #
+  # It does NOT claim §9.2's gate or rows 46/48/51, which need a flashed unit.
+  # The script says so itself, in section 7, so a reader cannot mistake a green
+  # run for a hardware pass.
+  firmware:
+    name: firmware recipe gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - name: Firmware recipe + postinst gate
+        run: ./scripts/firmware-gate.sh
+
+      - name: The staged payload is never tracked
+        run: |
+          set -euo pipefail
+          # build-firmware.sh stages the compiled binaries into the package's
+          # files/ dir. They are build products (the same ones out/ holds) and
+          # this repo must stay publishable, so a tracked one is a regression of
+          # the H3/H5 class — a 4.85 MiB binary in a repo that AGPL §13 requires
+          # us to offer to every network user.
+          hits=$(git ls-files | grep -E '^packaging/firmware/omnical/files/(rustical|dav-tls|config\.toml|init\.d/)' || true)
+          if [ -n "$hits" ]; then
+            echo "::error::staged firmware payload must not be tracked:"; echo "$hits"
+            exit 1
+          fi
+          echo "ok: only text (recipe, postinst, keep list) is tracked"
+
+      - name: The postinst survives mutation (the gate is not vacuous)
+        run: |
+          set -euo pipefail
+          # A gate that cannot fail is worse than no gate, because it is read as
+          # coverage. Break the one line that matters — the guard that keeps a
+          # preserved config.toml from being overwritten — and require the gate
+          # to notice. This caught exactly this class of bug during development:
+          # the first version of the recipe check matched a *comment* in the
+          # Makefile, so deleting the install line it was supposed to be testing
+          # still reported ok.
+          cp packaging/firmware/omnical/files/postinst /tmp/postinst.orig
+          sed -i 's|^if \[ -f "$CONF_DIR/config.toml" \]; then|if false; then|' \
+            packaging/firmware/omnical/files/postinst
+          if ./scripts/firmware-gate.sh >/dev/null 2>&1; then
+            echo "::error::the firmware gate passed with a clobbering postinst — it is not testing anything"
+            exit 1
+          fi
+          echo "ok: the gate rejects a postinst that overwrites a preserved config"
+          cp /tmp/postinst.orig packaging/firmware/omnical/files/postinst
+          ./scripts/firmware-gate.sh >/dev/null
+          echo "ok: restored, and green again"
+
   # ── 3. The submodule URL must actually exist ─────────────────────────────
   # Added 2026-09-28, after the first public push. `.gitmodules` pointed at a
   # repository that had never been created, and all three workflows died in

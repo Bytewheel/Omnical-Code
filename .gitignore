@@ -87,3 +87,19 @@
 .vscode/
 .DS_Store
 Thumbs.db
+
+# ─── Appliance firmware staging (PLAN §9.2, item 12) ───────────────────────
+# scripts/build-firmware.sh stages the payload into the package's files/ dir so
+# the OpenWrt recipe has something to install. Those are the SAME build products
+# as out/ (a 4.85 MiB UPX'd binary and a 610 KB one), so they are ignored for
+# the same reason out/ is: a compiled binary does not belong in git, and this
+# repo has to stay publishable for AGPL §13.
+#
+# The committed tree holds the recipe, the postinst, the sysupgrade keep list and
+# the build script — all text, all reviewable, all gated by
+# scripts/firmware-gate.sh.
+/packaging/firmware/omnical/files/rustical
+/packaging/firmware/omnical/files/dav-tls
+/packaging/firmware/omnical/files/rustical-watchdog
+/packaging/firmware/omnical/files/config.toml
+/packaging/firmware/omnical/files/init.d/

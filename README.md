@@ -169,3 +169,71 @@ binaries must come from `out/` either way. The idempotent re-run was verified
 live on 2026-09-06: ~10 s rustical stop→swap→start, dav-tls untouched when its
 sha256 is unchanged (zero TLS blip), and it tolerates the wiped-router state
 (missing init script, absent old binary sha).
+
+---
+
+## Appliance firmware image (PLAN §9.2, item 12)
+
+**This replaces the "re-run `deploy.sh` from a laptop" step above.** The sysupgrade
+runbook is still true and still describes what a *bare* libreCMC flash does — but a
+unit flashed with the Omnical image below re-provisions itself, so the recovery
+paragraph at the end of that section no longer applies to a factory unit.
+
+### Why
+
+A `sysupgrade` wipes `/usr/sbin/rustical`, `/usr/sbin/dav-tls`, both custom
+`/etc/init.d` scripts and the watchdog. Custom init scripts are **not conffiles**,
+which is why the runbook's step 3 says the services do not start after a flash and
+step 4 sends you back to a dev machine. That is fine for a router on your desk and
+impossible for a retail appliance: there is no laptop, no `pass` store, and no SSH.
+
+### Build
+
+```sh
+scripts/build-rust.sh aarch64-unknown-linux-musl      # the two binaries
+scripts/build-firmware.sh --staged-only               # stage + check the budget
+scripts/build-firmware.sh /path/to/openwrt-imagebuilder   # build the image
+```
+
+`build-firmware.sh` needs an OpenWrt/libreCMC **ImageBuilder** for the image step
+only. The staging step needs nothing but the two binaries, and it prints the
+combined payload size against the 35 MiB overlay budget (§9.5) — `build-rust.sh`
+enforces the per-binary size, but the overlay pays for *both* binaries plus the
+watchdog, and the watchdog is what people forget.
+
+### How it survives a flash
+
+Three different mechanisms, because they are three different code paths:
+
+| What | How | Survives |
+|---|---|---|
+| binaries, init scripts, watchdog | **package-owned files** — opkg restores a package's file list | a fresh flash |
+| init scripts on an *in-place* `sysupgrade` | `packaging/firmware/omnical/files/omnical.keep.d` | a keep-settings upgrade |
+| `/etc/rustical`, `/usr/local/share/rustical` | `/etc/sysupgrade.conf`, re-asserted idempotently by the postinst | data + config |
+| the base `config.toml` | installed as a **`.sample`**; the postinst copies it **only if there is nothing to preserve** | a preserved config, byte-identical |
+
+The last row is the one that matters and the one the gate tests hardest. The
+postinst runs on every flash, forever, with nobody watching it. An earlier draft
+re-seeded `config.toml` unconditionally, which on a post-flash boot would have
+silently reverted a production unit to defaults — losing per-tenant SMTP
+credentials and the RSVP signing secret — and the only symptom would have been
+bounced invites minutes later with no obvious cause. That is a much worse failure
+than a box that does not boot, so `scripts/firmware-gate.sh` runs the real
+postinst against a fake root containing a config with secrets in it and asserts
+the file comes out **byte-identical**, then runs it twice more to prove
+idempotence.
+
+```sh
+scripts/firmware-gate.sh        # no router, no ImageBuilder, no binaries needed
+```
+
+It is a CI job (`firmware` in `hygiene.yml`), including a **mutation step** that
+breaks the clobbering guard and requires the gate to notice — because a gate that
+cannot fail is worse than no gate, since it gets read as coverage.
+
+### What is still unproven
+
+The gate deliberately does **not** claim §9.2's `sysupgrade -b | grep -c rustical`
+or rows 46/48/51: those need a flashed unit. The script says so in its own
+section 7. The 35 MiB overlay budget *is* checked, against the staged payload,
+which is the same number the device would see.

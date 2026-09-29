@@ -1,0 +1,104 @@
+#!/bin/sh
+# omnical.postinst — the stateful half of the appliance image.
+#
+# Everything the package file list covers is restored by opkg on install, on a
+# fresh flash, without anyone running anything. This script covers only what a
+# file list *cannot* express: edits to files this package does not own
+# (/etc/sysupgrade.conf, /etc/crontabs/root) and a first-run seed that must not
+# clobber a preserved config.
+#
+# Idempotent by construction, because the same script runs on a factory flash,
+# on every `sysupgrade -k`, and again on every `opkg install --force-reinstall`
+# that an operator might do to fix a broken unit. Every write is guarded by a
+# presence test or an `|| append`.
+#
+# OMNICAL_ROOT is a test hook: set it to a directory and the script operates on
+# that tree instead of /. scripts/firmware-gate.sh uses it to run this against a
+# fake root twice and assert both the effects and the idempotence, which is the
+# only way to test a postinst without flashing a unit.
+
+set -e
+
+R="${OMNICAL_ROOT:-}"
+etc() { echo "$R/etc"; }
+
+# ── 1. Persistence across future firmware updates ───────────────────────────
+# /etc/rustical holds config.toml (SMTP credentials, the RSVP secret, LE
+# certs); /usr/local/share/rustical holds the SQLite database. Without these
+# two lines a `sysupgrade` leaves a working unit with no data and no config,
+# which is the failure mode the runbook's step 2 warns about ("do NOT pass -n").
+CONF_FILE="$(etc)/sysupgrade.conf"
+[ -d "$(etc)" ] || mkdir -p "$(etc)"
+touch "$CONF_FILE"
+for line in /etc/rustical /usr/local/share/rustical; do
+	grep -qxF "$line" "$CONF_FILE" || echo "$line" >> "$CONF_FILE"
+done
+
+# ── 2. The base config, seeded only when there is nothing to preserve ──────
+# This is the one line of this script that could destroy a customer's data, so
+# it is the one line the gate tests hardest. A preserved config is *theirs*: it
+# holds per-tenant SMTP credentials and the RSVP signing secret, and both are
+# rotated by hand. Overwriting it with the sample on a post-flash boot would
+# silently reconfigure a production unit to defaults, and the SMTP failure would
+# show up as bounced invites minutes later with no obvious cause.
+#
+# `opkg` lists /etc/rustical/config.toml as a conffile, which makes opkg itself
+# preserve it across a package upgrade; this is the belt to that suspenders, and
+# the reason the copy is `cp -n`-equivalent (tested, not assumed).
+CONF_DIR="$(etc)/rustical"
+mkdir -p "$CONF_DIR"
+if [ -f "$CONF_DIR/config.toml" ]; then
+	CONFIGURED=yes
+else
+	cp /etc/omnical-config.toml.sample "$CONF_DIR/config.toml" 2>/dev/null ||
+		cp "$R/etc/omnical-config.toml.sample" "$CONF_DIR/config.toml" 2>/dev/null || true
+	CONFIGURED=no
+fi
+# 0600: §6.6.8 — the config now carries SMTP passwords and the RSVP secret.
+chmod 600 "$CONF_DIR/config.toml" 2>/dev/null || true
+
+# ── 3. The database directory must exist and be persistent ─────────────────
+# /var is tmpfs on this platform, so /usr/local/share is the only durable place
+# for the DB. Created here because a factory flash has no deploy.sh to do it.
+mkdir -p "$R/usr/local/share/rustical"
+
+# ── 4. The watchdog cron line ──────────────────────────────────────────────
+# /etc/crontabs/root survives a sysupgrade only because
+# /lib/upgrade/keep.d/busybox preserves it, which is a busybox implementation
+# detail rather than a contract. Re-asserting the line on every install is
+# cheap and is what makes a *reinstall* restore self-healing.
+#     */5 * * * * /usr/bin/rustical-watchdog
+CRON_DIR="$(etc)/crontabs"
+CRON="$CRON_DIR/root"
+if [ -d "$CRON_DIR" ]; then
+	touch "$CRON"
+	grep -qF '/usr/bin/rustical-watchdog' "$CRON" ||
+		echo '*/5 * * * * /usr/bin/rustical-watchdog' >> "$CRON"
+	/etc/init.d/cron enabled || /etc/init.d/cron enable 2>/dev/null || true
+fi
+
+# ── 5. Services ────────────────────────────────────────────────────────────
+# Enabled unconditionally: a factory unit must come back serving after a flash
+# with no operator present. Started only when configured, because a rustical
+# process with no config is a process that crashes on boot and fills the log
+# with a message the owner cannot see from a browser.
+[ -x "$(etc)/init.d/dav-tls" ] && { /etc/init.d/dav-tls enable 2>/dev/null || true; }
+[ -x "$(etc)/init.d/rustical" ] && { /etc/init.d/rustical enable 2>/dev/null || true; }
+
+if [ "$CONFIGURED" = yes ]; then
+	[ -n "$R" ] || {
+		/etc/init.d/rustical restart 2>/dev/null || /etc/init.d/rustical start 2>/dev/null || true
+		/etc/init.d/dav-tls restart 2>/dev/null || true
+	}
+else
+	# Unconfigured. Once §9.3 (item 13) ships, rustical serves a LAN-only setup
+	# portal in exactly this state, so this is a normal state and not an error.
+	logger -t omnical "no config yet — first-boot setup mode (see §9.3)"
+fi
+
+if [ "$CONFIGURED" = yes ]; then
+	logger -t omnical "omnical installed; existing config.toml preserved"
+else
+	logger -t omnical "omnical installed; no config.toml — first-boot setup mode (§9.3)"
+fi
+exit 0
