@@ -208,15 +208,38 @@ $R "/usr/sbin/rustical --config-file $CFG principals list" \
 ```
 
 Then, **per principal, one at a time** — do not loop blindly, because each
-`app-token remove` is irreversible and a typo removes the wrong credential:
+`app-token remove` is irreversible and a typo removes the wrong credential.
+
+**Prefer `regenerate` over `remove` + `create` wherever the client is the same
+one.** `remove` then `create` produces a *different token id* for the same
+logical client, so anything referencing the old id — a config file, a profile,
+a runbook — silently stops matching. `regenerate` keeps the id.
 
 ```sh
 p=nicholas@carltonaudio.com
 $R "/usr/sbin/rustical --config-file $CFG principals app-token list $p"
 # note the token IDs
 $R "/usr/sbin/rustical --config-file $CFG principals app-token remove $p <TOKEN_ID>"
-# re-issue a fresh token for the same client
-$R "/usr/sbin/rustical --config-file $CFG principals app-token add $p <NAME> <TOKEN>"
+# re-issue a fresh token for the SAME client.
+#
+# There are two ways to do this and the one that used to be written here was the
+# wrong one. Prefer `regenerate`, which rotates the secret in place and keeps the
+# token row and its id — which is what re-provisioning a known client means:
+#
+#     $R "/usr/sbin/rustical --config-file $CFG \
+#          principals app-token regenerate <TOKEN_ID>"
+#
+# `regenerate` prints the new secret once. If you must create a *new* token
+# instead, the subcommand is `create` (there is no `add`), it takes only `--name`
+# and the principal, and it **generates** the secret itself:
+#
+#     $R "/usr/sbin/rustical --config-file $CFG \
+#          principals app-token create --name <NAME> $p"
+#
+# **You cannot supply the token value.** The `token` column stores
+# `$pbkdf2-sha512$i=1000,l=32$…`, so a plaintext secret cannot be inserted —
+# `pass` is where a token is *distributed* from, not a source that can be replayed
+# into the server. The router mints, and its one-time output is the only copy.
 ```
 
 Useful cleanups while in there (all of these are **test** residue, safe to
@@ -244,6 +267,11 @@ $R "/usr/sbin/rustical --config-file $CFG principals list" \
 ```sh
 # Regenerate the Apple profile from FRESH tokens. It is deterministic (uuid5)
 # and reads from `pass`, so nothing is hand-edited.
+#
+# VERIFIED 2026-09-30: this does produce the fresh values (15 payloads, mode
+# 0600), and it only reflects whatever `pass` currently holds — so **`pass` must
+# be updated with the new secrets first**, or it will faithfully re-emit the
+# revoked ones.
 python3 scripts/make-apple-profile.py     # writes out/omnical-iphone.mobileconfig, mode 0600
 
 # Serve it on the LAN (the existing helper).
