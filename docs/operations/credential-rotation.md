@@ -96,6 +96,32 @@ cannot fail is worse than no check.
 **If `verify` fails, do not report the rotation clean.** Restore the `before`
 archive (`rustical restore`), find what touched the wrong rows, and re-run.
 
+### The database is in WAL mode — copy the `-wal` or checkpoint first
+
+The live database is `db.sqlite3` in **WAL mode**. A `DELETE` committed through
+the CLI is written to `db.sqlite3-wal` and may not reach the main file for a long
+time. On 2026-09-30 the guest-token revocation left **177,192 bytes** of WAL
+un-checkpointed.
+
+If you copy `db.sqlite3` to another machine to fingerprint it, **you will copy
+the pre-revocation database**, and nothing in the manifest will reveal it: the
+counts are internally consistent, just old. Run the drill *on the router* (as
+above), where the WAL lives, or checkpoint first:
+
+```sh
+ssh router 'sqlite3 /usr/local/share/rustical/db.sqlite3 "PRAGMA wal_checkpoint(TRUNCATE);"'
+# or, to copy:
+scp router:/usr/local/share/rustical/db.sqlite3{,-wal,-shm} /tmp/
+```
+
+This is exactly how a **green retention check came to mean nothing** on the first
+attempt at this window: it reported `app_tokens 69 -> 69` while the live database
+had already gone to 50. The `verify` output has since been changed to say so
+loudly instead of narrating "the rotation worked" over an unchanged table.
+
+**If `verify` reports that the credential table did not change, treat that as a
+failed window, not a clean one.** Nothing was revoked.
+
 ## Part 1 — rotate the TLS certificate
 
 **Impact: a few seconds of TLS interruption on `:8443` if done carelessly.

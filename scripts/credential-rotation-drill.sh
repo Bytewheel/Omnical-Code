@@ -229,9 +229,24 @@ if failed:
     sys.exit(1)
 
 green("\nEvery calendar, event, task, contact and other user table is unchanged.")
-if a.get(rotation_table) is not None:
-    green(f"Only {rotation_table} moved ({b.get(rotation_table)} -> {a[rotation_table]}), "
-          "which is the revocation working.")
+# Only narrate the credential table as having moved if it actually did.
+#
+# The first version printed this unconditionally, so a *stale* after-snapshot
+# produced two contradictory lines and still exited 0:
+#     (nothing moved at all — the rotation revoked nothing. Check the window ran.)
+#     Only app_tokens moved (69 -> 69), which is the revocation working.
+#
+# A gate that narrates both "nothing happened" and "the thing happened" is worse
+# than no narration, because it teaches the reader to skip it. That contradiction
+# is the only reason a 177 KB un-checkpointed WAL went unnoticed: the "after"
+# snapshot it compared against was still the pre-revocation database, and it
+# agreed with itself.
+if moved_rotation:
+    green(f"Only {rotation_table} moved, which is the revocation working.")
+else:
+    red(f"NOTE: {rotation_table} did NOT change. Nothing was revoked. If this window "
+        "was meant to rotate credentials it did not run, and a retention check that "
+        "passes on a no-op is not evidence that anything was safe.")
 sys.exit(0)
 PY
 }
@@ -305,9 +320,21 @@ cmd_selftest() {
   # 6. nothing moved at all
   mk "$DRILL_W/b6" '{"calendars":9,"principals":11,"app_tokens":50}'
   mk "$DRILL_W/a6" '{"calendars":9,"principals":11,"app_tokens":50}'
-  cmd_verify "$DRILL_W/b6" "$DRILL_W/a6" >/dev/null 2>&1 &&
-    green "selftest: a no-op rotation passes (and says the revocation did nothing)" ||
-    { red "selftest: FAIL — a no-op rotation was rejected"; failures=$((failures+1)); }
+  # A no-op must not be reported as a completed rotation. It still exits 0 —
+  # nothing was lost — but it has to say out loud that nothing was revoked,
+  # because "no data lost" and "the window ran" are different claims and
+  # conflating them is how a stale snapshot passes unnoticed.
+  if out="$(cmd_verify "$DRILL_W/b6" "$DRILL_W/a6" 2>&1)"; then
+    if printf '%s' "$out" | grep -qi "did NOT change"; then
+      green "selftest: a no-op passes but is flagged as having revoked nothing"
+    else
+      red "selftest: FAIL — a no-op was reported as a completed rotation"
+      failures=$((failures+1))
+    fi
+  else
+    red "selftest: FAIL — a no-op rotation was rejected outright"
+    failures=$((failures+1))
+  fi
 
   echo
   [ "$failures" -eq 0 ] && { green "credential-rotation-drill: selftest passed"; return 0; }
