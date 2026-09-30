@@ -103,3 +103,11 @@ Thumbs.db
 /packaging/firmware/omnical/files/rustical-watchdog
 /packaging/firmware/omnical/files/config.toml
 /packaging/firmware/omnical/files/init.d/
+
+# Credential-rotation drill output (PLAN_DEPLOYMENTS.md §5.2 item 1).
+# These are `rustical backup` archives and their manifests — i.e. a copy of the
+# production database sitting in the working tree at the exact moment someone is
+# handling live customer data. Untracked is not enough; a single `git add -A`
+# during a maintenance window would publish it.
+rotation-drills/
+.drill-protected

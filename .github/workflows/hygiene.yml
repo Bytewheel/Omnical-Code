@@ -105,6 +105,12 @@ jobs:
           check "TLS private key material" '\.key$|\.key\.pem$|^out/tls/'
           check "Apple profiles (app tokens)" '\.mobileconfig$'
           check "secret stores"             '^(secrets|pass)/|^\.env'
+          # §5.2 item 1's drill writes `rustical backup` archives into
+          # rotation-drills/ — a copy of the production database, produced at the
+          # exact moment someone is handling live customer data. `.gitignore`
+          # covers it, and this asserts the ignore actually holds rather than
+          # trusting that it does.
+          check "rotation drill output"     'rotation-drills/|\.drill-protected'
           # NOTE: *.pem is intentionally NOT blanket-checked. One public CA
           # cert must stay tracked — see the allowlist assertion below.
           exit $fail
@@ -379,3 +385,32 @@ jobs:
           echo "::error::step until that repository exists AND the gitlink commit"
           echo "::error::($(git ls-tree HEAD rustical | awk '{print $3}')) is pushed to it."
           exit 1
+
+  # ── 5. The rotation drill's own gate ─────────────────────────────────────
+  # §5.2 item 1. `docs/operations/credential-rotation.md` is the runbook that
+  # finally retires the live Let's Encrypt key and the 15 live app tokens, and
+  # the requirement attached to it is that no calendar, event, task or contact
+  # is lost. That is a property of a sequence of human-run steps against a live
+  # database, so the thing that needs testing is the *check*, not the rotation:
+  #
+  #   selftest feeds the verifier synthetic manifests for the intended change, a
+  #   protected table moving, one event lost out of many, a table appearing, one
+  #   disappearing, and a no-op.
+  #
+  # It caught two real bugs in its own first draft — `verify` reading a temp file
+  # only `selftest` wrote (so the suite passed and the real run crashed), and an
+  # EXIT trap over a `local` that `set -u` turned into exit 1. Both would have
+  # shipped a "retention verified" claim that never ran.
+  rotation-drill:
+    name: credential-rotation drill
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - name: The drill gates itself
+        run: |
+          set -euo pipefail
+          bash -n scripts/credential-rotation-drill.sh
+          scripts/credential-rotation-drill.sh selftest

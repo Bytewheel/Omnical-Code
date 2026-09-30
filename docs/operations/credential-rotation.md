@@ -43,6 +43,59 @@ nicholas@hawksnestsoftware.com 4
 window where the affected people are reachable. Password login and the web
 portal keep working throughout — only DAV app tokens break.
 
+## Part 0 — fingerprint the customer data (before you touch anything)
+
+**Do this first. It is the only step that makes the retention requirement
+checkable instead of assumed.**
+
+Parts 1 and 2 below can report complete success while having lost somebody's
+calendar: Part 1's gate is "the new cert is valid", Part 2's is "the old token
+401s". Neither looks at a single row. The requirement is that **every calendar,
+event, task, contact and everything else survives**, and this fingerprints the
+whole database so that claim can be falsified afterwards.
+
+```sh
+CFG=/etc/rustical/config.toml
+R="ssh router"
+
+# On the router: write a backup, keep the manifest.
+$R "mkdir -p /var/lib/omnical/rotation-drills"
+$R "/usr/sbin/rustical --config-file $CFG backup \
+      --out-dir /var/lib/omnical/rotation-drills"
+$R "cp /var/lib/omnical/rotation-drills/omnical-backup-*.tar\manifest.json \
+     /var/lib/omnical/rotation-drills/before/manifest.json"   # see drill below
+```
+
+Or, from this repo, which does the whole thing including the comparison:
+
+```sh
+export ROTATION_DRILL_BIN=/usr/sbin/rustical
+export ROTATION_DRILL_CONFIG=$CFG
+scripts/credential-rotation-drill.sh snapshot before   # -> rotation-drills/before/
+#   … Parts 1 and 2 …
+scripts/credential-rotation-drill.sh snapshot after
+scripts/credential-rotation-drill.sh verify rotation-drills/before rotation-drills/after
+```
+
+`verify` exits non-zero unless **every user table but `app_tokens` is unchanged.**
+`app_tokens` is the sole exception, because deleting those rows *is* the
+revocation; everything else moving — a calendar, an event, a contact, a
+principal, a table appearing or vanishing — is a failure, and it says so in
+those words. The fingerprint is the `row_counts` map already in the backup
+manifest, so the drill and the backup cannot disagree about what is in the
+database, and `snapshot` refuses to run against a database failing
+`PRAGMA integrity_check`.
+
+Rehearsed end to end against a real migrated database: a clean revocation
+passes, and deleting one event out of four fails with
+`calendarobjects 4 -> 3 <- CUSTOMER DATA CHANGED`. Its own gate
+(`scripts/credential-rotation-drill.sh selftest`, wired into CI) covers the
+same cases plus a table appearing and one disappearing, because a check that
+cannot fail is worse than no check.
+
+**If `verify` fails, do not report the rotation clean.** Restore the `before`
+archive (`rustical restore`), find what touched the wrong rows, and re-run.
+
 ## Part 1 — rotate the TLS certificate
 
 **Impact: a few seconds of TLS interruption on `:8443` if done carelessly.
