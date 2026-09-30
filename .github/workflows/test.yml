@@ -224,3 +224,51 @@ jobs:
           name: clippy-log
           path: /tmp/clippy.log
           retention-days: 7
+
+  # ── AGPL §13 source offer (§10.3, item 19) ─────────────────────────────────
+  # "on a running hosted instance, an anonymous client can reach /frontend/source,
+  # download a tarball whose `git rev-parse HEAD` matches the running binary's
+  # build, and the tarball builds. Test this in CI, not by eye."
+  #
+  # `tests/source_offer.rs` covers the part a unit test can: that the page
+  # refuses to name a commit it does not have, and withholds an unverifiable
+  # tarball link. This job covers the rest, which needs two real artefacts — the
+  # release binary and the tarball it was built from — and the comparison is the
+  # whole of the compliance check.
+  #
+  # A page that renders correctly and points at the wrong tree is a §13 failure
+  # that looks like a working feature, which is why this is a job.
+  source-offer:
+    name: AGPL source offer matches the built binary
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          # The tarball must carry a .git for `git rev-parse HEAD` to work. A
+          # `git archive` strips it, and then the offer's commit cannot be
+          # checked at all — which the gate reports rather than assuming.
+          fetch-depth: 0
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.0
+
+      - name: Build the release binary (bakes in the commit)
+        working-directory: rustical
+        run: |
+          set -euo pipefail
+          export SQLX_OFFLINE=true
+          # A clean tree, so `build.rs` does not stamp DIRTY and the page's
+          # dirty-build warning is not what this job is testing.
+          cargo build --release
+          ./target/release/rustical support-bundle --stdout --no-config | grep '^commit:'
+
+      - name: Pack the source at that same commit
+        run: |
+          set -euo pipefail
+          tar czf /tmp/source.tar.gz --exclude=target rustical
+          echo "packed $(tar tzf /tmp/source.tar.gz | wc -l) entries"
+
+      - name: §10.3 gate — the offer matches the binary, and the offer builds
+        run: ./scripts/source-offer-gate.sh rustical/target/release/rustical /tmp/source.tar.gz
