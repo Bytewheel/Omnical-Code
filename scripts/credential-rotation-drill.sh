@@ -109,6 +109,25 @@ cmd_snapshot() {
   # a side effect to quietly apply.
   "$BIN" --config-file "$CONFIG" backup --out-dir "$out" >/dev/null ||
     die "backup failed — nothing to compare against"
+  # Refuse rather than guess. `find | head -1` picks an arbitrary archive when
+  # more than one is present, and that is not hypothetical: rehearsing this drill
+  # left an archive and a manifest in rotation-drills/before/, and the live
+  # "before" fingerprint of the production database was written next to them —
+  # after which `snapshot` extracted the *rehearsal* manifest and reported
+  #   principals 3, calendarobjects 4, app_tokens 4
+  # for a database that actually holds
+  #   principals 31, calendarobjects 216, app_tokens 69.
+  #
+  # Every later "nothing was lost" verdict would then have been a comparison of
+  # rehearsal data against production data. The label on the directory was the
+  # only thing asserting freshness, and a label is not evidence.
+  local existing
+  existing="$(find "$out" -name 'omnical-backup-*.tar' 2>/dev/null | head -1)"
+  if [ -n "$existing" ]; then
+    die "$out already contains $(basename "$existing"). Refusing to fingerprint \
+into a directory that already holds a backup — remove it, or use a fresh name, \
+because a stale manifest read as current would silently pass the retention check."
+  fi
   local archive
   archive="$(find "$out" -name 'omnical-backup-*.tar' | head -1)"
   [ -n "$archive" ] || die "no archive in $out"
