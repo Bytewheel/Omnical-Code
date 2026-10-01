@@ -161,6 +161,35 @@ EOF
 # defaults match, but the live router must not depend on them silently.
 cat <<'EOF'
 
+# Tenancy (§6.5/§6.6), migrated 2026-09-30 from single-tenant. The live data
+# was COPIED into tenants/<uuid>/db.sqlite3 and verified table-by-table and
+# byte-for-byte against the original, which is still on disk as
+# db.sqlite3 — the single-tenant path, and the rollback.
+#
+# `default_tenant` rather than a `tenant_hosts` claim, deliberately: there is no
+# `tenant set-host` subcommand (hosts are create-only), and default_tenant is
+# the documented N=1 escape hatch for exactly this shape — one box, one
+# hostname, one database.
+#
+# The admin panel cannot share the DAV hostname. It is dispatched AHEAD of
+# tenant resolution, so a panel on 0115d8cf.duckdns.org would swallow /caldav
+# on that host. Hence the panel is on the appliance's own name plus a second,
+# and `assert_admin_host_unclaimed` checks every host in the list.
+#
+# The TLS certificate covers only 0115d8cf.duckdns.org, so panel access over
+# https on these names will not verify. That is a certificate question, not a
+# routing one — see NEXT_AGENT_ITEM14_PANEL.md.
+[tenancy]
+enabled = true
+control_db_url = "sqlite:///usr/local/share/rustical/control.sqlite3"
+data_root = "/usr/local/share/rustical"
+max_cached_tenants = 8
+default_tenant = "omnical"
+admin_host = "librecmc"
+admin_hosts = ["admin.librecmc"]
+platform_admins = ["burningserenity@gmail.com"]
+admin_single_instance_acknowledged = true   # one instance, procd respawn, no LB
+
 [registration]
 enabled = true                  # public self-service registration (§17.8)
 invite_required = true          # single-use invite codes required (public default)
