@@ -189,55 +189,48 @@ a mistake. That expiry is your rollback window — do not let it lapse.
 
 ## Part 2 — rotate the app tokens
 
-> ### ⚠ Part 2 cannot work as written while tenancy is enabled
+> ### ✅ Part 2 works as written again — tenancy store resolution, fixed
 >
-> **Do not start Part 2 until this is resolved.** Measured on the live router
-> 2026-10-02, with `[tenancy] enabled = true`:
+> This section previously carried a warning that Part 2 could not be run at all.
+> That is no longer true, and the warning has been replaced rather than deleted
+> so the failure mode stays on the record.
 >
-> | database | holds |
-> |---|---|
-> | `/usr/local/share/rustical/db.sqlite3` | what `[data_store.sqlite] db_url` names — **where the CLI writes** |
-> | `/usr/local/share/rustical/tenants/<id>/db.sqlite3` | **where the running server reads** (confirmed via `/proc/<pid>/fd`) |
+> **What was broken.** With `[tenancy] enabled`, the server answers from
+> `/usr/local/share/rustical/tenants/<id>/db.sqlite3`, but the CLI resolved
+> `[data_store.sqlite] db_url` — the install-time copy at
+> `/usr/local/share/rustical/db.sqlite3` — so every CLI mutation landed where
+> the server never reads it, and reported success:
 >
-> `rustical`'s CLI subcommands resolve `db_url` directly and do **not** apply
-> the tenancy redirection the server applies, so every CLI mutation of per-tenant
-> data lands in the platform database where the server never reads it. The
-> observable behaviour is that the command appears to succeed and changes
-> nothing:
+> - `app-token create` printed a secret that 401'd.
+> - `regenerate` left the **previous** secret working, so the rotation never
+>   revoked anything and Part 2's own gate ("the old token 401s") could not fail.
+> - `remove` left the row in place.
 >
-> - `app-token create` prints a secret and the token shows up in
->   `app-token list`, but **no row exists in the tenant database** and the
->   secret 401s.
-> - `app-token regenerate` updates the hash in the platform database, so **the
->   previous secret keeps working** — the rotation does not revoke.
-> - `app-token remove` drops the token from `app-token list`, but **the row
->   survives in the tenant database** and the secret keeps working.
+> **Fixed** in rustical `9d209aa0` (CLI), `7207b5f8` (the server's own
+> background tasks), `bed1791e` (`backup`/`restore`/`upgrade`, and revocation
+> now reporting whether it revoked anything). All live on the router as of
+> 2026-10-02.
 >
-> This defeats Part 2's own gate. The gate is "the old token 401s", and a
-> rotation that silently fails to revoke never trips it — which is the same
-> shape of false-green that commit 77d5819 caught on the retention check.
-> Nothing here is specific to app tokens; principals, calendars, invites and
-> anything else the CLI mutates is affected the same way.
->
-> **Consequence: there is currently no working way to provision or revoke an app
-> token for the server on this deployment.** The verified workaround is to write
-> to the tenant database directly and restart, which is what actually revoked a
-> leaked secret on 2026-10-02:
+> **Verified on the live router**, not merely built:
 >
 > ```sh
-> # NOT a substitute for fixing this — it bypasses the application entirely,
-> # and the server must be restarted to observe it.
-> T=/usr/local/share/rustical/tenants/<tenant-id>/db.sqlite3
-> cp -a "$T" ~/db.sqlite3.prerotate-$(date -u +%Y%m%dT%H%M%SZ)
-> sqlite3 "$T" "delete from app_tokens where id='<TOKEN_ID>';"
-> sqlite3 "$T" 'pragma integrity_check;'
-> /etc/init.d/rustical restart
-> # Then verify: the old secret must 401 AND an untouched sibling token must
-> # still 207. One without the other proves nothing.
+> CFG=/etc/rustical/config.toml
+> # create: the row lands in the TENANT database, not the platform copy
+> rustical --config-file $CFG principals app-token create <principal> --name <app>
+> sqlite3 /usr/local/share/rustical/tenants/<id>/db.sqlite3 "select count(*) from app_tokens;"
+> # regenerate: the OLD secret must now 401
+> # remove:    an unknown id exits non-zero and says nothing was revoked
 > ```
 >
-> Prefer fixing the tenancy resolution in `get_data_stores` so the CLI and the
-> server agree on which database they are talking to.
+> The two databases differ by exactly one `app_tokens` row on this deployment
+> (tenant 51, platform 50), which is how `rustical backup` was confirmed to read
+> the tenant's data: it reports 51.
+>
+> **The `sqlite3`-by-hand workaround below is no longer needed.** It is kept only
+> as a record of what was actually done on 2026-10-02 to revoke the leaked
+> secret before the fix was deployed. Do not reach for it now: it bypasses the
+> application, and under tenancy the server's own maintenance tasks read a
+> different file than the one you would be editing.
 
 **Impact: every CalDAV/CardDAV client for the 11 principals above stops
 syncing until re-provisioned. Tell people first.**
