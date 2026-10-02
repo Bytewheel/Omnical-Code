@@ -77,6 +77,11 @@ define Package/omnical/install
 	$(INSTALL_DIR) $(1)/usr/sbin
 	$(INSTALL_BIN) $(CURDIR)/files/rustical          $(1)/usr/sbin/rustical
 	$(INSTALL_BIN) $(CURDIR)/files/dav-tls           $(1)/usr/sbin/dav-tls
+	# usr/bin, not usr/sbin: the watchdog is a helper cron invokes, not
+	# something an operator runs.  The INSTALL_DIR has to be here — without
+	# it `install` fails with "No such file or directory" on a real build,
+	# which is the only thing that has ever exercised this recipe.
+	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(CURDIR)/files/rustical-watchdog $(1)/usr/bin/rustical-watchdog
 
 	# The two init scripts.  Custom /etc/init.d files are not conffiles, which

@@ -87,7 +87,40 @@ step "staged"
 # ── phase 2: image ───────────────────────────────────────────────────────────
 [ -n "$IMAGEBUILDER" ] || die "pass the OpenWrt ImageBuilder directory, or --staged-only"
 [ -d "$IMAGEBUILDER" ] || die "no such ImageBuilder directory: $IMAGEBUILDER"
-[ -x "$IMAGEBUILDER/scripts/imagebuilder" ] || die "$IMAGEBUILDER does not look like an ImageBuilder"
+
+# Which kind of builder is this, and does it have the layout we need?
+#
+# An ImageBuilder ships a *frozen* .packageinfo and .targetinfo generated at
+# release time, and `make image` never re-scans package/.  So a stock
+# ImageBuilder structurally cannot see a custom package or a custom device
+# profile — "omnical (no such package)" and "Profile omnical does not exist"
+# are not fixable by hand-editing, because nothing regenerates those indexes.
+#
+# An SDK does re-scan (include/toplevel.mk's prepare-tmpinfo) and regenerates
+# .targetinfo from target/linux/*/image/*.mk, so it is the only one of the two
+# that can carry an appliance package and profile.  Prefer it when adding them.
+#
+# Both layouts have Makefile + rules.mk + scripts/, so key the structural check
+# on those and report the flavour separately.
+if [ -f "$IMAGEBUILDER/Makefile" ] && [ -f "$IMAGEBUILDER/rules.mk" ] &&
+	[ -d "$IMAGEBUILDER/scripts" ]; then
+	if [ -f "$IMAGEBUILDER/Config.in" ]; then
+		IB_KIND="SDK"
+	else
+		IB_KIND="ImageBuilder"
+	fi
+else
+	die "$IMAGEBUILDER is neither an OpenWrt SDK nor an ImageBuilder (no Makefile+rules.mk+scripts/)"
+fi
+step "builder: $IB_KIND ($IMAGEBUILDER)"
+
+# An SDK ships no .config; without one it cannot resolve the profile or the
+# package list, and fails with a confusing error rather than a clear one.
+if [ ! -f "$IMAGEBUILDER/.config" ]; then
+	step "generating .config (make defconfig)"
+	(cd "$IMAGEBUILDER" && make defconfig) ||
+		die "make defconfig failed in $IMAGEBUILDER"
+fi
 
 VERSION="$(grep -m1 -oE 'rustical [0-9]+\.[0-9]+\.[0-9]+' "$ROOT/router/etc/rustical/config.toml" 2>/dev/null |
 	grep -oE '[0-9]+\.[0-9]+\.[0-9]+' || echo 0.0.0)"
@@ -95,14 +128,47 @@ step "building the sysupgrade image (omnical $VERSION)"
 
 # The package tree has to sit inside the ImageBuilder dir, because ImageBuilder
 # builds from its own feed/ tree and will not follow a symlink out of it.
+# profile.mk is deliberately excluded: it is an *image* profile, not package
+# content, and belongs in the image/ dir (below).
 PKGDIR="$IMAGEBUILDER/package/omnical"
 mkdir -p "$PKGDIR"
-cp -r "$ROOT/packaging/firmware/omnical/." "$PKGDIR/"
+for f in "$ROOT/packaging/firmware/omnical/"*; do
+	[ "$(basename "$f")" = "profile.mk" ] && continue
+	cp -r "$f" "$PKGDIR/"
+done
+
+# `PROFILE=omnical` only resolves if the ImageBuilder knows a profile by that
+# name, and it does not: its profiles come from target/linux/<t>/image/<sub>.mk.
+# So install ours there and include it from the subtarget.  Both the target and
+# the subtarget are read out of the ImageBuilder's own .config rather than
+# guessed from the directory name, so a differently-named tarball still works.
+IB_TARGET="$(sed -n 's/^CONFIG_TARGET_BOARD="\([^"]*\)".*/\1/p' "$IMAGEBUILDER/.config" 2>/dev/null)"
+IB_SUBTARGET="$(sed -n 's/^CONFIG_TARGET_SUBTARGET="\([^"]*\)".*/\1/p' "$IMAGEBUILDER/.config" 2>/dev/null)"
+[ -n "$IB_TARGET" ] && [ -n "$IB_SUBTARGET" ] ||
+	die "could not read CONFIG_TARGET_BOARD/SUBTARGET from $IMAGEBUILDER/.config"
+
+IMAGEDIR="$IMAGEBUILDER/target/linux/$IB_TARGET/image"
+SUBMK="$IMAGEDIR/$IB_SUBTARGET.mk"
+[ -f "$SUBMK" ] || die "no subtarget makefile at $SUBMK (wrong ImageBuilder for this profile?)"
+
+PROFILE_SRC="$ROOT/packaging/firmware/omnical/profile.mk"
+[ -f "$PROFILE_SRC" ] || die "missing appliance profile: $PROFILE_SRC"
+cp "$PROFILE_SRC" "$IMAGEDIR/omnical.mk"
+
+# Idempotent: re-running must not append the include a second time.
+if ! grep -qx 'include omnical.mk' "$SUBMK"; then
+	printf '\n# added by scripts/build-firmware.sh — the appliance profile\ninclude omnical.mk\n' >>"$SUBMK"
+	step "installed appliance profile into $IB_TARGET/$IB_SUBTARGET (PROFILE=omnical)"
+else
+	step "appliance profile already installed in $IB_TARGET/$IB_SUBTARGET"
+fi
 
 cd "$IMAGEBUILDER"
+# The package list lives in the profile's DEVICE_PACKAGES, not here: which
+# firmware blobs an appliance needs is a property of the board, and the board
+# specifics belong in the one device-specific file.
 OMNICAL_VERSION="$VERSION" make image \
 	PROFILE="omnical" \
-	PACKAGES="omnical sqlite3-cli" \
 	V=s
 
 step "done"
