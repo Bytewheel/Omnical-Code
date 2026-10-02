@@ -4,11 +4,18 @@
 # 35 MiB overlay budget is enforced on every push instead of being discovered
 # on a device with 27 MB of free space.
 #
-# Targets mirror scripts/build-rust.sh:36-100, which supports exactly two:
-#   aarch64-unknown-linux-musl   -> the appliance/router (RK3328, ThinkPenguin)
-#   x86_64-unknown-linux-gnu     -> host smoke tests
-# A third target is NOT added here without also teaching build-rust.sh about
+# Targets mirror scripts/build-rust.sh, which supports three:
+#   aarch64-unknown-linux-musl      -> the appliance/router (RK3328, ThinkPenguin)
+#   armv7-unknown-linux-musleabihf  -> ipq806x/ipq40xx class (Netgear R7800 et al)
+#   x86_64-unknown-linux-gnu        -> host smoke tests
+# A fourth target is NOT added here without also teaching build-rust.sh about
 # it — the script exits 1 on anything else, so CI would fail misleadingly.
+#
+# Each cross target is *executed*, not just built, via scripts/smoke-cross.sh
+# under qemu-user. Building is not the same as working: a binary can compile,
+# link, pass the size gate and be statically linked while being unable to run
+# on its own ISA. The migration namespace and `-latomic` shim in the armv7
+# build are exactly the class of defect that only appears at exec time.
 
 name: build
 
@@ -132,10 +139,127 @@ jobs:
           done
           echo "ok: aarch64 static binaries produced"
 
+      # The shipping target had no execution test at all: this job built the
+      # router's binary and only ever inspected its headers. smoke-cross.sh runs
+      # it under qemu-aarch64 and drives `principals list` against a throwaway
+      # database, which is what exercises the bundled libsqlite3-sys — the
+      # riskiest native dependency in the build, and one whose failure mode on a
+      # foreign ABI is a runtime crash rather than a compile error.
+      - name: Install qemu-user + sqlite3 (for smoke-cross.sh)
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qemu-user sqlite3
+          qemu-aarch64 --version | head -1
+
+      - name: Execute the binary (scripts/smoke-cross.sh)
+        run: ./scripts/smoke-cross.sh aarch64-unknown-linux-musl
+
       - uses: actions/upload-artifact@v4
         with:
           name: binaries-aarch64-musl
           path: out/rustical
+          retention-days: 14
+
+  # ── armv7: the ipq806x / ipq40xx device class ─────────────────────────────
+  # Netgear R7800 (IPQ8065, dual Cortex-A15), and everything else on those
+  # targets. Built so scripts/smoke-cross.sh has something to execute, and
+  # so a regression in the 32-bit path is caught by CI rather than by the first
+  # person to flash one.
+  #
+  # The zig/clang setup below is duplicated from the aarch64 job on purpose. A
+  # composite action would be DRYer, but it would mean rewriting a pinned,
+  # working step in a job that cannot be run from this checkout — and this file
+  # carries a lot of hard-won commentary about that recipe that would have to
+  # move with it. Duplication of a pinned download is the smaller risk. If this
+  # ever grows a third cross target, extract it then.
+  armv7-musleabihf:
+    name: armv7-unknown-linux-musleabihf (ipq806x class)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.0
+          # Tier 2, so a prebuilt rust-std exists — unlike the MIPS targets in
+          # docs/hardware/CROSS_COMPILE_PLAN.md §3, which have none.
+          targets: armv7-unknown-linux-musleabihf
+
+      - name: Install zig (musl sysroot) and clang/llvm
+        run: |
+          set -euo pipefail
+          # Same pin and digest as the aarch64 job; see there for why the
+          # archive is named zig-<arch>-<os>-<version> and why the digest is a
+          # literal rather than fetched alongside the tarball.
+          ZIG_VERSION=0.16.0
+          ZIG_PKG="zig-x86_64-linux-${ZIG_VERSION}"
+          ZIG_URL="https://ziglang.org/download/${ZIG_VERSION}/${ZIG_PKG}.tar.xz"
+          ZIG_SHA256=70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00
+
+          curl -fsSL -o /tmp/zig.tar.xz "$ZIG_URL"
+          echo "${ZIG_SHA256}  /tmp/zig.tar.xz" | sha256sum --check --strict
+          sudo tar -xJf /tmp/zig.tar.xz -C /usr/local
+
+          echo "ZIG_VERSION=${ZIG_VERSION}" >> "$GITHUB_ENV"
+          echo "/usr/local/${ZIG_PKG}" >> "$GITHUB_PATH"
+          export PATH="/usr/local/${ZIG_PKG}:$PATH"
+          zig version
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq clang llvm lld upx-ucl sqlite3
+          clang --version | head -1
+
+      - name: Cache cargo target dir
+        uses: actions/cache@v4
+        with:
+          path: build/cargo-target
+          key: build-armv7-${{ hashFiles('rustical/Cargo.lock', 'dav-tls/Cargo.lock') }}
+          restore-keys: build-armv7-
+
+      - name: Build
+        env:
+          LLVM_STRIP: /usr/bin/llvm-strip
+        run: ./scripts/build-rust.sh armv7-unknown-linux-musleabihf
+
+      # The 32-bit build must also fit the overlay budget — and it is the one
+      # that has to fit *smaller* flash than the aarch64 unit does. build-rust.sh
+      # now gates every device target, but assert it here too so the failure is
+      # legible as a budget failure rather than a script-log line.
+      - name: Assert the 35 MiB overlay budget
+        run: |
+          set -euo pipefail
+          budget=$((35 * 1024 * 1024))
+          for bin in rustical dav-tls; do
+            p="out/armv7-unknown-linux-musleabihf/$bin"
+            bytes=$(stat -c%s "$p")
+            echo "$bin: $((bytes/1024)) KiB"
+            [ "$bytes" -le "$budget" ] || {
+              echo "::error::$bin is $((bytes/1024/1024)) MiB — over the 35 MiB budget"
+              exit 1
+            }
+          done
+
+      - name: Install qemu-user (for smoke-cross.sh)
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq qemu-user
+          qemu-arm --version | head -1
+
+      # This is the step the whole job exists for. It runs the armv7 ELF and
+      # checks it against a real SQLite store, which is how the two armv7-only
+      # defects get caught: the statvfs `c_ulong` width mismatch (a compile
+      # error, so cargo would catch it) and the `-latomic` link (which only
+      # shows up as an unsatisfiable symbol at exec time).
+      - name: Execute the binary (scripts/smoke-cross.sh)
+        run: ./scripts/smoke-cross.sh armv7-unknown-linux-musleabihf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: binaries-armv7-musleabihf
+          path: out/armv7-unknown-linux-musleabihf
           retention-days: 14
 
   x86_64-gnu:
