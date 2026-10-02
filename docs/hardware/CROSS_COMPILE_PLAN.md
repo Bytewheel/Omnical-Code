@@ -1,7 +1,12 @@
 # Cross-compile plan: MIPS and ARMv7 targets
 
-**Status: plan only. Nothing has been built for either ISA.** One probe build
-was run and its results are recorded below; the rest is unverified reasoning.
+**Status: ARMv7 BUILT and VERIFIED. MIPS not attempted. Package builds; the
+appliance *image* needs a full buildroot — see §2.**
+
+`armv7-unknown-linux-musleabihf` now builds via
+`scripts/build-rust.sh armv7-unknown-linux-musleabihf` and passes
+`scripts/smoke-cross.sh`. §2 below records what it actually took, which was not
+quite what the plan predicted. §3 (MIPS) is still unverified reasoning.
 
 Companion to [`DEVICE_TARGETS.md`](DEVICE_TARGETS.md), which lists the devices
 these targets would unlock.
@@ -67,16 +72,32 @@ Toolchain in use: `rustc 1.98.1 (48a229cea 2026-09-01)`, stable.
 The two load-bearing results: **armv7 has a prebuilt std and our entire native
 dependency stack compiles for it**, and **MIPS has no prebuilt std at all**.
 
+### Since the armv7 build landed
+
+| | Result |
+|---|---|
+| `aws-lc-sys` on armv7 | compiles (`libaws_lc_0_45_0_crypto.a`) |
+| `openssl-sys` on armv7 | compiles |
+| `ring` on armv7 | compiles |
+| bundled SQLite on armv7 | compiles **and runs** — 21 tables migrated under `qemu-arm` |
+| undefined symbols in the linked armv7 binary | **0** |
+| rustical size | 16,182,268 → 4,642,880 packed (vs aarch64 17,716,384 → 5,467,184) |
+
 ---
 
-## 2. ARMv7 (`armv7-unknown-linux-musleabihf`) — proceed
+## 2. ARMv7 (`armv7-unknown-linux-musleabihf`) — DONE
 
-### Why this is the low-risk one
+```
+scripts/build-rust.sh armv7-unknown-linux-musleabihf   # builds
+scripts/smoke-cross.sh armv7-unknown-linux-musleabihf   # verifies
+```
+
+### Why this was the low-risk one
 
 - Tier 2 with prebuilt `rust-std`. No nightly, no `-Z build-std`, no
   rebuilding the standard library.
 - **The crypto blocker, which is the thing that usually kills embedded Rust,
-  does not apply.** `aws-lc-sys` built cleanly for armv7. This matters because
+  did not apply.** `aws-lc-sys` built cleanly for armv7. This matters because
   `Cargo.toml:148` deliberately leaves the rustls provider at its `aws-lc-rs`
   default precisely so the crypto provider matches between the host build and
   the router — so the *default* configuration has to work, and it does.
@@ -85,78 +106,152 @@ dependency stack compiles for it**, and **MIPS has no prebuilt std at all**.
   512 MB RAM, 128 MB NAND — comfortably above both floors), and the wider
   ipq40xx/ipq806x class.
 
-### The one real obstacle: the link step
+### What actually blocked it — two things, neither predicted
 
-The probe compiled every crate and failed only at the final link:
+**The link line was never the problem.** §2 below originally proposed four
+recipes for the `duplicate symbol: _start_c` collision. All four were
+unnecessary: `scripts/build-rust.sh` already documented the answer in its own
+header, and the plan had not read it. The script's `clang` path uses clang with
+zig's musl headers and links with `rust-lld` plus rustc's self-contained CRT,
+with a comment saying `TOOLCHAIN=zig` is *"broken at link"* for exactly this
+reason. My probe had used `zig cc` as the linker driver — the documented-broken
+route. Mirroring the existing `clang` branch solved it on the first build
+attempt.
 
-```
-ld.lld: error: duplicate symbol: _start_c
-  defined at crt1.c   (zig's musl crt1.o)
-  defined at crt1.c   (rustc's self-contained crt1.o)
-```
+The real obstacles were these two:
 
-Cause: rustc's musl targets link **self-contained CRT objects**, and pointing
-the linker at `zig cc` makes zig *also* supply musl's CRT. Both define
-`_start_c`.
+**1. A genuine 32-bit portability bug in the source.** `src/appliance.rs`
+computed overlay free space as:
 
-This is a known recipe problem with a known fix, not an architectural one. Work
-it in this order, stopping when one links cleanly:
-
-1. **Let zig provide the CRT entirely.** Suppress rustc's self-contained
-   objects:
-   ```
-   RUSTFLAGS="-C link-self-contained=no"
-   ```
-   Tried this; it moves the failure to an unresolved symbol referenced from
-   `libaws_lc_sys` — closer, and it confirms the CRT collision is the real
-   issue rather than a missing toolchain.
-2. **Use `rust-lld` directly.** rustc bundles an LLD that already understands
-   the self-contained objects, so no second CRT is ever introduced:
-   ```
-   CARGO_TARGET_ARMV7_UNKNOWN_LINUX_MUSLEABIHF_LINKER=rust-lld
-   CARGO_TARGET_ARMV7_UNKNOWN_LINUX_MUSLEABIHF_RUSTFLAGS="-C linker-flavor=gnu-lld"
-   ```
-3. **Keep zig but strip its CRT** via a wrapper that adds `-nostartfiles` and
-   points `LD_LIBRARY_PATH`/sysroot at the Rust-provided objects.
-4. **Fall back to a real musl cross-toolchain** (`musl-cross-make`, or Debian's
-   `gcc-arm-linux-gnueabihf` + musl) if all of the above fight. Most robust,
-   slowest to set up.
-
-Note that `zig cc` cannot be handed to cargo as a multi-word `LINKER` value —
-cargo does not shell-split it. It has to be a wrapper script:
-
-```sh
-#!/bin/sh
-exec zig cc -target arm-linux-musleabihf "$@"
+```rust
+total: stats.f_blocks.saturating_mul(block),   // block came from f_frsize
 ```
 
-`scripts/build-rust.sh` will need the same treatment as its existing
-`build/bin/zig-musl-cc` wrapper.
+The existing comment said `c_ulong` is *"unsigned on every platform this builds
+for, so no cast is needed"* — true when aarch64 was the only cross target.
+`f_frsize` is a `c_ulong`, so it is **32-bit on armv7** while `f_blocks` and
+`f_bavail` are `fsblkcnt_t` and 64-bit on both. Two `E0308`s. Fixed with
+`u64::from(...)`, which is the identity on a 64-bit source and a lossless
+widening on a 32-bit one — and with a targeted
+`#[allow(clippy::useless_conversion)]`, because clippy is right that the
+conversion is a no-op *on the host* and wrong about armv7.
 
-### Steps
+This is the kind of bug that only surfaces on a second architecture, which is
+the argument for having built one.
 
-1. Add `armv7-unknown-linux-musleabihf)` to the `case` statement at
-   `scripts/build-rust.sh:40`, mirroring the `aarch64` arm: `zig-musl-cc`,
-   `zig-musl-ar`, `zig-musl-nm`, `zig-musl-ranlib` symlinks, plus the
-   `ZIG_MUSL_CFLAGS` and `-nostartfiles` handling.
-2. Resolve the link per §2 options above. Gate: a trivial binary that links and
-   runs under `qemu-arm`.
-3. Extend the `dest="$OUT/$TARGET/$bin"` logic — note `build-rust.sh:113`,
-   `:134` and `:144` already special-case `aarch64` for exactly this, so the
-   per-target output directory scheme is in place.
-4. Verify the size gate. A 32-bit build should land *under* the aarch64 figure
-   (17.7 MB unpacked), which gives more overlay headroom per device, partially
-   compensating for the smaller devices.
-5. **Add the qemu-arm smoke test.** There is currently no emulator-based test —
-   CI runs `cargo test` on the host (`.github/workflows/cicd.yml:32`), which
-   exercises the x86_64 build only. `qemu-arm-static` running `rustical
-   --version` and a `principals list` against a scratch SQLite file would catch
-   ISA-specific breakage in CI. This is the step most likely to be skipped and
-   most worth not skipping.
-6. Cross-build an R7800-class ImageBuilder and run `firmware-gate.sh` against
-   it.
+**2. `-latomic`, which needed a different fix than planned.** rustc puts
+`-latomic` on every armv7 link line — a 32-bit ARM core cannot do 64-bit atomics
+natively — but its self-contained musl sysroot ships no `libatomic.a`, so the
+link failed with *"unable to find library -latomic"* before symbol resolution.
+No armv7 `libatomic.a` exists anywhere on this host, and neither clang nor zig
+ships one.
 
-### Risk: low. Effort: modest. Unlocks: a large, cheap, well-supported device class.
+The fix: **cortex-a15 has LPAE**, so LLVM lowers 8-byte atomics to
+`ldrexd`/`strexd` inline instead of calling `__atomic_*`. Nothing is ever
+pulled from the library, so an **empty** archive created with `llvm-ar crs`
+satisfies the linker's search. This is verified, not assumed: the linked binary
+has **zero undefined symbols** (`nm -u`), so the stub is provably unreferenced.
+`-Ctarget-cpu=cortex-a15` is also the honest choice for the target class —
+cortex-a15 *is* the R7800's core.
+
+### What was done to the build script
+
+- Factored the aarch64 toolchain configuration into `configure_musl_cross`,
+  parameterised by `(rust target, zig C triple)`, so a third target is one
+  `case` arm rather than a 20-line copy. The aarch64 `clang` recipe is
+  unchanged — verified by rebuilding it after the refactor (`dav-tls` came out
+  byte-identical at 620,884).
+- Replaced the four hardcoded `[ "$TARGET" = "aarch64-..." ]` tests with a
+  `ROUTER_TARGET` constant and a `bin_dest` helper.
+- Extended the size gate to **every** device target, not just aarch64. A 32-bit
+  build is the one that has to fit smaller devices' flash.
+- Added a `rustup target list --installed` preflight that fails with the exact
+  `rustup target add` command, rather than letting cargo die inside a C build
+  script.
+
+### Verification
+
+`scripts/smoke-cross.sh` (new) runs the artifact and is reproducible rather than
+ad-hoc. It checks the ELF is static and the right width/ISA, that there are zero
+undefined symbols, then **executes** it under qemu and drives `principals list`
+against a throwaway database — which is what actually exercises bundled SQLite
+and the migration path on the target ISA. All seven checks pass for armv7, and
+also for aarch64.
+
+### The appliance image: what actually works, and what does not
+
+This is where the plan was wrong, and the correction matters for anyone who
+picks this up next. **The ImageBuilder cannot build an appliance image carrying
+a custom package or profile, and the SDK cannot build an image at all.**
+
+| | produces an image? | sees a custom package/profile? |
+|---|---|---|
+| **ImageBuilder** | yes (`make image PROFILE=`) | **no** |
+| **SDK** | **no** (no `image` target exists) | yes |
+| **full buildroot** | yes | yes |
+
+The ImageBuilder ships `.packageinfo` and `.targetinfo` **generated at release
+time**, and `make image` never re-scans `package/`. So:
+
+- `PACKAGES="omnical"` → `omnical (no such package)`
+- `PROFILE=omnical` → `Profile "omnical" does not exist!`
+
+Both fail, and neither is fixable by hand-editing: nothing regenerates those
+indexes. `.profiles.mk` is derived from `.targetinfo` via
+`scripts/target-metadata.pl`, which parses `.targetinfo` rather than the `.mk`
+files — so appending `include omnical.mk` to the subtarget is silently ignored.
+
+The SDK is the mirror image. It *does* re-scan (`include/toplevel.mk`'s
+`prepare-tmpinfo`) and finds both — `tmp/.targetinfo` gains the profile and
+`tmp/.packageinfo` gains `Package: omnical` — but its only targets are
+`world`/`prepare`/`prereq`. There is no `image` target in an SDK; its own help
+says it is for building packages.
+
+**So the appliance image needs a full buildroot** (`git clone` of openwrt at
+the release tag, `./scripts/feeds update/install`, toolchain build). That is a
+real piece of work and is not done.
+
+One OpenWrt 25.12 gotcha on the way, worth recording: `feeds update -a &&
+feeds install -a` installs *all* feeds, and that trips genuine kconfig cycles
+in the release-pinned feeds — `LIBCURL_LDAP` ↔ `PACKAGE_libcurl`,
+`PACKAGE_NETATALK_LDAP` ↔ `PACKAGE_netatalk-full`, and others. Feeds are pinned
+to the correct 25.12.5 commits, so this is not a version drift. The official
+buildroot only enables the feeds it needs, so the fix is the same:
+`./scripts/feeds update -i packages`. With that, `make defconfig` succeeds.
+
+### What the SDK *did* produce
+
+A real package, which the ImageBuilder never could:
+
+```
+bin/packages/arm_cortex-a15_neon-vfpv4/base/omnical-0.16.1-r1.apk
+```
+
+`apk adbdump` confirms `usr/sbin/{rustical,dav-tls}`, `usr/bin/rustical-watchdog`,
+`etc/init.d/{rustical,dav-tls}`, `etc/rustical/omnical-config.toml.sample`,
+`lib/upgrade/keep.d/omnical`, generated conffiles, `arch: arm_cortex-a15_neon-vfpv4`,
+`depends: libc sqlite3-cli`.
+
+Building it found a real bug in the committed recipe that nothing had ever
+exercised: `Package/omnical/install` installed `rustical-watchdog` into
+`$(1)/usr/bin` without an `$(INSTALL_DIR) $(1)/usr/bin`, so the install step
+died with `cannot create regular file ... No such file or directory`. Fixed in
+`packaging/firmware/omnical/Makefile`. This would have failed on *any* OpenWrt
+build; it had survived because the image phase had never run.
+
+### Done
+
+- The armv7 cross-build and its smoke test (§2 above).
+- `scripts/smoke-cross.sh`, wired into CI for **both** cross targets. The aarch64
+  job previously built the router's binary and never executed it.
+- `scripts/firmware-gate.sh`: **all checks pass**, including the postinst
+  byte-identical-config and idempotence gates.
+
+### Still not done
+
+- The sysupgrade image itself, which needs a full buildroot as above.
+- `omnical.keep.d` and the postinst are exercised by `firmware-gate.sh` against
+  a synthetic root, not against a real flash.
 
 ---
 
