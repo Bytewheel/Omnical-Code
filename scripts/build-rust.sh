@@ -32,6 +32,9 @@ RUSTICAL_BUDGET=$((35 * 1024 * 1024))  # stripped size budget (plan C2)
 export PATH="$HOME/.cargo/bin:$PATH"
 export CARGO_TARGET_DIR="${CARGO_TARGET_DIR:-$ROOT/build/cargo-target}"
 export SQLX_OFFLINE=true
+# Never leave this unset for a build: it is exported so that a build launched
+# from a shell where it was not set cannot silently write somewhere else.
+export CARGO_INCREMENTAL="${CARGO_INCREMENTAL:-0}"
 
 case "$TARGET" in
 	aarch64-unknown-linux-musl)

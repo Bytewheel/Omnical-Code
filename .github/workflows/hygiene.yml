@@ -180,6 +180,46 @@ jobs:
       - name: Firmware recipe + postinst gate
         run: ./scripts/firmware-gate.sh
 
+      # §9.5's WAN-IP discovery. Lives here rather than in build.yml because it
+      # needs no router and no binaries: it asserts the *decision* half of
+      # interface resolution and the init script that invokes it. The rebinding
+      # half needs a mutable interface and is NOT claimed — the gate prints that
+      # list on every run so a green result cannot be misread as coverage of it.
+      - name: dav-tls WAN-address gate (--discover)
+        run: ./scripts/dav-tls-gate.sh
+
+      # A gate that cannot fail is worse than no gate, because it gets read as
+      # coverage. Break the discovery's core invariant — the refuse-to-bind-
+      # anything-but-the-named-interface rule — and require the gate to notice.
+      # Note this is the ONE safety property worth mutating: the others (exit
+      # codes, message wording) are already asserted directly.
+      - name: dav-tls gate is not vacuous (mutation)
+        run: |
+          set -euo pipefail
+          SRC=dav-tls/src/discover.rs
+          cp "$SRC" "$SRC.orig"
+          restore() { mv "$SRC.orig" "$SRC"; }
+          trap restore EXIT
+
+          # Replace the "is this address usable" predicate with one that accepts
+          # everything. That is the bug the whole module exists to prevent: a
+          # link-local address getting bound looks healthy and receives nothing.
+          python3 - "$SRC" <<'PY'
+          import sys
+          p = sys.argv[1]
+          s = open(p).read()
+          old = "    !ip.is_loopback() && !ip.is_link_local()"
+          assert old in s, "mutation target not found — is_usable changed shape?"
+          open(p, "w").write(s.replace(old, "    true", 1))
+          PY
+
+          if ./scripts/dav-tls-gate.sh >/tmp/mutant.log 2>&1; then
+            echo "::error::dav-tls gate passed with the link-local guard removed"
+            grep -E 'loopback|link-local' /tmp/mutant.log | sed 's/^/  /' || true
+            exit 1
+          fi
+          echo "ok: removing the link-local guard makes the gate fail, as it must"
+
       - name: The staged payload is never tracked
         run: |
           set -euo pipefail

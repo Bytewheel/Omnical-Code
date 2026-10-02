@@ -280,7 +280,7 @@ python3 scripts/serve-apple-profile.py   # 0.0.0.0:8917
 
 Send each person: the `.mobileconfig` link (Apple), or the per-client
 instructions the portal now renders on each calendar tile (PLAN.md §17.15/§17.16
-— Apple, DAVx5, Thunderbird, plus the "not possible on Google/Outlook" line).
+— Apple, HawkBook/DavX, Thunderbird, plus the "not possible on Google/Outlook" line).
 
 **Gate:** every old token returns `401` on loopback DAV, and every affected
 person confirms their calendar syncs again.

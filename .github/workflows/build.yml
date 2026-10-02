@@ -160,6 +160,48 @@ jobs:
       - name: Build
         run: ./scripts/build-rust.sh x86_64-unknown-linux-gnu
 
+      # dav-tls is a separate crate and is NOT in the rustical workspace, so
+      # `cargo test --workspace` in test.yml cannot reach its tests. Without this
+      # step the --discover selection rules (src/discover.rs) are only exercised
+      # by a human running cargo test by hand in dav-tls/.
+      #
+      # This is the unit half only. It does not need network privileges, so it
+      # runs on any runner. The end-to-end half — a rebind after a real address
+      # change — needs a mutable interface and is NOT claimed here; see
+      # scripts/dav-tls-gate.sh for what that script does and does not prove.
+      - name: dav-tls unit tests (--discover selection rules)
+        working-directory: dav-tls
+        env:
+          SQLX_OFFLINE: "true"
+        run: cargo test --release 2>&1 | tee /tmp/davtls-test.log
+
+      - name: Assert the dav-tls tests ran, and cannot silently stop running
+        run: |
+          set -euo pipefail
+          # A count floor, in the same spirit as test.yml's floors for
+          # backup_restore / setup_wizard / run_integration_tests. If someone
+          # deletes the discover module's tests, or the job stops building the
+          # crate, this fails instead of the step passing on "0 passed".
+          ran=$(grep -oE '^test result: ok\. [0-9]+ passed' /tmp/davtls-test.log \
+                | grep -oE '[0-9]+' | head -1)
+          : "${ran:?no 'test result: ok' line in /tmp/davtls-test.log}"
+          echo "dav-tls: $ran tests passed"
+          if [ "$ran" -lt 12 ]; then
+            echo "::error::dav-tls ran only $ran tests; the floor is 12 (src/discover.rs)"
+            exit 1
+          fi
+          # The selection rules are the point of the crate. Name them so a
+          # deletion cannot pass as a refactor.
+          for t in a_global_address_elsewhere_never_satisfies_the_named_interface \
+                   link_local_is_refused_and_says_so_in_dhcp_terms \
+                   observe_finds_this_machine_loopback \
+                   a_fixed_listen_is_never_re_resolved; do
+            if ! grep -qF "$t" /tmp/davtls-test.log; then
+              echo "::error::dav-tls test '$t' did not run"
+              exit 1
+            fi
+          done
+
       - name: Smoke test the binary
         run: |
           set -euo pipefail
@@ -172,6 +214,33 @@ jobs:
           grep -q 'data_store' /tmp/generated.toml
           "$BIN" --version
           echo "ok: binary runs and emits a config template"
+
+      # The init script is what actually invokes --discover on a device, so a
+      # change to it that drops the flag or reintroduces a hard-coded address
+      # would leave a unit that boots and never listens. Assert the wiring.
+      - name: The appliance init script uses --discover, not a pinned address
+        run: |
+          set -euo pipefail
+          SCRIPT=router/etc/init.d/dav-tls
+          sh -n "$SCRIPT"
+          grep -q -- '--discover' "$SCRIPT" || {
+            echo "::error::$SCRIPT no longer passes --discover"; exit 1; }
+          # The old failure mode, verbatim. This is the regression that matters:
+          # a lease moves, and the service refuses to start.
+          if grep -qE '^\s*\[ "\$cur_ip" = "\$WAN_IP" \]' "$SCRIPT"; then
+            echo "::error::$SCRIPT refuses to start on an address change again"
+            exit 1
+          fi
+          ! grep -qE '^\s*WAN_IP=' "$SCRIPT" || {
+            echo "::error::$SCRIPT hard-codes WAN_IP again"; exit 1; }
+          # The staged copy must be regenerated from this one, or a flashed unit
+          # ships the old script.
+          if [ -f packaging/firmware/omnical/files/init.d/dav-tls ]; then
+            diff -q "$SCRIPT" packaging/firmware/omnical/files/init.d/dav-tls >/dev/null || {
+              echo "::error::staged init.d/dav-tls differs from $SCRIPT — re-run scripts/build-firmware.sh --staged-only"
+              exit 1; }
+          fi
+          echo "ok: init script discovers the WAN address"
 
       - uses: actions/upload-artifact@v4
         with:

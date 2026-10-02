@@ -1,16 +1,43 @@
 #!/bin/sh /etc/rc.common
 # dav-tls — rustls TLS tunnel in front of rustical.
-# Terminates TLS on the WAN IP, port 8443 (Let's Encrypt cert for
+# Terminates TLS on the WAN interface, port 8443 (Let's Encrypt cert for
 # 0115d8cf.duckdns.org, deployed by acme.sh on the dev machine) and forwards
 # plaintext to 127.0.0.1:4000.  ALPN is restricted to http/1.1; everything
 # (including WebDAV-Push WebSockets) is passed through untouched.
 #
 # Per the 2026-09-04 port amendment: public URL is :8443 (the .truth site on
-# 443 stays); the listen address is the WAN IP — NOT 0.0.0.0 — so this never
-# collides with any current/future uhttpd binds (uhttpd stays on LAN :443).
+# 443 stays).
 #
 # The service refuses to start without certs — enable it only in Phase 3
 # after the first Let's Encrypt issuance.
+#
+# ── WAN address: discovered, not pinned ─────────────────────────────────────
+#
+# This used to hard-code `WAN_IP=192.168.1.21` and abort at boot when the live
+# address differed:
+#
+#     cur_ip="$(ip -4 -o addr show dev "$WAN_IF" ... )"
+#     [ "$cur_ip" = "$WAN_IP" ] || return 1
+#
+# which is correct on a router with a static WAN and fatal on any unit whose WAN
+# is DHCP-assigned: the lease moves after a reboot or an upstream flap, and the
+# public front end then refuses to start until somebody edits this file by hand.
+# PLAN_DEPLOYMENTS.md §9.5 called this "the one place §9 needs real new work".
+#
+# `--discover` hands the interface to dav-tls, which resolves it at startup and
+# re-checks every 30s, rebinding when the address moves. Two properties make it
+# safe here:
+#
+#   * It never falls back to "some other address". A wrong interface is a
+#     startup failure with a message naming what it did see.
+#   * A link-local (169.254.x) address — an interface mid-lease — is refused
+#     rather than bound, so a half-configured WAN is a visible error and not a
+#     listener that silently never receives anything.
+#
+# If you need the old static behaviour, pass `--listen "$WAN_IP:8443"` instead.
+# On this router the WAN address *is* static, and --discover resolves to the
+# same address; the difference is that the service no longer needs editing when
+# that stops being true.
 
 START=96
 STOP=15
@@ -20,10 +47,11 @@ PROG=/usr/sbin/dav-tls
 CERT=/etc/rustical/tls/fullchain.pem
 KEY=/etc/rustical/tls/key.pem
 WAN_IF=eth0
-WAN_IP=192.168.1.21        # DHCP from the upstream Deco — must stay pinned (the
-                           # upstream port-forward targets this address too)
-LISTEN="$WAN_IP:8443"
+PORT=8443
 UPSTREAM="127.0.0.1:4000"
+
+# Override to pin instead of discovering: set to a full listen address.
+DAV_TLS_PINNED="${DAV_TLS_PINNED:-}"
 
 start_service() {
 	[ -x "$PROG" ] || {
@@ -36,15 +64,26 @@ start_service() {
 			return 1
 		}
 	done
+
+	# Log what dav-tls will bind, so a boot log records the address the service
+	# actually took. It resolves independently, so this is informational only —
+	# it is NOT a precondition, and a mismatch here does not block startup.
 	cur_ip="$(ip -4 -o addr show dev "$WAN_IF" 2>/dev/null | awk '{split($4,a,"/"); print a[1]; exit}')"
-	[ "$cur_ip" = "$WAN_IP" ] || {
-		logger -t dav-tls "ERROR: $WAN_IF has '$cur_ip', expected $WAN_IP (DHCP lease changed?) — fix the address (and the upstream port-forward), then restart"
-		return 1
-	}
+	[ -n "$cur_ip" ] && logger -t dav-tls "starting; $WAN_IF currently holds $cur_ip"
+
+	if [ -n "$DAV_TLS_PINNED" ]; then
+		set -- --listen "$DAV_TLS_PINNED"
+	else
+		# No address check here on purpose: dav-tls does it, with a message that
+		# says what to do about it, and it retries rather than exiting — so a
+		# DHCP gap of two minutes does not become an hour-long outage via
+		# procd's respawn policy.
+		set -- --discover "$WAN_IF:$PORT"
+	fi
 
 	procd_open_instance
 	procd_set_param command "$PROG" \
-		--listen "$LISTEN" \
+		"$@" \
 		--upstream "$UPSTREAM" \
 		--cert "$CERT" \
 		--key "$KEY" \

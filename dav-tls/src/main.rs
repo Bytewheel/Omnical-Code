@@ -11,6 +11,13 @@
 //! host:port entries, internet scanners probe with plain GET) is answered
 //! with a 301 redirect to the https:// equivalent instead of a fatal TLS
 //! alert + close.
+//!
+//! `--discover <interface>:<port>` binds to whatever IPv4 address an interface
+//! holds, resolved at startup and re-checked on an interval, so a DHCP-assigned
+//! WAN works without the address being pinned in a file. `--listen <ip:port>`
+//! keeps working exactly as before for a static address. See `discover`.
+
+mod discover;
 
 use std::{
     ffi::CString,
@@ -40,11 +47,40 @@ const ALPN_HTTP1: &[u8] = b"http/1.1";
 const MAX_HEAD: usize = 8 * 1024;
 const REDIRECT_READ_TIMEOUT: Duration = Duration::from_secs(5);
 const HTTP_METHODS: [&[u8]; 8] = [
-    b"GET ", b"HEAD ", b"POST ", b"PUT ", b"DELETE ", b"OPTIONS ", b"PATCH ", b"TRACE ",
+    b"GET ",
+    b"HEAD ",
+    b"POST ",
+    b"PUT ",
+    b"DELETE ",
+    b"OPTIONS ",
+    b"PATCH ",
+    b"TRACE ",
 ];
 
+/// How often a `--discover` listener re-reads its interface.
+///
+/// A DHCP lease on a retail unit can change on a reboot, a WAN flap, or an
+/// upstream lease expiry — minutes to hours, and on no schedule we control.
+/// Thirty seconds is well inside the slowest plausible change, and costs one
+/// `getifaddrs` per discovered listener per tick: a linked-list walk over a
+/// handful of interfaces.
+///
+/// Re-resolving is the difference between a listener that follows its address
+/// and one that silently stops receiving. A bound socket keeps the address it
+/// was given for the life of the process, so without this a lease change turns
+/// the public front end into a black hole while the process still looks healthy.
+const REDISCOVER_INTERVAL: Duration = Duration::from_secs(30);
+
+/// How long before a failed rebind is retried.
+///
+/// Retry rather than exit: the usual cause of a failed resolve is an interface
+/// that is mid-lease, and that resolves itself. Exiting would hand a transient
+/// DHCP state to procd's `respawn 3600 5 0`, which gives up after five tries in
+/// an hour — turning a two-minute DHCP gap into an hour-long outage.
+const REBIND_RETRY_INTERVAL: Duration = Duration::from_secs(5);
+
 struct Args {
-    listen: Vec<SocketAddr>,
+    listen: Vec<discover::Listen>,
     upstream: SocketAddr,
     cert: String,
     key: String,
@@ -55,19 +91,31 @@ const USAGE: &str = "\
 dav-tls — minimal rustls TLS tunnel
 
 USAGE:
-    dav-tls --listen <ADDR> [--listen <ADDR> ...] --upstream <ADDR> --cert <PEM> --key <PEM> [--user <NAME>]
+    dav-tls (--listen <ADDR> | --discover <IFACE:PORT>) [--repeatable] \\
+           --upstream <ADDR> --cert <PEM> --key <PEM> [--user <NAME>]
 
 OPTIONS:
-    --listen <ip:port>    Address to accept TLS on (repeatable)
-    --upstream <ip:port>  Plain TCP address to forward to (e.g. 127.0.0.1:4000)
-    --cert <path>         TLS certificate chain (PEM, fullchain)
-    --key <path>          TLS private key (PEM)
-    --user <name>         Drop privileges to this user after binding
-    -h, --help            Show this help
+    --listen <ip:port>      Address to accept TLS on (repeatable)
+    --discover <iface:port> Bind to the interface's current IPv4 address, and
+                            re-resolve it while running. Use this for a
+                            DHCP-assigned WAN: pinning an address DHCP will
+                            move is what made this refuse to start.
+    --upstream <ip:port>    Plain TCP address to forward to (e.g. 127.0.0.1:4000)
+    --cert <path>           TLS certificate chain (PEM, fullchain)
+    --key <path>            TLS private key (PEM)
+    --user <name>           Drop privileges to this user after binding
+    -h, --help              Show this help
+
+EXAMPLES:
+    # Static address — unchanged behaviour
+    dav-tls --listen 192.168.1.21:8443 --upstream 127.0.0.1:4000 --cert c.pem --key k.pem
+
+    # DHCP-assigned WAN
+    dav-tls --discover eth0:8443 --upstream 127.0.0.1:4000 --cert c.pem --key k.pem
 ";
 
 fn parse_args() -> Args {
-    let mut listen: Vec<SocketAddr> = Vec::new();
+    let mut listen: Vec<discover::Listen> = Vec::new();
     let mut upstream: Option<SocketAddr> = None;
     let mut cert: Option<String> = None;
     let mut key: Option<String> = None;
@@ -86,12 +134,26 @@ fn parse_args() -> Args {
         };
         match arg.as_str() {
             "--listen" => match value("--listen").parse() {
-                Ok(addr) => listen.push(addr),
+                Ok(addr) => listen.push(discover::Listen::Fixed(addr)),
                 Err(_) => {
                     eprintln!("dav-tls: invalid --listen address");
                     process::exit(2);
                 }
             },
+            "--discover" => {
+                let spec = value("--discover");
+                // A malformed spec is a usage error and exits 2. An interface
+                // that does not *resolve* is a runtime condition, reported by
+                // the listener with a retry, not here — conflating the two
+                // would make a typo look like an outage.
+                match discover::parse_spec(&spec) {
+                    Ok((iface, port)) => listen.push(discover::Listen::Discovered { iface, port }),
+                    Err(e) => {
+                        eprintln!("dav-tls: {e}");
+                        process::exit(2);
+                    }
+                }
+            }
             "--upstream" => match value("--upstream").parse() {
                 Ok(addr) => upstream = Some(addr),
                 Err(_) => {
@@ -117,13 +179,23 @@ fn parse_args() -> Args {
         eprint!("{USAGE}");
         process::exit(2);
     }
-    Args { listen, upstream: upstream.unwrap(), cert: cert.unwrap(), key: key.unwrap(), user }
+    Args {
+        listen,
+        upstream: upstream.unwrap(),
+        cert: cert.unwrap(),
+        key: key.unwrap(),
+        user,
+    }
 }
 
 /// Bind a listener with SO_REUSEADDR set before bind (std does not set it
 /// on Unix for listeners, and procd restarts must not fail on TIME_WAIT).
 fn bind_listener(addr: SocketAddr) -> std::io::Result<TcpListener> {
-    let domain = if addr.is_ipv4() { socket2::Domain::IPV4 } else { socket2::Domain::IPV6 };
+    let domain = if addr.is_ipv4() {
+        socket2::Domain::IPV4
+    } else {
+        socket2::Domain::IPV6
+    };
     let socket = socket2::Socket::new(domain, socket2::Type::STREAM, Some(socket2::Protocol::TCP))?;
     socket.set_reuse_address(true)?;
     socket.set_nonblocking(true)?;
@@ -133,8 +205,7 @@ fn bind_listener(addr: SocketAddr) -> std::io::Result<TcpListener> {
 }
 
 fn load_server_config(cert_path: &str, key_path: &str) -> Result<ServerConfig, String> {
-    let certs_file =
-        File::open(cert_path).map_err(|e| format!("open {cert_path}: {e}"))?;
+    let certs_file = File::open(cert_path).map_err(|e| format!("open {cert_path}: {e}"))?;
     let certs: Vec<CertificateDer> = rustls_pemfile::certs(&mut BufReader::new(certs_file))
         .collect::<Result<_, _>>()
         .map_err(|e| format!("parse certificates in {cert_path}: {e}"))?;
@@ -228,7 +299,9 @@ async fn serve_https_redirect(mut stream: TcpStream) {
         .to_string();
     let host = lines.find_map(|l| {
         let (name, value) = l.split_once(':')?;
-        name.trim().eq_ignore_ascii_case("host").then(|| value.trim())
+        name.trim()
+            .eq_ignore_ascii_case("host")
+            .then(|| value.trim())
     });
     // Host is required in HTTP/1.1 and always sent by browsers; fall back to
     // the connection's local address for ancient HTTP/1.0 probes.
@@ -237,7 +310,11 @@ async fn serve_https_redirect(mut stream: TcpStream) {
         _ => match stream.local_addr() {
             Ok(a) => {
                 let ip = a.ip().to_string();
-                if ip.contains(':') { format!("[{ip}]") } else { ip }
+                if ip.contains(':') {
+                    format!("[{ip}]")
+                } else {
+                    ip
+                }
             }
             Err(_) => return,
         },
@@ -338,44 +415,86 @@ async fn handle_connection(
     conns.fetch_sub(1, Ordering::SeqCst);
 }
 
-#[tokio::main(flavor = "multi_thread")]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let args = parse_args();
+/// Accept connections on one endpoint, re-resolving it if it was `--discover`.
+///
+/// The rebind is what makes a DHCP-assigned WAN viable. A bound socket keeps its
+/// address for the life of the process, so a lease change would otherwise leave
+/// this task happily accepting connections that no port-forward will ever reach.
+/// On detecting a different address this drops the listener and re-binds;
+/// in-flight connections are unaffected, because each one is a separate socket
+/// that the listener never held.
+///
+/// `addr` is the address currently bound, tracked separately from `spec` so the
+/// comparison is against what is actually open rather than a re-read that could
+/// race the bind.
+#[allow(clippy::too_many_arguments)]
+async fn accept_loop(
+    spec: discover::Listen,
+    mut addr: SocketAddr,
+    mut listener: TcpListener,
+    acceptor: Arc<TlsAcceptor>,
+    upstream: SocketAddr,
+    shutdown: Arc<Notify>,
+    conns: Arc<AtomicUsize>,
+) {
+    // A `--listen` address is fixed by definition; re-reading it every tick
+    // would be pure overhead, and its purpose is to not move.
+    let watched = matches!(spec, discover::Listen::Discovered { .. });
 
-    let config = Arc::new(load_server_config(&args.cert, &args.key).map_err(|e| {
-        eprintln!("dav-tls: {e}");
-        e
-    })?);
+    let mut ticker = tokio::time::interval(REDISCOVER_INTERVAL);
+    // The first tick fires immediately, and the address was just resolved by
+    // main(). Skip it: it would be a redundant syscall comparing a value to
+    // itself, and a spurious "unchanged" log line on every start.
+    ticker.tick().await;
 
-    let shutdown = Arc::new(Notify::new());
-    let conns = Arc::new(AtomicUsize::new(0));
-    let acceptor = Arc::new(TlsAcceptor::from(config));
-    let upstream = args.upstream;
-
-    let mut listeners = Vec::new();
-    for addr in &args.listen {
-        let listener = bind_listener(*addr)?;
-        eprintln!("dav-tls: listening on TLS {addr} -> {upstream}");
-        listeners.push(listener);
-    }
-
-    // Must be done while still root (after binding the ports).
-    if let Some(user) = &args.user {
-        drop_privileges(user).map_err(|e| {
-            eprintln!("dav-tls: {e}");
-            e
-        })?;
-        eprintln!("dav-tls: dropped privileges to user '{user}'");
-    }
-
-    for listener in listeners {
-        let acceptor = Arc::clone(&acceptor);
-        let shutdown = Arc::clone(&shutdown);
-        let conns = Arc::clone(&conns);
-        task::spawn(async move {
-            loop {
-                tokio::select! {
+    loop {
+        tokio::select! {
                     _ = shutdown.notified() => break,
+
+                    // Watchdog branch — disabled entirely for a fixed address, so the
+                    // fixed-address path costs nothing per tick.
+                    _ = ticker.tick(), if watched => {
+                        match spec.current_addr() {
+                            Ok(next) if next != addr => {
+                                eprintln!(
+                                    "dav-tls: {} moved {addr} -> {next}, rebinding",
+                                    spec.describe()
+                                );
+                                match bind_listener(next) {
+                                    Ok(fresh) => {
+                                        // Only swap after the new bind succeeded, so a
+                                        // failed rebind leaves the old listener serving
+                                        // rather than leaving nothing listening at all.
+                                        listener = fresh;
+                                        addr = next;
+                                    }
+                                    Err(e) => {
+                                        // Keep the old listener and retry next tick.
+                                        eprintln!(
+                                            "dav-tls: rebind to {next} failed: {e}; still serving {addr}, retrying in {}s",
+                                            REBIND_RETRY_INTERVAL.as_secs()
+                                        );
+        ticker.reset_after(REBIND_RETRY_INTERVAL);
+                                    }
+                                }
+                            }
+                            Ok(_) => {}
+                            Err(e) => {
+                                // Same reasoning as the bind failure: an unresolvable
+                                // interface is usually mid-lease, so keep serving the
+                                // old address and try again shortly. If the interface
+                                // really is gone this logs every retry, which is the
+                                // honest report — the endpoint is down and only the
+                                // operator can fix it.
+                                eprintln!(
+                                    "dav-tls: could not re-resolve {}: {e}; still serving {addr}",
+                                    spec.describe()
+                                );
+                                ticker.reset_after(REBIND_RETRY_INTERVAL);
+                            }
+                        }
+                    }
+
                     accepted = listener.accept() => match accepted {
                         Ok((stream, _peer)) => {
                             if conns.load(Ordering::SeqCst) >= MAX_CONNS {
@@ -393,14 +512,72 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                         }
                     }
                 }
+    }
+}
+
+#[tokio::main(flavor = "multi_thread")]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let args = parse_args();
+
+    let config = Arc::new(load_server_config(&args.cert, &args.key).map_err(|e| {
+        eprintln!("dav-tls: {e}");
+        e
+    })?);
+
+    let shutdown = Arc::new(Notify::new());
+    let conns = Arc::new(AtomicUsize::new(0));
+    let acceptor = Arc::new(TlsAcceptor::from(config));
+    let upstream = args.upstream;
+
+    // Must be done while still root (after binding the ports).
+    //
+    // Each endpoint binds before the privilege drop — including `--discover`
+    // ones, which resolve first. That ordering is load-bearing on the appliance:
+    // :8443 is above 1024 so a non-root bind would work, but :443 is not, and a
+    // host that front-ends dav-tls on 443 must still be able to drop privileges.
+    // Resolving here also means a bad interface name is a startup failure with a
+    // precise message, rather than a silent listener that never receives.
+    let mut bound = Vec::new();
+    for spec in &args.listen {
+        // Exit rather than propagate: propagating would print the Debug
+        // representation as a second, worse error line — an operator on a
+        // headless appliance would read `NoSuchInterface { iface: ... }` in
+        // syslog after the message that actually explains the problem.
+        let addr = match spec.current_addr() {
+            Ok(addr) => addr,
+            Err(e) => {
+                eprintln!("dav-tls: {e}");
+                process::exit(1);
             }
-        });
+        };
+        let listener = bind_listener(addr)?;
+        eprintln!(
+            "dav-tls: listening on TLS {} -> {upstream}",
+            spec.describe()
+        );
+        bound.push((spec.clone(), addr, listener));
+    }
+
+    if let Some(user) = &args.user {
+        drop_privileges(user).map_err(|e| {
+            eprintln!("dav-tls: {e}");
+            e
+        })?;
+        eprintln!("dav-tls: dropped privileges to user '{user}'");
+    }
+
+    for (spec, addr, listener) in bound {
+        let acceptor = Arc::clone(&acceptor);
+        let shutdown = Arc::clone(&shutdown);
+        let conns = Arc::clone(&conns);
+        task::spawn(accept_loop(
+            spec, addr, listener, acceptor, upstream, shutdown, conns,
+        ));
     }
 
     // Graceful SIGTERM/SIGINT: stop accepting, let in-flight connections
     // drain (bounded by DRAIN_TIMEOUT), then exit 0 for procd.
-    let mut sigterm =
-        tokio::signal::unix::signal(tokio::signal::unix::SignalKind::terminate())?;
+    let mut sigterm = tokio::signal::unix::signal(tokio::signal::unix::SignalKind::terminate())?;
     let mut sigint = tokio::signal::unix::signal(tokio::signal::unix::SignalKind::interrupt())?;
     tokio::select! {
         _ = sigterm.recv() => eprintln!("dav-tls: SIGTERM received, shutting down"),
