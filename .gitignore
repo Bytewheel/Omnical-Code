@@ -18,6 +18,14 @@
 /build/cargo-target/
 /build/**/cargo-target/
 
+# Downloaded OpenWrt builders. scripts/build-firmware.sh takes the path to an
+# SDK or ImageBuilder as an argument, and the natural place to put one is here —
+# which is how a 2.3 GB SDK and its .tar.zst became untracked-but-untracked-by
+# any rule. Only the extracted tree is ignored; the archives are too, because
+# `git add build/` must never be a way to commit a toolchain.
+/build/openwrt/
+/build/lib/
+
 # Any target/ dir. rustical/ is a submodule so it has its own ignore rules;
 # these cover dav-tls/ and anything else in-tree.
 /target/
