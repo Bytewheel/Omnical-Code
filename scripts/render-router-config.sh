@@ -194,7 +194,6 @@ admin_single_instance_acknowledged = true   # one instance, procd respawn, no LB
 enabled = true                  # public self-service registration (§17.8)
 invite_required = true          # single-use invite codes required (public default)
 min_password_length = 12
-auto_app_tokens = ["vdirsyncer", "davx5", "thunderbird", "apple", "i3status"]
 auto_subscription = true        # create personal share feeds on registration
 default_group = ""              # "" = no auto group (2026-09-07 decision)
 rate_limit_per_hour = 10        # per-IP; plus a fixed global bucket 60/h
