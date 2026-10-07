@@ -119,6 +119,43 @@ scp -q "$ROOT/router/etc/init.d/rustical" "$ROUTER:/etc/init.d/rustical"
 scp -q "$ROOT/router/etc/init.d/dav-tls" "$ROUTER:/etc/init.d/dav-tls"
 scp -q "$ROOT/router/usr/bin/rustical-watchdog" "$ROUTER:/usr/bin/rustical-watchdog"
 
+say "==> Staging HawkBook APK (out/hawkbook.apk → /usr/local/share/rustical/downloads/)"
+# Served at /frontend/download/hawkbook.apk while [frontend] hawkbook_apk is
+# set (see router/etc/rustical/config.toml). Staged through /tmp like the
+# binaries (18 MB never lands twice on the overlay), and the ENOSPC guard
+# runs BEFORE the cp so a too-tight overlay aborts with the staged file
+# intact instead of leaving a truncated package the intro would link.
+# Skipped (warned) when absent: the config key then points at the previous
+# deploy's package, which keeps the page's link and checksum correct.
+if [ -f "$OUT/hawkbook.apk" ]; then
+	scp -q "$OUT/hawkbook.apk" "$ROUTER:/tmp/hawkbook.apk.new"
+	ssh "$ROUTER" '
+		set -e
+		new_size="$(wc -c < /tmp/hawkbook.apk.new | tr -d " ")"
+		apk_dir=/usr/local/share/rustical/downloads
+		old_size=0
+		[ -f $apk_dir/hawkbook.apk ] && old_size="$(wc -c < $apk_dir/hawkbook.apk | tr -d " ")"
+		need_kib=$(( (new_size - old_size + 1023) / 1024 + 2048 ))
+		avail_kib=$(df -k / | awk "NR==2 {print \$4}")
+		if [ "$avail_kib" -lt "$need_kib" ]; then
+			logger -t deploy "ENOSPC guard (apk): avail=${avail_kib}KiB need=${need_kib}KiB — copy aborted"
+			echo "!! overlay too tight for the APK (avail=${avail_kib}KiB need=${need_kib}KiB) — kept staged at /tmp/hawkbook.apk.new" >&2
+			exit 1
+		fi
+		mkdir -p $apk_dir
+		cp /tmp/hawkbook.apk.new $apk_dir/hawkbook.apk
+		chmod 644 $apk_dir/hawkbook.apk
+		rm -f /tmp/hawkbook.apk.new
+		[ "$(wc -c < $apk_dir/hawkbook.apk | tr -d " ")" = "$new_size" ] || {
+			echo "!! APK copy incomplete (size mismatch)" >&2
+			exit 1
+		}
+		sha256sum $apk_dir/hawkbook.apk
+	'
+else
+	echo "   no $OUT/hawkbook.apk — the config keeps pointing at the previous deploy's package (or none)"
+fi
+
 say "==> Router-side preparation (idempotent)"
 ssh "$ROUTER" '
 	set -e

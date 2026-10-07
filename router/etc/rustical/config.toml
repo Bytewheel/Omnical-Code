@@ -13,6 +13,17 @@ payload_limit_mb = 32
 [data_store.sqlite]
 db_url = "file:/usr/local/share/rustical/db.sqlite3"   # persistent overlay — NOT /var (tmpfs!)
 
+[frontend]
+# HawkBook (the DAVx⁵ fork) is served as a download from this deployment —
+# the profile intro links it and prints its sha256. The file itself is NOT
+# in this repo (18 MB, and it is a build artifact of the app, not of this
+# one): out/hawkbook.apk → /usr/local/share/rustical/downloads/hawkbook.apk
+# on the router, pushed by deploy.sh. The whole /usr/local/share/rustical
+# tree survives sysupgrade (/etc/sysupgrade.conf), so this key stays valid.
+# Missing file ⇒ the binary warns, the route 404s and the intro omits the
+# link — never a link at something it cannot serve.
+hawkbook_apk = "/usr/local/share/rustical/downloads/hawkbook.apk"
+
 # [dav_push] — defaults for now; enable WebSocket/WebPush transport after Phase 7 tests.
 
 # [nextcloud_login] — enabled by default; required for the DAVx5 login flow.
