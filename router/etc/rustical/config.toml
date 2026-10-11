@@ -17,12 +17,16 @@ db_url = "file:/usr/local/share/rustical/db.sqlite3"   # persistent overlay — 
 # HawkBook (the DAVx⁵ fork) is served as a download from this deployment —
 # the profile intro links it and prints its sha256. The file itself is NOT
 # in this repo (18 MB, and it is a build artifact of the app, not of this
-# one): out/hawkbook.apk → /usr/local/share/rustical/downloads/hawkbook.apk
-# on the router, pushed by deploy.sh. The whole /usr/local/share/rustical
-# tree survives sysupgrade (/etc/sysupgrade.conf), so this key stays valid.
-# Missing file ⇒ the binary warns, the route 404s and the intro omits the
-# link — never a link at something it cannot serve.
-hawkbook_apk = "/usr/local/share/rustical/downloads/hawkbook.apk"
+# one): it lives in out/hawkbook.apk on the build host, which serves it on
+# :8123 (scripts/serve-hawkbook-apk.py). The router does NOT keep a flash
+# copy — at 18 MB it was a fifth of the whole overlay — instead
+# router/etc/init.d/rustical fetches it into /tmp (tmpfs) right before
+# rustical starts, and rustical reads the package ONCE at startup and
+# serves it from process memory. Flash cost: zero. RAM cost: one process
+# copy, same as always. A start while the build host is down fetches
+# nothing and degrades exactly like a missing file always has: the route
+# 404s and the intro omits the link.
+hawkbook_apk = "/tmp/hawkbook.apk"
 
 # [dav_push] — defaults for now; enable WebSocket/WebPush transport after Phase 7 tests.
 

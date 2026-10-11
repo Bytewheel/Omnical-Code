@@ -27,6 +27,22 @@ start_service() {
 	# (The omnical package owns both files, so a flash restores them — §9.2.)
 	mkdir -p /usr/local/share/rustical
 
+	# HawkBook APK: fetched into tmpfs from the build host right before
+	# start. rustical reads the package ONCE at startup (and serves it from
+	# process memory), so this is the only moment the file is needed — and
+	# an 18 MB flash copy was a fifth of the overlay. Failure is silent on
+	# purpose: rustical already treats an unreadable package as "no
+	# download" (route 404s, intro omits the link), which is the right
+	# answer when the build host is down; the next successful start
+	# re-fetches. The build host holds a DHCP reservation for this address
+	# (see deploy.sh); out/hawkbook.apk there is the served bytes.
+	if [ ! -s /tmp/hawkbook.apk ]; then
+		wget -q -O /tmp/hawkbook.apk.new http://192.168.10.241:8123/hawkbook.apk \
+			&& mv /tmp/hawkbook.apk.new /tmp/hawkbook.apk \
+			|| { rm -f /tmp/hawkbook.apk.new
+			     logger -t rustical "hawkbook.apk fetch failed — download link will be omitted until the next start"; }
+	fi
+
 	procd_open_instance
 	# NB: --config-file is a top-level clap option — it MUST precede the subcommand
 	# --config-file names a file that may not exist yet. That is deliberate:

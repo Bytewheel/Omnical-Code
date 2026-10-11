@@ -6,6 +6,9 @@
 # History / constraints that shaped this script:
 #   - Phase 2: initial deploy (virgin router, 42 MB free) — plain scp worked.
 #   - Phase 3: dav-tls enabled+running (192.168.1.21:8443 -> 127.0.0.1:4000).
+#   - 2026-10-11: the HawkBook APK moved off the flash (the overlay hit 95%):
+#     the build host serves it on :8123, the init script fetches it into
+#     tmpfs at every start, rustical reads it once at startup into memory.
 #   - §17.2 item 5 (2026-09-05): config render enables the scheduling
 #     extension with the 7 SMTP identities from pass.  By then the f2fs overlay
 #     had ~9 MB free vs 28 MB binaries: scp'ing a second copy next to the
@@ -27,6 +30,8 @@
 #   - out/rustical + out/dav-tls built by scripts/build-rust.sh
 #   - pass entries for the 7 SMTP identities (render script aborts otherwise)
 #   - SSH alias `router` (root@192.168.10.1, key ~/.ssh/router)
+#   - scripts/serve-hawkbook-apk.py running on this host (crontab @reboot)
+#     — the router's init script fetches the HawkBook APK from it at start
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
@@ -119,41 +124,32 @@ scp -q "$ROOT/router/etc/init.d/rustical" "$ROUTER:/etc/init.d/rustical"
 scp -q "$ROOT/router/etc/init.d/dav-tls" "$ROUTER:/etc/init.d/dav-tls"
 scp -q "$ROOT/router/usr/bin/rustical-watchdog" "$ROUTER:/usr/bin/rustical-watchdog"
 
-say "==> Staging HawkBook APK (out/hawkbook.apk → /usr/local/share/rustical/downloads/)"
-# Served at /frontend/download/hawkbook.apk while [frontend] hawkbook_apk is
-# set (see router/etc/rustical/config.toml). Staged through /tmp like the
-# binaries (18 MB never lands twice on the overlay), and the ENOSPC guard
-# runs BEFORE the cp so a too-tight overlay aborts with the staged file
-# intact instead of leaving a truncated package the intro would link.
-# Skipped (warned) when absent: the config key then points at the previous
-# deploy's package, which keeps the page's link and checksum correct.
+say "==> Staging HawkBook APK (out/hawkbook.apk → router /tmp, flash-free)"
+# The APK is 18 MB — a fifth of the whole overlay — so it no longer lives
+# on the router's flash. The build host serves it on :8123
+# (scripts/serve-hawkbook-apk.py), the init script fetches it into tmpfs
+# before every start, and rustical reads the package ONCE at startup and
+# serves it from process memory. This staging step is the belt to that
+# suspender: it guarantees the bytes for the restart THIS deploy is about
+# to trigger even if the static server just died, and it retires the old
+# flash copy (~18 MB back to the overlay). tmpfs costs RAM only.
 if [ -f "$OUT/hawkbook.apk" ]; then
 	scp -q "$OUT/hawkbook.apk" "$ROUTER:/tmp/hawkbook.apk.new"
 	ssh "$ROUTER" '
 		set -e
 		new_size="$(wc -c < /tmp/hawkbook.apk.new | tr -d " ")"
-		apk_dir=/usr/local/share/rustical/downloads
-		old_size=0
-		[ -f $apk_dir/hawkbook.apk ] && old_size="$(wc -c < $apk_dir/hawkbook.apk | tr -d " ")"
-		need_kib=$(( (new_size - old_size + 1023) / 1024 + 2048 ))
-		avail_kib=$(df -k / | awk "NR==2 {print \$4}")
-		if [ "$avail_kib" -lt "$need_kib" ]; then
-			logger -t deploy "ENOSPC guard (apk): avail=${avail_kib}KiB need=${need_kib}KiB — copy aborted"
-			echo "!! overlay too tight for the APK (avail=${avail_kib}KiB need=${need_kib}KiB) — kept staged at /tmp/hawkbook.apk.new" >&2
-			exit 1
+		[ "$new_size" -gt 0 ] || { echo "!! staged APK is empty" >&2; exit 1; }
+		mv /tmp/hawkbook.apk.new /tmp/hawkbook.apk
+		# Retire the pre-2026-10-11 flash copy.
+		if [ -f /usr/local/share/rustical/downloads/hawkbook.apk ]; then
+			rm -f /usr/local/share/rustical/downloads/hawkbook.apk
+			rmdir /usr/local/share/rustical/downloads 2>/dev/null || true
+			echo "   retired the flash copy — overlay space freed"
 		fi
-		mkdir -p $apk_dir
-		cp /tmp/hawkbook.apk.new $apk_dir/hawkbook.apk
-		chmod 644 $apk_dir/hawkbook.apk
-		rm -f /tmp/hawkbook.apk.new
-		[ "$(wc -c < $apk_dir/hawkbook.apk | tr -d " ")" = "$new_size" ] || {
-			echo "!! APK copy incomplete (size mismatch)" >&2
-			exit 1
-		}
-		sha256sum $apk_dir/hawkbook.apk
+		sha256sum /tmp/hawkbook.apk
 	'
 else
-	echo "   no $OUT/hawkbook.apk — the config keeps pointing at the previous deploy's package (or none)"
+	echo "   no $OUT/hawkbook.apk — a start will fall back to the build host's :8123"
 fi
 
 say "==> Router-side preparation (idempotent)"
