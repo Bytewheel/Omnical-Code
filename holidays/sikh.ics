@@ -1,0 +1,210 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-sikh-guru-gobind-singh-20260105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260105
+DTEND;VALUE=DATE:20260106
+SUMMARY:Guru Gobind Singh Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. Kep
+ t on Jan 5 by the Nanakshahi calendar\; the panchang-based observance vari
+ es by year.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-vaisakhi-20260414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+SUMMARY:Vaisakhi (Khalsa Founding Day)
+DESCRIPTION:The sun's sidereal entry into Aries — the Khalsa was founded b
+ y Guru Gobind Singh in 1699 (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-bandi-chhor-divas-20261109@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Bandi Chhor Divas
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\, the day of Diwali: the release of Guru Hargobind fr
+ om Gwalior Fort.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-nanak-jayanti-20261124@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Guru Nanak Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Kartika Purnima\; the birthday of Guru Nanak.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-gobind-singh-20270105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:Guru Gobind Singh Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. Kep
+ t on Jan 5 by the Nanakshahi calendar\; the panchang-based observance vari
+ es by year.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-vaisakhi-20270414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Vaisakhi (Khalsa Founding Day)
+DESCRIPTION:The sun's sidereal entry into Aries — the Khalsa was founded b
+ y Guru Gobind Singh in 1699 (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-bandi-chhor-divas-20271029@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:Bandi Chhor Divas
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\, the day of Diwali: the release of Guru Hargobind fr
+ om Gwalior Fort.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-nanak-jayanti-20271114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271114
+DTEND;VALUE=DATE:20271115
+SUMMARY:Guru Nanak Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Kartika Purnima\; the birthday of Guru Nanak.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-gobind-singh-20280105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280105
+DTEND;VALUE=DATE:20280106
+SUMMARY:Guru Gobind Singh Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. Kep
+ t on Jan 5 by the Nanakshahi calendar\; the panchang-based observance vari
+ es by year.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-vaisakhi-20280413@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280413
+DTEND;VALUE=DATE:20280414
+SUMMARY:Vaisakhi (Khalsa Founding Day)
+DESCRIPTION:The sun's sidereal entry into Aries — the Khalsa was founded b
+ y Guru Gobind Singh in 1699 (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-bandi-chhor-divas-20281018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281018
+DTEND;VALUE=DATE:20281019
+SUMMARY:Bandi Chhor Divas
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\, the day of Diwali: the release of Guru Hargobind fr
+ om Gwalior Fort.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-nanak-jayanti-20281102@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281102
+DTEND;VALUE=DATE:20281103
+SUMMARY:Guru Nanak Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Kartika Purnima\; the birthday of Guru Nanak.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-gobind-singh-20290105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290105
+DTEND;VALUE=DATE:20290106
+SUMMARY:Guru Gobind Singh Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. Kep
+ t on Jan 5 by the Nanakshahi calendar\; the panchang-based observance vari
+ es by year.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-vaisakhi-20290414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290414
+DTEND;VALUE=DATE:20290415
+SUMMARY:Vaisakhi (Khalsa Founding Day)
+DESCRIPTION:The sun's sidereal entry into Aries — the Khalsa was founded b
+ y Guru Gobind Singh in 1699 (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-bandi-chhor-divas-20291106@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291106
+DTEND;VALUE=DATE:20291107
+SUMMARY:Bandi Chhor Divas
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\, the day of Diwali: the release of Guru Hargobind fr
+ om Gwalior Fort.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-nanak-jayanti-20291121@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291121
+DTEND;VALUE=DATE:20291122
+SUMMARY:Guru Nanak Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Kartika Purnima\; the birthday of Guru Nanak.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-gobind-singh-20300105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300105
+DTEND;VALUE=DATE:20300106
+SUMMARY:Guru Gobind Singh Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. Kep
+ t on Jan 5 by the Nanakshahi calendar\; the panchang-based observance vari
+ es by year.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-vaisakhi-20300414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300414
+DTEND;VALUE=DATE:20300415
+SUMMARY:Vaisakhi (Khalsa Founding Day)
+DESCRIPTION:The sun's sidereal entry into Aries — the Khalsa was founded b
+ y Guru Gobind Singh in 1699 (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-bandi-chhor-divas-20301026@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301026
+DTEND;VALUE=DATE:20301027
+SUMMARY:Bandi Chhor Divas
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\, the day of Diwali: the release of Guru Hargobind fr
+ om Gwalior Fort.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-sikh-guru-nanak-jayanti-20301110@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301110
+DTEND;VALUE=DATE:20301111
+SUMMARY:Guru Nanak Jayanti
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Kartika Purnima\; the birthday of Guru Nanak.
+END:VEVENT
+END:VCALENDAR

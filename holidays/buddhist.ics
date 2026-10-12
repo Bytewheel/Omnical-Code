@@ -1,0 +1,155 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-buddhist-magha-puja-20260201@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260201
+DTEND;VALUE=DATE:20260202
+SUMMARY:Magha Puja (Sangha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Magha\; a major Theravada observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-vesak-20260501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:Vesak (Buddha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Vaisakha: birth\, enlightenment and passing of the Buddha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-asalha-puja-20260629@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260630
+SUMMARY:Asalha Puja (Dhamma Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Asalha\; the first sermon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-magha-puja-20270221@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Magha Puja (Sangha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Magha\; a major Theravada observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-vesak-20270520@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:Vesak (Buddha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Vaisakha: birth\, enlightenment and passing of the Buddha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-asalha-puja-20270718@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270718
+DTEND;VALUE=DATE:20270719
+SUMMARY:Asalha Puja (Dhamma Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Asalha\; the first sermon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-magha-puja-20280210@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280210
+DTEND;VALUE=DATE:20280211
+SUMMARY:Magha Puja (Sangha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Magha\; a major Theravada observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-vesak-20280508@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280508
+DTEND;VALUE=DATE:20280509
+SUMMARY:Vesak (Buddha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Vaisakha: birth\, enlightenment and passing of the Buddha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-asalha-puja-20280706@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280706
+DTEND;VALUE=DATE:20280707
+SUMMARY:Asalha Puja (Dhamma Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Asalha\; the first sermon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-magha-puja-20290130@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290130
+DTEND;VALUE=DATE:20290131
+SUMMARY:Magha Puja (Sangha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Magha\; a major Theravada observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-vesak-20290428@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290428
+DTEND;VALUE=DATE:20290429
+SUMMARY:Vesak (Buddha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Vaisakha: birth\, enlightenment and passing of the Buddha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-asalha-puja-20290626@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290626
+DTEND;VALUE=DATE:20290627
+SUMMARY:Asalha Puja (Dhamma Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Asalha\; the first sermon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-magha-puja-20300218@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300218
+DTEND;VALUE=DATE:20300219
+SUMMARY:Magha Puja (Sangha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Magha\; a major Theravada observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-vesak-20300517@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300517
+DTEND;VALUE=DATE:20300518
+SUMMARY:Vesak (Buddha Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Vaisakha: birth\, enlightenment and passing of the Buddha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-buddhist-asalha-puja-20300715@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300715
+DTEND;VALUE=DATE:20300716
+SUMMARY:Asalha Puja (Dhamma Day)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  full moon of Asalha\; the first sermon.
+END:VEVENT
+END:VCALENDAR

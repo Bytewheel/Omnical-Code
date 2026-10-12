@@ -18,9 +18,9 @@ Design constraints that shaped this generator:
     the Hebrew calendar is exactly computable (an arithmetic calendar, not
     observational); Islamic dates are TABULAR (±1 day vs local moon
     sightings — that calendar is observational by definition); Chinese and
-    Hindu lunar dates are computed from approximate new moons/tithis (±1
-    day; official PR-C holiday arrangements are announced years in advance
-    anyway); Orthodox fixed feasts are given on the Old (Julian) reckoning,
+    Hindu/Buddhist/Sikh lunar dates are computed from approximate
+    new moons/tithis (±1 day; official PR-C holiday arrangements are
+    announced years in advance anyway); Orthodox fixed feasts are given on the Old (Julian) reckoning,
     converted, with the New-Calendar alternative named in the description.
   - Every event is an all-day VALUE=DATE on the Gregorian civil calendar;
     where an observance begins at sundown the description says so — the
@@ -573,20 +573,22 @@ def day_with_tithi(tithi, lo, hi):
 CST = 8 / 24.0
 
 
-def _sun_crossing(jd_start, target_deg, max_days=5.0):
-    """The civil CST date on which the sun's apparent longitude first
-    reaches `target_deg` after `jd_start` (stepped in 6-hour ticks)."""
+def _sun_crossing(jd_start, target_deg, max_days=5.0, tz=CST):
+    """The civil date (in the given timezone, as a day fraction: CST for
+    the Chinese solar terms, IST for the Indian sankrantis) on which the
+    sun's apparent longitude first reaches `target_deg` after `jd_start`
+    (stepped in 6-hour ticks).  The 2.5-hour difference between those two
+    can move the civil day when the crossing lands near midnight."""
     prev = _sun_longitude(jd_start) % 360
     jd = jd_start
     while jd < jd_start + max_days:
         jd += 0.25
         cur = _sun_longitude(jd) % 360
-        crossed = (target_deg - prev) % 360 < (cur - prev + 360) % 360 if False else None
         # a crossing happened iff cur wrapped past target between prev..cur
         span = (cur - prev) % 360
         before = (target_deg - prev) % 360
         if before <= span:
-            return _jd_to_date(jd + CST)
+            return _jd_to_date(jd + tz)
         prev = cur
     return None
 
@@ -942,80 +944,230 @@ def set_islam():
 
 
 # ==========================================================================
-# Hindu, Buddhist and Sikh major festivals — panchang-lite: the civil day
-# whose sunrise (06:00 IST) carries the required tithi, inside a tight
-# window per festival.  Approximate by construction (regional panchangs and
-# local sunrise shift dates by a day) — every description says so.
+# Hindu, Buddhist and Sikh festival sets — three separate religions, three
+# separate sets, one shared panchang-lite machinery: the civil day whose
+# sunrise (06:00 IST) carries the required tithi.  Approximate by
+# construction (regional panchangs and local sunrise shift dates by a day) —
+# every lunar description says so.
+#
+# The wrinkle the windows have to survive: 2026 and 2029 both carry an
+# Adhika Ashwina (the leap month falls in the Navaratri season), pushing
+# every Bhadrapada/Ashvina festival ~19 days past its usual Gregorian slot —
+# and the pre-leap years park the PRIOR month's purnima inside any naive
+# window.  So the purnima festivals that would collide (Holi vs Magha,
+# Vesak vs Chaitra) are anchored RELATIVE to Holi's moon (Phalguna:
+# Magha = one lunar month before it, Vaisakha = two after), and the
+# Navaratri tithis (Durga Ashtami, Vijayadashami) hang off the Ashvina
+# purnima itself.  Vaisakhi is genuinely shared (the Hindu Vaisakha
+# Sankranti and the Khalsa's founding are the same solar day), so it rides
+# both the Hindu and the Sikh set with its own wording; Bandi Chhor Divas
+# shares Diwali's Amavasya.  Sankrantis are sidereal: the crossing is
+# tested against the sun's longitude minus the Lahiri ayanamsa — a purely
+# tropical reading puts Makar Sankranti on Jan 10 and Vaisakhi on Apr 20
+# (or nowhere) while both claim "accurate".
 # ==========================================================================
 
 INDIA_NOTE = ("Computed from the tithi running at sunrise (panchang convention, "
               "06:00 IST approximation); regional calendars may shift it ±1 day.")
 
+# Lahiri ayanamsa, 2026-2030 (24.16°-24.20°, drifting ~0.007°/yr): one
+# constant is ±0.05° across the range — well inside the day-roll.
+AYANAMSA = 24.2
 
-def set_india():
-    events = []
+IST = 5.5 / 24.0  # sankranti dates roll to the Indian civil day
+
+
+def _panchang_adder(events):
+    """The three sets' shared `add`: out-of-range and unresolvable (None)
+    dates drop, and the panchang caveat rides on every event — the solar
+    sankranti festivals append their own Events instead (they are accurate
+    and say so)."""
     lo, hi = datetime.date(YEARS[0], 1, 1), datetime.date(YEARS[-1], 12, 31)
-    for y in YEARS:
-        def add(date, name, slug, note=""):
-            if date and lo <= date <= hi:
-                events.append(Event(date, name, slug, INDIA_NOTE + " " + note if note else INDIA_NOTE))
 
-        # Full-moon (Purnima, tithi 15 at sunrise) and new-moon (Amavasya,
-        # tithi 29) festivals, in their seasonal windows:
-        add(day_with_tithi(29, datetime.date(y, 10, 18), datetime.date(y, 11, 14)),
-            "Diwali (Lakshmi Puja)", "diwali",
-            "The Amavasya of Kartika. Bandi Chhor Divas (Sikh) coincides; "
-            "celebrations extend five days.")
-        add(day_with_tithi(15, datetime.date(y, 2, 20), datetime.date(y, 3, 20)),
-            "Holi", "holi",
+    def add(date, name, slug, note=""):
+        if date and lo <= date <= hi:
+            events.append(Event(date, name, slug, INDIA_NOTE + " " + note if note else INDIA_NOTE))
+
+    return add
+
+
+def day_with_purnima(after, lo, hi):
+    """A Purnima festival day: the first sunrise carrying the festival's
+    tithi — 14 = purnima at sunrise (Magha Puja, Vesak, Asalha Puja, Raksha
+    Bandhan, Guru Nanak Jayanti), 15 = the sunrise just past the full moon
+    (Holi, observed the day the overnight purnima ends) — falling back to
+    the other when the tithi skips sunrises entirely (a ksaya tithi: Holi
+    2028's pratipada ran sunrise-to-sunrise, so no day "carried" it and the
+    festival rides the adjacent purnima day)."""
+    other = 14 if after == 15 else 15
+    return day_with_tithi(after, lo, hi) or day_with_tithi(other, lo, hi)
+
+
+TD = datetime.timedelta
+
+
+def holi(y):
+    """Phalguna Purnima.  The window starts in March so the Magha purnima
+    (late Jan-late Feb) can never be first (2027's Feb 21 moon was the
+    old set's Holi — a month early)."""
+    return day_with_purnima(15, datetime.date(y, 3, 1), datetime.date(y, 3, 25))
+
+
+def magha_puja(y):
+    """Magha Purnima — anchored one lunar month before Holi's moon, where
+    the Pausha purnima cannot wander in."""
+    h = holi(y)
+    return h and day_with_purnima(14, h - TD(days=34), h - TD(days=25))
+
+
+def vesak(y):
+    """Vaisakha Purnima — anchored two lunar months after Holi's moon, past
+    the Chaitra purnima that a flat window catches first (2027: Chaitra
+    Apr 20 vs Vaisakha May 20)."""
+    h = holi(y)
+    return h and day_with_purnima(14, h + TD(days=52), h + TD(days=66))
+
+
+def asalha_puja(y):
+    """Ashadha Purnima (Guru Purnima's moon; Dhamma Day to Buddhists)."""
+    return day_with_purnima(14, datetime.date(y, 6, 25), datetime.date(y, 7, 25))
+
+
+def raksha_bandhan(y):
+    """Shravana Purnima."""
+    return day_with_purnima(14, datetime.date(y, 7, 25), datetime.date(y, 8, 25))
+
+
+def guru_nanak(y):
+    """Kartika Purnima — Guru Nanak's birthday.  November's full moon:
+    Ashvina's purnima (Oct 26 in 2026) sits outside the window, which is
+    the whole point — a window starting in October grabs the wrong moon
+    exactly in the years this set exists for."""
+    return day_with_purnima(14, datetime.date(y, 11, 1), datetime.date(y, 11, 30))
+
+
+def shivaratri(y):
+    """Maha Shivaratri — Magha krishna chaturdashi at sunrise."""
+    return day_with_tithi(28, datetime.date(y, 2, 10), datetime.date(y, 3, 12))
+
+
+def janmashtami(y):
+    """Krishna Janmashtami — the ashtami after the Bhadrapada purnima.  In
+    adhika-adjacent years the pre-purnima (Shravana) ashtami sits ~4 weeks
+    earlier: the window starts past it (2027's Aug 25) but before the
+    earliest true date (2029's Sep 1)."""
+    return day_with_tithi(22, datetime.date(y, 8, 26), datetime.date(y, 9, 25))
+
+
+def ganesh_chaturthi(y):
+    """Bhadrapada shukla chaturthi.  The Shravana chaturthi (~1 lunar
+    month earlier) and the adhika twin (~1 month later) each land inside a
+    naive window in some year of the range; this one is cut to exclude
+    both (2027: Shravana Aug 5 vs true Sep 4; 2030: Shravana Aug 3 vs true
+    Sep 1)."""
+    return day_with_tithi(3, datetime.date(y, 8, 6), datetime.date(y, 9, 14))
+
+
+def ashvina_purnima(y):
+    """The purnima of (nija) Ashvina — the anchor the Navaratri tithis
+    hang from.  Adhika-Ashwina years (2026, 2029 in range) push every
+    Ashvina-shukla festival ~19 days past its usual window, so those tithis
+    are taken RELATIVE to this purnima instead of from a fixed Gregorian
+    window."""
+    return day_with_purnima(14, datetime.date(y, 10, 1), datetime.date(y, 11, 1))
+
+
+def durga_ashtami(y):
+    p = ashvina_purnima(y)
+    return p and day_with_tithi(7, p - TD(days=12), p - TD(days=4))
+
+
+def vijayadashami(y):
+    p = ashvina_purnima(y)
+    return p and day_with_tithi(9, p - TD(days=11), p - TD(days=3))
+
+
+def diwali(y):
+    """The Amavasya of Ashvina (Lakshmi Puja falls on its evening)."""
+    return day_with_tithi(29, datetime.date(y, 10, 18), datetime.date(y, 11, 14))
+
+
+def makar_sankranti(y):
+    """The sun's sidereal entry into Capricorn (270° + ayanamsa tropical)."""
+    return _sun_crossing(_date_to_jd(datetime.date(y, 1, 10)), 270.0 + AYANAMSA,
+                         max_days=10.0, tz=IST)
+
+
+def vaisakhi(y):
+    """The sun's sidereal entry into Aries (0° + ayanamsa tropical)."""
+    return _sun_crossing(_date_to_jd(datetime.date(y, 4, 10)), AYANAMSA,
+                         max_days=10.0, tz=IST)
+
+
+def set_hindu():
+    events = []
+    add = _panchang_adder(events)
+    for y in YEARS:
+        add(holi(y), "Holi", "holi",
             "The Purnima of Phalguna; Holika Dahan is the previous evening.")
-        add(day_with_tithi(14, datetime.date(y, 2, 1), datetime.date(y, 3, 1)),
-            "Magha Puja (Sangha Day)", "magha-puja",
-            "The February full moon; a major Theravada observance.")
-        add(day_with_tithi(14, datetime.date(y, 4, 20), datetime.date(y, 5, 20)),
-            "Vesak (Buddha Day)", "vesak",
-            "The full moon of Vaisakha: birth, enlightenment and passing of the Buddha.")
-        add(day_with_tithi(14, datetime.date(y, 6, 25), datetime.date(y, 7, 25)),
-            "Asalha Puja (Dhamma Day)", "asalha-puja",
-            "The full moon of Asalha; the first sermon.")
-        add(day_with_tithi(14, datetime.date(y, 10, 25), datetime.date(y, 11, 25)),
-            "Guru Nanak Jayanti", "guru-nanak-jayanti",
-            "The Kartika Purnima; the birthday of Guru Nanak.")
-        # Krishna-paksha / shukla-paksha tithi festivals:
-        add(day_with_tithi(28, datetime.date(y, 2, 10), datetime.date(y, 3, 12)),
-            "Maha Shivaratri", "shivaratri",
+        add(shivaratri(y), "Maha Shivaratri", "shivaratri",
             "The 14th night of the waning moon of Magha.")
-        add(day_with_tithi(14, datetime.date(y, 7, 25), datetime.date(y, 8, 25)),
-            "Raksha Bandhan", "raksha-bandhan",
+        add(raksha_bandhan(y), "Raksha Bandhan", "raksha-bandhan",
             "The Purnima of Shravana.")
-        add(day_with_tithi(22, datetime.date(y, 8, 10), datetime.date(y, 9, 10)),
-            "Krishna Janmashtami", "janmashtami",
-            "The 8th of the waning moon of Shravana.")
-        add(day_with_tithi(3, datetime.date(y, 8, 15), datetime.date(y, 9, 20)),
-            "Ganesh Chaturthi", "ganesh-chaturthi",
+        add(janmashtami(y), "Krishna Janmashtami", "janmashtami",
+            "The 8th of the waning moon after the Bhadrapada Purnima.")
+        add(ganesh_chaturthi(y), "Ganesh Chaturthi", "ganesh-chaturthi",
             "The 4th of the waxing moon of Bhadrapada.")
-        add(day_with_tithi(7, datetime.date(y, 9, 25), datetime.date(y, 10, 15)),
-            "Durga Ashtami", "durga-ashtami",
+        add(durga_ashtami(y), "Durga Ashtami", "durga-ashtami",
             "The 8th of the waxing moon of Ashvina, within Navaratri.")
-        add(day_with_tithi(9, datetime.date(y, 9, 25), datetime.date(y, 10, 15)),
-            "Vijayadashami (Dussehra)", "vijayadashami",
+        add(vijayadashami(y), "Vijayadashami (Dussehra)", "vijayadashami",
             "The 10th of the waxing moon of Ashvina.")
+        add(diwali(y), "Diwali (Lakshmi Puja)", "diwali",
+            "The Amavasya of Kartika; celebrations extend five days.")
+        sankranti = makar_sankranti(y)
+        if sankranti:
+            events.append(Event(sankranti, "Makar Sankranti / Pongal", "makar-sankranti",
+                                "The sun's sidereal entry into Capricorn (solar "
+                                "festival, accurate)."))
+        baisakhi = vaisakhi(y)
+        if baisakhi:
+            events.append(Event(baisakhi, "Vaisakhi (Vaisakha Sankranti)", "vaisakhi",
+                                "The sun's sidereal entry into Aries — the harvest "
+                                "new year of the Punjab (solar, accurate)."))
+    return events
+
+
+def set_buddhist():
+    events = []
+    add = _panchang_adder(events)
+    for y in YEARS:
+        add(magha_puja(y), "Magha Puja (Sangha Day)", "magha-puja",
+            "The full moon of Magha; a major Theravada observance.")
+        add(vesak(y), "Vesak (Buddha Day)", "vesak",
+            "The full moon of Vaisakha: birth, enlightenment and passing of the Buddha.")
+        add(asalha_puja(y), "Asalha Puja (Dhamma Day)", "asalha-puja",
+            "The full moon of Asalha; the first sermon.")
+    return events
+
+
+def set_sikh():
+    events = []
+    add = _panchang_adder(events)
+    for y in YEARS:
+        add(diwali(y), "Bandi Chhor Divas", "bandi-chhor-divas",
+            "The Amavasya of Kartika, the day of Diwali: the release of "
+            "Guru Hargobind from Gwalior Fort.")
+        add(guru_nanak(y), "Guru Nanak Jayanti", "guru-nanak-jayanti",
+            "The Kartika Purnima; the birthday of Guru Nanak.")
         add(datetime.date(y, 1, 5), "Guru Gobind Singh Jayanti", "guru-gobind-singh",
             "Kept on Jan 5 by the Nanakshahi calendar; the panchang-based "
             "observance varies by year.")
-        # Solar festivals (sankranti) — sun-longitude crossings:
-        jd_jan = _date_to_jd(datetime.date(y, 1, 10))
-        sankranti = _sun_crossing(jd_jan, 290.0, max_days=10.0)  # ~Jan 14
-        if sankranti:
-            events.append(Event(sankranti, "Makar Sankranti / Pongal", "makar-sankranti",
-                                "The sun's entry into Capricorn (solar festival, "
-                                "accurate)."))
-        jd_apr = _date_to_jd(datetime.date(y, 4, 10))
-        vaisakhi = _sun_crossing(jd_apr, 30.0, max_days=10.0)   # ~Apr 13-14
-        if vaisakhi:
-            events.append(Event(vaisakhi, "Vaisakhi (Baisakhi)", "vaisakhi",
-                                "The sun's entry into Aries — the Punjabi harvest "
-                                "festival and the Khalsa's founding day (solar, accurate)."))
+        baisakhi = vaisakhi(y)
+        if baisakhi:
+            events.append(Event(baisakhi, "Vaisakhi (Khalsa Founding Day)", "vaisakhi",
+                                "The sun's sidereal entry into Aries — the Khalsa "
+                                "was founded by Guru Gobind Singh in 1699 "
+                                "(solar, accurate)."))
     return events
 
 
@@ -1554,13 +1706,31 @@ label = "Jewish holidays (full cycle)"
 file = "judaism.ics"
 
 [[groups]]
-id = "hinduism-buddhism-sikhism"
-label = "Hinduism · Buddhism · Sikhism"
+id = "hinduism"
+label = "Hinduism"
 
 [[groups.sets]]
-id = "hindu-buddhist-sikh"
-label = "Hindu, Buddhist and Sikh festivals"
-file = "hindu-buddhist-sikh.ics"
+id = "hindu"
+label = "Hindu festivals"
+file = "hindu.ics"
+
+[[groups]]
+id = "buddhism"
+label = "Buddhism"
+
+[[groups.sets]]
+id = "buddhist"
+label = "Buddhist observances"
+file = "buddhist.ics"
+
+[[groups]]
+id = "sikhism"
+label = "Sikhism"
+
+[[groups.sets]]
+id = "sikh"
+label = "Sikh festivals"
+file = "sikh.ics"
 """
 
 
@@ -1586,6 +1756,18 @@ def self_test():
         ("Eid al-Adha 1446", islamic_to_civil(1446, 12, 10), datetime.date(2026, 5, 27)),
         ("1 Muharram 1447", islamic_to_civil(1447, 1, 1), datetime.date(2026, 6, 16)),
         ("Ashura 1447", islamic_to_civil(1447, 1, 10), datetime.date(2026, 6, 25)),
+        # Panchang anchors — published festival dates this machinery must
+        # keep reproducing (the adhika/ksaya fixes hang off these).
+        ("Makar Sankranti 2026", makar_sankranti(2026), datetime.date(2026, 1, 14)),
+        ("Vaisakhi 2026", vaisakhi(2026), datetime.date(2026, 4, 14)),
+        ("Holi 2026", holi(2026), datetime.date(2026, 3, 4)),
+        ("Magha Purnima 2026", magha_puja(2026), datetime.date(2026, 2, 1)),
+        ("Vesak 2026", vesak(2026), datetime.date(2026, 5, 1)),
+        ("Janmashtami 2026", janmashtami(2026), datetime.date(2026, 9, 4)),
+        ("Ganesh Chaturthi 2026", ganesh_chaturthi(2026), datetime.date(2026, 8, 16)),
+        ("Dussehra 2026", vijayadashami(2026), datetime.date(2026, 10, 21)),
+        ("Diwali 2026 (amavasya at sunrise)", diwali(2026), datetime.date(2026, 11, 9)),
+        ("Guru Nanak Jayanti 2026", guru_nanak(2026), datetime.date(2026, 11, 24)),
     ]
     for name, got, want in checks:
         if got != want:
@@ -1607,7 +1789,7 @@ def main():
         ("rc-current", set_rc_current), ("rc-1962", set_rc_1962),
         ("orthodox", set_orthodox), ("anglican", set_anglican),
         ("islam", set_islam), ("judaism", set_judaism),
-        ("hindu-buddhist-sikh", set_india),
+        ("hindu", set_hindu), ("buddhist", set_buddhist), ("sikh", set_sikh),
     ]
     print(f"writing holiday sets for {YEARS[0]}-{YEARS[-1]} into {os.path.abspath(OUT_DIR)}:")
     total = 0
@@ -1616,7 +1798,7 @@ def main():
         total += n
     with open(os.path.join(OUT_DIR, "holidays.toml"), "w", encoding="utf-8") as fh:
         fh.write(MANIFEST)
-    print(f"  holidays.toml: {len(sets)} sets in 5 groups")
+    print(f"  holidays.toml: {len(sets)} sets in 7 groups")
     print(f"  total events: {total}")
 
 

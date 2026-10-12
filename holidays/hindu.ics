@@ -1,0 +1,495 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-hindu-makar-sankranti-20260114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260114
+DTEND;VALUE=DATE:20260115
+SUMMARY:Makar Sankranti / Pongal
+DESCRIPTION:The sun's sidereal entry into Capricorn (solar festival\, accur
+ ate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-shivaratri-20260216@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260217
+SUMMARY:Maha Shivaratri
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  14th night of the waning moon of Magha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-holi-20260304@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260304
+DTEND;VALUE=DATE:20260305
+SUMMARY:Holi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Phalguna\; Holika Dahan is the previous evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vaisakhi-20260414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+SUMMARY:Vaisakhi (Vaisakha Sankranti)
+DESCRIPTION:The sun's sidereal entry into Aries — the harvest new year of 
+ the Punjab (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-raksha-bandhan-20260729@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+SUMMARY:Raksha Bandhan
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Shravana.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-ganesh-chaturthi-20260816@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260817
+SUMMARY:Ganesh Chaturthi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  4th of the waxing moon of Bhadrapada.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-janmashtami-20260904@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:Krishna Janmashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waning moon after the Bhadrapada Purnima.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-durga-ashtami-20261019@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Durga Ashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waxing moon of Ashvina\, within Navaratri.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vijayadashami-20261021@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Vijayadashami (Dussehra)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  10th of the waxing moon of Ashvina.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-diwali-20261109@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Diwali (Lakshmi Puja)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\; celebrations extend five days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-makar-sankranti-20270114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Makar Sankranti / Pongal
+DESCRIPTION:The sun's sidereal entry into Capricorn (solar festival\, accur
+ ate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-shivaratri-20270307@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Maha Shivaratri
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  14th night of the waning moon of Magha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-holi-20270323@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:Holi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Phalguna\; Holika Dahan is the previous evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vaisakhi-20270414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Vaisakhi (Vaisakha Sankranti)
+DESCRIPTION:The sun's sidereal entry into Aries — the harvest new year of 
+ the Punjab (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-raksha-bandhan-20270817@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270817
+DTEND;VALUE=DATE:20270818
+SUMMARY:Raksha Bandhan
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Shravana.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-ganesh-chaturthi-20270904@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+SUMMARY:Ganesh Chaturthi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  4th of the waxing moon of Bhadrapada.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-janmashtami-20270923@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270923
+DTEND;VALUE=DATE:20270924
+SUMMARY:Krishna Janmashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waning moon after the Bhadrapada Purnima.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-durga-ashtami-20271007@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271007
+DTEND;VALUE=DATE:20271008
+SUMMARY:Durga Ashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waxing moon of Ashvina\, within Navaratri.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vijayadashami-20271010@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271011
+SUMMARY:Vijayadashami (Dussehra)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  10th of the waxing moon of Ashvina.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-diwali-20271029@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:Diwali (Lakshmi Puja)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\; celebrations extend five days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-makar-sankranti-20280115@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280115
+DTEND;VALUE=DATE:20280116
+SUMMARY:Makar Sankranti / Pongal
+DESCRIPTION:The sun's sidereal entry into Capricorn (solar festival\, accur
+ ate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-shivaratri-20280224@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280224
+DTEND;VALUE=DATE:20280225
+SUMMARY:Maha Shivaratri
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  14th night of the waning moon of Magha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-holi-20280311@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280311
+DTEND;VALUE=DATE:20280312
+SUMMARY:Holi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Phalguna\; Holika Dahan is the previous evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vaisakhi-20280413@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280413
+DTEND;VALUE=DATE:20280414
+SUMMARY:Vaisakhi (Vaisakha Sankranti)
+DESCRIPTION:The sun's sidereal entry into Aries — the harvest new year of 
+ the Punjab (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-raksha-bandhan-20280805@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280805
+DTEND;VALUE=DATE:20280806
+SUMMARY:Raksha Bandhan
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Shravana.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-ganesh-chaturthi-20280823@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280823
+DTEND;VALUE=DATE:20280824
+SUMMARY:Ganesh Chaturthi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  4th of the waxing moon of Bhadrapada.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-janmashtami-20280912@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280912
+DTEND;VALUE=DATE:20280913
+SUMMARY:Krishna Janmashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waning moon after the Bhadrapada Purnima.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-durga-ashtami-20280926@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280926
+DTEND;VALUE=DATE:20280927
+SUMMARY:Durga Ashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waxing moon of Ashvina\, within Navaratri.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vijayadashami-20280928@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280928
+DTEND;VALUE=DATE:20280929
+SUMMARY:Vijayadashami (Dussehra)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  10th of the waxing moon of Ashvina.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-diwali-20281018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281018
+DTEND;VALUE=DATE:20281019
+SUMMARY:Diwali (Lakshmi Puja)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\; celebrations extend five days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-makar-sankranti-20290114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290114
+DTEND;VALUE=DATE:20290115
+SUMMARY:Makar Sankranti / Pongal
+DESCRIPTION:The sun's sidereal entry into Capricorn (solar festival\, accur
+ ate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-shivaratri-20290212@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290212
+DTEND;VALUE=DATE:20290213
+SUMMARY:Maha Shivaratri
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  14th night of the waning moon of Magha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-holi-20290301@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290301
+DTEND;VALUE=DATE:20290302
+SUMMARY:Holi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Phalguna\; Holika Dahan is the previous evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vaisakhi-20290414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290414
+DTEND;VALUE=DATE:20290415
+SUMMARY:Vaisakhi (Vaisakha Sankranti)
+DESCRIPTION:The sun's sidereal entry into Aries — the harvest new year of 
+ the Punjab (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-raksha-bandhan-20290725@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290725
+DTEND;VALUE=DATE:20290726
+SUMMARY:Raksha Bandhan
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Shravana.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-ganesh-chaturthi-20290813@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290813
+DTEND;VALUE=DATE:20290814
+SUMMARY:Ganesh Chaturthi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  4th of the waxing moon of Bhadrapada.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-janmashtami-20290901@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290901
+DTEND;VALUE=DATE:20290902
+SUMMARY:Krishna Janmashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waning moon after the Bhadrapada Purnima.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-durga-ashtami-20291014@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291014
+DTEND;VALUE=DATE:20291015
+SUMMARY:Durga Ashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waxing moon of Ashvina\, within Navaratri.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vijayadashami-20291016@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291016
+DTEND;VALUE=DATE:20291017
+SUMMARY:Vijayadashami (Dussehra)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  10th of the waxing moon of Ashvina.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-diwali-20291106@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291106
+DTEND;VALUE=DATE:20291107
+SUMMARY:Diwali (Lakshmi Puja)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\; celebrations extend five days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-makar-sankranti-20300114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300114
+DTEND;VALUE=DATE:20300115
+SUMMARY:Makar Sankranti / Pongal
+DESCRIPTION:The sun's sidereal entry into Capricorn (solar festival\, accur
+ ate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-shivaratri-20300303@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300303
+DTEND;VALUE=DATE:20300304
+SUMMARY:Maha Shivaratri
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  14th night of the waning moon of Magha.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-holi-20300320@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300320
+DTEND;VALUE=DATE:20300321
+SUMMARY:Holi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Phalguna\; Holika Dahan is the previous evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vaisakhi-20300414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300414
+DTEND;VALUE=DATE:20300415
+SUMMARY:Vaisakhi (Vaisakha Sankranti)
+DESCRIPTION:The sun's sidereal entry into Aries — the harvest new year of 
+ the Punjab (solar\, accurate).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-raksha-bandhan-20300813@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300813
+DTEND;VALUE=DATE:20300814
+SUMMARY:Raksha Bandhan
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Purnima of Shravana.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-ganesh-chaturthi-20300901@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300901
+DTEND;VALUE=DATE:20300902
+SUMMARY:Ganesh Chaturthi
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  4th of the waxing moon of Bhadrapada.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-janmashtami-20300920@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300920
+DTEND;VALUE=DATE:20300921
+SUMMARY:Krishna Janmashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waning moon after the Bhadrapada Purnima.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-durga-ashtami-20301004@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301004
+DTEND;VALUE=DATE:20301005
+SUMMARY:Durga Ashtami
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  8th of the waxing moon of Ashvina\, within Navaratri.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-vijayadashami-20301006@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301006
+DTEND;VALUE=DATE:20301007
+SUMMARY:Vijayadashami (Dussehra)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  10th of the waxing moon of Ashvina.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-hindu-diwali-20301026@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301026
+DTEND;VALUE=DATE:20301027
+SUMMARY:Diwali (Lakshmi Puja)
+DESCRIPTION:Computed from the tithi running at sunrise (panchang convention
+ \, 06:00 IST approximation)\; regional calendars may shift it ±1 day. The
+  Amavasya of Kartika\; celebrations extend five days.
+END:VEVENT
+END:VCALENDAR

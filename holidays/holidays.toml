@@ -68,10 +68,28 @@ label = "Jewish holidays (full cycle)"
 file = "judaism.ics"
 
 [[groups]]
-id = "hinduism-buddhism-sikhism"
-label = "Hinduism · Buddhism · Sikhism"
+id = "hinduism"
+label = "Hinduism"
 
 [[groups.sets]]
-id = "hindu-buddhist-sikh"
-label = "Hindu, Buddhist and Sikh festivals"
-file = "hindu-buddhist-sikh.ics"
+id = "hindu"
+label = "Hindu festivals"
+file = "hindu.ics"
+
+[[groups]]
+id = "buddhism"
+label = "Buddhism"
+
+[[groups.sets]]
+id = "buddhist"
+label = "Buddhist observances"
+file = "buddhist.ics"
+
+[[groups]]
+id = "sikhism"
+label = "Sikhism"
+
+[[groups.sets]]
+id = "sikh"
+label = "Sikh festivals"
+file = "sikh.ics"
