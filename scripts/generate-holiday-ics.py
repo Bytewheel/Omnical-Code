@@ -1302,9 +1302,17 @@ def set_rc_current():
 
 
 def _first_sunday_after(d):
+    """The first Sunday STRICTLY AFTER d — never d itself.  When Jan 6 falls
+    on a Sunday (2030 in range) Holy Family, the Baptism and the Anglican
+    Baptism-of-Christ all move to Jan 13, not back onto the Epiphany."""
+    d += datetime.timedelta(days=1)
     while d.weekday() != 6:
         d += datetime.timedelta(days=1)
     return d
+
+
+def _ordinal(n):
+    return f"{n}{'th' if 10 <= n % 100 < 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
 
 
 # ==========================================================================
@@ -1313,6 +1321,93 @@ def _first_sunday_after(d):
 # principal feasts of the temporal and sanctorale.  Ranks (I/II/III class)
 # and liturgical colours in the descriptions.
 # ==========================================================================
+
+# Fixed days that DISPLACE a II class Sunday of the Pentecost season (and so
+# consume its number): I class feasts (Code of Rubrics 1960, table n. 91 —
+# rows 3/4/11 outrank the 2nd class Sundays of row 15) and II class feasts
+# of the Lord (row 14, per General Rubric n. 16a).  Verified against the
+# LMS/FIUV Ordines and the Divinum Officium 1962 Ordo for 2026-2030.
+_RC1962_IMPEDING = [
+    # (month, day, rank, feast of the Lord?)
+    (8, 15, 1, False),   # Assumption
+    (6, 24, 1, False),   # Nativity of St John the Baptist
+    (7, 1, 1, False),    # Most Precious Blood
+    (9, 29, 1, False),   # St Michael (Dedication)
+    (11, 1, 1, False),   # All Saints
+    (8, 6, 2, True),     # Transfiguration
+    (9, 14, 2, True),    # Exaltation of the Holy Cross
+    (11, 9, 2, True),    # Dedication of the Lateran
+]
+
+
+def _rc1962_impeded_sunday(date, year):
+    """True when a Sunday slot of the Pentecost season is taken by a fixed
+    feast of higher rank (Christ the King included — the last Sunday of
+    October, General Rubric n. 17d)."""
+    if date.month == 10:
+        last_oct = datetime.date(year, 10, 31)
+        while last_oct.weekday() != 6:
+            last_oct -= datetime.timedelta(days=1)
+        if date == last_oct:  # Christ the King, I class, on its own Sunday
+            return True
+    for m, d, rank, lord in _RC1962_IMPEDING:
+        if date == datetime.date(year, m, d) and (rank == 1 or lord):
+            return True
+    return False
+
+
+def sundays_1962(year):
+    """The numbered Sundays of the 1962 calendar for `year`, verified against
+    the Divinum Officium 1962 Ordo for every year in range:
+
+      {date: (kind, n)} with kind in
+        "epiphany"  — kept after Epiphany in January (n = 2..6),
+        "pentecost" — after Trinity, numbered forward (n = 2..23; Trinity
+                      itself is the 1st, emitted as its own feast),
+        "resumed"   — the impeded Epiphany Sundays resumed between the 23rd
+                      and the 24th after Pentecost, numbered from the end
+                      (the slot nearest the 24th takes the highest number;
+                      leftovers are dropped — General Rubric n. 18),
+        "last"       — the 24th & Last Sunday after Pentecost, always the
+                      last before Advent.
+
+    Slots taken by a higher-ranked day still consume their number (the
+    superseded Sunday's Mass is what that week's ferias use); numbering
+    stops at the 23rd.  (DO 2026-2030 all reproduce exactly.)
+    """
+    easter = easter_gregorian(year)
+    septuagesima = easter - datetime.timedelta(days=63)
+    trinity = easter + datetime.timedelta(days=56)  # Pentecost + 7; the 1st
+    last = _advent_first(year) - datetime.timedelta(days=7)  # the 24th
+    holy_family = _first_sunday_after(datetime.date(year, 1, 6))
+    out = {trinity: ("trinity", 1)}
+    # January segment: Holy Family is the 1st Sunday after Epiphany (as a
+    # feast); the following Sundays number upward until Septuagesima.
+    d = holy_family + datetime.timedelta(days=7)
+    n = 2
+    while d < septuagesima:
+        out[d] = ("epiphany", n)
+        d += datetime.timedelta(days=7)
+        n += 1
+    impeded = list(range(n, 7))  # the after-Epiphany numbers unused in January
+    # Pentecost season: forward numbering with consumption, 2..23.
+    free = []
+    d = trinity + datetime.timedelta(days=7)
+    num = 2
+    while d < last:
+        if num <= 23:
+            if not _rc1962_impeded_sunday(d, year):
+                out[d] = ("pentecost", num)
+        elif not _rc1962_impeded_sunday(d, year):
+            free.append(d)  # between the 23rd's slot and the 24th
+        num += 1
+        d += datetime.timedelta(days=7)
+    for i, dd in enumerate(reversed(free)):
+        if i < len(impeded):
+            out[dd] = ("resumed", impeded[-1 - i])
+    out[last] = ("last", 24)
+    return out
+
 
 def set_rc_1962():
     events = []
@@ -1440,6 +1535,23 @@ def set_rc_1962():
             if rank == "skip":
                 continue
             add(datetime.date(y, m, d), name, slugify(name), rank, color, note)
+        # --- The numbered Sundays the Ordo prints around the feasts above
+        for day, (kind, n) in sorted(sundays_1962(y).items()):
+            if kind == "trinity":
+                continue  # already emitted above as Trinity Sunday (the 1st)
+            if kind == "epiphany":
+                add(day, f"{_ordinal(n)} Sunday after Epiphany", f"epiphany-{n}",
+                    "II class", "green")
+            elif kind == "pentecost":
+                add(day, f"{_ordinal(n)} Sunday after Pentecost", f"pentecost-{n}",
+                    "II class", "green")
+            elif kind == "resumed":
+                add(day, f"{_ordinal(n)} Sunday after Epiphany (resumed)", f"epiphany-{n}",
+                    "II class", "green", "Impeded by Septuagesima in January; resumed "
+                    "between the 23rd and 24th Sundays after Pentecost (General Rubric 18).")
+            else:
+                add(day, "24th & Last Sunday after Pentecost", "pentecost-24",
+                    "II class", "green", "Always the last Sunday before Advent.")
     return events
 
 
@@ -1635,6 +1747,74 @@ def set_anglican():
 # Self-test + emission
 # ==========================================================================
 
+# The 1962 numbered Sundays for every year in range — the full outcome
+# tables as printed by the Divinum Officium 1962 Ordo (2026 additionally
+# verified against the LMS and FIUV Ordines).  Gaps in the Pentecost run
+# are slots consumed by a higher-ranked day (Christ the King, All Saints,
+# Assumption, St John Baptist, Precious Blood, St Michael, Transfiguration).
+_RC1962_ANCHORS = {
+    2026: [
+        (1, 18, "epiphany", 2), (1, 25, "epiphany", 3),
+        (6, 7, "pentecost", 2), (6, 14, "pentecost", 3), (6, 21, "pentecost", 4),
+        (6, 28, "pentecost", 5), (7, 5, "pentecost", 6), (7, 12, "pentecost", 7),
+        (7, 19, "pentecost", 8), (7, 26, "pentecost", 9), (8, 2, "pentecost", 10),
+        (8, 9, "pentecost", 11), (8, 16, "pentecost", 12), (8, 23, "pentecost", 13),
+        (8, 30, "pentecost", 14), (9, 6, "pentecost", 15), (9, 13, "pentecost", 16),
+        (9, 20, "pentecost", 17), (9, 27, "pentecost", 18), (10, 4, "pentecost", 19),
+        (10, 11, "pentecost", 20), (10, 18, "pentecost", 21),
+        (11, 8, "resumed", 5), (11, 15, "resumed", 6), (11, 22, "last", 24),
+    ],
+    2027: [
+        (1, 17, "epiphany", 2),
+        (5, 30, "pentecost", 2), (6, 6, "pentecost", 3), (6, 13, "pentecost", 4),
+        (6, 20, "pentecost", 5), (6, 27, "pentecost", 6), (7, 4, "pentecost", 7),
+        (7, 11, "pentecost", 8), (7, 18, "pentecost", 9), (7, 25, "pentecost", 10),
+        (8, 1, "pentecost", 11), (8, 8, "pentecost", 12),
+        (8, 22, "pentecost", 14), (8, 29, "pentecost", 15),
+        (9, 5, "pentecost", 16), (9, 12, "pentecost", 17), (9, 19, "pentecost", 18),
+        (9, 26, "pentecost", 19), (10, 3, "pentecost", 20), (10, 10, "pentecost", 21),
+        (10, 17, "pentecost", 22), (10, 24, "pentecost", 23),
+        (11, 7, "resumed", 5), (11, 14, "resumed", 6), (11, 21, "last", 24),
+    ],
+    2028: [
+        (1, 16, "epiphany", 2), (1, 23, "epiphany", 3), (1, 30, "epiphany", 4),
+        (2, 6, "epiphany", 5),
+        (6, 18, "pentecost", 2), (6, 25, "pentecost", 3), (7, 2, "pentecost", 4),
+        (7, 9, "pentecost", 5), (7, 16, "pentecost", 6), (7, 23, "pentecost", 7),
+        (7, 30, "pentecost", 8), (8, 13, "pentecost", 10), (8, 20, "pentecost", 11),
+        (8, 27, "pentecost", 12), (9, 3, "pentecost", 13), (9, 10, "pentecost", 14),
+        (9, 17, "pentecost", 15), (9, 24, "pentecost", 16), (10, 1, "pentecost", 17),
+        (10, 8, "pentecost", 18), (10, 15, "pentecost", 19), (10, 22, "pentecost", 20),
+        (11, 5, "pentecost", 22), (11, 12, "pentecost", 23),
+        (11, 19, "resumed", 6), (11, 26, "last", 24),
+    ],
+    2029: [
+        (1, 14, "epiphany", 2), (1, 21, "epiphany", 3),
+        (6, 3, "pentecost", 2), (6, 10, "pentecost", 3), (6, 17, "pentecost", 4),
+        (7, 8, "pentecost", 7), (7, 15, "pentecost", 8), (7, 22, "pentecost", 9),
+        (7, 29, "pentecost", 10), (8, 5, "pentecost", 11), (8, 12, "pentecost", 12),
+        (8, 19, "pentecost", 13), (8, 26, "pentecost", 14), (9, 2, "pentecost", 15),
+        (9, 9, "pentecost", 16), (9, 16, "pentecost", 17), (9, 23, "pentecost", 18),
+        (9, 30, "pentecost", 19), (10, 7, "pentecost", 20), (10, 14, "pentecost", 21),
+        (10, 21, "pentecost", 22),
+        (11, 4, "resumed", 4), (11, 11, "resumed", 5), (11, 18, "resumed", 6),
+        (11, 25, "last", 24),
+    ],
+    2030: [
+        (1, 20, "epiphany", 2), (1, 27, "epiphany", 3), (2, 3, "epiphany", 4),
+        (2, 10, "epiphany", 5),
+        (6, 23, "pentecost", 2), (6, 30, "pentecost", 3), (7, 7, "pentecost", 4),
+        (7, 14, "pentecost", 5), (7, 21, "pentecost", 6), (7, 28, "pentecost", 7),
+        (8, 4, "pentecost", 8), (8, 11, "pentecost", 9), (8, 18, "pentecost", 10),
+        (8, 25, "pentecost", 11), (9, 1, "pentecost", 12), (9, 8, "pentecost", 13),
+        (9, 15, "pentecost", 14), (9, 22, "pentecost", 15),
+        (10, 6, "pentecost", 17), (10, 13, "pentecost", 18), (10, 20, "pentecost", 19),
+        (11, 3, "pentecost", 21), (11, 10, "pentecost", 22), (11, 17, "pentecost", 23),
+        (11, 24, "last", 24),
+    ],
+}
+
+
 MANIFEST = """\
 # Generated by scripts/generate-holiday-ics.py — do not edit by hand.
 # Regenerate: python3 scripts/generate-holiday-ics.py
@@ -1772,6 +1952,22 @@ def self_test():
     for name, got, want in checks:
         if got != want:
             raise SystemExit(f"SELF-TEST FAILED: {name}: computed {got}, published {want}")
+    # rc-1962 numbered Sundays — the full Divinum-Officium-verified outcome
+    # tables for every year in range (see _RC1962_ANCHORS).
+    for year, rows in _RC1962_ANCHORS.items():
+        computed = sundays_1962(year)
+        want = {datetime.date(year, m, d): (kind, n) for m, d, kind, n in rows}
+        got = {d: k for d, k in computed.items() if k[0] != "trinity"}
+        if got != want:
+            bad = {str(k): (got.get(k), want.get(k))
+                   for k in set(got) | set(want) if got.get(k) != want.get(k)}
+            raise SystemExit(f"SELF-TEST FAILED: 1962 Sundays {year}: {bad}")
+        trinity = easter_gregorian(year) + datetime.timedelta(days=56)
+        if computed.get(trinity) != ("trinity", 1):
+            raise SystemExit(f"SELF-TEST FAILED: 1962 Trinity slot {year}")
+    if _first_sunday_after(datetime.date(2030, 1, 6)) != datetime.date(2030, 1, 13):
+        raise SystemExit("SELF-TEST FAILED: Epiphany-Sunday 2030 must push "
+                         "Holy Family to Jan 13")
     # Hebrew structural sweep
     for y in range(5700, 5861):
         if hebrew_year_length(y) not in (353, 354, 355, 383, 384, 385):

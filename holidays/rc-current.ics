@@ -2093,15 +2093,6 @@ SUMMARY:Mary\, Mother of God (white)
 DESCRIPTION:A solemnity\; the Octave Day of the Nativity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-baptism-of-the-lord-20300106@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20300106
-DTEND;VALUE=DATE:20300107
-SUMMARY:Baptism of the Lord (white)
-DESCRIPTION:The Sunday after Epiphany (the Monday after when Epiphany falls
-  on Jan 7-8 and is transferred).
-END:VEVENT
-BEGIN:VEVENT
 UID:hol-rc-current-epiphany-20300106@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300106
@@ -2111,25 +2102,27 @@ DESCRIPTION:Jan 6 in the universal calendar\; many countries transfer it to
   the following Sunday.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-1-20300113@omnical
+UID:hol-rc-current-baptism-of-the-lord-20300113@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300113
 DTEND;VALUE=DATE:20300114
-SUMMARY:Ordinary Sunday 1 (green)
+SUMMARY:Baptism of the Lord (white)
+DESCRIPTION:The Sunday after Epiphany (the Monday after when Epiphany falls
+  on Jan 7-8 and is transferred).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-2-20300120@omnical
+UID:hol-rc-current-ot-early-1-20300120@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300120
 DTEND;VALUE=DATE:20300121
-SUMMARY:Ordinary Sunday 2 (green)
+SUMMARY:Ordinary Sunday 1 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-3-20300127@omnical
+UID:hol-rc-current-ot-early-2-20300127@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300127
 DTEND;VALUE=DATE:20300128
-SUMMARY:Ordinary Sunday 3 (green)
+SUMMARY:Ordinary Sunday 2 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-presentation-20300202@omnical
@@ -2140,39 +2133,39 @@ SUMMARY:Presentation of the Lord (Candlemas) (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-4-20300203@omnical
+UID:hol-rc-current-ot-early-3-20300203@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300203
 DTEND;VALUE=DATE:20300204
-SUMMARY:Ordinary Sunday 4 (green)
+SUMMARY:Ordinary Sunday 3 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-5-20300210@omnical
+UID:hol-rc-current-ot-early-4-20300210@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300210
 DTEND;VALUE=DATE:20300211
-SUMMARY:Ordinary Sunday 5 (green)
+SUMMARY:Ordinary Sunday 4 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-6-20300217@omnical
+UID:hol-rc-current-ot-early-5-20300217@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300217
 DTEND;VALUE=DATE:20300218
-SUMMARY:Ordinary Sunday 6 (green)
+SUMMARY:Ordinary Sunday 5 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-7-20300224@omnical
+UID:hol-rc-current-ot-early-6-20300224@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300224
 DTEND;VALUE=DATE:20300225
-SUMMARY:Ordinary Sunday 7 (green)
+SUMMARY:Ordinary Sunday 6 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-8-20300303@omnical
+UID:hol-rc-current-ot-early-7-20300303@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300303
 DTEND;VALUE=DATE:20300304
-SUMMARY:Ordinary Sunday 8 (green)
+SUMMARY:Ordinary Sunday 7 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-ash-wednesday-20300306@omnical
