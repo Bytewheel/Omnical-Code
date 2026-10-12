@@ -37,14 +37,19 @@ hawkbook_apk = "/tmp/hawkbook.apk"
 holidays_dir = "/usr/local/share/rustical/holidays"
 
 [caldav]
-# Omnical DailyView shim: the Punkt MP02's frozen DailyView client stores
-# all-day (VALUE=DATE) events at UTC midnight but windows its 4-day list at
-# local midnight — west of UTC that files every holiday one day early and
-# hides it on its own day. GETs from DailyView's User-Agent are served
-# DATE→midnight rewrites in this timezone; every other client (khal,
-# vdirsyncer, Thunderbird, Apple, HawkBook) keeps the canonical all-day
-# data. The deployment vouches for the timezone because DailyView sends
-# none. Remove the key to disable the rewrite entirely.
+# Omnical DailyView shim: the Punkt MP02's frozen DailyView client files
+# every fetched event at its master's DTSTART with no recurrence expansion,
+# windows its 4-day list at local midnight, and reads bodies only from
+# REPORT <C:calendar-data/> (never GETs). Two rewrites, both scoped to
+# DailyView's User-Agent and armed by this timezone: all-day (VALUE=DATE)
+# events are served as local-midnight DATE-TIMEs (west of UTC the app would
+# otherwise file them one day early at UTC midnight), and recurring events
+# are served as their first occurrence inside the phone's own 4-day window
+# (it would otherwise store the master's — often long-past — DTSTART and
+# never show the event again). Every other client (khal, vdirsyncer,
+# Thunderbird, Apple, HawkBook) keeps the canonical data on every path. The
+# deployment vouches for the timezone because DailyView sends none. Remove
+# the key to disable both rewrites entirely.
 dailyview_timezone = "America/New_York"
 
 # [dav_push] — defaults for now; enable WebSocket/WebPush transport after Phase 7 tests.
