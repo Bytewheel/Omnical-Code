@@ -1433,6 +1433,22 @@ def _ordinal(n):
     return f"{n}{'th' if 10 <= n % 100 < 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
 
 
+_WORD_ORDINALS = [
+    "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth",
+    "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth",
+    "Fifteenth", "Sixteenth", "Seventeenth", "Eighteenth", "Nineteenth",
+    "Twentieth", "Twenty-First", "Twenty-Second", "Twenty-Third",
+    "Twenty-Fourth", "Twenty-Fifth", "Twenty-Sixth", "Twenty-Seventh",
+    "Twenty-Eighth", "Twenty-Ninth", "Thirtieth", "Thirty-First",
+    "Thirty-Second", "Thirty-Third", "Thirty-Fourth",
+]
+
+
+def _word(n):
+    """'The Nth' as CW prints it: 'The Twenty-First Sunday after Trinity'."""
+    return _WORD_ORDINALS[n - 1] if 1 <= n <= 34 else _ordinal(n)
+
+
 # ==========================================================================
 # Roman Catholic, 1962 Missal (Extraordinary Form) — the pre-1970 calendar:
 # Septuagesima season, Passiontide, ember days, the three octaves, and the
@@ -2015,59 +2031,164 @@ def set_orthodox():
 # ==========================================================================
 
 def set_anglican():
-    events = []
+    """The Church of England's calendar as shaped by Common Worship (2000):
+    the Sundays as CW names them (the Baptism of Christ opens Epiphany; the
+    Sundays before Lent run backward from the Sunday next before Lent; the
+    last numbered Sunday after Trinity is 'The Last Sunday after Trinity';
+    the year closes with the Sundays before Advent and Christ the King),
+    plus the Rules' short precedence list.  One event per date throughout.
+    CW names verified against churchofengland.org (Rules to Order the
+    Christian Year) and published per-year Sunday lists."""
+    TD = datetime.timedelta
+    rows = []  # (date, name, slug, note, kind)
 
-    def add(date, name, slug, note=""):
-        events.append(Event(date, name, slug, note))
+    def add(date, name, slug, note="", kind="feast"):
+        rows.append((date, name, slug, note, kind))
+
+    def sunday_after(d):
+        return _first_sunday_after(d)
 
     for y in YEARS:
         easter = easter_gregorian(y)
         advent = _advent_first(y)
-        for i, week in enumerate(["I", "II", "III", "IV"]):
-            add(advent + datetime.timedelta(days=7 * i), f"Advent Sunday {week}",
-                f"advent-{i + 1}", "The Church Year begins at Advent.")
+        ash = easter - TD(days=46)
+        epiphany = datetime.date(y, 1, 6)
+        # --- Advent
+        for i, word in enumerate(["First", "Second", "Third", "Fourth"]):
+            add(advent + TD(days=7 * i), f"The {word} Sunday of Advent",
+                f"advent-{i + 1}", "The Church Year begins at Advent.", "closed")
         add(datetime.date(y, 12, 25), "Christmas Day", "christmas",
-            "One of the Principal Feasts.")
-        add(_first_sunday_after(datetime.date(y, 12, 25)), "First Sunday after Christmas",
-            "christmas-1")
-        add(_first_sunday_after(datetime.date(y, 1, 6)), "First Sunday after the Epiphany",
-            "epiphany-1")
-        add(datetime.date(y, 1, 6), "The Epiphany", "epiphany",
-            "A Principal Feast.")
-        add(datetime.date(y, 2, 2), "The Presentation (Candlemas)", "presentation",
-            "A Holy Day.")
-        add(easter - datetime.timedelta(days=46), "Ash Wednesday", "ash-wednesday",
-            "Lent begins.")
-        add(easter - datetime.timedelta(days=7), "The Sunday of the Passion (Palm Sunday)",
-            "palm-sunday", "Holy Week begins.")
-        add(easter - datetime.timedelta(days=3), "Maundy Thursday", "maundy-thursday",
-            "The institution of the Eucharist.")
-        add(easter - datetime.timedelta(days=2), "Good Friday", "good-friday",
-            "The Passion of the Lord.")
+            "A Principal Feast.", "principal")
+        add(sunday_after(datetime.date(y, 12, 25)), "The First Sunday of Christmas",
+            "christmas-1", "", "ordinary")
+        # --- Epiphany season: the Baptism of Christ is the First Sunday of
+        # Epiphany — the Second when 6 January is itself a Sunday (CW Rule).
+        # The remaining Sundays before Ash Wednesday split: the first up to
+        # three (two when the Epiphany is a Sunday) are the Sundays of
+        # Epiphany; the rest are the Sundays before Lent, titled backward
+        # from the Sunday next before Lent.
+        add(epiphany, "The Epiphany", "epiphany", "A Principal Feast.", "principal")
+        baptism = sunday_after(epiphany)
+        if epiphany.weekday() == 6:
+            add(baptism, "The Baptism of Christ", "baptism-of-christ",
+                "Kept on the Second Sunday of Epiphany, 6 January being a "
+                "Sunday (CW Rules).", "ordinary")
+        else:
+            add(baptism, "The Baptism of Christ", "baptism-of-christ",
+                "The First Sunday of Epiphany.", "ordinary")
+        ash = easter - TD(days=46)
+        slots = []
+        d = baptism + TD(days=7)
+        while d < ash:
+            slots.append(d)
+            d += TD(days=7)
+        n_epiphany = 3 if epiphany.weekday() != 6 else 2
+        start = 2 if epiphany.weekday() != 6 else 3
+        for n, d in enumerate(slots[:n_epiphany], start=start):
+            add(d, f"The {['Second', 'Third', 'Fourth'][n - 2]} Sunday of Epiphany",
+                f"epiphany-{n}", "", "ordinary")
+        for i, d in enumerate(reversed(slots[n_epiphany:])):
+            title = "The Sunday next before Lent" if i == 0 else \
+                f"The {_word(i + 1)} Sunday before Lent"
+            add(d, title, f"before-lent-{i + 1}", "", "ordinary")
+        add(datetime.date(y, 2, 2), "The Presentation of Christ in the Temple "
+            "(Candlemas)", "presentation",
+            "A Holy Day; CW also allows the Sunday between 28 January and "
+            "3 February.", "feast")
+        # --- Lent and Holy Week
+        add(ash, "Ash Wednesday", "ash-wednesday", "Lent begins.", "principal")
+        for i in range(5):
+            add(ash + TD(days=4 + 7 * i), f"The {_word(i + 1)} Sunday of Lent",
+                f"lent-{i + 1}", "", "closed")
+        add(easter - TD(days=7), "The Sunday of the Passion (Palm Sunday)",
+            "palm-sunday", "Holy Week begins.", "closed")
+        add(easter - TD(days=3), "Maundy Thursday", "maundy-thursday",
+            "The institution of the Eucharist.", "principal")
+        add(easter - TD(days=2), "Good Friday", "good-friday",
+            "The Passion of the Lord.", "principal")
         add(easter, "Easter Day", "easter",
-            "The Queen of Feasts; the Great Fifty Days follow.")
-        add(easter + datetime.timedelta(days=39), "Ascension Day", "ascension",
-            "A Principal Feast, kept on a Thursday.")
-        add(easter + datetime.timedelta(days=49), "The Day of Pentecost (Whitsunday)",
-            "pentecost", "A Principal Feast.")
-        add(easter + datetime.timedelta(days=56), "Trinity Sunday", "trinity-sunday",
-            "A Principal Feast.")
-        add(datetime.date(y, 5, 31), "The Visitation", "visitation", "A Holy Day.")
-        add(datetime.date(y, 11, 1), "All Saints' Day", "all-saints",
-            "A Principal Feast.")
-        add(datetime.date(y, 11, 1) if datetime.date(y, 11, 1).weekday() != 6
-            else datetime.date(y, 11, 1) + datetime.timedelta(days=7),
-            "All Saints' Sunday", "all-saints-sunday")
+            "The Queen of Feasts; the Great Fifty Days follow.", "principal")
+        # --- Eastertide: the Sundays of Easter, Ascension, Pentecost
+        for i in range(2, 8):
+            add(easter + TD(days=7 * (i - 1)), f"The {_word(i)} Sunday of Easter",
+                f"easter-{i}", "", "closed")
+        add(easter + TD(days=39), "Ascension Day", "ascension",
+            "A Principal Feast, kept on a Thursday.", "principal")
+        add(easter + TD(days=49), "The Day of Pentecost (Whitsunday)",
+            "pentecost", "A Principal Feast.", "principal")
+        trinity = easter + TD(days=56)
+        add(trinity, "Trinity Sunday", "trinity-sunday", "A Principal Feast.",
+            "principal")
+        # --- The Sundays after Trinity: numbered from the First after
+        # Trinity; the last one is 'The Last Sunday after Trinity', which
+        # stands before the Sunday kept as All Saints' Sunday (or, when
+        # 1 November is a Sunday, before All Saints' Day itself)
+        all_saints = datetime.date(y, 11, 1)
+        ass_sunday = all_saints if all_saints.weekday() == 6 else \
+            all_saints + TD(days=(6 - all_saints.weekday()) % 7 or 7)
+        # the CW window is 30 Oct - 5 Nov; when Nov 1 is a weekday the
+        # following Sunday falls in the window unless Nov 1 is Monday/Tuesday
+        if all_saints.weekday() in (0, 1):  # Monday/Tuesday: the Sunday BEFORE
+            ass_sunday = all_saints - TD(days=all_saints.weekday() + 1)
+        d, n = trinity + TD(days=7), 1
+        while d < ass_sunday - TD(days=7):
+            add(d, f"The {_word(n)} Sunday after Trinity", f"trinity-{n}", "", "ordinary")
+            d += TD(days=7)
+            n += 1
+        add(ass_sunday - TD(days=7), "The Last Sunday after Trinity",
+            "trinity-last", "", "ordinary")
+        add(all_saints, "All Saints' Day", "all-saints", "A Principal Feast.",
+            "principal")
+        if all_saints.weekday() != 6:
+            add(ass_sunday, "All Saints' Sunday", "all-saints-sunday",
+                "The Sunday between 30 October and 5 November (CW).", "ordinary")
+        # --- The year closes: the Sundays before Advent and Christ the King
+        for n, back in [(3, 21), (2, 14)]:
+            add(advent - TD(days=back), f"The {_word(n)} Sunday before Advent",
+                f"before-advent-{n}", "", "ordinary")
+        add(advent - TD(days=7), "Christ the King (The Sunday next before Advent)",
+            "christ-the-king", "The last Sunday of the year.", "principal")
+        # --- Festivals
+        add(datetime.date(y, 5, 31), "The Visitation", "visitation", "A Festival.")
         add(datetime.date(y, 6, 24), "The Nativity of Saint John the Baptist",
-            "st-john-baptist", "A Holy Day.")
-        add(datetime.date(y, 6, 29), "Saint Peter and Saint Paul", "sts-peter-and-paul",
-            "A Holy Day.")
-        add(datetime.date(y, 8, 15), "Saint Mary the Virgin", "st-mary",
-            "A Holy Day (the church's major Marian feast).")
+            "st-john-baptist", "A Festival.")
+        add(datetime.date(y, 6, 29), "Saint Peter and Saint Paul",
+            "sts-peter-and-paul", "A Festival.")
+        add(datetime.date(y, 8, 15), "The Blessed Virgin Mary", "st-mary",
+            "A Festival (CW also allows 8 September for pastoral reasons).")
         add(datetime.date(y, 9, 29), "Saint Michael and All Angels", "michaelmas",
-            "A Holy Day.")
-        add(advent - datetime.timedelta(days=7), "Christ the King (Sunday next before Advent)",
-            "christ-the-king", "The last Sunday of the year.")
+            "A Festival.")
+    # --- Resolve the CW Rules: a Festival coinciding with a Principal Feast
+    # or Principal Holy Day, or falling on a Sunday in Advent, Lent or
+    # Eastertide, transfers to the first available day (the Monday); on any
+    # other Sunday it is always to be observed, kept on the day at the
+    # Rules' discretion, with the Sunday observed alongside it.
+    events = []
+    by_date = {}
+    for r in rows:
+        by_date.setdefault(r[0], []).append(r)
+    for date, rs in sorted(by_date.items()):
+        if len(rs) == 1:
+            r = rs[0]
+            events.append(Event(r[0], r[1], r[2], r[3]))
+            continue
+        feasts = [r for r in rs if r[4] == "feast"]
+        others = [r for r in rs if r[4] != "feast"]
+        if len(feasts) != 1 or len(others) != 1:
+            raise SystemExit(f"anglican resolver: unexpected collision on {date}: {rs}")
+        f, o = feasts[0], others[0]
+        if o[4] in ("principal", "closed"):
+            target = date + TD(days=1)
+            events.append(Event(o[0], o[1], o[2], o[3]))
+            note = f"Transferred from {date.day} {date:%b} ({o[1]}; CW Rules)."
+            events.append(Event(target, f[1], f[2],
+                                (f[3] + " " if f[3] else "") + note))
+        else:
+            note = (f[3] + " " if f[3] else "") + \
+                f"Falls on {o[1]}; the Sunday is always observed alongside " \
+                "it, and the celebration may instead be moved to the " \
+                "Monday following (CW Rules)."
+            events.append(Event(f[0], f[1], f[2], note))
     return events
 
 
@@ -2192,7 +2313,7 @@ file = "orthodox.ics"
 
 [[groups.sets]]
 id = "anglican"
-label = "Anglican (Book of Common Prayer)"
+label = "Anglican (Common Worship)"
 file = "anglican.ics"
 
 [[groups]]
@@ -2412,6 +2533,55 @@ def self_test():
                              f"expected '{want_summary}'")
         if want_desc and want_desc not in e.description:
             raise SystemExit(f"SELF-TEST FAILED: rc-current {d} '{e.summary}' "
+                             f"description lacks '{want_desc}': {e.description}")
+    # anglican (Common Worship) — the Sunday names, the All Saints' Sunday
+    # window and the Rules' precedence, verified against the Church of
+    # England's Rules to Order the Christian Year and published per-year
+    # Sunday lists (7 June 2026 is 'The First Sunday after Trinity').
+    ang = {}
+    for e in set_anglican():
+        if e.dtstart in ang:
+            raise SystemExit(f"SELF-TEST FAILED: two events on {e.dtstart} in anglican")
+        ang[e.dtstart] = e
+    for date, want_summary, want_desc in [
+        ("20260607", "The First Sunday after Trinity", None),
+        ("20261025", "The Last Sunday after Trinity", None),
+        ("20260208", "The Second Sunday before Lent", None),
+        ("20260215", "The Sunday next before Lent", None),
+        ("20261101", "All Saints' Day", None),
+        ("20261108", "The Third Sunday before Advent", None),
+        ("20261122", "Christ the King (The Sunday next before Advent)", None),
+        ("20271031", "All Saints' Sunday", None),
+        ("20281105", "All Saints' Sunday", None),
+        ("20281231", "The First Sunday of Christmas", None),
+        ("20291104", "All Saints' Sunday", None),
+        ("20301103", "All Saints' Sunday", None),
+        ("20300113", "The Baptism of Christ",
+         "Second Sunday of Epiphany"),
+        ("20300120", "The Third Sunday of Epiphany", None),
+        ("20300203", "The Fifth Sunday before Lent", None),
+        ("20300303", "The Sunday next before Lent", None),
+        ("20260412", "The Second Sunday of Easter", None),
+        ("20260517", "The Seventh Sunday of Easter", None),
+        ("20260601", "The Visitation", "Transferred from 31 May"),
+        ("20260531", "Trinity Sunday", None),
+        ("20270815", "The Blessed Virgin Mary", "Falls on The Twelfth Sunday after Trinity"),
+        ("20300929", "Saint Michael and All Angels",
+         "Falls on The Fifteenth Sunday after Trinity"),
+    ]:
+        d = datetime.date(int(date[:4]), int(date[4:6]), int(date[6:]))
+        e = ang.get(d)
+        if want_summary is None:
+            if e is not None:
+                raise SystemExit(f"SELF-TEST FAILED: {d} must carry no anglican event")
+            continue
+        if e is None:
+            raise SystemExit(f"SELF-TEST FAILED: anglican {d} has no event")
+        if e.summary != want_summary:
+            raise SystemExit(f"SELF-TEST FAILED: anglican {d} is '{e.summary}', "
+                             f"expected '{want_summary}'")
+        if want_desc and want_desc not in e.description:
+            raise SystemExit(f"SELF-TEST FAILED: anglican {d} '{e.summary}' "
                              f"description lacks '{want_desc}': {e.description}")
     # Hebrew structural sweep
     for y in range(5700, 5861):
