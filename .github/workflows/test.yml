@@ -1,6 +1,6 @@
 # Omnical — test + lint
 #
-# Runs the fork's own test suite. The integration baseline is **116** tests in
+# Runs the fork's own test suite. The integration baseline is **121** tests in
 # tests/run_integration_tests.rs, re-derived 2026-10-12. That number is the
 # safety net for the tenancy refactor in PLAN_DEPLOYMENTS.md §6.1: the
 # `make_app` -> `make_app_for` extraction MUST pass it with zero test edits.
@@ -27,6 +27,19 @@
 # DailyView all-day shim tests (§18.36) — all additions, zero deletions or
 # renames. The digest was re-derived in the same commit as this edit, per
 # the rule above.
+#
+# 2026-10-12 (later, same day): deliberately 116 -> 118 — the §18.37 DailyView
+# REPORT additions (`test_report_dailyview_rewrites_all_day`,
+# `test_report_dailyview_flattens_recurrence`), additions only. The digest
+# re-derived in the same commit, per the rule above; this edit should have
+# shipped WITH 025ae443 (the commit that added the tests) and the 17:51/17:52Z
+# runs failing on the old pin were the miss.
+#
+# 2026-10-12 (evening): deliberately 118 -> 121 — the §18.38 DailyView export
+# additions (`test_export_dailyview_flattens`,
+# `test_export_dailyview_unarmed_ignores_param`,
+# `test_export_dailyview_all_day_pass`), additions only, digest re-derived
+# in the same commit.
 #
 # SQLX_OFFLINE=true is REQUIRED, not optional: 42 compile-time-checked
 # `sqlx::query!` macros exist and the .sqlx/ query cache (70 files) is
@@ -127,7 +140,7 @@ jobs:
           # coverage. The integration runner is a separate test target, so
           # assert it directly rather than inferring from the workspace run.
           #
-          # 116, not 98 — see the header for how the floor tracks deliberate
+          # 121, not 118 — see the header for how the floor tracks deliberate
           # additions. `listed` is cross-checked against `n` so a *renamed* or
           # *removed* test is caught even if a replacement keeps the count up:
           # the tenancy refactor's promise is "zero test edits", and an edit
@@ -137,8 +150,8 @@ jobs:
           n=$(grep -oE "^test result: ok\. [0-9]+" /tmp/integration.log \
               | awk '{s+=$4} END {print s+0}')
           echo "integration tests passed: $n"
-          if [ "$n" -ne 116 ]; then
-            echo "::error::the integration baseline is 116 tests; $n ran. A refactor must"
+          if [ "$n" -ne 121 ]; then
+            echo "::error::the integration baseline is 121 tests; $n ran. A refactor must"
             echo "::error::not change this number, and a change here means a test was"
             echo "::error::added, deleted or renamed. Update this file in the same commit"
             echo "::error::if that was deliberate."
@@ -157,7 +170,7 @@ jobs:
           # values, so a pin computed in one locale was unpassable in the other.
           # Byte order has no such opinions and is identical everywhere, which is
           # the whole requirement for a value that gets pasted between machines.
-          expected_digest=28e4ea6d9a3ab9d54898f02274e75af50b17297123de94ef36c783e36ca994ff
+          expected_digest=c8bb7123285d9a4e679befb4054c9f444efd759f5649cc02870e78073d84164b
           listed=$(cargo test --test run_integration_tests -- --list 2>/dev/null \
               | grep -oE '^integration_tests::.*: test$' | LC_ALL=C sort)
           count=$(printf '%s\n' "$listed" | grep -c .)
@@ -283,16 +296,33 @@ jobs:
         working-directory: .
         run: |
           set -euo pipefail
-          # actions/checkout leaves a submodule's .git as a *gitfile* — a
-          # one-line pointer into the superproject's .git/modules — so a tar
-          # of the submodule carries a pointer to files it does not carry,
-          # and `git rev-parse HEAD` inside the unpacked tree fails. Absorb
-          # the git dir into rustical/.git first: the tarball is then a
-          # self-contained repo, which is what the gate's clause 2 needs.
-          # (A `git archive` would strip .git entirely — the job's own
-          # fetch-depth: 0 note explains why that is not used either.)
-          git submodule absorbgitdirs rustical
-          test -d rustical/.git
+          # actions/checkout leaves the submodule's gitdir already *absorbed*
+          # into the superproject: it lives at $GIT_DIR/modules/rustical and
+          # rustical/.git is a *gitfile* pointing at it — so a tar of rustical
+          # alone carries a pointer to files it does not carry, and
+          # `git rev-parse HEAD` inside the unpacked tree fails.
+          #
+          # `git submodule absorbgitdirs` is the *opposite* move — it absorbs
+          # a *foreign* gitdir INTO $GIT_DIR/modules — so on a checkout tree
+          # it silently no-ops (exit 0, converts nothing) and the `test -d`
+          # that followed exited 1 with no message at all: the whole
+          # 370ms-silent failure signature of the 17:51/17:52Z runs,
+          # reproduced locally 2026-10-12. Move the gitdir into rustical/.git
+          # by hand instead: the tarball is then a self-contained repo, which
+          # is what the gate's clause 2 needs. (A `git archive` would strip
+          # .git entirely — the job's own fetch-depth: 0 note explains why
+          # that is not used either.)
+          test -f rustical/.git  # fail loudly if checkout's shape ever changes
+          gitdir="$(git -C rustical rev-parse --absolute-git-dir)"
+          rm rustical/.git
+          mv "$gitdir" rustical/.git
+          # The moved config's core.worktree points at the gitdir's old home
+          # under .git/modules, and `git -C rustical config` resolves the
+          # worktree before it can edit — so fix it via --file, then prove
+          # the tree is self-contained (this exact rev-parse is the gate's
+          # clause 2).
+          git config --file rustical/.git/config core.worktree .
+          git -C rustical rev-parse HEAD >/dev/null
           tar czf /tmp/source.tar.gz --exclude=target rustical
           echo "packed $(tar tzf /tmp/source.tar.gz | wc -l) entries"
 
