@@ -29,25 +29,25 @@ DESCRIPTION:The Sunday after Epiphany (the Monday after when Epiphany falls
   on Jan 7-8 and is transferred).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-1-20260118@omnical
+UID:hol-rc-current-ot-2-20260118@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260118
 DTEND;VALUE=DATE:20260119
-SUMMARY:Ordinary Sunday 1 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-early-2-20260125@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20260125
-DTEND;VALUE=DATE:20260126
 SUMMARY:Ordinary Sunday 2 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-3-20260201@omnical
+UID:hol-rc-current-ot-3-20260125@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260125
+DTEND;VALUE=DATE:20260126
+SUMMARY:Ordinary Sunday 3 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-4-20260201@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260201
 DTEND;VALUE=DATE:20260202
-SUMMARY:Ordinary Sunday 3 (green)
+SUMMARY:Ordinary Sunday 4 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-presentation-20260202@omnical
@@ -58,18 +58,18 @@ SUMMARY:Presentation of the Lord (Candlemas) (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-4-20260208@omnical
+UID:hol-rc-current-ot-5-20260208@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260208
 DTEND;VALUE=DATE:20260209
-SUMMARY:Ordinary Sunday 4 (green)
+SUMMARY:Ordinary Sunday 5 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-5-20260215@omnical
+UID:hol-rc-current-ot-6-20260215@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260215
 DTEND;VALUE=DATE:20260216
-SUMMARY:Ordinary Sunday 5 (green)
+SUMMARY:Ordinary Sunday 6 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-ash-wednesday-20260218@omnical
@@ -178,6 +178,34 @@ DTEND;VALUE=DATE:20260413
 SUMMARY:Divine Mercy Sunday (Easter II) (white)
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-rc-current-easter-3-20260419@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260419
+DTEND;VALUE=DATE:20260420
+SUMMARY:Third Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-4-20260426@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260426
+DTEND;VALUE=DATE:20260427
+SUMMARY:Fourth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-5-20260503@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260503
+DTEND;VALUE=DATE:20260504
+SUMMARY:Fifth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-6-20260510@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260510
+DTEND;VALUE=DATE:20260511
+SUMMARY:Sixth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-rc-current-ascension-20260514@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260514
@@ -185,6 +213,13 @@ DTEND;VALUE=DATE:20260515
 SUMMARY:Ascension of the Lord (white)
 DESCRIPTION:Thursday of the sixth week of Easter in the universal calendar\
  ; many countries move it to the following Sunday.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-7-20260517@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260518
+SUMMARY:Seventh Sunday of Easter (white)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-pentecost-20260524@omnical
@@ -200,6 +235,8 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260531
 DTEND;VALUE=DATE:20260601
 SUMMARY:Trinity Sunday (white)
+DESCRIPTION:The feast of Visitation of the Blessed Virgin Mary is omitted t
+ his year (the Trinity Sunday takes precedence).
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-corpus-christi-20260604@omnical
@@ -210,11 +247,11 @@ SUMMARY:Corpus Christi (white)
 DESCRIPTION:Thursday\; many countries move it to Sunday.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-11-20260607@omnical
+UID:hol-rc-current-ot-10-20260607@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260607
 DTEND;VALUE=DATE:20260608
-SUMMARY:Ordinary Sunday 11 (green)
+SUMMARY:Ordinary Sunday 10 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-sacred-heart-20260612@omnical
@@ -224,18 +261,18 @@ DTEND;VALUE=DATE:20260613
 SUMMARY:Sacred Heart of Jesus (white)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-12-20260614@omnical
+UID:hol-rc-current-ot-11-20260614@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260614
 DTEND;VALUE=DATE:20260615
-SUMMARY:Ordinary Sunday 12 (green)
+SUMMARY:Ordinary Sunday 11 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-13-20260621@omnical
+UID:hol-rc-current-ot-12-20260621@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260621
 DTEND;VALUE=DATE:20260622
-SUMMARY:Ordinary Sunday 13 (green)
+SUMMARY:Ordinary Sunday 12 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-st-john-baptist-20260624@omnical
@@ -246,11 +283,11 @@ SUMMARY:Nativity of Saint John the Baptist (white)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-14-20260628@omnical
+UID:hol-rc-current-ot-13-20260628@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260628
 DTEND;VALUE=DATE:20260629
-SUMMARY:Ordinary Sunday 14 (green)
+SUMMARY:Ordinary Sunday 13 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-sts-peter-and-paul-20260629@omnical
@@ -261,39 +298,39 @@ SUMMARY:Saints Peter and Paul (red)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-15-20260705@omnical
+UID:hol-rc-current-ot-14-20260705@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260705
 DTEND;VALUE=DATE:20260706
-SUMMARY:Ordinary Sunday 15 (green)
+SUMMARY:Ordinary Sunday 14 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-16-20260712@omnical
+UID:hol-rc-current-ot-15-20260712@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260712
 DTEND;VALUE=DATE:20260713
-SUMMARY:Ordinary Sunday 16 (green)
+SUMMARY:Ordinary Sunday 15 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-17-20260719@omnical
+UID:hol-rc-current-ot-16-20260719@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260719
 DTEND;VALUE=DATE:20260720
-SUMMARY:Ordinary Sunday 17 (green)
+SUMMARY:Ordinary Sunday 16 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-18-20260726@omnical
+UID:hol-rc-current-ot-17-20260726@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260726
 DTEND;VALUE=DATE:20260727
-SUMMARY:Ordinary Sunday 18 (green)
+SUMMARY:Ordinary Sunday 17 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-19-20260802@omnical
+UID:hol-rc-current-ot-18-20260802@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260802
 DTEND;VALUE=DATE:20260803
-SUMMARY:Ordinary Sunday 19 (green)
+SUMMARY:Ordinary Sunday 18 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-transfiguration-20260806@omnical
@@ -304,11 +341,11 @@ SUMMARY:Transfiguration of the Lord (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-20-20260809@omnical
+UID:hol-rc-current-ot-19-20260809@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260809
 DTEND;VALUE=DATE:20260810
-SUMMARY:Ordinary Sunday 20 (green)
+SUMMARY:Ordinary Sunday 19 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-assumption-20260815@omnical
@@ -319,39 +356,39 @@ SUMMARY:Assumption of the Blessed Virgin Mary (white)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-21-20260816@omnical
+UID:hol-rc-current-ot-20-20260816@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260816
 DTEND;VALUE=DATE:20260817
-SUMMARY:Ordinary Sunday 21 (green)
+SUMMARY:Ordinary Sunday 20 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-22-20260823@omnical
+UID:hol-rc-current-ot-21-20260823@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260823
 DTEND;VALUE=DATE:20260824
-SUMMARY:Ordinary Sunday 22 (green)
+SUMMARY:Ordinary Sunday 21 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-23-20260830@omnical
+UID:hol-rc-current-ot-22-20260830@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260830
 DTEND;VALUE=DATE:20260831
-SUMMARY:Ordinary Sunday 23 (green)
+SUMMARY:Ordinary Sunday 22 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-24-20260906@omnical
+UID:hol-rc-current-ot-23-20260906@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260906
 DTEND;VALUE=DATE:20260907
-SUMMARY:Ordinary Sunday 24 (green)
+SUMMARY:Ordinary Sunday 23 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-25-20260913@omnical
+UID:hol-rc-current-ot-24-20260913@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260913
 DTEND;VALUE=DATE:20260914
-SUMMARY:Ordinary Sunday 25 (green)
+SUMMARY:Ordinary Sunday 24 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-holy-cross-20260914@omnical
@@ -362,18 +399,18 @@ SUMMARY:Exaltation of the Holy Cross (red)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-26-20260920@omnical
+UID:hol-rc-current-ot-25-20260920@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260920
 DTEND;VALUE=DATE:20260921
-SUMMARY:Ordinary Sunday 26 (green)
+SUMMARY:Ordinary Sunday 25 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-27-20260927@omnical
+UID:hol-rc-current-ot-26-20260927@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260928
-SUMMARY:Ordinary Sunday 27 (green)
+SUMMARY:Ordinary Sunday 26 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-archangels-20260929@omnical
@@ -381,35 +418,45 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
 SUMMARY:Saints Michael\, Gabriel and Raphael (white)
-DESCRIPTION:A feast.
+DESCRIPTION:A memorial.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-28-20261004@omnical
+UID:hol-rc-current-ot-27-20261004@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
-SUMMARY:Ordinary Sunday 28 (green)
+SUMMARY:Ordinary Sunday 27 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-29-20261011@omnical
+UID:hol-rc-current-ot-28-20261011@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261011
 DTEND;VALUE=DATE:20261012
-SUMMARY:Ordinary Sunday 29 (green)
+SUMMARY:Ordinary Sunday 28 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-30-20261018@omnical
+UID:hol-rc-current-ot-29-20261018@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
-SUMMARY:Ordinary Sunday 30 (green)
+SUMMARY:Ordinary Sunday 29 (green)
+DESCRIPTION:The feast of Saint Luke\, Evangelist is omitted this year (the 
+ Ordinary Sunday 29 takes precedence).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-31-20261025@omnical
+UID:hol-rc-current-ot-30-20261025@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261025
 DTEND;VALUE=DATE:20261026
-SUMMARY:Ordinary Sunday 31 (green)
+SUMMARY:Ordinary Sunday 30 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-sts-simon-jude-20261028@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Saints Simon and Jude\, Apostles (red)
+DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-all-saints-20261101@omnical
@@ -417,14 +464,8 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:All Saints (white)
-DESCRIPTION:A solemnity.
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-32-20261101@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:Ordinary Sunday 32 (green)
+DESCRIPTION:A solemnity. Supersedes the 31st Sunday of Ordinary Time this y
+ ear.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-all-souls-20261102@omnical
@@ -435,11 +476,11 @@ SUMMARY:All Souls' Day (purple)
 DESCRIPTION:Commemoration of all the faithful departed.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-33-20261108@omnical
+UID:hol-rc-current-ot-32-20261108@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
-SUMMARY:Ordinary Sunday 33 (green)
+SUMMARY:Ordinary Sunday 32 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-lateran-20261109@omnical
@@ -450,11 +491,11 @@ SUMMARY:Dedication of the Lateran Basilica (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-34-20261115@omnical
+UID:hol-rc-current-ot-33-20261115@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
-SUMMARY:Ordinary Sunday 34 (green)
+SUMMARY:Ordinary Sunday 33 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-christ-the-king-20261122@omnical
@@ -546,25 +587,25 @@ DESCRIPTION:The Sunday after Epiphany (the Monday after when Epiphany falls
   on Jan 7-8 and is transferred).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-1-20270117@omnical
+UID:hol-rc-current-ot-2-20270117@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
-SUMMARY:Ordinary Sunday 1 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-early-2-20270124@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270124
-DTEND;VALUE=DATE:20270125
 SUMMARY:Ordinary Sunday 2 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-3-20270131@omnical
+UID:hol-rc-current-ot-3-20270124@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Ordinary Sunday 3 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-4-20270131@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270131
 DTEND;VALUE=DATE:20270201
-SUMMARY:Ordinary Sunday 3 (green)
+SUMMARY:Ordinary Sunday 4 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-presentation-20270202@omnical
@@ -575,11 +616,11 @@ SUMMARY:Presentation of the Lord (Candlemas) (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-4-20270207@omnical
+UID:hol-rc-current-ot-5-20270207@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270208
-SUMMARY:Ordinary Sunday 4 (green)
+SUMMARY:Ordinary Sunday 5 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-ash-wednesday-20270210@omnical
@@ -641,20 +682,12 @@ SUMMARY:Palm Sunday of the Passion (red)
 DESCRIPTION:Holy Week begins.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-annunciation-20270325@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270325
-DTEND;VALUE=DATE:20270326
-SUMMARY:Annunciation of the Lord (white)
-DESCRIPTION:A solemnity.
-END:VEVENT
-BEGIN:VEVENT
 UID:hol-rc-current-maundy-thursday-20270325@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270326
 SUMMARY:Maundy Thursday (Holy Thursday) (white)
-DESCRIPTION:The Mass of the Lord's Supper\, evening.
+DESCRIPTION:Annunciation of the Lord is transferred to 5 Apr.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-good-friday-20270326@omnical
@@ -688,6 +721,43 @@ DTEND;VALUE=DATE:20270405
 SUMMARY:Divine Mercy Sunday (Easter II) (white)
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-rc-current-annunciation-20270405@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270406
+SUMMARY:Annunciation of the Lord (white)
+DESCRIPTION:A solemnity. Transferred from 25 Mar (Maundy Thursday) to the M
+ onday after the Second Sunday of Easter..
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-3-20270411@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Third Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-4-20270418@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Fourth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-5-20270425@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Fifth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-6-20270502@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Sixth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-rc-current-ascension-20270506@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270506
@@ -695,6 +765,13 @@ DTEND;VALUE=DATE:20270507
 SUMMARY:Ascension of the Lord (white)
 DESCRIPTION:Thursday of the sixth week of Easter in the universal calendar\
  ; many countries move it to the following Sunday.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-7-20270509@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Seventh Sunday of Easter (white)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-pentecost-20270516@omnical
@@ -720,11 +797,19 @@ SUMMARY:Corpus Christi (white)
 DESCRIPTION:Thursday\; many countries move it to Sunday.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-10-20270530@omnical
+UID:hol-rc-current-ot-9-20270530@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270530
 DTEND;VALUE=DATE:20270531
-SUMMARY:Ordinary Sunday 10 (green)
+SUMMARY:Ordinary Sunday 9 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-visitation-20270531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:Visitation of the Blessed Virgin Mary (white)
+DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-sacred-heart-20270604@omnical
@@ -734,25 +819,25 @@ DTEND;VALUE=DATE:20270605
 SUMMARY:Sacred Heart of Jesus (white)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-11-20270606@omnical
+UID:hol-rc-current-ot-10-20270606@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270606
 DTEND;VALUE=DATE:20270607
-SUMMARY:Ordinary Sunday 11 (green)
+SUMMARY:Ordinary Sunday 10 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-12-20270613@omnical
+UID:hol-rc-current-ot-11-20270613@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270613
 DTEND;VALUE=DATE:20270614
-SUMMARY:Ordinary Sunday 12 (green)
+SUMMARY:Ordinary Sunday 11 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-13-20270620@omnical
+UID:hol-rc-current-ot-12-20270620@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270620
 DTEND;VALUE=DATE:20270621
-SUMMARY:Ordinary Sunday 13 (green)
+SUMMARY:Ordinary Sunday 12 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-st-john-baptist-20270624@omnical
@@ -763,11 +848,11 @@ SUMMARY:Nativity of Saint John the Baptist (white)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-14-20270627@omnical
+UID:hol-rc-current-ot-13-20270627@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270627
 DTEND;VALUE=DATE:20270628
-SUMMARY:Ordinary Sunday 14 (green)
+SUMMARY:Ordinary Sunday 13 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-sts-peter-and-paul-20270629@omnical
@@ -778,39 +863,39 @@ SUMMARY:Saints Peter and Paul (red)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-15-20270704@omnical
+UID:hol-rc-current-ot-14-20270704@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270704
 DTEND;VALUE=DATE:20270705
-SUMMARY:Ordinary Sunday 15 (green)
+SUMMARY:Ordinary Sunday 14 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-16-20270711@omnical
+UID:hol-rc-current-ot-15-20270711@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270711
 DTEND;VALUE=DATE:20270712
-SUMMARY:Ordinary Sunday 16 (green)
+SUMMARY:Ordinary Sunday 15 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-17-20270718@omnical
+UID:hol-rc-current-ot-16-20270718@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270718
 DTEND;VALUE=DATE:20270719
-SUMMARY:Ordinary Sunday 17 (green)
+SUMMARY:Ordinary Sunday 16 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-18-20270725@omnical
+UID:hol-rc-current-ot-17-20270725@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270725
 DTEND;VALUE=DATE:20270726
-SUMMARY:Ordinary Sunday 18 (green)
+SUMMARY:Ordinary Sunday 17 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-19-20270801@omnical
+UID:hol-rc-current-ot-18-20270801@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270802
-SUMMARY:Ordinary Sunday 19 (green)
+SUMMARY:Ordinary Sunday 18 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-transfiguration-20270806@omnical
@@ -821,11 +906,11 @@ SUMMARY:Transfiguration of the Lord (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-20-20270808@omnical
+UID:hol-rc-current-ot-19-20270808@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270808
 DTEND;VALUE=DATE:20270809
-SUMMARY:Ordinary Sunday 20 (green)
+SUMMARY:Ordinary Sunday 19 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-assumption-20270815@omnical
@@ -833,42 +918,36 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270815
 DTEND;VALUE=DATE:20270816
 SUMMARY:Assumption of the Blessed Virgin Mary (white)
-DESCRIPTION:A solemnity.
+DESCRIPTION:A solemnity. Supersedes the 20th Sunday of Ordinary Time this y
+ ear.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-21-20270815@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20270815
-DTEND;VALUE=DATE:20270816
-SUMMARY:Ordinary Sunday 21 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-22-20270822@omnical
+UID:hol-rc-current-ot-21-20270822@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270822
 DTEND;VALUE=DATE:20270823
-SUMMARY:Ordinary Sunday 22 (green)
+SUMMARY:Ordinary Sunday 21 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-23-20270829@omnical
+UID:hol-rc-current-ot-22-20270829@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270829
 DTEND;VALUE=DATE:20270830
-SUMMARY:Ordinary Sunday 23 (green)
+SUMMARY:Ordinary Sunday 22 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-24-20270905@omnical
+UID:hol-rc-current-ot-23-20270905@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270905
 DTEND;VALUE=DATE:20270906
-SUMMARY:Ordinary Sunday 24 (green)
+SUMMARY:Ordinary Sunday 23 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-25-20270912@omnical
+UID:hol-rc-current-ot-24-20270912@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270912
 DTEND;VALUE=DATE:20270913
-SUMMARY:Ordinary Sunday 25 (green)
+SUMMARY:Ordinary Sunday 24 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-holy-cross-20270914@omnical
@@ -879,18 +958,18 @@ SUMMARY:Exaltation of the Holy Cross (red)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-26-20270919@omnical
+UID:hol-rc-current-ot-25-20270919@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270919
 DTEND;VALUE=DATE:20270920
-SUMMARY:Ordinary Sunday 26 (green)
+SUMMARY:Ordinary Sunday 25 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-27-20270926@omnical
+UID:hol-rc-current-ot-26-20270926@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270926
 DTEND;VALUE=DATE:20270927
-SUMMARY:Ordinary Sunday 27 (green)
+SUMMARY:Ordinary Sunday 26 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-archangels-20270929@omnical
@@ -898,42 +977,58 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270929
 DTEND;VALUE=DATE:20270930
 SUMMARY:Saints Michael\, Gabriel and Raphael (white)
-DESCRIPTION:A feast.
+DESCRIPTION:A memorial.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-28-20271003@omnical
+UID:hol-rc-current-ot-27-20271003@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20271003
 DTEND;VALUE=DATE:20271004
-SUMMARY:Ordinary Sunday 28 (green)
+SUMMARY:Ordinary Sunday 27 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-29-20271010@omnical
+UID:hol-rc-current-ot-28-20271010@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20271010
 DTEND;VALUE=DATE:20271011
-SUMMARY:Ordinary Sunday 29 (green)
+SUMMARY:Ordinary Sunday 28 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-30-20271017@omnical
+UID:hol-rc-current-ot-29-20271017@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20271017
 DTEND;VALUE=DATE:20271018
-SUMMARY:Ordinary Sunday 30 (green)
+SUMMARY:Ordinary Sunday 29 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-31-20271024@omnical
+UID:hol-rc-current-st-luke-20271018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271018
+DTEND;VALUE=DATE:20271019
+SUMMARY:Saint Luke\, Evangelist (red)
+DESCRIPTION:A feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-30-20271024@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20271024
 DTEND;VALUE=DATE:20271025
-SUMMARY:Ordinary Sunday 31 (green)
+SUMMARY:Ordinary Sunday 30 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-32-20271031@omnical
+UID:hol-rc-current-sts-simon-jude-20271028@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Saints Simon and Jude\, Apostles (red)
+DESCRIPTION:A feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-31-20271031@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20271031
 DTEND;VALUE=DATE:20271101
-SUMMARY:Ordinary Sunday 32 (green)
+SUMMARY:Ordinary Sunday 31 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-all-saints-20271101@omnical
@@ -952,11 +1047,11 @@ SUMMARY:All Souls' Day (purple)
 DESCRIPTION:Commemoration of all the faithful departed.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-33-20271107@omnical
+UID:hol-rc-current-ot-32-20271107@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20271107
 DTEND;VALUE=DATE:20271108
-SUMMARY:Ordinary Sunday 33 (green)
+SUMMARY:Ordinary Sunday 32 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-lateran-20271109@omnical
@@ -967,11 +1062,11 @@ SUMMARY:Dedication of the Lateran Basilica (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-34-20271114@omnical
+UID:hol-rc-current-ot-33-20271114@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20271114
 DTEND;VALUE=DATE:20271115
-SUMMARY:Ordinary Sunday 34 (green)
+SUMMARY:Ordinary Sunday 33 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-christ-the-king-20271121@omnical
@@ -1063,25 +1158,25 @@ DESCRIPTION:The Sunday after Epiphany (the Monday after when Epiphany falls
   on Jan 7-8 and is transferred).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-1-20280116@omnical
+UID:hol-rc-current-ot-2-20280116@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280116
 DTEND;VALUE=DATE:20280117
-SUMMARY:Ordinary Sunday 1 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-early-2-20280123@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20280123
-DTEND;VALUE=DATE:20280124
 SUMMARY:Ordinary Sunday 2 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-3-20280130@omnical
+UID:hol-rc-current-ot-3-20280123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280123
+DTEND;VALUE=DATE:20280124
+SUMMARY:Ordinary Sunday 3 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-4-20280130@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280130
 DTEND;VALUE=DATE:20280131
-SUMMARY:Ordinary Sunday 3 (green)
+SUMMARY:Ordinary Sunday 4 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-presentation-20280202@omnical
@@ -1092,32 +1187,32 @@ SUMMARY:Presentation of the Lord (Candlemas) (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-4-20280206@omnical
+UID:hol-rc-current-ot-5-20280206@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280206
 DTEND;VALUE=DATE:20280207
-SUMMARY:Ordinary Sunday 4 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-early-5-20280213@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20280213
-DTEND;VALUE=DATE:20280214
 SUMMARY:Ordinary Sunday 5 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-6-20280220@omnical
+UID:hol-rc-current-ot-6-20280213@omnical
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20280220
-DTEND;VALUE=DATE:20280221
+DTSTART;VALUE=DATE:20280213
+DTEND;VALUE=DATE:20280214
 SUMMARY:Ordinary Sunday 6 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-7-20280227@omnical
+UID:hol-rc-current-ot-7-20280220@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280220
+DTEND;VALUE=DATE:20280221
+SUMMARY:Ordinary Sunday 7 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-8-20280227@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280227
 DTEND;VALUE=DATE:20280228
-SUMMARY:Ordinary Sunday 7 (green)
+SUMMARY:Ordinary Sunday 8 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-ash-wednesday-20280301@omnical
@@ -1142,19 +1237,22 @@ DTEND;VALUE=DATE:20280313
 SUMMARY:Lent Sunday 2 (purple)
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-rc-current-st-joseph-20280318@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280318
+DTEND;VALUE=DATE:20280319
+SUMMARY:Saint Joseph (white)
+DESCRIPTION:A solemnity. Transferred from 19 Mar (Lent Sunday 3)\; observed
+  on the preceding Saturday per the universal norm (General Norms 5)\; some
+  conferences (e.g. the United States) keep it on the following Monday.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-rc-current-lent-3-20280319@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280319
 DTEND;VALUE=DATE:20280320
 SUMMARY:Lent Sunday 3 (purple)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-st-joseph-20280319@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20280319
-DTEND;VALUE=DATE:20280320
-SUMMARY:Saint Joseph (white)
-DESCRIPTION:A solemnity.
+DESCRIPTION:Saint Joseph is transferred to 18 Mar.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-annunciation-20280325@omnical
@@ -1226,6 +1324,34 @@ DTEND;VALUE=DATE:20280424
 SUMMARY:Divine Mercy Sunday (Easter II) (white)
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-rc-current-easter-3-20280430@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280430
+DTEND;VALUE=DATE:20280501
+SUMMARY:Third Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-4-20280507@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280507
+DTEND;VALUE=DATE:20280508
+SUMMARY:Fourth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-5-20280514@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280514
+DTEND;VALUE=DATE:20280515
+SUMMARY:Fifth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-6-20280521@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280521
+DTEND;VALUE=DATE:20280522
+SUMMARY:Sixth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-rc-current-ascension-20280525@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280525
@@ -1233,6 +1359,21 @@ DTEND;VALUE=DATE:20280526
 SUMMARY:Ascension of the Lord (white)
 DESCRIPTION:Thursday of the sixth week of Easter in the universal calendar\
  ; many countries move it to the following Sunday.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-7-20280528@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280528
+DTEND;VALUE=DATE:20280529
+SUMMARY:Seventh Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-visitation-20280531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280531
+DTEND;VALUE=DATE:20280601
+SUMMARY:Visitation of the Blessed Virgin Mary (white)
+DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-pentecost-20280604@omnical
@@ -1258,11 +1399,11 @@ SUMMARY:Corpus Christi (white)
 DESCRIPTION:Thursday\; many countries move it to Sunday.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-12-20280618@omnical
+UID:hol-rc-current-ot-11-20280618@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280618
 DTEND;VALUE=DATE:20280619
-SUMMARY:Ordinary Sunday 12 (green)
+SUMMARY:Ordinary Sunday 11 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-sacred-heart-20280623@omnical
@@ -1280,11 +1421,11 @@ SUMMARY:Nativity of Saint John the Baptist (white)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-13-20280625@omnical
+UID:hol-rc-current-ot-12-20280625@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280625
 DTEND;VALUE=DATE:20280626
-SUMMARY:Ordinary Sunday 13 (green)
+SUMMARY:Ordinary Sunday 12 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-sts-peter-and-paul-20280629@omnical
@@ -1295,46 +1436,39 @@ SUMMARY:Saints Peter and Paul (red)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-14-20280702@omnical
+UID:hol-rc-current-ot-13-20280702@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280702
 DTEND;VALUE=DATE:20280703
-SUMMARY:Ordinary Sunday 14 (green)
+SUMMARY:Ordinary Sunday 13 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-15-20280709@omnical
+UID:hol-rc-current-ot-14-20280709@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280709
 DTEND;VALUE=DATE:20280710
-SUMMARY:Ordinary Sunday 15 (green)
+SUMMARY:Ordinary Sunday 14 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-16-20280716@omnical
+UID:hol-rc-current-ot-15-20280716@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280716
 DTEND;VALUE=DATE:20280717
-SUMMARY:Ordinary Sunday 16 (green)
+SUMMARY:Ordinary Sunday 15 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-17-20280723@omnical
+UID:hol-rc-current-ot-16-20280723@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280723
 DTEND;VALUE=DATE:20280724
-SUMMARY:Ordinary Sunday 17 (green)
+SUMMARY:Ordinary Sunday 16 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-18-20280730@omnical
+UID:hol-rc-current-ot-17-20280730@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280730
 DTEND;VALUE=DATE:20280731
-SUMMARY:Ordinary Sunday 18 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-19-20280806@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20280806
-DTEND;VALUE=DATE:20280807
-SUMMARY:Ordinary Sunday 19 (green)
+SUMMARY:Ordinary Sunday 17 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-transfiguration-20280806@omnical
@@ -1342,14 +1476,14 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280806
 DTEND;VALUE=DATE:20280807
 SUMMARY:Transfiguration of the Lord (white)
-DESCRIPTION:A feast.
+DESCRIPTION:A feast. Supersedes the 18th Sunday of Ordinary Time this year.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-20-20280813@omnical
+UID:hol-rc-current-ot-19-20280813@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280813
 DTEND;VALUE=DATE:20280814
-SUMMARY:Ordinary Sunday 20 (green)
+SUMMARY:Ordinary Sunday 19 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-assumption-20280815@omnical
@@ -1360,32 +1494,32 @@ SUMMARY:Assumption of the Blessed Virgin Mary (white)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-21-20280820@omnical
+UID:hol-rc-current-ot-20-20280820@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280820
 DTEND;VALUE=DATE:20280821
-SUMMARY:Ordinary Sunday 21 (green)
+SUMMARY:Ordinary Sunday 20 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-22-20280827@omnical
+UID:hol-rc-current-ot-21-20280827@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280827
 DTEND;VALUE=DATE:20280828
-SUMMARY:Ordinary Sunday 22 (green)
+SUMMARY:Ordinary Sunday 21 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-23-20280903@omnical
+UID:hol-rc-current-ot-22-20280903@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280903
 DTEND;VALUE=DATE:20280904
-SUMMARY:Ordinary Sunday 23 (green)
+SUMMARY:Ordinary Sunday 22 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-24-20280910@omnical
+UID:hol-rc-current-ot-23-20280910@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280910
 DTEND;VALUE=DATE:20280911
-SUMMARY:Ordinary Sunday 24 (green)
+SUMMARY:Ordinary Sunday 23 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-holy-cross-20280914@omnical
@@ -1396,18 +1530,18 @@ SUMMARY:Exaltation of the Holy Cross (red)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-25-20280917@omnical
+UID:hol-rc-current-ot-24-20280917@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280917
 DTEND;VALUE=DATE:20280918
-SUMMARY:Ordinary Sunday 25 (green)
+SUMMARY:Ordinary Sunday 24 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-26-20280924@omnical
+UID:hol-rc-current-ot-25-20280924@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280924
 DTEND;VALUE=DATE:20280925
-SUMMARY:Ordinary Sunday 26 (green)
+SUMMARY:Ordinary Sunday 25 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-archangels-20280929@omnical
@@ -1415,42 +1549,58 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280929
 DTEND;VALUE=DATE:20280930
 SUMMARY:Saints Michael\, Gabriel and Raphael (white)
-DESCRIPTION:A feast.
+DESCRIPTION:A memorial.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-27-20281001@omnical
+UID:hol-rc-current-ot-26-20281001@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281001
 DTEND;VALUE=DATE:20281002
-SUMMARY:Ordinary Sunday 27 (green)
+SUMMARY:Ordinary Sunday 26 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-28-20281008@omnical
+UID:hol-rc-current-ot-27-20281008@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281008
 DTEND;VALUE=DATE:20281009
-SUMMARY:Ordinary Sunday 28 (green)
+SUMMARY:Ordinary Sunday 27 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-29-20281015@omnical
+UID:hol-rc-current-ot-28-20281015@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281015
 DTEND;VALUE=DATE:20281016
-SUMMARY:Ordinary Sunday 29 (green)
+SUMMARY:Ordinary Sunday 28 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-30-20281022@omnical
+UID:hol-rc-current-st-luke-20281018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281018
+DTEND;VALUE=DATE:20281019
+SUMMARY:Saint Luke\, Evangelist (red)
+DESCRIPTION:A feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-29-20281022@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281022
 DTEND;VALUE=DATE:20281023
-SUMMARY:Ordinary Sunday 30 (green)
+SUMMARY:Ordinary Sunday 29 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-31-20281029@omnical
+UID:hol-rc-current-sts-simon-jude-20281028@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281028
+DTEND;VALUE=DATE:20281029
+SUMMARY:Saints Simon and Jude\, Apostles (red)
+DESCRIPTION:A feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-30-20281029@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281029
 DTEND;VALUE=DATE:20281030
-SUMMARY:Ordinary Sunday 31 (green)
+SUMMARY:Ordinary Sunday 30 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-all-saints-20281101@omnical
@@ -1469,11 +1619,11 @@ SUMMARY:All Souls' Day (purple)
 DESCRIPTION:Commemoration of all the faithful departed.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-32-20281105@omnical
+UID:hol-rc-current-ot-31-20281105@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281105
 DTEND;VALUE=DATE:20281106
-SUMMARY:Ordinary Sunday 32 (green)
+SUMMARY:Ordinary Sunday 31 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-lateran-20281109@omnical
@@ -1484,18 +1634,18 @@ SUMMARY:Dedication of the Lateran Basilica (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-33-20281112@omnical
+UID:hol-rc-current-ot-32-20281112@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281112
 DTEND;VALUE=DATE:20281113
-SUMMARY:Ordinary Sunday 33 (green)
+SUMMARY:Ordinary Sunday 32 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-34-20281119@omnical
+UID:hol-rc-current-ot-33-20281119@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281119
 DTEND;VALUE=DATE:20281120
-SUMMARY:Ordinary Sunday 34 (green)
+SUMMARY:Ordinary Sunday 33 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-christ-the-king-20281126@omnical
@@ -1587,25 +1737,25 @@ DESCRIPTION:The Sunday after Epiphany (the Monday after when Epiphany falls
   on Jan 7-8 and is transferred).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-1-20290114@omnical
+UID:hol-rc-current-ot-2-20290114@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290114
 DTEND;VALUE=DATE:20290115
-SUMMARY:Ordinary Sunday 1 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-early-2-20290121@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20290121
-DTEND;VALUE=DATE:20290122
 SUMMARY:Ordinary Sunday 2 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-3-20290128@omnical
+UID:hol-rc-current-ot-3-20290121@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290121
+DTEND;VALUE=DATE:20290122
+SUMMARY:Ordinary Sunday 3 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-4-20290128@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290128
 DTEND;VALUE=DATE:20290129
-SUMMARY:Ordinary Sunday 3 (green)
+SUMMARY:Ordinary Sunday 4 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-presentation-20290202@omnical
@@ -1616,18 +1766,18 @@ SUMMARY:Presentation of the Lord (Candlemas) (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-4-20290204@omnical
+UID:hol-rc-current-ot-5-20290204@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290204
 DTEND;VALUE=DATE:20290205
-SUMMARY:Ordinary Sunday 4 (green)
+SUMMARY:Ordinary Sunday 5 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-5-20290211@omnical
+UID:hol-rc-current-ot-6-20290211@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290211
 DTEND;VALUE=DATE:20290212
-SUMMARY:Ordinary Sunday 5 (green)
+SUMMARY:Ordinary Sunday 6 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-ash-wednesday-20290214@omnical
@@ -1681,20 +1831,12 @@ SUMMARY:Saint Joseph (white)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-annunciation-20290325@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20290325
-DTEND;VALUE=DATE:20290326
-SUMMARY:Annunciation of the Lord (white)
-DESCRIPTION:A solemnity.
-END:VEVENT
-BEGIN:VEVENT
 UID:hol-rc-current-palm-sunday-20290325@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290325
 DTEND;VALUE=DATE:20290326
 SUMMARY:Palm Sunday of the Passion (red)
-DESCRIPTION:Holy Week begins.
+DESCRIPTION:Annunciation of the Lord is transferred to 9 Apr.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-maundy-thursday-20290329@omnical
@@ -1736,6 +1878,43 @@ DTEND;VALUE=DATE:20290409
 SUMMARY:Divine Mercy Sunday (Easter II) (white)
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-rc-current-annunciation-20290409@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290409
+DTEND;VALUE=DATE:20290410
+SUMMARY:Annunciation of the Lord (white)
+DESCRIPTION:A solemnity. Transferred from 25 Mar (Palm Sunday of the Passio
+ n) to the Monday after the Second Sunday of Easter..
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-3-20290415@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290415
+DTEND;VALUE=DATE:20290416
+SUMMARY:Third Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-4-20290422@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290422
+DTEND;VALUE=DATE:20290423
+SUMMARY:Fourth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-5-20290429@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290429
+DTEND;VALUE=DATE:20290430
+SUMMARY:Fifth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-6-20290506@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290506
+DTEND;VALUE=DATE:20290507
+SUMMARY:Sixth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-rc-current-ascension-20290510@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290510
@@ -1743,6 +1922,13 @@ DTEND;VALUE=DATE:20290511
 SUMMARY:Ascension of the Lord (white)
 DESCRIPTION:Thursday of the sixth week of Easter in the universal calendar\
  ; many countries move it to the following Sunday.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-7-20290513@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290513
+DTEND;VALUE=DATE:20290514
+SUMMARY:Seventh Sunday of Easter (white)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-pentecost-20290520@omnical
@@ -1765,14 +1951,16 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290531
 DTEND;VALUE=DATE:20290601
 SUMMARY:Corpus Christi (white)
-DESCRIPTION:Thursday\; many countries move it to Sunday.
+DESCRIPTION:Thursday\; many countries move it to Sunday. The feast of Visit
+ ation of the Blessed Virgin Mary is omitted this year (the Corpus Christi 
+ takes precedence).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-10-20290603@omnical
+UID:hol-rc-current-ot-9-20290603@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290603
 DTEND;VALUE=DATE:20290604
-SUMMARY:Ordinary Sunday 10 (green)
+SUMMARY:Ordinary Sunday 9 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-sacred-heart-20290608@omnical
@@ -1782,18 +1970,18 @@ DTEND;VALUE=DATE:20290609
 SUMMARY:Sacred Heart of Jesus (white)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-11-20290610@omnical
+UID:hol-rc-current-ot-10-20290610@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290610
 DTEND;VALUE=DATE:20290611
-SUMMARY:Ordinary Sunday 11 (green)
+SUMMARY:Ordinary Sunday 10 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-12-20290617@omnical
+UID:hol-rc-current-ot-11-20290617@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290617
 DTEND;VALUE=DATE:20290618
-SUMMARY:Ordinary Sunday 12 (green)
+SUMMARY:Ordinary Sunday 11 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-st-john-baptist-20290624@omnical
@@ -1801,14 +1989,8 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290624
 DTEND;VALUE=DATE:20290625
 SUMMARY:Nativity of Saint John the Baptist (white)
-DESCRIPTION:A solemnity.
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-13-20290624@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20290624
-DTEND;VALUE=DATE:20290625
-SUMMARY:Ordinary Sunday 13 (green)
+DESCRIPTION:A solemnity. Supersedes the 12th Sunday of Ordinary Time this y
+ ear.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-sts-peter-and-paul-20290629@omnical
@@ -1819,46 +2001,46 @@ SUMMARY:Saints Peter and Paul (red)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-14-20290701@omnical
+UID:hol-rc-current-ot-13-20290701@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290701
 DTEND;VALUE=DATE:20290702
-SUMMARY:Ordinary Sunday 14 (green)
+SUMMARY:Ordinary Sunday 13 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-15-20290708@omnical
+UID:hol-rc-current-ot-14-20290708@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290708
 DTEND;VALUE=DATE:20290709
-SUMMARY:Ordinary Sunday 15 (green)
+SUMMARY:Ordinary Sunday 14 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-16-20290715@omnical
+UID:hol-rc-current-ot-15-20290715@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290715
 DTEND;VALUE=DATE:20290716
-SUMMARY:Ordinary Sunday 16 (green)
+SUMMARY:Ordinary Sunday 15 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-17-20290722@omnical
+UID:hol-rc-current-ot-16-20290722@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290722
 DTEND;VALUE=DATE:20290723
-SUMMARY:Ordinary Sunday 17 (green)
+SUMMARY:Ordinary Sunday 16 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-18-20290729@omnical
+UID:hol-rc-current-ot-17-20290729@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290729
 DTEND;VALUE=DATE:20290730
-SUMMARY:Ordinary Sunday 18 (green)
+SUMMARY:Ordinary Sunday 17 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-19-20290805@omnical
+UID:hol-rc-current-ot-18-20290805@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290805
 DTEND;VALUE=DATE:20290806
-SUMMARY:Ordinary Sunday 19 (green)
+SUMMARY:Ordinary Sunday 18 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-transfiguration-20290806@omnical
@@ -1869,11 +2051,11 @@ SUMMARY:Transfiguration of the Lord (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-20-20290812@omnical
+UID:hol-rc-current-ot-19-20290812@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290812
 DTEND;VALUE=DATE:20290813
-SUMMARY:Ordinary Sunday 20 (green)
+SUMMARY:Ordinary Sunday 19 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-assumption-20290815@omnical
@@ -1884,32 +2066,32 @@ SUMMARY:Assumption of the Blessed Virgin Mary (white)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-21-20290819@omnical
+UID:hol-rc-current-ot-20-20290819@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290819
 DTEND;VALUE=DATE:20290820
-SUMMARY:Ordinary Sunday 21 (green)
+SUMMARY:Ordinary Sunday 20 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-22-20290826@omnical
+UID:hol-rc-current-ot-21-20290826@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290826
 DTEND;VALUE=DATE:20290827
-SUMMARY:Ordinary Sunday 22 (green)
+SUMMARY:Ordinary Sunday 21 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-23-20290902@omnical
+UID:hol-rc-current-ot-22-20290902@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290902
 DTEND;VALUE=DATE:20290903
-SUMMARY:Ordinary Sunday 23 (green)
+SUMMARY:Ordinary Sunday 22 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-24-20290909@omnical
+UID:hol-rc-current-ot-23-20290909@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290909
 DTEND;VALUE=DATE:20290910
-SUMMARY:Ordinary Sunday 24 (green)
+SUMMARY:Ordinary Sunday 23 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-holy-cross-20290914@omnical
@@ -1920,18 +2102,18 @@ SUMMARY:Exaltation of the Holy Cross (red)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-25-20290916@omnical
+UID:hol-rc-current-ot-24-20290916@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290916
 DTEND;VALUE=DATE:20290917
-SUMMARY:Ordinary Sunday 25 (green)
+SUMMARY:Ordinary Sunday 24 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-26-20290923@omnical
+UID:hol-rc-current-ot-25-20290923@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290923
 DTEND;VALUE=DATE:20290924
-SUMMARY:Ordinary Sunday 26 (green)
+SUMMARY:Ordinary Sunday 25 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-archangels-20290929@omnical
@@ -1939,42 +2121,52 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290929
 DTEND;VALUE=DATE:20290930
 SUMMARY:Saints Michael\, Gabriel and Raphael (white)
-DESCRIPTION:A feast.
+DESCRIPTION:A memorial.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-27-20290930@omnical
+UID:hol-rc-current-ot-26-20290930@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290930
 DTEND;VALUE=DATE:20291001
-SUMMARY:Ordinary Sunday 27 (green)
+SUMMARY:Ordinary Sunday 26 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-28-20291007@omnical
+UID:hol-rc-current-ot-27-20291007@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20291007
 DTEND;VALUE=DATE:20291008
-SUMMARY:Ordinary Sunday 28 (green)
+SUMMARY:Ordinary Sunday 27 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-29-20291014@omnical
+UID:hol-rc-current-ot-28-20291014@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20291014
 DTEND;VALUE=DATE:20291015
-SUMMARY:Ordinary Sunday 29 (green)
+SUMMARY:Ordinary Sunday 28 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-30-20291021@omnical
+UID:hol-rc-current-st-luke-20291018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291018
+DTEND;VALUE=DATE:20291019
+SUMMARY:Saint Luke\, Evangelist (red)
+DESCRIPTION:A feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-29-20291021@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20291021
 DTEND;VALUE=DATE:20291022
-SUMMARY:Ordinary Sunday 30 (green)
+SUMMARY:Ordinary Sunday 29 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-31-20291028@omnical
+UID:hol-rc-current-ot-30-20291028@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20291028
 DTEND;VALUE=DATE:20291029
-SUMMARY:Ordinary Sunday 31 (green)
+SUMMARY:Ordinary Sunday 30 (green)
+DESCRIPTION:The feast of Saints Simon and Jude\, Apostles is omitted this y
+ ear (the Ordinary Sunday 30 takes precedence).
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-all-saints-20291101@omnical
@@ -1993,11 +2185,11 @@ SUMMARY:All Souls' Day (purple)
 DESCRIPTION:Commemoration of all the faithful departed.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-32-20291104@omnical
+UID:hol-rc-current-ot-31-20291104@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20291104
 DTEND;VALUE=DATE:20291105
-SUMMARY:Ordinary Sunday 32 (green)
+SUMMARY:Ordinary Sunday 31 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-lateran-20291109@omnical
@@ -2008,18 +2200,18 @@ SUMMARY:Dedication of the Lateran Basilica (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-33-20291111@omnical
+UID:hol-rc-current-ot-32-20291111@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20291111
 DTEND;VALUE=DATE:20291112
-SUMMARY:Ordinary Sunday 33 (green)
+SUMMARY:Ordinary Sunday 32 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-34-20291118@omnical
+UID:hol-rc-current-ot-33-20291118@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20291118
 DTEND;VALUE=DATE:20291119
-SUMMARY:Ordinary Sunday 34 (green)
+SUMMARY:Ordinary Sunday 33 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-christ-the-king-20291125@omnical
@@ -2111,18 +2303,18 @@ DESCRIPTION:The Sunday after Epiphany (the Monday after when Epiphany falls
   on Jan 7-8 and is transferred).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-1-20300120@omnical
+UID:hol-rc-current-ot-2-20300120@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300120
 DTEND;VALUE=DATE:20300121
-SUMMARY:Ordinary Sunday 1 (green)
+SUMMARY:Ordinary Sunday 2 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-2-20300127@omnical
+UID:hol-rc-current-ot-3-20300127@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300127
 DTEND;VALUE=DATE:20300128
-SUMMARY:Ordinary Sunday 2 (green)
+SUMMARY:Ordinary Sunday 3 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-presentation-20300202@omnical
@@ -2133,39 +2325,39 @@ SUMMARY:Presentation of the Lord (Candlemas) (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-3-20300203@omnical
+UID:hol-rc-current-ot-4-20300203@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300203
 DTEND;VALUE=DATE:20300204
-SUMMARY:Ordinary Sunday 3 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-early-4-20300210@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20300210
-DTEND;VALUE=DATE:20300211
 SUMMARY:Ordinary Sunday 4 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-5-20300217@omnical
+UID:hol-rc-current-ot-5-20300210@omnical
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20300217
-DTEND;VALUE=DATE:20300218
+DTSTART;VALUE=DATE:20300210
+DTEND;VALUE=DATE:20300211
 SUMMARY:Ordinary Sunday 5 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-6-20300224@omnical
+UID:hol-rc-current-ot-6-20300217@omnical
 DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20300224
-DTEND;VALUE=DATE:20300225
+DTSTART;VALUE=DATE:20300217
+DTEND;VALUE=DATE:20300218
 SUMMARY:Ordinary Sunday 6 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-early-7-20300303@omnical
+UID:hol-rc-current-ot-7-20300224@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300224
+DTEND;VALUE=DATE:20300225
+SUMMARY:Ordinary Sunday 7 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-8-20300303@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300303
 DTEND;VALUE=DATE:20300304
-SUMMARY:Ordinary Sunday 7 (green)
+SUMMARY:Ordinary Sunday 8 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-ash-wednesday-20300306@omnical
@@ -2274,6 +2466,34 @@ DTEND;VALUE=DATE:20300429
 SUMMARY:Divine Mercy Sunday (Easter II) (white)
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-rc-current-easter-3-20300505@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300505
+DTEND;VALUE=DATE:20300506
+SUMMARY:Third Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-4-20300512@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300512
+DTEND;VALUE=DATE:20300513
+SUMMARY:Fourth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-5-20300519@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300519
+DTEND;VALUE=DATE:20300520
+SUMMARY:Fifth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-6-20300526@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300526
+DTEND;VALUE=DATE:20300527
+SUMMARY:Sixth Sunday of Easter (white)
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-rc-current-ascension-20300530@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300530
@@ -2281,6 +2501,21 @@ DTEND;VALUE=DATE:20300531
 SUMMARY:Ascension of the Lord (white)
 DESCRIPTION:Thursday of the sixth week of Easter in the universal calendar\
  ; many countries move it to the following Sunday.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-visitation-20300531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300531
+DTEND;VALUE=DATE:20300601
+SUMMARY:Visitation of the Blessed Virgin Mary (white)
+DESCRIPTION:A feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-easter-7-20300602@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300602
+DTEND;VALUE=DATE:20300603
+SUMMARY:Seventh Sunday of Easter (white)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-pentecost-20300609@omnical
@@ -2306,11 +2541,11 @@ SUMMARY:Corpus Christi (white)
 DESCRIPTION:Thursday\; many countries move it to Sunday.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-13-20300623@omnical
+UID:hol-rc-current-ot-12-20300623@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300623
 DTEND;VALUE=DATE:20300624
-SUMMARY:Ordinary Sunday 13 (green)
+SUMMARY:Ordinary Sunday 12 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-st-john-baptist-20300624@omnical
@@ -2336,46 +2571,46 @@ SUMMARY:Saints Peter and Paul (red)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-14-20300630@omnical
+UID:hol-rc-current-ot-13-20300630@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300630
 DTEND;VALUE=DATE:20300701
-SUMMARY:Ordinary Sunday 14 (green)
+SUMMARY:Ordinary Sunday 13 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-15-20300707@omnical
+UID:hol-rc-current-ot-14-20300707@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300707
 DTEND;VALUE=DATE:20300708
-SUMMARY:Ordinary Sunday 15 (green)
+SUMMARY:Ordinary Sunday 14 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-16-20300714@omnical
+UID:hol-rc-current-ot-15-20300714@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300714
 DTEND;VALUE=DATE:20300715
-SUMMARY:Ordinary Sunday 16 (green)
+SUMMARY:Ordinary Sunday 15 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-17-20300721@omnical
+UID:hol-rc-current-ot-16-20300721@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300721
 DTEND;VALUE=DATE:20300722
-SUMMARY:Ordinary Sunday 17 (green)
+SUMMARY:Ordinary Sunday 16 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-18-20300728@omnical
+UID:hol-rc-current-ot-17-20300728@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300728
 DTEND;VALUE=DATE:20300729
-SUMMARY:Ordinary Sunday 18 (green)
+SUMMARY:Ordinary Sunday 17 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-19-20300804@omnical
+UID:hol-rc-current-ot-18-20300804@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300804
 DTEND;VALUE=DATE:20300805
-SUMMARY:Ordinary Sunday 19 (green)
+SUMMARY:Ordinary Sunday 18 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-transfiguration-20300806@omnical
@@ -2386,11 +2621,11 @@ SUMMARY:Transfiguration of the Lord (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-20-20300811@omnical
+UID:hol-rc-current-ot-19-20300811@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300811
 DTEND;VALUE=DATE:20300812
-SUMMARY:Ordinary Sunday 20 (green)
+SUMMARY:Ordinary Sunday 19 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-assumption-20300815@omnical
@@ -2401,32 +2636,32 @@ SUMMARY:Assumption of the Blessed Virgin Mary (white)
 DESCRIPTION:A solemnity.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-21-20300818@omnical
+UID:hol-rc-current-ot-20-20300818@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300818
 DTEND;VALUE=DATE:20300819
-SUMMARY:Ordinary Sunday 21 (green)
+SUMMARY:Ordinary Sunday 20 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-22-20300825@omnical
+UID:hol-rc-current-ot-21-20300825@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300825
 DTEND;VALUE=DATE:20300826
-SUMMARY:Ordinary Sunday 22 (green)
+SUMMARY:Ordinary Sunday 21 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-23-20300901@omnical
+UID:hol-rc-current-ot-22-20300901@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300901
 DTEND;VALUE=DATE:20300902
-SUMMARY:Ordinary Sunday 23 (green)
+SUMMARY:Ordinary Sunday 22 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-24-20300908@omnical
+UID:hol-rc-current-ot-23-20300908@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300908
 DTEND;VALUE=DATE:20300909
-SUMMARY:Ordinary Sunday 24 (green)
+SUMMARY:Ordinary Sunday 23 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-holy-cross-20300914@omnical
@@ -2437,61 +2672,71 @@ SUMMARY:Exaltation of the Holy Cross (red)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-25-20300915@omnical
+UID:hol-rc-current-ot-24-20300915@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300915
 DTEND;VALUE=DATE:20300916
-SUMMARY:Ordinary Sunday 25 (green)
+SUMMARY:Ordinary Sunday 24 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-26-20300922@omnical
+UID:hol-rc-current-ot-25-20300922@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300922
 DTEND;VALUE=DATE:20300923
+SUMMARY:Ordinary Sunday 25 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-26-20300929@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300929
+DTEND;VALUE=DATE:20300930
 SUMMARY:Ordinary Sunday 26 (green)
+DESCRIPTION:The memorial of Saints Michael\, Gabriel and Raphael is omitted
+  this year (the Ordinary Sunday 26 takes precedence).
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-27-20300929@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20300929
-DTEND;VALUE=DATE:20300930
-SUMMARY:Ordinary Sunday 27 (green)
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-archangels-20300929@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20300929
-DTEND;VALUE=DATE:20300930
-SUMMARY:Saints Michael\, Gabriel and Raphael (white)
-DESCRIPTION:A feast.
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-ot-28-20301006@omnical
+UID:hol-rc-current-ot-27-20301006@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301006
 DTEND;VALUE=DATE:20301007
-SUMMARY:Ordinary Sunday 28 (green)
+SUMMARY:Ordinary Sunday 27 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-29-20301013@omnical
+UID:hol-rc-current-ot-28-20301013@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301013
 DTEND;VALUE=DATE:20301014
-SUMMARY:Ordinary Sunday 29 (green)
+SUMMARY:Ordinary Sunday 28 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-30-20301020@omnical
+UID:hol-rc-current-st-luke-20301018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301018
+DTEND;VALUE=DATE:20301019
+SUMMARY:Saint Luke\, Evangelist (red)
+DESCRIPTION:A feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-ot-29-20301020@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301020
 DTEND;VALUE=DATE:20301021
-SUMMARY:Ordinary Sunday 30 (green)
+SUMMARY:Ordinary Sunday 29 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-31-20301027@omnical
+UID:hol-rc-current-ot-30-20301027@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301027
 DTEND;VALUE=DATE:20301028
-SUMMARY:Ordinary Sunday 31 (green)
+SUMMARY:Ordinary Sunday 30 (green)
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-current-sts-simon-jude-20301028@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301028
+DTEND;VALUE=DATE:20301029
+SUMMARY:Saints Simon and Jude\, Apostles (red)
+DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-all-saints-20301101@omnical
@@ -2510,11 +2755,11 @@ SUMMARY:All Souls' Day (purple)
 DESCRIPTION:Commemoration of all the faithful departed.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-32-20301103@omnical
+UID:hol-rc-current-ot-31-20301103@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301103
 DTEND;VALUE=DATE:20301104
-SUMMARY:Ordinary Sunday 32 (green)
+SUMMARY:Ordinary Sunday 31 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-lateran-20301109@omnical
@@ -2525,18 +2770,18 @@ SUMMARY:Dedication of the Lateran Basilica (white)
 DESCRIPTION:A feast.
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-33-20301110@omnical
+UID:hol-rc-current-ot-32-20301110@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301110
 DTEND;VALUE=DATE:20301111
-SUMMARY:Ordinary Sunday 33 (green)
+SUMMARY:Ordinary Sunday 32 (green)
 END:VEVENT
 BEGIN:VEVENT
-UID:hol-rc-current-ot-34-20301117@omnical
+UID:hol-rc-current-ot-33-20301117@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301117
 DTEND;VALUE=DATE:20301118
-SUMMARY:Ordinary Sunday 34 (green)
+SUMMARY:Ordinary Sunday 33 (green)
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-christ-the-king-20301124@omnical
@@ -2555,20 +2800,23 @@ SUMMARY:Advent Sunday I (purple)
 DESCRIPTION:The four weeks before Christmas.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-rc-current-immaculate-conception-20301207@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301207
+DTEND;VALUE=DATE:20301208
+SUMMARY:Immaculate Conception (white)
+DESCRIPTION:A solemnity. Transferred from 8 Dec (Advent Sunday II)\; observ
+ ed on the preceding Saturday per the universal norm (General Norms 5)\; so
+ me conferences (e.g. the United States) keep it on the following Monday\, 
+ 2030's Monday keeping the obligation in the United States.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-rc-current-advent-2-20301208@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301208
 DTEND;VALUE=DATE:20301209
 SUMMARY:Advent Sunday II (purple)
-DESCRIPTION:The four weeks before Christmas.
-END:VEVENT
-BEGIN:VEVENT
-UID:hol-rc-current-immaculate-conception-20301208@omnical
-DTSTAMP:20260101T000000Z
-DTSTART;VALUE=DATE:20301208
-DTEND;VALUE=DATE:20301209
-SUMMARY:Immaculate Conception (white)
-DESCRIPTION:A solemnity.
+DESCRIPTION:Immaculate Conception is transferred to 7 Dec.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-rc-current-advent-3-20301215@omnical

@@ -1188,11 +1188,59 @@ def _advent_first(year):
     return st_andrew + datetime.timedelta(days=7 - offset)
 
 
-def set_rc_current():
-    events = []
+def _rc_current_ordinary(year):
+    """The Ordinary Time Sundays of the current calendar, numbered per the
+    Universal Norms (verified for 2026-2030 against romcal's calendar):
+    the Baptism of the Lord is the FIRST Sunday; the early segment numbers
+    upward until Ash Wednesday; the late segment numbers backward from
+    Christ the King = the 34th, one number per Sunday slot, consuming a
+    number wherever a solemnity or a feast of the Lord in the General
+    Calendar takes the Sunday (Trinity itself takes the first).  Returns
+    (early, late, displaced) — the last one maps the displacing solemnity
+    dates to the Sunday numbers they consumed."""
+    easter = easter_gregorian(year)
+    pentecost = easter + datetime.timedelta(days=49)
+    trinity = pentecost + datetime.timedelta(days=7)
+    ash = easter - datetime.timedelta(days=46)
+    ctk = _advent_first(year) - datetime.timedelta(days=7)
+    baptism = _first_sunday_after(datetime.date(year, 1, 6))
+    displacers = {  # solemnities / feasts of the Lord, universal dates
+        datetime.date(year, 11, 1): "All Saints",
+        datetime.date(year, 8, 15): "the Assumption",
+        datetime.date(year, 6, 24): "the Birth of Saint John the Baptist",
+        datetime.date(year, 8, 6): "the Transfiguration",
+        datetime.date(year, 9, 14): "the Exaltation of the Holy Cross",
+        datetime.date(year, 2, 2): "the Presentation of the Lord",
+        datetime.date(year, 11, 9): "the Dedication of the Lateran Basilica",
+    }
+    early, n, d = [], 2, baptism + datetime.timedelta(days=7)
+    while d < ash:
+        early.append((d, n))
+        n += 1
+        d += datetime.timedelta(days=7)
+    late, num, d, displaced = [], 33, ctk - datetime.timedelta(days=7), {}
+    while d > trinity:
+        if d in displacers:
+            displaced[d] = num  # the Sunday gives way (Table n. 59, I.3/II.5)
+        else:
+            late.append((d, num))
+        num -= 1
+        d -= datetime.timedelta(days=7)
+    late.reverse()
+    return early, late, displaced
 
-    def add(date, name, slug, color, note=""):
-        events.append(Event(date, f"{name} ({color})", slug, note))
+
+def set_rc_current():
+    """The current Roman calendar (universal dates; national transfers are
+    noted, not moved).  Every candidate is a row and the set is resolved so
+    one event per date holds: impeded solemnities go to the preceding
+    Saturday (Universal Norms n. 5 — the Annunciation, impeded in Holy Week
+    or the Easter octave, to the Monday after the Second Sunday of Easter);
+    saints' celebrations impeded by a Sunday are omitted that year (n. 60)."""
+    rows = []  # (date, name, slug, color, note, kind)
+
+    def add(date, name, slug, color, note="", kind=""):
+        rows.append((date, name, slug, color, note, kind))
 
     for y in YEARS:
         easter = easter_gregorian(y)
@@ -1201,11 +1249,11 @@ def set_rc_current():
         for i, week in enumerate(["I", "II", "III", "IV"]):
             add(advent + datetime.timedelta(days=7 * i), f"Advent Sunday {week}",
                 f"advent-{i + 1}", "purple",
-                "The four weeks before Christmas.")
+                "The four weeks before Christmas.", "sunday")
         add(datetime.date(y, 12, 8), "Immaculate Conception", "immaculate-conception",
-            "white", "A solemnity.")
+            "white", "A solemnity.", "solemnity")
         add(datetime.date(y, 12, 25), "Christmas (Nativity of the Lord)", "christmas",
-            "white", "The octave runs to Jan 1.")
+            "white", "The octave runs to Jan 1.", "solemnity")
         # Holy Family: the Sunday within the Christmas octave, else Dec 30
         hf = None
         for d in range(26, 32):
@@ -1213,91 +1261,161 @@ def set_rc_current():
             if cand.weekday() == 6:
                 hf = cand
                 break
-        add(hf or datetime.date(y, 12, 30), "Holy Family", "holy-family", "white")
-
-        # Following year's early season (emitted for year y+1 dates within y+1's loop)
+        add(hf or datetime.date(y, 12, 30), "Holy Family", "holy-family", "white",
+            "", "lord")
         add(datetime.date(y, 1, 1), "Mary, Mother of God", "mary-mother-of-god",
-            "white", "A solemnity; the Octave Day of the Nativity.")
+            "white", "A solemnity; the Octave Day of the Nativity.", "solemnity")
         add(datetime.date(y, 1, 6), "Epiphany of the Lord", "epiphany", "white",
             "Jan 6 in the universal calendar; many countries transfer it to the "
-            "following Sunday.")
+            "following Sunday.", "solemnity")
         baptism = _first_sunday_after(datetime.date(y, 1, 6))
         add(baptism, "Baptism of the Lord", "baptism-of-the-lord", "white",
             "The Sunday after Epiphany (the Monday after when Epiphany falls "
-            "on Jan 7-8 and is transferred).")
+            "on Jan 7-8 and is transferred).", "lord")
         add(datetime.date(y, 2, 2), "Presentation of the Lord (Candlemas)", "presentation",
-            "white", "A feast.")
+            "white", "A feast.", "lord")
         # Lent and Easter
         add(easter - datetime.timedelta(days=46), "Ash Wednesday", "ash-wednesday",
-            "purple", "The beginning of Lent.")
+            "purple", "The beginning of Lent.", "sunday")
         lent1 = easter - datetime.timedelta(days=42)
         for i in range(5):
             add(lent1 + datetime.timedelta(days=7 * i), f"Lent Sunday {i + 1}",
-                f"lent-{i + 1}", "purple")
+                f"lent-{i + 1}", "purple", "", "sunday")
         add(easter - datetime.timedelta(days=7), "Palm Sunday of the Passion", "palm-sunday",
-            "red", "Holy Week begins.")
+            "red", "Holy Week begins.", "sunday")
         add(easter - datetime.timedelta(days=3), "Maundy Thursday (Holy Thursday)",
-            "maundy-thursday", "white", "The Mass of the Lord's Supper, evening.")
+            "maundy-thursday", "white", "The Mass of the Lord's Supper, evening.", "sunday")
         add(easter - datetime.timedelta(days=2), "Good Friday", "good-friday", "red",
-            "The Passion of the Lord.")
+            "The Passion of the Lord.", "sunday")
         add(easter - datetime.timedelta(days=1), "Holy Saturday", "holy-saturday", "purple",
-            "The Easter Vigil is celebrated after nightfall.")
+            "The Easter Vigil is celebrated after nightfall.", "sunday")
         add(easter, "Easter Sunday", "easter", "white", "The Resurrection; the octave runs "
-            "to the Second Sunday.")
+            "to the Second Sunday.", "sunday")
         add(easter + datetime.timedelta(days=7), "Divine Mercy Sunday (Easter II)",
-            "divine-mercy", "white")
-        # Fixed spring feasts
-        add(datetime.date(y, 3, 19), "Saint Joseph", "st-joseph", "white", "A solemnity.")
+            "divine-mercy", "white", "", "sunday")
+        # The Sundays of Easter (Universal Norms n. 23): II is the octave day
+        # (emitted above as Divine Mercy); III..VII follow weekly.
+        for i, word in [(3, "Third"), (4, "Fourth"), (5, "Fifth"), (6, "Sixth"),
+                        (7, "Seventh")]:
+            add(easter + datetime.timedelta(days=7 * (i - 1)),
+                f"{word} Sunday of Easter", f"easter-{i}", "white", "", "sunday")
+        # Fixed spring solemnities
+        add(datetime.date(y, 3, 19), "Saint Joseph", "st-joseph", "white", "A solemnity.",
+            "solemnity")
         add(datetime.date(y, 3, 25), "Annunciation of the Lord", "annunciation", "white",
-            "A solemnity.")
+            "A solemnity.", "solemnity")
         add(easter + datetime.timedelta(days=39), "Ascension of the Lord", "ascension",
             "white", "Thursday of the sixth week of Easter in the universal "
-            "calendar; many countries move it to the following Sunday.")
+            "calendar; many countries move it to the following Sunday.", "solemnity")
         add(easter + datetime.timedelta(days=49), "Pentecost", "pentecost", "red",
-            "The descent of the Holy Spirit.")
-        add(easter + datetime.timedelta(days=56), "Trinity Sunday", "trinity-sunday", "white")
+            "The descent of the Holy Spirit.", "sunday")
+        add(easter + datetime.timedelta(days=56), "Trinity Sunday", "trinity-sunday",
+            "white", "", "solemnity")
         add(easter + datetime.timedelta(days=60), "Corpus Christi", "corpus-christi",
-            "white", "Thursday; many countries move it to Sunday.")
+            "white", "Thursday; many countries move it to Sunday.", "solemnity")
         add(easter + datetime.timedelta(days=68), "Sacred Heart of Jesus", "sacred-heart",
-            "white")
+            "white", "", "solemnity")
         add(datetime.date(y, 6, 24), "Nativity of Saint John the Baptist",
-            "st-john-baptist", "white", "A solemnity.")
+            "st-john-baptist", "white", "A solemnity.", "solemnity")
         add(datetime.date(y, 6, 29), "Saints Peter and Paul", "sts-peter-and-paul",
-            "red", "A solemnity.")
+            "red", "A solemnity.", "solemnity")
+        add(datetime.date(y, 5, 31), "Visitation of the Blessed Virgin Mary",
+            "visitation", "white", "A feast.", "feast")
         add(datetime.date(y, 8, 6), "Transfiguration of the Lord", "transfiguration",
-            "white", "A feast.")
+            "white", "A feast.", "lord")
         add(datetime.date(y, 8, 15), "Assumption of the Blessed Virgin Mary", "assumption",
-            "white", "A solemnity.")
+            "white", "A solemnity.", "solemnity")
         add(datetime.date(y, 9, 14), "Exaltation of the Holy Cross", "holy-cross",
-            "red", "A feast.")
+            "red", "A feast.", "lord")
         add(datetime.date(y, 9, 29), "Saints Michael, Gabriel and Raphael", "archangels",
-            "white", "A feast.")
-        add(datetime.date(y, 11, 1), "All Saints", "all-saints", "white", "A solemnity.")
+            "white", "A memorial.", "memorial")
+        add(datetime.date(y, 10, 18), "Saint Luke, Evangelist", "st-luke",
+            "red", "A feast.", "feast")
+        add(datetime.date(y, 10, 28), "Saints Simon and Jude, Apostles", "sts-simon-jude",
+            "red", "A feast.", "feast")
+        add(datetime.date(y, 11, 1), "All Saints", "all-saints", "white",
+            "A solemnity.", "solemnity")
         add(datetime.date(y, 11, 2), "All Souls' Day", "all-souls", "purple",
-            "Commemoration of all the faithful departed.")
+            "Commemoration of all the faithful departed.", "solemnity")
         add(datetime.date(y, 11, 9), "Dedication of the Lateran Basilica", "lateran",
-            "white", "A feast.")
-        # Christ the King: the last Sunday before Advent I
+            "white", "A feast.", "lord")
+        # Christ the King: the last Sunday before Advent I, always the 34th
         ctk = advent - datetime.timedelta(days=7)
         add(ctk, "Our Lord Jesus Christ, King of the Universe", "christ-the-king",
-            "white", "The 34th and last Sunday of Ordinary Time.")
-        # Ordinary Sundays, numbered per the Roman books: count backwards
-        # from Christ the King, and number the post-baptism/pre-Lent Sundays
-        # from 1.
-        ot = 34
-        d = ctk - datetime.timedelta(days=7)
-        while d > easter + datetime.timedelta(days=60):  # after Corpus Christi
-            add(d, f"Ordinary Sunday {ot}", f"ot-{ot}", "green")
-            ot -= 1
-            d -= datetime.timedelta(days=7)
-        # early Ordinary Time: after Baptism until Septuagesima (OF has none —
-        # Lent starts at Ash Wednesday); count from 1 until the Sunday before Ash
-        n = 1
-        d = baptism + datetime.timedelta(days=7)
-        while d < easter - datetime.timedelta(days=42):
-            add(d, f"Ordinary Sunday {n}", f"ot-early-{n}", "green")
-            n += 1
-            d += datetime.timedelta(days=7)
+            "white", "The 34th and last Sunday of Ordinary Time.", "sunday")
+        # Ordinary Time: the Baptism is the 1st Sunday (Norms n. 38, 6); the
+        # early segment counts upward to Ash Wednesday, the late segment
+        # backward from the 34th, consuming numbers where a solemnity or
+        # feast of the Lord takes the Sunday.
+        early, late, displaced = _rc_current_ordinary(y)
+        for d, n in early:
+            add(d, f"Ordinary Sunday {n}", f"ot-{n}", "green", "", "otsunday")
+        for d, n in late:
+            add(d, f"Ordinary Sunday {n}", f"ot-{n}", "green", "", "otsunday")
+        # the solemnities that took a Sunday carry the number they consumed
+        for i, r in enumerate(rows):
+            if r[0].year == y and r[0] in displaced and r[5] in ("solemnity", "lord"):
+                n = displaced[r[0]]
+                rows[i] = (r[0], r[1], r[2], r[3],
+                           ((r[4] + " ") if r[4] else "") +
+                           f"Supersedes the {_ordinal(n)} Sunday of Ordinary Time "
+                           "this year.", r[5])
+    # --- resolve occurrence: one event per date
+    events = []
+    by_date = {}
+    for r in rows:
+        by_date.setdefault(r[0], []).append(r)
+    transfers = []
+    for date, rs in sorted(by_date.items()):
+        if len(rs) == 1:
+            r = rs[0]
+            events.append(Event(r[0], f"{r[1]} ({r[3]})", r[2], r[4]))
+            continue
+        kinds = [r[5] for r in rs]
+        if "solemnity" in kinds and "sunday" in kinds and "otsunday" not in kinds:
+            # a solemnity impeded by a Sunday of Advent/Lent/Easter:
+            # n. 5 — the preceding Saturday (the Annunciation, impeded in
+            # Holy Week or the Easter octave: the Monday after the Second
+            # Sunday of Easter)
+            sol = next(r for r in rs if r[5] == "solemnity")
+            sun = next(r for r in rs if r[5] == "sunday")
+            sun_name = sun[1].split(" (")[0]
+            if sol[2] == "annunciation":
+                target = easter_gregorian(date.year) + datetime.timedelta(days=8)
+                note = (f"Transferred from {date.day} {date:%b} ({sun_name}) to the "
+                        "Monday after the Second Sunday of Easter.")
+            else:
+                target = date - datetime.timedelta(days=1)
+                note = (f"Transferred from {date.day} {date:%b} ({sun_name}); observed "
+                        "on the preceding Saturday per the universal norm "
+                        "(General Norms 5); some conferences (e.g. the United "
+                        "States) keep it on the following Monday")
+                if sol[2] == "immaculate-conception":
+                    note += (f", {target.year}'s Monday keeping the obligation "
+                             "in the United States")
+            note += "."
+            transfers.append((target, sol, note))
+            events.append(Event(sun[0], f"{sun[1]} ({sun[3]})", sun[2],
+                                f"{sol[1]} is transferred to {target.day} {target:%b}."))
+            continue
+        # otherwise the higher place in the Table of Liturgical Days (n. 59)
+        # keeps the day; saints' celebrations give way and are omitted that
+        # year (n. 60), noted on the winner
+        rank_of = {"sunday": 0, "solemnity": 1, "lord": 2, "otsunday": 3,
+                   "feast": 4, "memorial": 5}
+        rs_sorted = sorted(rs, key=lambda r: rank_of[r[5]])
+        win, losers = rs_sorted[0], rs_sorted[1:]
+        note = win[4]
+        for loser in losers:
+            what = "memorial" if loser[5] == "memorial" else "feast"
+            clause = f"The {what} of {loser[1]} is omitted this year (the " \
+                     f"{win[1].split(' (')[0]} takes precedence)."
+            note = ((note + " ") if note else "") + clause
+        events.append(Event(win[0], f"{win[1]} ({win[3]})", win[2], note))
+    for target, sol, note in transfers:
+        base = sol[4]
+        events.append(Event(target, f"{sol[1]} ({sol[3]})", sol[2],
+                            ((base + " ") if base else "") + note))
     return events
 
 
@@ -2241,6 +2359,60 @@ def self_test():
         if want_desc and want_desc not in e.description:
             raise SystemExit(f"SELF-TEST FAILED: rc-1962 {d} '{e.summary}' description "
                              f"lacks '{want_desc}': {e.description}")
+    # rc-current — the Ordinary Time numbering (the Baptism counts as the
+    # 1st Sunday; the late segment numbers backward from Christ the King =
+    # the 34th) and the occurrence vectors, verified against romcal's
+    # 2026-2030 calendars (the universal calendar: romcal's US rendering
+    # also moves Epiphany, Ascension and Corpus Christi to Sundays, which
+    # this set notes on the fixed dates instead).
+    rccur = {}
+    for e in set_rc_current():
+        if e.dtstart in rccur:
+            raise SystemExit(f"SELF-TEST FAILED: two events on {e.dtstart} in rc-current")
+        rccur[e.dtstart] = e
+    for date, want_summary, want_desc in [
+        ("20260118", "Ordinary Sunday 2 (green)", None),
+        ("20260215", "Ordinary Sunday 6 (green)", None),
+        ("20260419", "Third Sunday of Easter (white)", None),
+        ("20260503", "Fifth Sunday of Easter (white)", None),
+        ("20260517", "Seventh Sunday of Easter (white)", None),
+        ("20260607", "Ordinary Sunday 10 (green)", None),
+        ("20261011", "Ordinary Sunday 28 (green)", None),
+        ("20261018", "Ordinary Sunday 29 (green)",
+         "Saint Luke, Evangelist is omitted this year"),
+        ("20261101", "All Saints (white)", "Supersedes the 31st Sunday"),
+        ("20261108", "Ordinary Sunday 32 (green)", None),
+        ("20261122", "Our Lord Jesus Christ, King of the Universe (white)", "34th"),
+        ("20270815", "Assumption of the Blessed Virgin Mary (white)",
+         "Supersedes the 20th Sunday"),
+        ("20280318", "Saint Joseph (white)", "Transferred from 19 Mar"),
+        ("20280319", "Lent Sunday 3 (purple)", "transferred to 18 Mar"),
+        ("20280806", "Transfiguration of the Lord (white)",
+         "Supersedes the 18th Sunday"),
+        ("20290409", "Annunciation of the Lord (white)",
+         "Monday after the Second Sunday of Easter"),
+        ("20290624", "Nativity of Saint John the Baptist (white)",
+         "Supersedes the 12th Sunday"),
+        ("20291028", "Ordinary Sunday 30 (green)",
+         "Saints Simon and Jude, Apostles is omitted this year"),
+        ("20291224", None, None),  # the Annunciation has left Mar 25 free
+        ("20301207", "Immaculate Conception (white)", "Transferred from 8 Dec"),
+        ("20301208", "Advent Sunday II (purple)", "transferred to 7 Dec"),
+    ]:
+        d = datetime.date(int(date[:4]), int(date[4:6]), int(date[6:]))
+        e = rccur.get(d)
+        if want_summary is None:
+            if e is not None:
+                raise SystemExit(f"SELF-TEST FAILED: {d} must carry no rc-current event")
+            continue
+        if e is None:
+            raise SystemExit(f"SELF-TEST FAILED: rc-current {d} has no event")
+        if e.summary != want_summary:
+            raise SystemExit(f"SELF-TEST FAILED: rc-current {d} is '{e.summary}', "
+                             f"expected '{want_summary}'")
+        if want_desc and want_desc not in e.description:
+            raise SystemExit(f"SELF-TEST FAILED: rc-current {d} '{e.summary}' "
+                             f"description lacks '{want_desc}': {e.description}")
     # Hebrew structural sweep
     for y in range(5700, 5861):
         if hebrew_year_length(y) not in (353, 354, 355, 383, 384, 385):
