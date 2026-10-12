@@ -1358,9 +1358,10 @@ def _rc1962_impeded_sunday(date, year):
 
 def sundays_1962(year):
     """The numbered Sundays of the 1962 calendar for `year`, verified against
-    the Divinum Officium 1962 Ordo for every year in range:
+    the Divinum Officium 1962 Ordo for every year in range.  Returns
+    (sundays, consumed) where
 
-      {date: (kind, n)} with kind in
+      sundays = {date: (kind, n)} with kind in
         "epiphany"  — kept after Epiphany in January (n = 2..6),
         "pentecost" — after Trinity, numbered forward (n = 2..23; Trinity
                       itself is the 1st, emitted as its own feast),
@@ -1368,12 +1369,16 @@ def sundays_1962(year):
                       and the 24th after Pentecost, numbered from the end
                       (the slot nearest the 24th takes the highest number;
                       leftovers are dropped — General Rubric n. 18),
-        "last"       — the 24th & Last Sunday after Pentecost, always the
-                      last before Advent.
+        "last"      — the 24th & Last Sunday after Pentecost, always the
+                      last before Advent;
 
-    Slots taken by a higher-ranked day still consume their number (the
-    superseded Sunday's Mass is what that week's ferias use); numbering
-    stops at the 23rd.  (DO 2026-2030 all reproduce exactly.)
+      consumed = {date: (kind, n)} for the Sunday slots whose number an
+        impeding feast took instead (Christ the King, All Saints, ...).  The
+        superseded Sunday's Mass is what that week's ferias use, and it is
+        commemorated in the feast's office.
+
+    Numbering stops at the 23rd; the 24th is always the last Sunday before
+    Advent.  (DO 2026-2030 all reproduce exactly.)
     """
     easter = easter_gregorian(year)
     septuagesima = easter - datetime.timedelta(days=63)
@@ -1392,11 +1397,14 @@ def sundays_1962(year):
     impeded = list(range(n, 7))  # the after-Epiphany numbers unused in January
     # Pentecost season: forward numbering with consumption, 2..23.
     free = []
+    consumed = {}
     d = trinity + datetime.timedelta(days=7)
     num = 2
     while d < last:
         if num <= 23:
-            if not _rc1962_impeded_sunday(d, year):
+            if _rc1962_impeded_sunday(d, year):
+                consumed[d] = ("pentecost", num)
+            else:
                 out[d] = ("pentecost", num)
         elif not _rc1962_impeded_sunday(d, year):
             free.append(d)  # between the 23rd's slot and the 24th
@@ -1406,152 +1414,312 @@ def sundays_1962(year):
         if i < len(impeded):
             out[dd] = ("resumed", impeded[-1 - i])
     out[last] = ("last", 24)
-    return out
+    return out, consumed
+
+
+class _LitDay:
+    """One candidate celebration for a date, feeding the 1962 occurrence
+    resolver: rank = I/II/III class, kind = sunday | feast | octave | ember |
+    vigil | feria, and the flags the 1960 Code of Rubrics hangs its
+    dispositions on — lord (a feast of the Lord, General Rubric 16a),
+    replacement (a feast permanently assigned to a Sunday, n. 17, which
+    takes the Sunday's place with all its rights and no commemoration).
+    `commem` is how the day names itself inside other days' descriptions."""
+
+    def __init__(self, date, summary, slug, rank, color, note="",
+                 kind="feast", lord=False, replacement=False, commem=None):
+        self.date = date
+        self.summary = summary
+        self.slug = slug
+        self.rank = rank
+        self.color = color
+        self.note = note
+        self.kind = kind
+        self.lord = lord
+        self.replacement = replacement
+        self.commem = commem if commem is not None else summary
+
+    def row(self):
+        """The Tabula of liturgical days (Code of Rubrics n. 91) folded to one
+        precedence value per emitted day; lower wins."""
+        if self.kind == "sunday":
+            return 6 if self.rank == 1 else 15
+        if self.kind == "octave":
+            return 10 if self.rank == 1 else 17
+        if self.kind == "ember":
+            return 18
+        if self.kind == "vigil":
+            if self.rank == 1:
+                return 5 if self.slug == "christmas-vigil" else 9
+            return 21
+        if self.kind == "feria":
+            return 7 if self.rank == 1 else 26
+        if self.rank == 1:
+            if "Immaculate Conception" in self.summary:
+                return 4   # General Rubric 15: preferred to the Advent Sunday
+            if "All Souls" in self.summary:
+                return 8   # n. 91.8: yields to any Sunday occurring on it
+            return 11
+        return 14 if self.lord else 16
+
+    def event(self):
+        parts = [f"{['', 'I', 'II', 'III'][self.rank]} class", self.color, self.note]
+        desc = ", ".join(p for p in parts if p)
+        if desc:
+            desc = desc[0].upper() + desc[1:]
+        return Event(self.date, self.summary, self.slug, desc)
+
+
+def _rc1962_resolve(year, days, consumed):
+    """Group the candidates by date and apply the occurrence dispositions of
+    the 1960 Code of Rubrics (nn. 14-18, 30, 69, 95-96, 111 + the Tabula of
+    n. 91), all verified against the Divinum Officium Ordo for 2026-2030:
+
+      - the higher Tabula row wins;
+      - a I class feast impeded by a higher row is TRANSFERRED (n. 95) — the
+        Annunciation to the Monday after Low Sunday (n. 96a) — except the
+        Immaculate Conception, which beats the Advent Sunday it lands on
+        (n. 15);
+      - an impeded Sunday is never resumed or anticipated (n. 14): it is
+        commemorated on the feast that displaced it, or (for the n. 17
+        replacements and II class feasts of the Lord, n. 16a) silently
+        replaced;
+      - II and III class feasts lose without transference: commemorated
+        where the rubrics admit it (n. 111), otherwise omitted that year.
+
+    `consumed` is sundays_1962's map of numbered-Sunday slots taken by
+    impeding feasts; their commemoration rides in the winner's note.
+    """
+    by_date = {}
+    for d in days:
+        by_date.setdefault(d.date, []).append(d)
+    # dates that block a I class transfer (n. 96: "the next day following
+    # which is not of the 1st or 2nd class") — every I/II class candidate,
+    # plus the II class Advent ferias of 17-23 December (n. 24a), which the
+    # set does not otherwise emit
+    blockers = {dt for dt, cs in by_date.items() if any(c.rank <= 2 for c in cs)}
+    blockers |= {datetime.date(year, 12, dd) for dd in range(17, 24)}
+
+    events, transferred = [], []
+    for date, cands in sorted(by_date.items()):
+        if len(cands) > 1:
+            cands.sort(key=lambda c: (c.row(), 0 if c.replacement else 1))
+            win, losers = cands[0], cands[1:]
+        else:
+            win, losers = cands[0], []
+        notes = [win.note] if win.note else []
+        for loser in losers:
+            if win.slug == "christmas-vigil" and loser.kind == "sunday":
+                continue  # n. 30a: replaces the Fourth Sunday of Advent outright
+            if loser.kind == "octave" and win.kind == "sunday":
+                continue  # n. 69: the Sunday within the octave IS that day
+            if loser.rank == 1 and loser.kind == "feast":
+                # only I class feasts transfer (n. 95)
+                if loser.slug == "annunciation-of-the-blessed-virgin-mary":
+                    target = easter_gregorian(year) + datetime.timedelta(days=8)
+                else:  # n. 96: the next day free of I and II class
+                    target = loser.date + datetime.timedelta(days=1)
+                    while target in blockers:
+                        target += datetime.timedelta(days=1)
+                moved = _LitDay(target, loser.summary, loser.slug, loser.rank,
+                                loser.color, loser.note, kind=loser.kind,
+                                lord=loser.lord, replacement=loser.replacement,
+                                commem=loser.commem)
+                moved.note = ((loser.note + " ") if loser.note else "") + \
+                    f"Transferred from {loser.date.day} {loser.date:%b} ({win.commem})."
+                transferred.append(moved)
+                notes.append(f"{loser.commem} is transferred to {target.day} {target:%b}.")
+                continue
+            # No transference for anything else (n. 14, 95): commemorated
+            # where the day admits it, otherwise omitted that year (n. 111).
+            if loser.kind == "sunday":
+                notes.append(f"{loser.commem} is commemorated.")
+            elif loser.kind in ("octave", "ember", "vigil"):
+                notes.append(f"Commemorated: {loser.commem}.")
+            elif win.rank == 1 or win.kind == "sunday":
+                if loser.rank == 2 and win.kind == "sunday":
+                    notes.append(f"Commemorated: {loser.commem}.")  # n. 111b
+                else:
+                    notes.append(f"{loser.commem} is omitted this year.")
+            else:
+                notes.append(f"Commemorated: {loser.commem}.")  # n. 111c
+        if date in consumed and not win.replacement:
+            kind, n = consumed[date]
+            sname = (f"{_ordinal(n)} Sunday after Pentecost" if kind == "pentecost"
+                     else f"{_ordinal(n)} Sunday after Epiphany")
+            if win.row() == 14:  # a II class feast of the Lord: no commemoration (n. 16a)
+                notes.append(f"The {sname} gives way to this feast of the Lord.")
+            else:
+                notes.append(f"The {sname} is commemorated.")
+        win.note = " ".join(n[0].upper() + n[1:] if n else n for n in notes)
+        events.append(win.event())
+    events.extend(d.event() for d in transferred)
+    return events
 
 
 def set_rc_1962():
-    events = []
+    """The 1962 calendar: every candidate day is built as a _LitDay and run
+    through _rc1962_resolve, so exactly one event per date results — the
+    occurrence dispositions of the 1960 Code ride in the descriptions as
+    commemorations, omissions and transfers."""
+    days = []
+    TD = datetime.timedelta
 
-    def add(date, name, slug, rank="", color="", note=""):
-        desc = ", ".join(p for p in [rank, color, note] if p)
-        if desc:
-            desc = desc[0].upper() + desc[1:]
-        events.append(Event(date, name, slug, desc))
+    def day(date, summary, slug, rank, color, note="", **kw):
+        days.append(_LitDay(date, summary, slug, rank, color, note, **kw))
 
     for y in YEARS:
         easter = easter_gregorian(y)
         advent = _advent_first(y)
+        pentecost = easter + TD(days=49)
         # --- Temporal: Advent through Christmastide
-        for i, week in enumerate(["I", "II", "III", "IV"]):
-            add(advent + datetime.timedelta(days=7 * i), f"Advent Sunday {week}",
-                f"advent-{i + 1}", "I class", "purple")
-        ember_dec = _ember_days(advent + datetime.timedelta(days=14))
-        for i, d in enumerate(ember_dec):
-            add(d, f"Ember Day of Advent ({['Wednesday', 'Friday', 'Saturday'][i]})",
-                f"ember-advent-{i}", "III class", "purple")
-        add(datetime.date(y, 12, 8), "Immaculate Conception", "immaculate-conception",
-            "I class", "white", "Patroness of the United States.")
-        add(datetime.date(y, 12, 25), "Christmas (Nativity of the Lord)", "christmas",
-            "I class", "white", "With its octave.")
+        for i, week in enumerate(["First", "Second", "Third", "Fourth"]):
+            day(advent + TD(days=7 * i), f"Advent Sunday {['I', 'II', 'III', 'IV'][i]}",
+                f"advent-{i + 1}", 1, "purple", kind="sunday",
+                commem=f"The {week} Sunday of Advent")
+        for i, d in enumerate(_ember_days(advent + TD(days=14))):
+            day(d, f"Ember Day of Advent ({['Wednesday', 'Friday', 'Saturday'][i]})",
+                f"ember-advent-{i}", 2, "purple", kind="ember",
+                commem="the ember day of Advent")
+        christmas_vigil = datetime.date(y, 12, 24)
+        day(christmas_vigil, "Vigil of Christmas", "christmas-vigil", 1, "purple",
+            "Takes the place of the Fourth Sunday of Advent when it falls "
+            "thus (General Rubric 30a)." if christmas_vigil.weekday() == 6 else "",
+            kind="vigil")
+        day(datetime.date(y, 12, 25), "Christmas (Nativity of the Lord)", "christmas",
+            1, "white", "With its octave.")
         for d in range(26, 32):
-            add(datetime.date(y, 12, d), "Day within the Christmas Octave", f"christmas-octave-{d}",
-                "II class", "white", f"Dec {d}.")
-        # Holy Innocents etc. handled in the sanctorale below.
-        add(datetime.date(y, 1, 1), "Circumcision of Our Lord", "circumcision",
-            "I class", "white", "The octave day of Christmas.")
-        add(datetime.date(y, 1, 6), "Epiphany of Our Lord", "epiphany", "I class", "white",
+            cand = datetime.date(y, 12, d)
+            if cand.weekday() == 6:
+                day(cand, "Sunday within the Octave of Christmas", "christmas-octave-sunday",
+                    2, "white", "General Rubric 69.", kind="sunday",
+                    commem="the Sunday within the Octave of Christmas")
+            day(cand, "Day within the Christmas Octave", f"christmas-octave-{d}",
+                2, "white", f"Dec {d}.", kind="octave",
+                commem="the day within the Octave of Christmas")
+        day(datetime.date(y, 1, 1), "Circumcision of Our Lord", "circumcision",
+            1, "white", "The octave day of Christmas.")
+        day(datetime.date(y, 1, 6), "Epiphany of Our Lord", "epiphany", 1, "white",
             "With vigil Jan 5 and its octave.")
-        # Holy Name: Sunday within Epiphany's octave (2 Jan-5 Jan per missal: the
-        # Sunday between Circumcision and Epiphany; the feast Jan 2 otherwise)
+        # Holy Name: the Sunday between Circumcision and Epiphany (n. 17a);
+        # the feast Jan 2 otherwise
         hn = None
         for d in range(2, 6):
-            cand = datetime.date(y, 1, d)
-            if cand.weekday() == 6:
-                hn = cand
+            if datetime.date(y, 1, d).weekday() == 6:
+                hn = datetime.date(y, 1, d)
                 break
-        add(hn or datetime.date(y, 1, 2), "Holy Name of Jesus", "holy-name",
-            "II class", "white")
-        # Holy Family: first Sunday after Epiphany
-        add(_first_sunday_after(datetime.date(y, 1, 6)), "Holy Family", "holy-family",
-            "II class", "white")
+        day(hn or datetime.date(y, 1, 2), "Holy Name of Jesus", "holy-name",
+            2, "white", kind="feast", lord=True, replacement=True)
+        # Holy Family: the First Sunday after Epiphany (n. 17b)
+        day(_first_sunday_after(datetime.date(y, 1, 6)), "Holy Family", "holy-family",
+            2, "white", lord=True, replacement=True)
         # --- Septuagesima / Lent / Passiontide
-        septuagesima = easter - datetime.timedelta(days=63)
         for name, offset in [("Septuagesima", 63), ("Sexagesima", 56), ("Quinquagesima", 49)]:
-            add(easter - datetime.timedelta(days=offset), f"{name} Sunday",
-                f"{name.lower()}", "II class", "purple")
-        ash = easter - datetime.timedelta(days=46)
-        add(ash - datetime.timedelta(days=3), "Quinquagesima Ember Wednesday", "ember-lent-0",
-            "III class", "purple")
-        add(ash - datetime.timedelta(days=1), "Quinquagesima Ember Saturday", "ember-lent-1",
-            "III class", "purple")
-        lent1 = easter - datetime.timedelta(days=42)
+            day(easter - TD(days=offset), f"{name} Sunday", name.lower(), 2, "purple",
+                kind="sunday", commem=f"{name} Sunday")
+        lent1 = easter - TD(days=42)
         for i, week in enumerate(["I", "II", "III", "IV"]):
-            add(lent1 + datetime.timedelta(days=7 * i), f"Lent Sunday {week}",
-                f"lent-{i + 1}", "I class", "purple")
-        # First Sunday's ember week (Mon/Tue/Wed... actually Lent ember = week of
-        # the first Sunday of Lent: Wed, Fri, Sat)
-        ember_lent = _ember_days(lent1)
-        for i, d in enumerate(ember_lent):
-            add(d, f"Ember Day of Lent ({['Wednesday', 'Friday', 'Saturday'][i]})",
-                f"ember-lent-{i}", "III class", "purple")
-        # Passion Sunday = Lent V; Passiontide begins
-        passion = easter - datetime.timedelta(days=14)
-        add(passion, "Passion Sunday (Lent V)", "passion-sunday", "I class", "purple",
-            "Passiontide begins; images are veiled.")
-        add(passion + datetime.timedelta(days=7), "Palm Sunday", "palm-sunday",
-            "I class", "purple", "The blessing of palms and procession.")
-        add(easter - datetime.timedelta(days=4), "Spy Wednesday", "spy-wednesday",
-            "II class", "purple")
-        add(easter - datetime.timedelta(days=3), "Maundy Thursday", "maundy-thursday",
-            "I class", "white", "In Coena Domini.")
-        add(easter - datetime.timedelta(days=2), "Good Friday", "good-friday",
-            "I class", "black", "In Parasceve; the Mass of the Presanctified.")
-        add(easter - datetime.timedelta(days=1), "Holy Saturday", "holy-saturday",
-            "I class", "purple", "The Easter Vigil after none.")
-        # Easter + octave
-        add(easter, "Easter Sunday", "easter", "I class", "white",
-            "With its privileged octave.")
+            day(lent1 + TD(days=7 * i), f"Lent Sunday {week}", f"lent-{i + 1}",
+                1, "purple", kind="sunday",
+                commem=f"The {['First', 'Second', 'Third', 'Fourth'][i]} Sunday of Lent")
+        # Ember days: Wednesday, Friday, Saturday of the first week of Lent
+        # (n. 24b) — not the pre-1960 Quinquagesima week.
+        for i, d in enumerate(_ember_days(lent1)):
+            day(d, f"Ember Day of Lent ({['Wednesday', 'Friday', 'Saturday'][i]})",
+                f"ember-lent-{i}", 2, "purple", kind="ember",
+                commem="the ember day of Lent")
+        passion = easter - TD(days=14)
+        day(passion, "Passion Sunday (Lent V)", "passion-sunday", 1, "purple",
+            "Passiontide begins; images are veiled.", kind="sunday",
+            commem="Passion Sunday")
+        day(passion + TD(days=7), "Palm Sunday", "palm-sunday", 1, "purple",
+            "The blessing of palms and procession.", kind="sunday",
+            commem="Palm Sunday")
+        day(easter - TD(days=4), "Spy Wednesday", "spy-wednesday", 1, "purple",
+            kind="feria")
+        day(easter - TD(days=3), "Maundy Thursday", "maundy-thursday", 1, "white",
+            "In Coena Domini.", kind="feria")
+        day(easter - TD(days=2), "Good Friday", "good-friday", 1, "black",
+            "In Parasceve; the Mass of the Presanctified.", kind="feria")
+        day(easter - TD(days=1), "Holy Saturday", "holy-saturday", 1, "purple",
+            "The Easter Vigil after none.", kind="feria")
+        # Easter + privileged octave
+        day(easter, "Easter Sunday", "easter", 1, "white", "With its privileged octave.")
         for i in range(1, 7):
-            add(easter + datetime.timedelta(days=i), f"Easter Octave, Day {i}",
-                f"easter-octave-{i}", "I class", "white")
-        add(easter + datetime.timedelta(days=7), "Low Sunday (Easter Octave)", "low-sunday",
-            "I class", "white", "In Albis.")
-        # Rogation Days: the three before Ascension
-        ascension = easter + datetime.timedelta(days=39)
-        for i in range(3):
-            add(ascension - datetime.timedelta(days=3 - i),
-                f"Rogation Day ({'Lesser' if i < 2 else 'Greater Litanies'})" if i == 2
-                else "Rogation Day", f"rogation-{i}", "III class", "purple")
-        add(ascension, "Ascension of Our Lord", "ascension", "I class", "white",
-            "With its vigil.")
-        pentecost = easter + datetime.timedelta(days=49)
-        add(pentecost - datetime.timedelta(days=1), "Vigil of Pentecost", "pentecost-vigil",
-            "I class", "red")
-        add(pentecost, "Pentecost (Whitsunday)", "pentecost", "I class", "red",
+            day(easter + TD(days=i), f"Easter Octave, Day {i}", f"easter-octave-{i}",
+                1, "white", kind="octave")
+        day(easter + TD(days=7), "Low Sunday (Easter Octave)", "low-sunday",
+            1, "white", "In Albis.", kind="sunday", commem="Low Sunday")
+        # Rogation days: Monday and Tuesday before the Ascension; the
+        # Wednesday is the vigil (n. 31a), which carries the rogation Mass.
+        ascension = easter + TD(days=39)
+        for i in range(2):
+            day(ascension - TD(days=3 - i), "Rogation Day", f"rogation-{i}", 3,
+                "purple", "The lesser litanies.", kind="feria",
+                commem="the rogation day")
+        day(ascension - TD(days=1), "Vigil of the Ascension", "ascension-vigil", 2,
+            "purple", "The rogation day; the lesser litany procession precedes "
+            "the vigil Mass.", kind="vigil", commem="the vigil of the Ascension")
+        day(ascension, "Ascension of Our Lord", "ascension", 1, "white", "With its vigil.")
+        day(pentecost - TD(days=1), "Vigil of Pentecost", "pentecost-vigil", 1,
+            "red", kind="vigil")
+        day(pentecost, "Pentecost (Whitsunday)", "pentecost", 1, "red",
             "With its privileged octave.")
-        for i in range(1, 6):
-            add(pentecost + datetime.timedelta(days=i), f"Pentecost Octave, Day {i}",
-                f"pentecost-octave-{i}", "I class", "red")
-        ember_pent = _ember_days(pentecost + datetime.timedelta(days=1))
-        for i, d in enumerate(ember_pent):
-            add(d, f"Ember Day of Pentecost ({['Wednesday', 'Friday', 'Saturday'][i]})",
-                f"ember-pentecost-{i}", "III class", "red")
-        # Whitsun week ember days: Wed/Fri/Sat after Pentecost — _ember_days uses
-        # the week containing its argument's Wednesday; see helper.
-        add(pentecost + datetime.timedelta(days=7), "Trinity Sunday", "trinity-sunday",
-            "I class", "white")
-        corpus = pentecost + datetime.timedelta(days=11)  # Thursday after Trinity
-        add(corpus, "Corpus Christi", "corpus-christi", "I class", "white",
-            "With its octave.")
-        add(corpus + datetime.timedelta(days=7), "Corpus Christi Octave", "corpus-octave",
-            "II class", "white")
-        sacred = easter + datetime.timedelta(days=68)
-        add(sacred, "Sacred Heart of Jesus", "sacred-heart", "II class", "white")
-        # Christ the King: last Sunday of October
-        add(nth_weekday(y, 10, 6, -1), "Our Lord Jesus Christ the King", "christ-the-king",
-            "I class", "white", "The last Sunday of October in the 1962 calendar.")
+        # Pentecost octave: every day is I class (n. 91.10); the Whitsun
+        # ember Wednesday/Friday/Saturday (n. 24) fall on days 3, 5 and 6.
+        for i in range(1, 7):
+            ember = {3: "Wednesday", 5: "Friday", 6: "Saturday"}.get(i)
+            day(pentecost + TD(days=i),
+                f"Pentecost Octave, Day {i}" + (f" (Ember Day, {ember})" if ember else ""),
+                f"pentecost-octave-{i}", 1, "red", kind="octave")
+        day(pentecost + TD(days=7), "Trinity Sunday", "trinity-sunday", 1, "white",
+            lord=True, replacement=True)  # the octave Sunday of Pentecost (n. 17c)
+        corpus = pentecost + TD(days=11)  # Thursday after Trinity
+        day(corpus, "Corpus Christi", "corpus-christi", 1, "white", lord=True)
+        sacred = easter + TD(days=68)
+        day(sacred, "Sacred Heart of Jesus", "sacred-heart", 1, "white", lord=True)
+        # Christ the King: the last Sunday of October (n. 17d)
+        day(nth_weekday(y, 10, 6, -1), "Our Lord Jesus Christ the King", "christ-the-king",
+            1, "white", "The last Sunday of October in the 1962 calendar.",
+            lord=True, replacement=True)
         # --- Sanctorale: principal feasts (a curated majors list)
         for (m, d), (name, rank, color, note) in _RC1962_SANCTORALE.items():
             if rank == "skip":
                 continue
-            add(datetime.date(y, m, d), name, slugify(name), rank, color, note)
+            day(datetime.date(y, m, d), name, slugify(name),
+                {"I": 1, "II": 2, "III": 3}[rank.split()[0]], color, note,
+                lord=name in _RC1962_LORDS,
+                commem=_RC1962_COMMEM.get(name))
         # --- The numbered Sundays the Ordo prints around the feasts above
-        for day, (kind, n) in sorted(sundays_1962(y).items()):
+        sundays, consumed = sundays_1962(y)
+        for sundate, (kind, n) in sorted(sundays.items()):
             if kind == "trinity":
                 continue  # already emitted above as Trinity Sunday (the 1st)
             if kind == "epiphany":
-                add(day, f"{_ordinal(n)} Sunday after Epiphany", f"epiphany-{n}",
-                    "II class", "green")
+                day(sundate, f"{_ordinal(n)} Sunday after Epiphany", f"epiphany-{n}",
+                    2, "green", kind="sunday")
             elif kind == "pentecost":
-                add(day, f"{_ordinal(n)} Sunday after Pentecost", f"pentecost-{n}",
-                    "II class", "green")
+                day(sundate, f"{_ordinal(n)} Sunday after Pentecost", f"pentecost-{n}",
+                    2, "green", kind="sunday")
             elif kind == "resumed":
-                add(day, f"{_ordinal(n)} Sunday after Epiphany (resumed)", f"epiphany-{n}",
-                    "II class", "green", "Impeded by Septuagesima in January; resumed "
-                    "between the 23rd and 24th Sundays after Pentecost (General Rubric 18).")
+                day(sundate, f"{_ordinal(n)} Sunday after Epiphany (resumed)", f"epiphany-{n}",
+                    2, "green", "Impeded by Septuagesima in January; resumed "
+                    "between the 23rd and 24th Sundays after Pentecost (General Rubric 18).",
+                    kind="sunday")
             else:
-                add(day, "24th & Last Sunday after Pentecost", "pentecost-24",
-                    "II class", "green", "Always the last Sunday before Advent.")
+                day(sundate, "24th & Last Sunday after Pentecost", "pentecost-24",
+                    2, "green", "Always the last Sunday before Advent.", kind="sunday")
+    return _rc1962_resolve_years(days)
+
+
+def _rc1962_resolve_years(days):
+    """_rc1962_resolve over the whole window, year by year (the blockers and
+    the consumed slots are per-year data)."""
+    events = []
+    for y in YEARS:
+        ydays = [d for d in days if d.date.year == y]
+        _, consumed = sundays_1962(y)
+        events.extend(_rc1962_resolve(y, ydays, consumed))
     return events
 
 
@@ -1574,45 +1742,87 @@ def slugify(name):
 
 
 _RC1962_SANCTORALE = {
+    # January
+    (1, 13): ("Baptism of Our Lord", "II class", "white",
+              "Fixed on the day after the Epiphany octave; the Baptism in the Jordan."),
     (1, 21): ("St Agnes, Virgin and Martyr", "III class", "red", ""),
-    (1, 28): ("St John of the Cross? (not 1962 — removed)", "skip", "skip", ""),
+    # February
+    (2, 2): ("Purification of the BVM (Candlemas)", "II class", "white",
+             "The blessing of candles and procession."),
     (2, 3): ("St Blaise, Bishop and Martyr", "III class", "red", "Blessing of throats."),
+    (2, 24): ("St Matthias, Apostle", "II class", "red",
+              "The 1962 date (not the medieval May 14)."),
+    # March
     (3, 7): ("SS Perpetua and Felicity, Martyrs", "III class", "red", ""),
     (3, 17): ("St Patrick, Bishop and Confessor", "III class", "white", ""),
-    (3, 23): ("St Joseph? (transferred from Mar 19 when in Holy Week)", "skip", "skip", ""),
+    (3, 19): ("St Joseph, Spouse of the BVM", "I class", "white",
+              "Patron of the Universal Church."),
     (3, 25): ("Annunciation of the Blessed Virgin Mary", "I class", "white", ""),
+    # April
     (4, 23): ("St George, Martyr", "III class", "red", ""),
     (4, 25): ("St Mark, Evangelist", "II class", "red", ""),
-    (5, 1): ("SS Philip and James, Apostles", "II class", "red", ""),
+    # May
+    (5, 1): ("St Joseph the Worker", "I class", "white",
+             "The 1955 feast; May 1 is not SS Philip and James in 1962."),
     (5, 3): ("Finding of the Holy Cross", "II class", "red", ""),
+    (5, 11): ("SS Philip and James, Apostles", "II class", "red",
+              "The 1955 date (moved off May 1)."),
+    # June
     (6, 13): ("St Anthony of Padua, Confessor and Doctor", "III class", "white", ""),
-    (6, 24): ("Nativity of St John the Baptist", "II class", "white", "With vigil."),
+    (6, 24): ("Nativity of St John the Baptist", "I class", "white", "With vigil."),
     (6, 29): ("SS Peter and Paul, Apostles", "I class", "red", "With vigil and octave."),
+    # July
+    (7, 1): ("Most Precious Blood", "I class", "red", ""),
     (7, 2): ("Visitation of the Blessed Virgin Mary", "II class", "white", ""),
     (7, 22): ("St Mary Magdalene, Penitent", "III class", "white", ""),
     (7, 26): ("St Anne, Mother of the BVM", "II class", "white", ""),
+    # August
+    (8, 6): ("Transfiguration of Our Lord", "II class", "white", ""),
     (8, 10): ("St Lawrence, Martyr", "II class", "red", ""),
     (8, 15): ("Assumption of the Blessed Virgin Mary", "I class", "white", "With octave."),
     (8, 22): ("Immaculate Heart of the BVM", "II class", "white", ""),
+    (8, 24): ("St Bartholomew, Apostle", "II class", "red", ""),
+    # September
     (9, 8): ("Nativity of the Blessed Virgin Mary", "II class", "white", ""),
+    (9, 14): ("Exaltation of the Holy Cross", "II class", "red", ""),
     (9, 21): ("St Matthew, Apostle and Evangelist", "II class", "red", ""),
     (9, 29): ("Dedication of St Michael the Archangel", "I class", "white", ""),
+    # October
     (10, 18): ("St Luke, Evangelist", "II class", "red", ""),
     (10, 28): ("SS Simon and Jude, Apostles", "II class", "red", ""),
+    # November
     (11, 1): ("All Saints", "I class", "white", "With vigil."),
     (11, 2): ("All Souls", "I class", "black", "The commemoration of all the faithful "
               "departed; three Masses."),
-    (11, 9): ("Dedication of the Archbasilica of Our Saviour", "III class", "white", ""),
+    (11, 9): ("Dedication of the Archbasilica of Our Saviour", "II class", "white",
+              "The Lateran basilica, the mother church."),
     (11, 11): ("St Martin of Tours, Bishop and Confessor", "III class", "white", ""),
     (11, 21): ("Presentation of the Blessed Virgin Mary", "III class", "white", ""),
     (11, 30): ("St Andrew, Apostle", "II class", "red", ""),
+    # December
     (12, 6): ("St Nicholas, Bishop and Confessor", "III class", "white", ""),
-    (12, 8): ("Immaculate Conception", "I class", "white", ""),
+    (12, 8): ("Immaculate Conception", "I class", "white",
+              "Patroness of the United States."),
     (12, 13): ("St Lucy, Virgin and Martyr", "III class", "red", ""),
     (12, 21): ("St Thomas, Apostle", "II class", "red", ""),
     (12, 26): ("St Stephen, First Martyr", "II class", "red", ""),
     (12, 27): ("St John, Apostle and Evangelist", "II class", "white", ""),
     (12, 28): ("Holy Innocents", "II class", "red", ""),
+}
+
+# The sanctorale's feasts of the Lord (General Rubric 16a: a I or II class
+# feast of the Lord takes the place of a II class Sunday outright).
+_RC1962_LORDS = {
+    "Baptism of Our Lord",
+    "Purification of the BVM (Candlemas)",
+    "Transfiguration of Our Lord",
+    "Exaltation of the Holy Cross",
+    "Dedication of the Archbasilica of Our Saviour",
+}
+
+# How some days name themselves inside other days' descriptions.
+_RC1962_COMMEM = {
+    "Baptism of Our Lord": "the Baptism of Our Lord",
 }
 
 
@@ -1955,7 +2165,7 @@ def self_test():
     # rc-1962 numbered Sundays — the full Divinum-Officium-verified outcome
     # tables for every year in range (see _RC1962_ANCHORS).
     for year, rows in _RC1962_ANCHORS.items():
-        computed = sundays_1962(year)
+        computed, _consumed = sundays_1962(year)
         want = {datetime.date(year, m, d): (kind, n) for m, d, kind, n in rows}
         got = {d: k for d, k in computed.items() if k[0] != "trinity"}
         if got != want:
@@ -1968,6 +2178,69 @@ def self_test():
     if _first_sunday_after(datetime.date(2030, 1, 6)) != datetime.date(2030, 1, 13):
         raise SystemExit("SELF-TEST FAILED: Epiphany-Sunday 2030 must push "
                          "Holy Family to Jan 13")
+    # rc-1962 occurrence dispositions — every vector verified against the
+    # Divinum Officium 1962 Ordo (2026 additionally the LMS/FIUV Ordines):
+    # (date, the summary that must own the day, a substring its description
+    # must carry).  A None summary requires the date to carry NO event.
+    rc62 = {}
+    for e in set_rc_1962():
+        if e.dtstart in rc62:
+            raise SystemExit(f"SELF-TEST FAILED: two events on {e.dtstart} in rc-1962")
+        rc62[e.dtstart] = e
+    for date, want_summary, want_desc in [
+        ("20261018", "21st Sunday after Pentecost", "Commemorated: St Luke, Evangelist."),
+        ("20261101", "All Saints", "The 23rd Sunday after Pentecost is commemorated."),
+        ("20270815", "Assumption of the Blessed Virgin Mary",
+         "The 13th Sunday after Pentecost is commemorated."),
+        ("20290624", "Nativity of St John the Baptist",
+         "The 5th Sunday after Pentecost is commemorated."),
+        ("20290701", "Most Precious Blood",
+         "The 6th Sunday after Pentecost is commemorated."),
+        ("20300929", "Dedication of St Michael the Archangel",
+         "The 16th Sunday after Pentecost is commemorated."),
+        ("20291028", "Our Lord Jesus Christ the King",
+         "SS Simon and Jude, Apostles is omitted this year"),
+        ("20280806", "Transfiguration of Our Lord",
+         "The 9th Sunday after Pentecost gives way to this feast of the Lord."),
+        ("20301208", "Immaculate Conception",
+         "The Second Sunday of Advent is commemorated."),
+        ("20301209", None, None),  # the IC is kept on its Sunday: no Monday copy
+        ("20280320", "St Joseph, Spouse of the BVM", "Transferred from 19 Mar"),
+        ("20280319", "Lent Sunday III", "transferred to 20 Mar"),
+        ("20290409", "Annunciation of the Blessed Virgin Mary",
+         "Transferred from 25 Mar (Palm Sunday)"),
+        ("20270405", "Annunciation of the Blessed Virgin Mary",
+         "Transferred from 25 Mar (Maundy Thursday)"),
+        ("20300113", "Holy Family", "Commemorated: the Baptism of Our Lord."),
+        ("20300224", "Sexagesima Sunday", "Commemorated: St Matthias, Apostle."),
+        ("20280702", "4th Sunday after Pentecost",
+         "Commemorated: Visitation of the Blessed Virgin Mary."),
+        ("20280423", "Low Sunday (Easter Octave)",
+         "St George, Martyr is omitted this year."),
+        ("20281224", "Vigil of Christmas", "Fourth Sunday of Advent"),
+        ("20281231", "Sunday within the Octave of Christmas", None),
+        ("20291230", "Sunday within the Octave of Christmas", None),
+        ("20261227", "Sunday within the Octave of Christmas",
+         "Commemorated: St John, Apostle and Evangelist."),
+        ("20271226", "Sunday within the Octave of Christmas",
+         "Commemorated: St Stephen, First Martyr."),
+        ("20260530", "Pentecost Octave, Day 6 (Ember Day, Saturday)", None),
+        ("20291221", "St Thomas, Apostle", "Commemorated: the ember day of Advent."),
+    ]:
+        d = datetime.date(int(date[:4]), int(date[4:6]), int(date[6:]))
+        e = rc62.get(d)
+        if want_summary is None:
+            if e is not None:
+                raise SystemExit(f"SELF-TEST FAILED: {d} must carry no rc-1962 event")
+            continue
+        if e is None:
+            raise SystemExit(f"SELF-TEST FAILED: rc-1962 {d} has no event")
+        if e.summary != want_summary:
+            raise SystemExit(f"SELF-TEST FAILED: rc-1962 {d} is '{e.summary}', "
+                             f"expected '{want_summary}'")
+        if want_desc and want_desc not in e.description:
+            raise SystemExit(f"SELF-TEST FAILED: rc-1962 {d} '{e.summary}' description "
+                             f"lacks '{want_desc}': {e.description}")
     # Hebrew structural sweep
     for y in range(5700, 5861):
         if hebrew_year_length(y) not in (353, 354, 355, 383, 384, 385):
