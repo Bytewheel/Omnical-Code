@@ -36,6 +36,17 @@ hawkbook_apk = "/tmp/hawkbook.apk"
 # holidays://{set} sources refresh by UID from these files.
 holidays_dir = "/usr/local/share/rustical/holidays"
 
+[caldav]
+# Omnical DailyView shim: the Punkt MP02's frozen DailyView client stores
+# all-day (VALUE=DATE) events at UTC midnight but windows its 4-day list at
+# local midnight — west of UTC that files every holiday one day early and
+# hides it on its own day. GETs from DailyView's User-Agent are served
+# DATE→midnight rewrites in this timezone; every other client (khal,
+# vdirsyncer, Thunderbird, Apple, HawkBook) keeps the canonical all-day
+# data. The deployment vouches for the timezone because DailyView sends
+# none. Remove the key to disable the rewrite entirely.
+dailyview_timezone = "America/New_York"
+
 # [dav_push] — defaults for now; enable WebSocket/WebPush transport after Phase 7 tests.
 
 # [nextcloud_login] — enabled by default; required for the DAVx5 login flow.
