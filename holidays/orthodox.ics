@@ -3,6 +3,16 @@ PRODID:-//omnical//holiday-sets//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
+UID:hol-orthodox-nativity-fathers-20260104@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260104
+DTEND;VALUE=DATE:20260105
+SUMMARY:Sunday before the Nativity (Holy Fathers)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 30th Sunday after Pentecost\; the 
+ Sunday before the Nativity.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-christmas-20260107@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260107
@@ -10,6 +20,24 @@ DTEND;VALUE=DATE:20260108
 SUMMARY:Nativity of Christ (Christmas)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The second-greatest feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-31-20260111@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260111
+DTEND;VALUE=DATE:20260112
+SUMMARY:31st Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-32-20260118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260118
+DTEND;VALUE=DATE:20260119
+SUMMARY:32nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-theophany-20260119@omnical
@@ -21,6 +49,15 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-33-20260125@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260125
+DTEND;VALUE=DATE:20260126
+SUMMARY:33rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-triodion-20260201@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260201
@@ -28,7 +65,7 @@ DTEND;VALUE=DATE:20260202
 SUMMARY:Triodion begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The preparatory season before Great Le
- nt.
+ nt (the Sunday of the Publican and the Pharisee).
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-meeting-20260215@omnical
@@ -47,6 +84,51 @@ DTEND;VALUE=DATE:20260224
 SUMMARY:Great Lent begins (Clean Monday)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The Great Fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-1-orthodoxy-20260301@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260301
+DTEND;VALUE=DATE:20260302
+SUMMARY:Sunday of Orthodoxy (1st Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-2-palamas-20260308@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260308
+DTEND;VALUE=DATE:20260309
+SUMMARY:St Gregory Palamas (2nd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-3-cross-20260315@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260315
+DTEND;VALUE=DATE:20260316
+SUMMARY:Veneration of the Cross (3rd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-4-climacus-20260322@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260322
+DTEND;VALUE=DATE:20260323
+SUMMARY:St John Climacus (4th Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-5-mary-of-egypt-20260329@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260329
+DTEND;VALUE=DATE:20260330
+SUMMARY:St Mary of Egypt (5th Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-lazarus-saturday-20260404@omnical
@@ -103,11 +185,65 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-thomas-antipascha-20260419@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260419
+DTEND;VALUE=DATE:20260420
+SUMMARY:Antipascha (St Thomas Sunday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-myrrhbearers-20260426@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260426
+DTEND;VALUE=DATE:20260427
+SUMMARY:Myrrhbearers Sunday (2nd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-paralytic-20260503@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260503
+DTEND;VALUE=DATE:20260504
+SUMMARY:Paralytic Sunday (3rd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-samaritan-20260510@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260510
+DTEND;VALUE=DATE:20260511
+SUMMARY:Samaritan Sunday (4th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-blind-man-20260517@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260518
+SUMMARY:Blind Man Sunday (5th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-ascension-20260521@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260522
 SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nicaea-fathers-20260524@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260524
+DTEND;VALUE=DATE:20260525
+SUMMARY:Fathers of Nicaea (7th Sunday after Pascha)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -127,8 +263,8 @@ DTSTART;VALUE=DATE:20260607
 DTEND;VALUE=DATE:20260608
 SUMMARY:All Saints Sunday
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
-  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
- les' Fast begins the next day.
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost (the 1st af
+ ter it)\; the Apostles' Fast begins the next day.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-apostles-fast-20260608@omnical
@@ -138,6 +274,87 @@ DTEND;VALUE=DATE:20260609
 SUMMARY:Apostles' Fast begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-2-20260614@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260614
+DTEND;VALUE=DATE:20260615
+SUMMARY:2nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-3-20260621@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260621
+DTEND;VALUE=DATE:20260622
+SUMMARY:3rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-4-20260628@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260628
+DTEND;VALUE=DATE:20260629
+SUMMARY:4th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-5-20260705@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260705
+DTEND;VALUE=DATE:20260706
+SUMMARY:5th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-6-20260712@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260712
+DTEND;VALUE=DATE:20260713
+SUMMARY:6th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-7-20260719@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260719
+DTEND;VALUE=DATE:20260720
+SUMMARY:7th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-8-20260726@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260726
+DTEND;VALUE=DATE:20260727
+SUMMARY:8th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-9-20260802@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260802
+DTEND;VALUE=DATE:20260803
+SUMMARY:9th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-10-20260809@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260809
+DTEND;VALUE=DATE:20260810
+SUMMARY:10th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-dormition-fast-20260814@omnical
@@ -150,6 +367,15 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
  Aug 15 Julian).
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-11-20260816@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260816
+DTEND;VALUE=DATE:20260817
+SUMMARY:11th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-transfiguration-20260819@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260819
@@ -159,11 +385,56 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-12-20260823@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260824
+SUMMARY:12th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-dormition-20260828@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Dormition of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-13-20260830@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260830
+DTEND;VALUE=DATE:20260831
+SUMMARY:13th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-14-20260906@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260906
+DTEND;VALUE=DATE:20260907
+SUMMARY:14th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-15-20260913@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:15th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-16-20260920@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:16th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -183,6 +454,79 @@ DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260928
 SUMMARY:Exaltation of the Holy Cross
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 17th Sunday after Pentecost is not
+ ed in its office.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-18-20261004@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:18th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-19-20261011@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:19th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20-20261018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:20th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-21-20261025@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:21st Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-22-20261101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:22nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-23-20261108@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:23rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-24-20261115@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:24th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-25-20261122@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:25th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
@@ -196,6 +540,15 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
  5 Julian).
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-26-20261129@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:26th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-theotokos-entry-20261204@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20261204
@@ -203,6 +556,53 @@ DTEND;VALUE=DATE:20261205
 SUMMARY:Entry of the Theotokos into the Temple
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-27-20261206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:27th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-28-20261213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:28th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-29-20261220@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:29th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-forefathers-20261227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+SUMMARY:Sunday of the Holy Forefathers
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 30th Sunday after Pentecost\; the 
+ second Sunday before the Nativity.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nativity-fathers-20270103@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:Sunday before the Nativity (Holy Fathers)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 31st Sunday after Pentecost\; the 
+ Sunday before the Nativity.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-christmas-20270107@omnical
@@ -214,11 +614,65 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The second-greatest feast.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-32-20270110@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:32nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-33-20270117@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270117
+DTEND;VALUE=DATE:20270118
+SUMMARY:33rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-theophany-20270119@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Theophany (Epiphany) of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-34-20270124@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:34th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-35-20270131@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:35th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-36-20270207@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:36th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-37-20270214@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:37th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -239,7 +693,7 @@ DTEND;VALUE=DATE:20270222
 SUMMARY:Triodion begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The preparatory season before Great Le
- nt.
+ nt (the Sunday of the Publican and the Pharisee).
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-great-lent-20270315@omnical
@@ -251,11 +705,56 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The Great Fast.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-lent-1-orthodoxy-20270321@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Sunday of Orthodoxy (1st Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-2-palamas-20270328@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:St Gregory Palamas (2nd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-3-cross-20270404@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Veneration of the Cross (3rd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-annunciation-20270407@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270407
 DTEND;VALUE=DATE:20270408
 SUMMARY:Annunciation of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-4-climacus-20270411@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:St John Climacus (4th Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-5-mary-of-egypt-20270418@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:St Mary of Egypt (5th Sunday of Great Lent)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -305,11 +804,65 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-thomas-antipascha-20270509@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Antipascha (St Thomas Sunday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-myrrhbearers-20270516@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+SUMMARY:Myrrhbearers Sunday (2nd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-paralytic-20270523@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Paralytic Sunday (3rd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-samaritan-20270530@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:Samaritan Sunday (4th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-blind-man-20270606@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:Blind Man Sunday (5th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-ascension-20270610@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270610
 DTEND;VALUE=DATE:20270611
 SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nicaea-fathers-20270613@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270613
+DTEND;VALUE=DATE:20270614
+SUMMARY:Fathers of Nicaea (7th Sunday after Pascha)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -329,8 +882,8 @@ DTSTART;VALUE=DATE:20270627
 DTEND;VALUE=DATE:20270628
 SUMMARY:All Saints Sunday
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
-  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
- les' Fast begins the next day.
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost (the 1st af
+ ter it)\; the Apostles' Fast begins the next day.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-apostles-fast-20270628@omnical
@@ -340,6 +893,60 @@ DTEND;VALUE=DATE:20270629
 SUMMARY:Apostles' Fast begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-2-20270704@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270704
+DTEND;VALUE=DATE:20270705
+SUMMARY:2nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-3-20270711@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270711
+DTEND;VALUE=DATE:20270712
+SUMMARY:3rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-4-20270718@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270718
+DTEND;VALUE=DATE:20270719
+SUMMARY:4th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-5-20270725@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270725
+DTEND;VALUE=DATE:20270726
+SUMMARY:5th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-6-20270801@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270802
+SUMMARY:6th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-7-20270808@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270808
+DTEND;VALUE=DATE:20270809
+SUMMARY:7th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-dormition-fast-20270814@omnical
@@ -352,11 +959,29 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
  Aug 15 Julian).
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-8-20270815@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:8th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-transfiguration-20270819@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270819
 DTEND;VALUE=DATE:20270820
 SUMMARY:Transfiguration of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-9-20270822@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270822
+DTEND;VALUE=DATE:20270823
+SUMMARY:9th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -370,6 +995,42 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-10-20270829@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270829
+DTEND;VALUE=DATE:20270830
+SUMMARY:10th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-11-20270905@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270905
+DTEND;VALUE=DATE:20270906
+SUMMARY:11th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-12-20270912@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270912
+DTEND;VALUE=DATE:20270913
+SUMMARY:12th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-13-20270919@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270919
+DTEND;VALUE=DATE:20270920
+SUMMARY:13th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-theotokos-nativity-20270921@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270921
@@ -379,11 +1040,101 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-14-20270926@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270926
+DTEND;VALUE=DATE:20270927
+SUMMARY:14th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-cross-20270927@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20270927
 DTEND;VALUE=DATE:20270928
 SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-15-20271003@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271003
+DTEND;VALUE=DATE:20271004
+SUMMARY:15th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-16-20271010@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271011
+SUMMARY:16th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-17-20271017@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271017
+DTEND;VALUE=DATE:20271018
+SUMMARY:17th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-18-20271024@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271025
+SUMMARY:18th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-19-20271031@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271101
+SUMMARY:19th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20-20271107@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271107
+DTEND;VALUE=DATE:20271108
+SUMMARY:20th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-21-20271114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271114
+DTEND;VALUE=DATE:20271115
+SUMMARY:21st Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-22-20271121@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271121
+DTEND;VALUE=DATE:20271122
+SUMMARY:22nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-23-20271128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271128
+DTEND;VALUE=DATE:20271129
+SUMMARY:23rd Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -407,6 +1158,53 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-24-20271205@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271205
+DTEND;VALUE=DATE:20271206
+SUMMARY:24th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-25-20271212@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271212
+DTEND;VALUE=DATE:20271213
+SUMMARY:25th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-26-20271219@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271219
+DTEND;VALUE=DATE:20271220
+SUMMARY:26th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-forefathers-20271226@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Sunday of the Holy Forefathers
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 27th Sunday after Pentecost\; the 
+ second Sunday before the Nativity.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nativity-fathers-20280102@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280102
+DTEND;VALUE=DATE:20280103
+SUMMARY:Sunday before the Nativity (Holy Fathers)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 28th Sunday after Pentecost\; the 
+ Sunday before the Nativity.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-christmas-20280107@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280107
@@ -414,6 +1212,24 @@ DTEND;VALUE=DATE:20280108
 SUMMARY:Nativity of Christ (Christmas)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The second-greatest feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-29-20280109@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280109
+DTEND;VALUE=DATE:20280110
+SUMMARY:29th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-30-20280116@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280116
+DTEND;VALUE=DATE:20280117
+SUMMARY:30th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-theophany-20280119@omnical
@@ -425,6 +1241,24 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-31-20280123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280123
+DTEND;VALUE=DATE:20280124
+SUMMARY:31st Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-32-20280130@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280130
+DTEND;VALUE=DATE:20280131
+SUMMARY:32nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-triodion-20280206@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280206
@@ -432,7 +1266,7 @@ DTEND;VALUE=DATE:20280207
 SUMMARY:Triodion begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The preparatory season before Great Le
- nt.
+ nt (the Sunday of the Publican and the Pharisee).
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-meeting-20280215@omnical
@@ -451,6 +1285,51 @@ DTEND;VALUE=DATE:20280229
 SUMMARY:Great Lent begins (Clean Monday)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The Great Fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-1-orthodoxy-20280305@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280305
+DTEND;VALUE=DATE:20280306
+SUMMARY:Sunday of Orthodoxy (1st Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-2-palamas-20280312@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280312
+DTEND;VALUE=DATE:20280313
+SUMMARY:St Gregory Palamas (2nd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-3-cross-20280319@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280319
+DTEND;VALUE=DATE:20280320
+SUMMARY:Veneration of the Cross (3rd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-4-climacus-20280326@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280326
+DTEND;VALUE=DATE:20280327
+SUMMARY:St John Climacus (4th Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-5-mary-of-egypt-20280402@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280402
+DTEND;VALUE=DATE:20280403
+SUMMARY:St Mary of Egypt (5th Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-annunciation-20280407@omnical
@@ -507,11 +1386,65 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-thomas-antipascha-20280423@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280423
+DTEND;VALUE=DATE:20280424
+SUMMARY:Antipascha (St Thomas Sunday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-myrrhbearers-20280430@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280430
+DTEND;VALUE=DATE:20280501
+SUMMARY:Myrrhbearers Sunday (2nd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-paralytic-20280507@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280507
+DTEND;VALUE=DATE:20280508
+SUMMARY:Paralytic Sunday (3rd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-samaritan-20280514@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280514
+DTEND;VALUE=DATE:20280515
+SUMMARY:Samaritan Sunday (4th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-blind-man-20280521@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280521
+DTEND;VALUE=DATE:20280522
+SUMMARY:Blind Man Sunday (5th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-ascension-20280525@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280525
 DTEND;VALUE=DATE:20280526
 SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nicaea-fathers-20280528@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280528
+DTEND;VALUE=DATE:20280529
+SUMMARY:Fathers of Nicaea (7th Sunday after Pascha)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -531,8 +1464,8 @@ DTSTART;VALUE=DATE:20280611
 DTEND;VALUE=DATE:20280612
 SUMMARY:All Saints Sunday
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
-  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
- les' Fast begins the next day.
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost (the 1st af
+ ter it)\; the Apostles' Fast begins the next day.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-apostles-fast-20280612@omnical
@@ -542,6 +1475,87 @@ DTEND;VALUE=DATE:20280613
 SUMMARY:Apostles' Fast begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-2-20280618@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280618
+DTEND;VALUE=DATE:20280619
+SUMMARY:2nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-3-20280625@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280625
+DTEND;VALUE=DATE:20280626
+SUMMARY:3rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-4-20280702@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280702
+DTEND;VALUE=DATE:20280703
+SUMMARY:4th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-5-20280709@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280709
+DTEND;VALUE=DATE:20280710
+SUMMARY:5th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-6-20280716@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280716
+DTEND;VALUE=DATE:20280717
+SUMMARY:6th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-7-20280723@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280723
+DTEND;VALUE=DATE:20280724
+SUMMARY:7th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-8-20280730@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280730
+DTEND;VALUE=DATE:20280731
+SUMMARY:8th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-9-20280806@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280806
+DTEND;VALUE=DATE:20280807
+SUMMARY:9th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-10-20280813@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280813
+DTEND;VALUE=DATE:20280814
+SUMMARY:10th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-dormition-fast-20280814@omnical
@@ -563,11 +1577,56 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-11-20280820@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280820
+DTEND;VALUE=DATE:20280821
+SUMMARY:11th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-12-20280827@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280827
+DTEND;VALUE=DATE:20280828
+SUMMARY:12th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-dormition-20280828@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280828
 DTEND;VALUE=DATE:20280829
 SUMMARY:Dormition of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-13-20280903@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280903
+DTEND;VALUE=DATE:20280904
+SUMMARY:13th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-14-20280910@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280910
+DTEND;VALUE=DATE:20280911
+SUMMARY:14th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-15-20280917@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280917
+DTEND;VALUE=DATE:20280918
+SUMMARY:15th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -581,11 +1640,101 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-16-20280924@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280924
+DTEND;VALUE=DATE:20280925
+SUMMARY:16th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-cross-20280927@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280927
 DTEND;VALUE=DATE:20280928
 SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-17-20281001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281001
+DTEND;VALUE=DATE:20281002
+SUMMARY:17th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-18-20281008@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281008
+DTEND;VALUE=DATE:20281009
+SUMMARY:18th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-19-20281015@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281015
+DTEND;VALUE=DATE:20281016
+SUMMARY:19th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20-20281022@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281022
+DTEND;VALUE=DATE:20281023
+SUMMARY:20th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-21-20281029@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281029
+DTEND;VALUE=DATE:20281030
+SUMMARY:21st Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-22-20281105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281105
+DTEND;VALUE=DATE:20281106
+SUMMARY:22nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-23-20281112@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281112
+DTEND;VALUE=DATE:20281113
+SUMMARY:23rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-24-20281119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281119
+DTEND;VALUE=DATE:20281120
+SUMMARY:24th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-25-20281126@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281126
+DTEND;VALUE=DATE:20281127
+SUMMARY:25th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -600,11 +1749,57 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
  5 Julian).
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-26-20281203@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281203
+DTEND;VALUE=DATE:20281204
+SUMMARY:26th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-theotokos-entry-20281204@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20281204
 DTEND;VALUE=DATE:20281205
 SUMMARY:Entry of the Theotokos into the Temple
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-27-20281210@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281210
+DTEND;VALUE=DATE:20281211
+SUMMARY:27th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-28-20281217@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281217
+DTEND;VALUE=DATE:20281218
+SUMMARY:28th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-forefathers-20281224@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281224
+DTEND;VALUE=DATE:20281225
+SUMMARY:Sunday of the Holy Forefathers
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 29th Sunday after Pentecost\; the 
+ second Sunday before the Nativity.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-30-20281231@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281231
+DTEND;VALUE=DATE:20290101
+SUMMARY:30th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -615,7 +1810,17 @@ DTSTART;VALUE=DATE:20290107
 DTEND;VALUE=DATE:20290108
 SUMMARY:Nativity of Christ (Christmas)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
-  keep fixed feasts 13 days earlier. The second-greatest feast.
+  keep fixed feasts 13 days earlier. The second-greatest feast. Christmas f
+ alls on the 31st Sunday after Pentecost this year.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-32-20290114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290114
+DTEND;VALUE=DATE:20290115
+SUMMARY:32nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-theophany-20290119@omnical
@@ -627,6 +1832,15 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-33-20290121@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290121
+DTEND;VALUE=DATE:20290122
+SUMMARY:33rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-triodion-20290128@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290128
@@ -634,7 +1848,7 @@ DTEND;VALUE=DATE:20290129
 SUMMARY:Triodion begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The preparatory season before Great Le
- nt.
+ nt (the Sunday of the Publican and the Pharisee).
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-meeting-20290215@omnical
@@ -653,6 +1867,51 @@ DTEND;VALUE=DATE:20290220
 SUMMARY:Great Lent begins (Clean Monday)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The Great Fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-1-orthodoxy-20290225@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290225
+DTEND;VALUE=DATE:20290226
+SUMMARY:Sunday of Orthodoxy (1st Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-2-palamas-20290304@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290304
+DTEND;VALUE=DATE:20290305
+SUMMARY:St Gregory Palamas (2nd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-3-cross-20290311@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290311
+DTEND;VALUE=DATE:20290312
+SUMMARY:Veneration of the Cross (3rd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-4-climacus-20290318@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290318
+DTEND;VALUE=DATE:20290319
+SUMMARY:St John Climacus (4th Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-5-mary-of-egypt-20290325@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290325
+DTEND;VALUE=DATE:20290326
+SUMMARY:St Mary of Egypt (5th Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-lazarus-saturday-20290331@omnical
@@ -709,11 +1968,65 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-thomas-antipascha-20290415@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290415
+DTEND;VALUE=DATE:20290416
+SUMMARY:Antipascha (St Thomas Sunday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-myrrhbearers-20290422@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290422
+DTEND;VALUE=DATE:20290423
+SUMMARY:Myrrhbearers Sunday (2nd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-paralytic-20290429@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290429
+DTEND;VALUE=DATE:20290430
+SUMMARY:Paralytic Sunday (3rd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-samaritan-20290506@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290506
+DTEND;VALUE=DATE:20290507
+SUMMARY:Samaritan Sunday (4th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-blind-man-20290513@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290513
+DTEND;VALUE=DATE:20290514
+SUMMARY:Blind Man Sunday (5th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-ascension-20290517@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290517
 DTEND;VALUE=DATE:20290518
 SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nicaea-fathers-20290520@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290520
+DTEND;VALUE=DATE:20290521
+SUMMARY:Fathers of Nicaea (7th Sunday after Pascha)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -733,8 +2046,8 @@ DTSTART;VALUE=DATE:20290603
 DTEND;VALUE=DATE:20290604
 SUMMARY:All Saints Sunday
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
-  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
- les' Fast begins the next day.
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost (the 1st af
+ ter it)\; the Apostles' Fast begins the next day.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-apostles-fast-20290604@omnical
@@ -744,6 +2057,96 @@ DTEND;VALUE=DATE:20290605
 SUMMARY:Apostles' Fast begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-2-20290610@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290610
+DTEND;VALUE=DATE:20290611
+SUMMARY:2nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-3-20290617@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290617
+DTEND;VALUE=DATE:20290618
+SUMMARY:3rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-4-20290624@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290624
+DTEND;VALUE=DATE:20290625
+SUMMARY:4th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-5-20290701@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290701
+DTEND;VALUE=DATE:20290702
+SUMMARY:5th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-6-20290708@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290708
+DTEND;VALUE=DATE:20290709
+SUMMARY:6th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-7-20290715@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290715
+DTEND;VALUE=DATE:20290716
+SUMMARY:7th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-8-20290722@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290722
+DTEND;VALUE=DATE:20290723
+SUMMARY:8th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-9-20290729@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290729
+DTEND;VALUE=DATE:20290730
+SUMMARY:9th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-10-20290805@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290805
+DTEND;VALUE=DATE:20290806
+SUMMARY:10th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-11-20290812@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290812
+DTEND;VALUE=DATE:20290813
+SUMMARY:11th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-dormition-fast-20290814@omnical
@@ -762,6 +2165,16 @@ DTSTART;VALUE=DATE:20290819
 DTEND;VALUE=DATE:20290820
 SUMMARY:Transfiguration of the Lord
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 12th Sunday after Pentecost is not
+ ed in its office.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-13-20290826@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290826
+DTEND;VALUE=DATE:20290827
+SUMMARY:13th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
@@ -770,6 +2183,33 @@ DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290828
 DTEND;VALUE=DATE:20290829
 SUMMARY:Dormition of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-14-20290902@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290902
+DTEND;VALUE=DATE:20290903
+SUMMARY:14th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-15-20290909@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290909
+DTEND;VALUE=DATE:20290910
+SUMMARY:15th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-16-20290916@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290916
+DTEND;VALUE=DATE:20290917
+SUMMARY:16th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -783,11 +2223,101 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-17-20290923@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290923
+DTEND;VALUE=DATE:20290924
+SUMMARY:17th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-cross-20290927@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290927
 DTEND;VALUE=DATE:20290928
 SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-18-20290930@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290930
+DTEND;VALUE=DATE:20291001
+SUMMARY:18th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-19-20291007@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291007
+DTEND;VALUE=DATE:20291008
+SUMMARY:19th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20-20291014@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291014
+DTEND;VALUE=DATE:20291015
+SUMMARY:20th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-21-20291021@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291021
+DTEND;VALUE=DATE:20291022
+SUMMARY:21st Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-22-20291028@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291028
+DTEND;VALUE=DATE:20291029
+SUMMARY:22nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-23-20291104@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291104
+DTEND;VALUE=DATE:20291105
+SUMMARY:23rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-24-20291111@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291111
+DTEND;VALUE=DATE:20291112
+SUMMARY:24th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-25-20291118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291118
+DTEND;VALUE=DATE:20291119
+SUMMARY:25th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-26-20291125@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291125
+DTEND;VALUE=DATE:20291126
+SUMMARY:26th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -802,6 +2332,15 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
  5 Julian).
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-27-20291202@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291202
+DTEND;VALUE=DATE:20291203
+SUMMARY:27th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-theotokos-entry-20291204@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20291204
@@ -809,6 +2348,53 @@ DTEND;VALUE=DATE:20291205
 SUMMARY:Entry of the Theotokos into the Temple
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-28-20291209@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291209
+DTEND;VALUE=DATE:20291210
+SUMMARY:28th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-29-20291216@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291216
+DTEND;VALUE=DATE:20291217
+SUMMARY:29th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-30-20291223@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291223
+DTEND;VALUE=DATE:20291224
+SUMMARY:30th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-forefathers-20291230@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291230
+DTEND;VALUE=DATE:20291231
+SUMMARY:Sunday of the Holy Forefathers
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 31st Sunday after Pentecost\; the 
+ second Sunday before the Nativity.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nativity-fathers-20300106@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300106
+DTEND;VALUE=DATE:20300107
+SUMMARY:Sunday before the Nativity (Holy Fathers)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 32nd Sunday after Pentecost\; the 
+ Sunday before the Nativity.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-christmas-20300107@omnical
@@ -820,11 +2406,56 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The second-greatest feast.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-33-20300113@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300113
+DTEND;VALUE=DATE:20300114
+SUMMARY:33rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-theophany-20300119@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300119
 DTEND;VALUE=DATE:20300120
 SUMMARY:Theophany (Epiphany) of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-34-20300120@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300120
+DTEND;VALUE=DATE:20300121
+SUMMARY:34th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-35-20300127@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300127
+DTEND;VALUE=DATE:20300128
+SUMMARY:35th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-36-20300203@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300203
+DTEND;VALUE=DATE:20300204
+SUMMARY:36th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-37-20300210@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300210
+DTEND;VALUE=DATE:20300211
+SUMMARY:37th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -845,7 +2476,7 @@ DTEND;VALUE=DATE:20300218
 SUMMARY:Triodion begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The preparatory season before Great Le
- nt.
+ nt (the Sunday of the Publican and the Pharisee).
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-great-lent-20300311@omnical
@@ -857,11 +2488,56 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. The Great Fast.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-lent-1-orthodoxy-20300317@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300317
+DTEND;VALUE=DATE:20300318
+SUMMARY:Sunday of Orthodoxy (1st Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-2-palamas-20300324@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300324
+DTEND;VALUE=DATE:20300325
+SUMMARY:St Gregory Palamas (2nd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-3-cross-20300331@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300331
+DTEND;VALUE=DATE:20300401
+SUMMARY:Veneration of the Cross (3rd Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-annunciation-20300407@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300407
 DTEND;VALUE=DATE:20300408
 SUMMARY:Annunciation of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-4-climacus-20300407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300407
+DTEND;VALUE=DATE:20300408
+SUMMARY:St John Climacus (4th Sunday of Great Lent)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lent-5-mary-of-egypt-20300414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300414
+DTEND;VALUE=DATE:20300415
+SUMMARY:St Mary of Egypt (5th Sunday of Great Lent)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -911,11 +2587,65 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-thomas-antipascha-20300505@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300505
+DTEND;VALUE=DATE:20300506
+SUMMARY:Antipascha (St Thomas Sunday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-myrrhbearers-20300512@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300512
+DTEND;VALUE=DATE:20300513
+SUMMARY:Myrrhbearers Sunday (2nd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-paralytic-20300519@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300519
+DTEND;VALUE=DATE:20300520
+SUMMARY:Paralytic Sunday (3rd after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-samaritan-20300526@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300526
+DTEND;VALUE=DATE:20300527
+SUMMARY:Samaritan Sunday (4th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-blind-man-20300602@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300602
+DTEND;VALUE=DATE:20300603
+SUMMARY:Blind Man Sunday (5th after Pascha)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-ascension-20300606@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300606
 DTEND;VALUE=DATE:20300607
 SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nicaea-fathers-20300609@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300609
+DTEND;VALUE=DATE:20300610
+SUMMARY:Fathers of Nicaea (7th Sunday after Pascha)
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -935,8 +2665,8 @@ DTSTART;VALUE=DATE:20300623
 DTEND;VALUE=DATE:20300624
 SUMMARY:All Saints Sunday
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
-  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
- les' Fast begins the next day.
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost (the 1st af
+ ter it)\; the Apostles' Fast begins the next day.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-apostles-fast-20300624@omnical
@@ -946,6 +2676,69 @@ DTEND;VALUE=DATE:20300625
 SUMMARY:Apostles' Fast begins
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-2-20300630@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300630
+DTEND;VALUE=DATE:20300701
+SUMMARY:2nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-3-20300707@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300707
+DTEND;VALUE=DATE:20300708
+SUMMARY:3rd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-4-20300714@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300714
+DTEND;VALUE=DATE:20300715
+SUMMARY:4th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-5-20300721@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300721
+DTEND;VALUE=DATE:20300722
+SUMMARY:5th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-6-20300728@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300728
+DTEND;VALUE=DATE:20300729
+SUMMARY:6th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-7-20300804@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300804
+DTEND;VALUE=DATE:20300805
+SUMMARY:7th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-8-20300811@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300811
+DTEND;VALUE=DATE:20300812
+SUMMARY:8th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-orthodox-dormition-fast-20300814@omnical
@@ -958,11 +2751,29 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
  Aug 15 Julian).
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-9-20300818@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300818
+DTEND;VALUE=DATE:20300819
+SUMMARY:9th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-transfiguration-20300819@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300819
 DTEND;VALUE=DATE:20300820
 SUMMARY:Transfiguration of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-10-20300825@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300825
+DTEND;VALUE=DATE:20300826
+SUMMARY:10th Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -976,6 +2787,33 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-11-20300901@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300901
+DTEND;VALUE=DATE:20300902
+SUMMARY:11th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-12-20300908@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300908
+DTEND;VALUE=DATE:20300909
+SUMMARY:12th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-13-20300915@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300915
+DTEND;VALUE=DATE:20300916
+SUMMARY:13th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-theotokos-nativity-20300921@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300921
@@ -985,11 +2823,101 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-14-20300922@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300922
+DTEND;VALUE=DATE:20300923
+SUMMARY:14th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-cross-20300927@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20300927
 DTEND;VALUE=DATE:20300928
 SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-15-20300929@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300929
+DTEND;VALUE=DATE:20300930
+SUMMARY:15th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-16-20301006@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301006
+DTEND;VALUE=DATE:20301007
+SUMMARY:16th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-17-20301013@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301013
+DTEND;VALUE=DATE:20301014
+SUMMARY:17th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-18-20301020@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301020
+DTEND;VALUE=DATE:20301021
+SUMMARY:18th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-19-20301027@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301027
+DTEND;VALUE=DATE:20301028
+SUMMARY:19th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20-20301103@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301103
+DTEND;VALUE=DATE:20301104
+SUMMARY:20th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-21-20301110@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301110
+DTEND;VALUE=DATE:20301111
+SUMMARY:21st Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-22-20301117@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301117
+DTEND;VALUE=DATE:20301118
+SUMMARY:22nd Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-23-20301124@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301124
+DTEND;VALUE=DATE:20301125
+SUMMARY:23rd Sunday after Pentecost
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
 END:VEVENT
@@ -1004,6 +2932,15 @@ DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
  5 Julian).
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-orthodox-pentecost-24-20301201@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301201
+DTEND;VALUE=DATE:20301202
+SUMMARY:24th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-orthodox-theotokos-entry-20301204@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20301204
@@ -1011,5 +2948,42 @@ DTEND;VALUE=DATE:20301205
 SUMMARY:Entry of the Theotokos into the Temple
 DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
   keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-25-20301208@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301208
+DTEND;VALUE=DATE:20301209
+SUMMARY:25th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-26-20301215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301215
+DTEND;VALUE=DATE:20301216
+SUMMARY:26th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-27-20301222@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301222
+DTEND;VALUE=DATE:20301223
+SUMMARY:27th Sunday after Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-forefathers-20301229@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301229
+DTEND;VALUE=DATE:20301230
+SUMMARY:Sunday of the Holy Forefathers
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The 28th Sunday after Pentecost\; the 
+ second Sunday before the Nativity.
 END:VEVENT
 END:VCALENDAR

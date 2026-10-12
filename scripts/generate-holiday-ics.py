@@ -1988,19 +1988,42 @@ def set_orthodox():
         pascha = easter_julian(y)
         # Fasting seasons
         add(pascha - datetime.timedelta(days=70), "Triodion begins", "triodion",
-            "The preparatory season before Great Lent.")
+            "The preparatory season before Great Lent (the Sunday of the "
+            "Publican and the Pharisee).")
         add(pascha - datetime.timedelta(days=48), "Great Lent begins (Clean Monday)",
             "great-lent", "The Great Fast.")
+        # The named Sundays of Great Lent (the five before Palm Sunday;
+        # titles verified against azbyka.ru / the Triodion):
+        for off, name, slug in [
+            (42, "Sunday of Orthodoxy (1st Sunday of Great Lent)", "lent-1-orthodoxy"),
+            (35, "St Gregory Palamas (2nd Sunday of Great Lent)", "lent-2-palamas"),
+            (28, "Veneration of the Cross (3rd Sunday of Great Lent)", "lent-3-cross"),
+            (21, "St John Climacus (4th Sunday of Great Lent)", "lent-4-climacus"),
+            (14, "St Mary of Egypt (5th Sunday of Great Lent)", "lent-5-mary-of-egypt"),
+        ]:
+            add(pascha - datetime.timedelta(days=off), name, slug)
         add(pascha - datetime.timedelta(days=8), "Lazarus Saturday", "lazarus-saturday")
         add(pascha - datetime.timedelta(days=7), "Palm Sunday", "palm-sunday")
         add(pascha - datetime.timedelta(days=2), "Great and Holy Friday", "holy-friday",
             "The burial of Christ.")
         add(pascha - datetime.timedelta(days=1), "Great and Holy Saturday", "holy-saturday")
         add(pascha, "Holy Pascha (Easter)", "pascha")
+        # The Sundays after Pascha (the Pentecostarion; titles per the
+        # Pentecostarion and azbyka.ru — the Fathers of Nicaea are the 7th)
+        for off, name, slug in [
+            (7, "Antipascha (St Thomas Sunday)", "thomas-antipascha"),
+            (14, "Myrrhbearers Sunday (2nd after Pascha)", "myrrhbearers"),
+            (21, "Paralytic Sunday (3rd after Pascha)", "paralytic"),
+            (28, "Samaritan Sunday (4th after Pascha)", "samaritan"),
+            (35, "Blind Man Sunday (5th after Pascha)", "blind-man"),
+            (42, "Fathers of Nicaea (7th Sunday after Pascha)", "nicaea-fathers"),
+        ]:
+            add(pascha + datetime.timedelta(days=off), name, slug)
         add(pascha + datetime.timedelta(days=39), "Ascension of the Lord", "ascension")
         add(pascha + datetime.timedelta(days=49), "Pentecost", "pentecost")
         add(pascha + datetime.timedelta(days=56), "All Saints Sunday", "all-saints",
-            "The Sunday after Pentecost; the Apostles' Fast begins the next day.")
+            "The Sunday after Pentecost (the 1st after it); the Apostles' Fast "
+            "begins the next day.")
         # Apostles' Fast: the Monday after All Saints to Jun 29 Julian (Jul 12)
         all_saints = pascha + datetime.timedelta(days=56)
         add(all_saints + datetime.timedelta(days=1), "Apostles' Fast begins", "apostles-fast",
@@ -2022,6 +2045,75 @@ def set_orthodox():
         add_julian(3, 25, "Annunciation of the Theotokos", "annunciation")
         add_julian(8, 6, "Transfiguration of the Lord", "transfiguration")
         add_julian(8, 15, "Dormition of the Theotokos", "dormition")
+        # --- The Sundays after Pentecost, numbered as the Slavic Ordo prints
+        # them (azbyka.ru, verified 2026-2030): All Saints is the 1st, and the
+        # numbering runs every Sunday across the year boundary until the next
+        # Triodion's Zacchaeus Sunday (Pascha − 77) inclusive.  A fixed Great
+        # Feast falling on a numbered Sunday is kept instead of it, the Sunday
+        # noted in the feast's description.
+        great_feasts = {datetime.date(y, m, d) + datetime.timedelta(days=13)
+                        for m, d in [(9, 8), (9, 14), (11, 21), (12, 25),
+                                     (1, 6), (2, 2), (3, 25), (8, 6), (8, 15)]}
+        great_feasts |= {datetime.date(y - 1, m, d) + datetime.timedelta(days=13)
+                         for m, d in [(12, 25), (1, 6)]}
+        nativity_next = datetime.date(y + 1, 1, 7)  # this season's Christmas
+        if nativity_next.weekday() == 6:  # Christmas on a Sunday: no Fathers'
+            forefathers = nativity_next - datetime.timedelta(days=14)
+        else:
+            fathers = nativity_next - datetime.timedelta(
+                days=(nativity_next.weekday() + 1) % 7 or 7)
+            forefathers = fathers - datetime.timedelta(days=7)
+        d = all_saints + datetime.timedelta(days=7)  # the 2nd
+        while d <= datetime.date(y, 12, 31):
+            n = (d - all_saints).days // 7 + 1
+            if d not in great_feasts:
+                if d == forefathers:
+                    add(d, "Sunday of the Holy Forefathers", "forefathers",
+                        f"The {_ordinal(n)} Sunday after Pentecost; the second "
+                        "Sunday before the Nativity.")
+                elif d == fathers:
+                    add(d, "Sunday before the Nativity (Holy Fathers)",
+                        "nativity-fathers",
+                        f"The {_ordinal(n)} Sunday after Pentecost; the Sunday "
+                        "before the Nativity.")
+                else:
+                    add(d, f"{_ordinal(n)} Sunday after Pentecost", f"pentecost-{n}")
+            else:  # the Great Feast keeps the day; note the Sunday on it
+                for e in events:
+                    if e.dtstart == d and e.summary in (
+                            "Exaltation of the Holy Cross", "Transfiguration of the Lord",
+                            "Dormition of the Theotokos", "Nativity of the Theotokos",
+                            "Entry of the Theotokos into the Temple"):
+                        e.description += f" The {_ordinal(n)} Sunday after " \
+                                         "Pentecost is noted in its office."
+            d += datetime.timedelta(days=7)
+        # January/February tail: these Sundays still belong to the previous
+        # season's count (All Saints of y-1), numbered through Zacchaeus
+        # (Pascha − 77) inclusive; no numbering exists after Zacchaeus until
+        # the next All Saints.
+        all_saints_prev = easter_julian(y - 1) + datetime.timedelta(days=56)
+        zacchaeus = pascha - datetime.timedelta(days=77)
+        nativity_now = datetime.date(y, 1, 7)
+        fathers_now = None if nativity_now.weekday() == 6 else nativity_now - \
+            datetime.timedelta(days=(nativity_now.weekday() + 1) % 7 or 7)
+        d = datetime.date(y, 1, 1)
+        while d.weekday() != 6:
+            d += datetime.timedelta(days=1)
+        while d <= zacchaeus:
+            n = (d - all_saints_prev).days // 7 + 1
+            if d == nativity_now:  # Christmas itself (numbered this year only)
+                for e in events:
+                    if e.dtstart == d and e.summary == "Nativity of Christ (Christmas)":
+                        e.description += (f" Christmas falls on the "
+                                          f"{_ordinal(n)} Sunday after Pentecost "
+                                          "this year.")
+            elif d == fathers_now:
+                add(d, "Sunday before the Nativity (Holy Fathers)", "nativity-fathers",
+                    f"The {_ordinal(n)} Sunday after Pentecost; the Sunday "
+                    "before the Nativity.")
+            elif d not in great_feasts:
+                add(d, f"{_ordinal(n)} Sunday after Pentecost", f"pentecost-{n}")
+            d += datetime.timedelta(days=7)
     return events
 
 
@@ -2582,6 +2674,52 @@ def self_test():
                              f"expected '{want_summary}'")
         if want_desc and want_desc not in e.description:
             raise SystemExit(f"SELF-TEST FAILED: anglican {d} '{e.summary}' "
+                             f"description lacks '{want_desc}': {e.description}")
+    # orthodox — the Pascha-cycle names and the Slavic numbering of the
+    # Sundays after Pentecost (All Saints = the 1st, numbered continuously
+    # across the year boundary until the next Triodion's Zacchaeus Sunday,
+    # the December Nativity-cycle Sundays carrying their names alongside),
+    # verified against azbyka.ru's calendar for every vector:
+    orth = {}
+    for e in set_orthodox():
+        orth.setdefault(e.dtstart, []).append(e)
+    for date, want_summary, want_desc in [
+        ("20260301", "Sunday of Orthodoxy (1st Sunday of Great Lent)", None),
+        ("20260329", "St Mary of Egypt (5th Sunday of Great Lent)", None),
+        ("20260419", "Antipascha (St Thomas Sunday)", None),
+        ("20260524", "Fathers of Nicaea (7th Sunday after Pascha)", None),
+        ("20260614", "2nd Sunday after Pentecost", None),
+        ("20260927", "Exaltation of the Holy Cross",
+         "The 17th Sunday after Pentecost is noted in its office."),
+        ("20261227", "Sunday of the Holy Forefathers",
+         "The 30th Sunday after Pentecost"),
+        ("20270103", "Sunday before the Nativity (Holy Fathers)",
+         "The 31st Sunday after Pentecost"),
+        ("20270110", "32nd Sunday after Pentecost", None),
+        ("20270207", "36th Sunday after Pentecost", None),
+        ("20270214", "37th Sunday after Pentecost", None),
+        ("20270221", "Triodion begins", None),
+        ("20281224", "Sunday of the Holy Forefathers",
+         "The 29th Sunday after Pentecost"),
+        ("20281231", "30th Sunday after Pentecost", None),
+        ("20290107", "Nativity of Christ (Christmas)",
+         "Christmas falls on the 31st Sunday after Pentecost"),
+        ("20290819", "Transfiguration of the Lord",
+         "The 12th Sunday after Pentecost is noted in its office."),
+        ("20291230", "Sunday of the Holy Forefathers",
+         "The 31st Sunday after Pentecost"),
+        ("20300106", "Sunday before the Nativity (Holy Fathers)",
+         "The 32nd Sunday after Pentecost"),
+        ("20300428", "Holy Pascha (Easter)", None),
+    ]:
+        d = datetime.date(int(date[:4]), int(date[4:6]), int(date[6:]))
+        es = orth.get(d, [])
+        e = next((x for x in es if x.summary == want_summary), None)
+        if e is None:
+            raise SystemExit(f"SELF-TEST FAILED: orthodox {d} lacks "
+                             f"'{want_summary}' (has {[x.summary for x in es]})")
+        if want_desc and want_desc not in e.description:
+            raise SystemExit(f"SELF-TEST FAILED: orthodox {d} '{e.summary}' "
                              f"description lacks '{want_desc}': {e.description}")
     # Hebrew structural sweep
     for y in range(5700, 5861):
