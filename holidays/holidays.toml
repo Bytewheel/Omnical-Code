@@ -46,7 +46,7 @@ file = "orthodox.ics"
 
 [[groups.sets]]
 id = "anglican"
-label = "Anglican (Book of Common Prayer)"
+label = "Anglican (Common Worship)"
 file = "anglican.ics"
 
 [[groups]]
