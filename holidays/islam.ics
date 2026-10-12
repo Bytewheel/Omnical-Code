@@ -1,0 +1,454 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-islam-laylat-baraat-20260203@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260203
+DTEND;VALUE=DATE:20260204
+SUMMARY:Laylat al-Baraat
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ramadan-20260218@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260218
+DTEND;VALUE=DATE:20260219
+SUMMARY:Ramadan begins (1 Ramadan)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The fasting month\; the first fast is the next d
+ ay.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-al-qadr-20260316@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+SUMMARY:Laylat al-Qadr (27 Ramadan\, approximate)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Night of Power falls in the last ten odd nig
+ hts of Ramadan\; the 27th is the traditional observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-fitr-20260320@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260323
+SUMMARY:Eid al-Fitr
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of breaking the fast\; three days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-arafah-20260526@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+SUMMARY:Day of Arafah (9 Dhul-Hijjah)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Hajj's day of standing\; a recommended fast 
+ for non-pilgrims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-adha-20260527@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260531
+SUMMARY:Eid al-Adha
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of the sacrifice\; with the three d
+ ays of Tashreeq.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-islamic-new-year-20260616@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260617
+SUMMARY:Islamic New Year (1 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ashura-20260625@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260625
+DTEND;VALUE=DATE:20260626
+SUMMARY:Ashura (10 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. A voluntary fast day\; commemorates the Exodus f
+ or Sunnis and the martyrdom of Husayn at Karbala for Shia Muslims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-mawlid-20260825@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:Mawlid al-Nabi
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The birthday of the Prophet Muhammad.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-baraat-20270123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Laylat al-Baraat
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ramadan-20270207@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Ramadan begins (1 Ramadan)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The fasting month\; the first fast is the next d
+ ay.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-al-qadr-20270305@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:Laylat al-Qadr (27 Ramadan\, approximate)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Night of Power falls in the last ten odd nig
+ hts of Ramadan\; the 27th is the traditional observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-fitr-20270309@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270312
+SUMMARY:Eid al-Fitr
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of breaking the fast\; three days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-arafah-20270515@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Day of Arafah (9 Dhul-Hijjah)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Hajj's day of standing\; a recommended fast 
+ for non-pilgrims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-adha-20270516@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270520
+SUMMARY:Eid al-Adha
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of the sacrifice\; with the three d
+ ays of Tashreeq.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-islamic-new-year-20270606@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:Islamic New Year (1 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ashura-20270615@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270615
+DTEND;VALUE=DATE:20270616
+SUMMARY:Ashura (10 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. A voluntary fast day\; commemorates the Exodus f
+ or Sunnis and the martyrdom of Husayn at Karbala for Shia Muslims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-mawlid-20270815@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Mawlid al-Nabi
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The birthday of the Prophet Muhammad.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-baraat-20280113@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280113
+DTEND;VALUE=DATE:20280114
+SUMMARY:Laylat al-Baraat
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ramadan-20280128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280128
+DTEND;VALUE=DATE:20280129
+SUMMARY:Ramadan begins (1 Ramadan)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The fasting month\; the first fast is the next d
+ ay.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-al-qadr-20280223@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280223
+DTEND;VALUE=DATE:20280224
+SUMMARY:Laylat al-Qadr (27 Ramadan\, approximate)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Night of Power falls in the last ten odd nig
+ hts of Ramadan\; the 27th is the traditional observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-fitr-20280227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280227
+DTEND;VALUE=DATE:20280301
+SUMMARY:Eid al-Fitr
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of breaking the fast\; three days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-arafah-20280504@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280504
+DTEND;VALUE=DATE:20280505
+SUMMARY:Day of Arafah (9 Dhul-Hijjah)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Hajj's day of standing\; a recommended fast 
+ for non-pilgrims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-adha-20280505@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280505
+DTEND;VALUE=DATE:20280509
+SUMMARY:Eid al-Adha
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of the sacrifice\; with the three d
+ ays of Tashreeq.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-islamic-new-year-20280525@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280525
+DTEND;VALUE=DATE:20280526
+SUMMARY:Islamic New Year (1 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ashura-20280603@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280603
+DTEND;VALUE=DATE:20280604
+SUMMARY:Ashura (10 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. A voluntary fast day\; commemorates the Exodus f
+ or Sunnis and the martyrdom of Husayn at Karbala for Shia Muslims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-mawlid-20280803@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280803
+DTEND;VALUE=DATE:20280804
+SUMMARY:Mawlid al-Nabi
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The birthday of the Prophet Muhammad.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-baraat-20290101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290101
+DTEND;VALUE=DATE:20290102
+SUMMARY:Laylat al-Baraat
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ramadan-20290116@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290116
+DTEND;VALUE=DATE:20290117
+SUMMARY:Ramadan begins (1 Ramadan)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The fasting month\; the first fast is the next d
+ ay.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-al-qadr-20290211@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290211
+DTEND;VALUE=DATE:20290212
+SUMMARY:Laylat al-Qadr (27 Ramadan\, approximate)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Night of Power falls in the last ten odd nig
+ hts of Ramadan\; the 27th is the traditional observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-fitr-20290215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290215
+DTEND;VALUE=DATE:20290218
+SUMMARY:Eid al-Fitr
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of breaking the fast\; three days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-arafah-20290423@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290423
+DTEND;VALUE=DATE:20290424
+SUMMARY:Day of Arafah (9 Dhul-Hijjah)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Hajj's day of standing\; a recommended fast 
+ for non-pilgrims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-adha-20290424@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290424
+DTEND;VALUE=DATE:20290428
+SUMMARY:Eid al-Adha
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of the sacrifice\; with the three d
+ ays of Tashreeq.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-islamic-new-year-20290514@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290514
+DTEND;VALUE=DATE:20290515
+SUMMARY:Islamic New Year (1 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ashura-20290523@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290523
+DTEND;VALUE=DATE:20290524
+SUMMARY:Ashura (10 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. A voluntary fast day\; commemorates the Exodus f
+ or Sunnis and the martyrdom of Husayn at Karbala for Shia Muslims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-mawlid-20290723@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290723
+DTEND;VALUE=DATE:20290724
+SUMMARY:Mawlid al-Nabi
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The birthday of the Prophet Muhammad.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-baraat-20291221@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291221
+DTEND;VALUE=DATE:20291222
+SUMMARY:Laylat al-Baraat
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ramadan-20300105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300105
+DTEND;VALUE=DATE:20300106
+SUMMARY:Ramadan begins (1 Ramadan)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The fasting month\; the first fast is the next d
+ ay.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-al-qadr-20300131@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300131
+DTEND;VALUE=DATE:20300201
+SUMMARY:Laylat al-Qadr (27 Ramadan\, approximate)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Night of Power falls in the last ten odd nig
+ hts of Ramadan\; the 27th is the traditional observance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-fitr-20300204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300204
+DTEND;VALUE=DATE:20300207
+SUMMARY:Eid al-Fitr
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of breaking the fast\; three days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-arafah-20300412@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300412
+DTEND;VALUE=DATE:20300413
+SUMMARY:Day of Arafah (9 Dhul-Hijjah)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The Hajj's day of standing\; a recommended fast 
+ for non-pilgrims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-eid-al-adha-20300413@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300413
+DTEND;VALUE=DATE:20300417
+SUMMARY:Eid al-Adha
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The festival of the sacrifice\; with the three d
+ ays of Tashreeq.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-islamic-new-year-20300504@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300504
+DTEND;VALUE=DATE:20300505
+SUMMARY:Islamic New Year (1 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ashura-20300513@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300513
+DTEND;VALUE=DATE:20300514
+SUMMARY:Ashura (10 Muharram)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. A voluntary fast day\; commemorates the Exodus f
+ or Sunnis and the martyrdom of Husayn at Karbala for Shia Muslims.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-mawlid-20300713@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300713
+DTEND;VALUE=DATE:20300714
+SUMMARY:Mawlid al-Nabi
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The birthday of the Prophet Muhammad.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-laylat-baraat-20301211@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301211
+DTEND;VALUE=DATE:20301212
+SUMMARY:Laylat al-Baraat
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-islam-ramadan-20301226@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301226
+DTEND;VALUE=DATE:20301227
+SUMMARY:Ramadan begins (1 Ramadan)
+DESCRIPTION:Tabular Hijri date\; actual dates follow local moon sightings a
+ nd may differ by ±1 day. The fasting month\; the first fast is the next d
+ ay.
+END:VEVENT
+END:VCALENDAR

@@ -119,3 +119,4 @@ Thumbs.db
 # during a maintenance window would publish it.
 rotation-drills/
 .drill-protected
+__pycache__/

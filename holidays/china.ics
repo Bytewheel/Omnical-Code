@@ -1,0 +1,420 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-china-new-year-20260101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+SUMMARY:New Year's Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-spring-festival-20260217@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260217
+DTEND;VALUE=DATE:20260218
+SUMMARY:Spring Festival (Chinese New Year)
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. Begins at midnight\; the official b
+ reak typically spans the first week of the lunar month.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-lantern-20260303@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260303
+DTEND;VALUE=DATE:20260304
+SUMMARY:Lantern Festival
+DESCRIPTION:15th day of the first lunar month. Official holiday windows (in
+ cl. adjusted workdays) are announced by the State Council the November bef
+ ore\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-qingming-20260405@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+SUMMARY:Qingming Festival
+DESCRIPTION:Tomb-sweeping day\, the 5th solar term. Official holiday window
+ s (incl. adjusted workdays) are announced by the State Council the Novembe
+ r before\; this is the festival day itself\, computed from the lunar calen
+ dar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-labour-day-20260501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:Labour Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-dragon-boat-20260521@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260522
+SUMMARY:Dragon Boat Festival
+DESCRIPTION:5th day of the 5th lunar month. Official holiday windows (incl.
+  adjusted workdays) are announced by the State Council the November before
+ \; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-mid-autumn-20260827@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:Mid-Autumn Festival
+DESCRIPTION:15th day of the 8th lunar month. Official holiday windows (incl
+ . adjusted workdays) are announced by the State Council the November befor
+ e\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-national-day-20261001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:National Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. The official break typically spans 
+ Oct 1-7.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-new-year-20270101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:New Year's Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-spring-festival-20270206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Spring Festival (Chinese New Year)
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. Begins at midnight\; the official b
+ reak typically spans the first week of the lunar month.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-lantern-20270220@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Lantern Festival
+DESCRIPTION:15th day of the first lunar month. Official holiday windows (in
+ cl. adjusted workdays) are announced by the State Council the November bef
+ ore\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-qingming-20270405@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270406
+SUMMARY:Qingming Festival
+DESCRIPTION:Tomb-sweeping day\, the 5th solar term. Official holiday window
+ s (incl. adjusted workdays) are announced by the State Council the Novembe
+ r before\; this is the festival day itself\, computed from the lunar calen
+ dar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-labour-day-20270501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Labour Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-dragon-boat-20270510@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+SUMMARY:Dragon Boat Festival
+DESCRIPTION:5th day of the 5th lunar month. Official holiday windows (incl.
+  adjusted workdays) are announced by the State Council the November before
+ \; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-mid-autumn-20270816@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270816
+DTEND;VALUE=DATE:20270817
+SUMMARY:Mid-Autumn Festival
+DESCRIPTION:15th day of the 8th lunar month. Official holiday windows (incl
+ . adjusted workdays) are announced by the State Council the November befor
+ e\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-national-day-20271001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271002
+SUMMARY:National Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. The official break typically spans 
+ Oct 1-7.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-new-year-20280101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280101
+DTEND;VALUE=DATE:20280102
+SUMMARY:New Year's Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-spring-festival-20280126@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280126
+DTEND;VALUE=DATE:20280127
+SUMMARY:Spring Festival (Chinese New Year)
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. Begins at midnight\; the official b
+ reak typically spans the first week of the lunar month.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-lantern-20280209@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280209
+DTEND;VALUE=DATE:20280210
+SUMMARY:Lantern Festival
+DESCRIPTION:15th day of the first lunar month. Official holiday windows (in
+ cl. adjusted workdays) are announced by the State Council the November bef
+ ore\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-qingming-20280404@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280404
+DTEND;VALUE=DATE:20280405
+SUMMARY:Qingming Festival
+DESCRIPTION:Tomb-sweeping day\, the 5th solar term. Official holiday window
+ s (incl. adjusted workdays) are announced by the State Council the Novembe
+ r before\; this is the festival day itself\, computed from the lunar calen
+ dar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-dragon-boat-20280429@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280429
+DTEND;VALUE=DATE:20280430
+SUMMARY:Dragon Boat Festival
+DESCRIPTION:5th day of the 5th lunar month. Official holiday windows (incl.
+  adjusted workdays) are announced by the State Council the November before
+ \; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-labour-day-20280501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280501
+DTEND;VALUE=DATE:20280502
+SUMMARY:Labour Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-mid-autumn-20280805@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280805
+DTEND;VALUE=DATE:20280806
+SUMMARY:Mid-Autumn Festival
+DESCRIPTION:15th day of the 8th lunar month. Official holiday windows (incl
+ . adjusted workdays) are announced by the State Council the November befor
+ e\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-national-day-20281001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281001
+DTEND;VALUE=DATE:20281002
+SUMMARY:National Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. The official break typically spans 
+ Oct 1-7.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-new-year-20290101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290101
+DTEND;VALUE=DATE:20290102
+SUMMARY:New Year's Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-spring-festival-20290213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290213
+DTEND;VALUE=DATE:20290214
+SUMMARY:Spring Festival (Chinese New Year)
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. Begins at midnight\; the official b
+ reak typically spans the first week of the lunar month.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-lantern-20290227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290227
+DTEND;VALUE=DATE:20290228
+SUMMARY:Lantern Festival
+DESCRIPTION:15th day of the first lunar month. Official holiday windows (in
+ cl. adjusted workdays) are announced by the State Council the November bef
+ ore\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-qingming-20290404@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290404
+DTEND;VALUE=DATE:20290405
+SUMMARY:Qingming Festival
+DESCRIPTION:Tomb-sweeping day\, the 5th solar term. Official holiday window
+ s (incl. adjusted workdays) are announced by the State Council the Novembe
+ r before\; this is the festival day itself\, computed from the lunar calen
+ dar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-labour-day-20290501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290501
+DTEND;VALUE=DATE:20290502
+SUMMARY:Labour Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-dragon-boat-20290517@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290517
+DTEND;VALUE=DATE:20290518
+SUMMARY:Dragon Boat Festival
+DESCRIPTION:5th day of the 5th lunar month. Official holiday windows (incl.
+  adjusted workdays) are announced by the State Council the November before
+ \; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-mid-autumn-20290824@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290824
+DTEND;VALUE=DATE:20290825
+SUMMARY:Mid-Autumn Festival
+DESCRIPTION:15th day of the 8th lunar month. Official holiday windows (incl
+ . adjusted workdays) are announced by the State Council the November befor
+ e\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-national-day-20291001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291001
+DTEND;VALUE=DATE:20291002
+SUMMARY:National Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. The official break typically spans 
+ Oct 1-7.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-new-year-20300101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300101
+DTEND;VALUE=DATE:20300102
+SUMMARY:New Year's Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-spring-festival-20300203@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300203
+DTEND;VALUE=DATE:20300204
+SUMMARY:Spring Festival (Chinese New Year)
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. Begins at midnight\; the official b
+ reak typically spans the first week of the lunar month.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-lantern-20300217@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300217
+DTEND;VALUE=DATE:20300218
+SUMMARY:Lantern Festival
+DESCRIPTION:15th day of the first lunar month. Official holiday windows (in
+ cl. adjusted workdays) are announced by the State Council the November bef
+ ore\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-qingming-20300405@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300405
+DTEND;VALUE=DATE:20300406
+SUMMARY:Qingming Festival
+DESCRIPTION:Tomb-sweeping day\, the 5th solar term. Official holiday window
+ s (incl. adjusted workdays) are announced by the State Council the Novembe
+ r before\; this is the festival day itself\, computed from the lunar calen
+ dar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-labour-day-20300501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300501
+DTEND;VALUE=DATE:20300502
+SUMMARY:Labour Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-dragon-boat-20300605@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300605
+DTEND;VALUE=DATE:20300606
+SUMMARY:Dragon Boat Festival
+DESCRIPTION:5th day of the 5th lunar month. Official holiday windows (incl.
+  adjusted workdays) are announced by the State Council the November before
+ \; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-mid-autumn-20300912@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300912
+DTEND;VALUE=DATE:20300913
+SUMMARY:Mid-Autumn Festival
+DESCRIPTION:15th day of the 8th lunar month. Official holiday windows (incl
+ . adjusted workdays) are announced by the State Council the November befor
+ e\; this is the festival day itself\, computed from the lunar calendar.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-china-national-day-20301001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301001
+DTEND;VALUE=DATE:20301002
+SUMMARY:National Day
+DESCRIPTION:Official holiday windows (incl. adjusted workdays) are announce
+ d by the State Council the November before\; this is the festival day itse
+ lf\, computed from the lunar calendar. The official break typically spans 
+ Oct 1-7.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,2006 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-judaism-tu-bishvat-20260202@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260202
+DTEND;VALUE=DATE:20260203
+SUMMARY:Tu BiShvat
+DESCRIPTION:Begins at sundown the evening before. The new year of the trees
+ .
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-taanit-esther-20260302@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260302
+DTEND;VALUE=DATE:20260303
+SUMMARY:Ta'anit Esther (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast before Purim.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-purim-20260303@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260303
+DTEND;VALUE=DATE:20260304
+SUMMARY:Purim
+DESCRIPTION:Begins at sundown the evening before. The reading of the Megill
+ ah is the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shushan-purim-20260304@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260304
+DTEND;VALUE=DATE:20260305
+SUMMARY:Shushan Purim
+DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
+ ities.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-20260402@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260403
+SUMMARY:Pesach (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Freedom\,
+  seven days (eight outside Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-seder-20260402@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260403
+SUMMARY:Pesach (First Seder)
+DESCRIPTION:Begins at sundown the evening before. The first Seder takes pla
+ ce this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-1-20260403@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+SUMMARY:Pesach (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-2-20260404@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260404
+DTEND;VALUE=DATE:20260405
+SUMMARY:Pesach (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-3-20260405@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+SUMMARY:Pesach (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-4-20260406@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260406
+DTEND;VALUE=DATE:20260407
+SUMMARY:Pesach (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-final-20260408@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260408
+DTEND;VALUE=DATE:20260409
+SUMMARY:Pesach (Final Days)
+DESCRIPTION:Begins at sundown the evening before. The seventh (and outside 
+ Israel eighth) day of Pesach.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hashoah-20260414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+SUMMARY:Yom HaShoah
+DESCRIPTION:Begins at sundown the evening before. Holocaust Remembrance Day
+  (27 Nisan\, moved to the preceding Thursday when it would fall on Friday 
+ or Saturday)\; siren at 10:00 in Israel.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hazikaron-20260421@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260421
+DTEND;VALUE=DATE:20260422
+SUMMARY:Yom HaZikaron
+DESCRIPTION:Begins at sundown the evening before. Israel's Remembrance Day 
+ (4 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-haatzmaut-20260422@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260422
+DTEND;VALUE=DATE:20260423
+SUMMARY:Yom HaAtzmaut
+DESCRIPTION:Begins at sundown the evening before. Israel's Independence Day
+  (5 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-lag-baomer-20260505@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260505
+DTEND;VALUE=DATE:20260506
+SUMMARY:Lag BaOmer
+DESCRIPTION:Begins at sundown the evening before. The 33rd day of the Omer\
+ , a minor festival.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-yerushalayim-20260515@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+SUMMARY:Yom Yerushalayim
+DESCRIPTION:Begins at sundown the evening before. Jerusalem Day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-20260522@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+SUMMARY:Shavuot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Weeks\; a
+ ll-night learning begins the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-2-20260523@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+SUMMARY:Shavuot (Second Day)
+DESCRIPTION:Begins at sundown the evening before. The second day of Shavuot
+  (kept as a single day in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shivaasar-btammuz-20260702@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260703
+SUMMARY:Shiva Asar b'Tammuz (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tisha-bav-20260723@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260724
+SUMMARY:Tisha B'Av (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast of the Ninth of 
+ Av.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bav-20260729@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+SUMMARY:Tu B'Av
+DESCRIPTION:Begins at sundown the evening before. A minor festival of love.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-20260912@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:Rosh Hashanah (Day 1)
+DESCRIPTION:Begins at sundown the evening before. The Jewish new year\; sec
+ ond day follows immediately.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-2-20260913@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:Rosh Hashanah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The second day of Rosh Ha
+ shanah.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tzom-gedaliah-20260914@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:Tzom Gedaliah (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-20260921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:Yom Kippur
+DESCRIPTION:Begins at sundown the evening before. The Day of Atonement\, a 
+ 25-hour fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-erev-20260921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:Yom Kippur (Erev)
+DESCRIPTION:Begins at sundown the evening before. Kol Nidre is chanted this
+  evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-sukkot-20260926@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Sukkot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Booths\, 
+ seven days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-1-20260927@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:Sukkot (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-2-20260928@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:Sukkot (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-3-20260929@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20260930
+SUMMARY:Sukkot (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-4-20260930@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Sukkot (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-5-20261001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Sukkot (Chol haMoed\, Day 5)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-6-20261002@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Sukkot (Chol haMoed\, Day 6)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shmini-atzeret-20261003@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Shmini Atzeret
+DESCRIPTION:Begins at sundown the evening before. The eighth-day assembly.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-simchat-torah-20261004@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:Simchat Torah
+DESCRIPTION:Begins at sundown the evening before. The Torah cycle concludes
+  and restarts (kept on Shmini Atzeret in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day1-20261205@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Hanukkah (First Day)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-20261205@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Hanukkah (First Night)
+DESCRIPTION:Begins at sundown the evening before. The eight-day festival be
+ gins this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20261206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Hanukkah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20261207@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Hanukkah (Day 3)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20261208@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Hanukkah (Day 4)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20261209@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Hanukkah (Day 5)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20261210@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Hanukkah (Day 6)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20261211@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Hanukkah (Day 7)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20261212@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Hanukkah (Day 8)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-asarah-btevet-20261220@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Asarah b'Tevet (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bishvat-20270123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Tu BiShvat
+DESCRIPTION:Begins at sundown the evening before. The new year of the trees
+ .
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-taanit-esther-20270322@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Ta'anit Esther (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast before Purim.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-purim-20270323@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:Purim
+DESCRIPTION:Begins at sundown the evening before. The reading of the Megill
+ ah is the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shushan-purim-20270324@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:Shushan Purim
+DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
+ ities.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-20270422@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:Pesach (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Freedom\,
+  seven days (eight outside Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-seder-20270422@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270422
+DTEND;VALUE=DATE:20270423
+SUMMARY:Pesach (First Seder)
+DESCRIPTION:Begins at sundown the evening before. The first Seder takes pla
+ ce this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-1-20270423@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:Pesach (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-2-20270424@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:Pesach (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-3-20270425@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Pesach (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-4-20270426@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:Pesach (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-final-20270428@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:Pesach (Final Days)
+DESCRIPTION:Begins at sundown the evening before. The seventh (and outside 
+ Israel eighth) day of Pesach.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hashoah-20270504@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270504
+DTEND;VALUE=DATE:20270505
+SUMMARY:Yom HaShoah
+DESCRIPTION:Begins at sundown the evening before. Holocaust Remembrance Day
+  (27 Nisan\, moved to the preceding Thursday when it would fall on Friday 
+ or Saturday)\; siren at 10:00 in Israel.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hazikaron-20270511@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:Yom HaZikaron
+DESCRIPTION:Begins at sundown the evening before. Israel's Remembrance Day 
+ (4 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-haatzmaut-20270512@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:Yom HaAtzmaut
+DESCRIPTION:Begins at sundown the evening before. Israel's Independence Day
+  (5 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-lag-baomer-20270525@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270526
+SUMMARY:Lag BaOmer
+DESCRIPTION:Begins at sundown the evening before. The 33rd day of the Omer\
+ , a minor festival.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-yerushalayim-20270604@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:Yom Yerushalayim
+DESCRIPTION:Begins at sundown the evening before. Jerusalem Day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-20270611@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:Shavuot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Weeks\; a
+ ll-night learning begins the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-2-20270612@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270612
+DTEND;VALUE=DATE:20270613
+SUMMARY:Shavuot (Second Day)
+DESCRIPTION:Begins at sundown the evening before. The second day of Shavuot
+  (kept as a single day in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shivaasar-btammuz-20270722@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270722
+DTEND;VALUE=DATE:20270723
+SUMMARY:Shiva Asar b'Tammuz (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tisha-bav-20270812@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270812
+DTEND;VALUE=DATE:20270813
+SUMMARY:Tisha B'Av (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast of the Ninth of 
+ Av.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bav-20270818@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:Tu B'Av
+DESCRIPTION:Begins at sundown the evening before. A minor festival of love.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-20271002@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271002
+DTEND;VALUE=DATE:20271003
+SUMMARY:Rosh Hashanah (Day 1)
+DESCRIPTION:Begins at sundown the evening before. The Jewish new year\; sec
+ ond day follows immediately.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-2-20271003@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271003
+DTEND;VALUE=DATE:20271004
+SUMMARY:Rosh Hashanah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The second day of Rosh Ha
+ shanah.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tzom-gedaliah-20271004@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271005
+SUMMARY:Tzom Gedaliah (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-20271011@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:Yom Kippur
+DESCRIPTION:Begins at sundown the evening before. The Day of Atonement\, a 
+ 25-hour fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-erev-20271011@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+SUMMARY:Yom Kippur (Erev)
+DESCRIPTION:Begins at sundown the evening before. Kol Nidre is chanted this
+  evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-sukkot-20271016@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271016
+DTEND;VALUE=DATE:20271017
+SUMMARY:Sukkot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Booths\, 
+ seven days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-1-20271017@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271017
+DTEND;VALUE=DATE:20271018
+SUMMARY:Sukkot (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-2-20271018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271018
+DTEND;VALUE=DATE:20271019
+SUMMARY:Sukkot (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-3-20271019@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271019
+DTEND;VALUE=DATE:20271020
+SUMMARY:Sukkot (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-4-20271020@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271020
+DTEND;VALUE=DATE:20271021
+SUMMARY:Sukkot (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-5-20271021@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271021
+DTEND;VALUE=DATE:20271022
+SUMMARY:Sukkot (Chol haMoed\, Day 5)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-6-20271022@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271022
+DTEND;VALUE=DATE:20271023
+SUMMARY:Sukkot (Chol haMoed\, Day 6)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shmini-atzeret-20271023@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271023
+DTEND;VALUE=DATE:20271024
+SUMMARY:Shmini Atzeret
+DESCRIPTION:Begins at sundown the evening before. The eighth-day assembly.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-simchat-torah-20271024@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271024
+DTEND;VALUE=DATE:20271025
+SUMMARY:Simchat Torah
+DESCRIPTION:Begins at sundown the evening before. The Torah cycle concludes
+  and restarts (kept on Shmini Atzeret in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day1-20271225@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:Hanukkah (First Day)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-20271225@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:Hanukkah (First Night)
+DESCRIPTION:Begins at sundown the evening before. The eight-day festival be
+ gins this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20271226@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Hanukkah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20271227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271227
+DTEND;VALUE=DATE:20271228
+SUMMARY:Hanukkah (Day 3)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20271228@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271228
+DTEND;VALUE=DATE:20271229
+SUMMARY:Hanukkah (Day 4)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20271229@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271229
+DTEND;VALUE=DATE:20271230
+SUMMARY:Hanukkah (Day 5)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20271230@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271230
+DTEND;VALUE=DATE:20271231
+SUMMARY:Hanukkah (Day 6)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20271231@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:Hanukkah (Day 7)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20280101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280101
+DTEND;VALUE=DATE:20280102
+SUMMARY:Hanukkah (Day 8)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-asarah-btevet-20280109@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280109
+DTEND;VALUE=DATE:20280110
+SUMMARY:Asarah b'Tevet (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bishvat-20280212@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280212
+DTEND;VALUE=DATE:20280213
+SUMMARY:Tu BiShvat
+DESCRIPTION:Begins at sundown the evening before. The new year of the trees
+ .
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-taanit-esther-20280310@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280310
+DTEND;VALUE=DATE:20280311
+SUMMARY:Ta'anit Esther (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast before Purim.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-purim-20280312@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280312
+DTEND;VALUE=DATE:20280313
+SUMMARY:Purim
+DESCRIPTION:Begins at sundown the evening before. The reading of the Megill
+ ah is the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shushan-purim-20280313@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280313
+DTEND;VALUE=DATE:20280314
+SUMMARY:Shushan Purim
+DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
+ ities.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-20280411@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280411
+DTEND;VALUE=DATE:20280412
+SUMMARY:Pesach (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Freedom\,
+  seven days (eight outside Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-seder-20280411@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280411
+DTEND;VALUE=DATE:20280412
+SUMMARY:Pesach (First Seder)
+DESCRIPTION:Begins at sundown the evening before. The first Seder takes pla
+ ce this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-1-20280412@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280412
+DTEND;VALUE=DATE:20280413
+SUMMARY:Pesach (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-2-20280413@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280413
+DTEND;VALUE=DATE:20280414
+SUMMARY:Pesach (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-3-20280414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280414
+DTEND;VALUE=DATE:20280415
+SUMMARY:Pesach (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-4-20280415@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280415
+DTEND;VALUE=DATE:20280416
+SUMMARY:Pesach (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-final-20280417@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280417
+DTEND;VALUE=DATE:20280418
+SUMMARY:Pesach (Final Days)
+DESCRIPTION:Begins at sundown the evening before. The seventh (and outside 
+ Israel eighth) day of Pesach.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hashoah-20280423@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280423
+DTEND;VALUE=DATE:20280424
+SUMMARY:Yom HaShoah
+DESCRIPTION:Begins at sundown the evening before. Holocaust Remembrance Day
+  (27 Nisan\, moved to the preceding Thursday when it would fall on Friday 
+ or Saturday)\; siren at 10:00 in Israel.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hazikaron-20280501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280501
+DTEND;VALUE=DATE:20280502
+SUMMARY:Yom HaZikaron
+DESCRIPTION:Begins at sundown the evening before. Israel's Remembrance Day 
+ (4 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-haatzmaut-20280502@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280502
+DTEND;VALUE=DATE:20280503
+SUMMARY:Yom HaAtzmaut
+DESCRIPTION:Begins at sundown the evening before. Israel's Independence Day
+  (5 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-lag-baomer-20280514@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280514
+DTEND;VALUE=DATE:20280515
+SUMMARY:Lag BaOmer
+DESCRIPTION:Begins at sundown the evening before. The 33rd day of the Omer\
+ , a minor festival.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-yerushalayim-20280524@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280524
+DTEND;VALUE=DATE:20280525
+SUMMARY:Yom Yerushalayim
+DESCRIPTION:Begins at sundown the evening before. Jerusalem Day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-20280531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280531
+DTEND;VALUE=DATE:20280601
+SUMMARY:Shavuot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Weeks\; a
+ ll-night learning begins the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-2-20280601@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280601
+DTEND;VALUE=DATE:20280602
+SUMMARY:Shavuot (Second Day)
+DESCRIPTION:Begins at sundown the evening before. The second day of Shavuot
+  (kept as a single day in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shivaasar-btammuz-20280711@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280711
+DTEND;VALUE=DATE:20280712
+SUMMARY:Shiva Asar b'Tammuz (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tisha-bav-20280801@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280801
+DTEND;VALUE=DATE:20280802
+SUMMARY:Tisha B'Av (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast of the Ninth of 
+ Av.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bav-20280807@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280807
+DTEND;VALUE=DATE:20280808
+SUMMARY:Tu B'Av
+DESCRIPTION:Begins at sundown the evening before. A minor festival of love.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-20280921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280921
+DTEND;VALUE=DATE:20280922
+SUMMARY:Rosh Hashanah (Day 1)
+DESCRIPTION:Begins at sundown the evening before. The Jewish new year\; sec
+ ond day follows immediately.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-2-20280922@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280922
+DTEND;VALUE=DATE:20280923
+SUMMARY:Rosh Hashanah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The second day of Rosh Ha
+ shanah.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tzom-gedaliah-20280924@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280924
+DTEND;VALUE=DATE:20280925
+SUMMARY:Tzom Gedaliah (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-20280930@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280930
+DTEND;VALUE=DATE:20281001
+SUMMARY:Yom Kippur
+DESCRIPTION:Begins at sundown the evening before. The Day of Atonement\, a 
+ 25-hour fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-erev-20280930@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280930
+DTEND;VALUE=DATE:20281001
+SUMMARY:Yom Kippur (Erev)
+DESCRIPTION:Begins at sundown the evening before. Kol Nidre is chanted this
+  evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-sukkot-20281005@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281005
+DTEND;VALUE=DATE:20281006
+SUMMARY:Sukkot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Booths\, 
+ seven days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-1-20281006@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281006
+DTEND;VALUE=DATE:20281007
+SUMMARY:Sukkot (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-2-20281007@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281007
+DTEND;VALUE=DATE:20281008
+SUMMARY:Sukkot (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-3-20281008@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281008
+DTEND;VALUE=DATE:20281009
+SUMMARY:Sukkot (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-4-20281009@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281009
+DTEND;VALUE=DATE:20281010
+SUMMARY:Sukkot (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-5-20281010@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281010
+DTEND;VALUE=DATE:20281011
+SUMMARY:Sukkot (Chol haMoed\, Day 5)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-6-20281011@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281011
+DTEND;VALUE=DATE:20281012
+SUMMARY:Sukkot (Chol haMoed\, Day 6)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shmini-atzeret-20281012@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281012
+DTEND;VALUE=DATE:20281013
+SUMMARY:Shmini Atzeret
+DESCRIPTION:Begins at sundown the evening before. The eighth-day assembly.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-simchat-torah-20281013@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281013
+DTEND;VALUE=DATE:20281014
+SUMMARY:Simchat Torah
+DESCRIPTION:Begins at sundown the evening before. The Torah cycle concludes
+  and restarts (kept on Shmini Atzeret in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day1-20281213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281213
+DTEND;VALUE=DATE:20281214
+SUMMARY:Hanukkah (First Day)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-20281213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281213
+DTEND;VALUE=DATE:20281214
+SUMMARY:Hanukkah (First Night)
+DESCRIPTION:Begins at sundown the evening before. The eight-day festival be
+ gins this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20281214@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281214
+DTEND;VALUE=DATE:20281215
+SUMMARY:Hanukkah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20281215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281215
+DTEND;VALUE=DATE:20281216
+SUMMARY:Hanukkah (Day 3)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20281216@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281216
+DTEND;VALUE=DATE:20281217
+SUMMARY:Hanukkah (Day 4)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20281217@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281217
+DTEND;VALUE=DATE:20281218
+SUMMARY:Hanukkah (Day 5)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20281218@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281218
+DTEND;VALUE=DATE:20281219
+SUMMARY:Hanukkah (Day 6)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20281219@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281219
+DTEND;VALUE=DATE:20281220
+SUMMARY:Hanukkah (Day 7)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20281220@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281220
+DTEND;VALUE=DATE:20281221
+SUMMARY:Hanukkah (Day 8)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-asarah-btevet-20281228@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281228
+DTEND;VALUE=DATE:20281229
+SUMMARY:Asarah b'Tevet (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bishvat-20290131@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290131
+DTEND;VALUE=DATE:20290201
+SUMMARY:Tu BiShvat
+DESCRIPTION:Begins at sundown the evening before. The new year of the trees
+ .
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-taanit-esther-20290228@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290228
+DTEND;VALUE=DATE:20290301
+SUMMARY:Ta'anit Esther (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast before Purim.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-purim-20290301@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290301
+DTEND;VALUE=DATE:20290302
+SUMMARY:Purim
+DESCRIPTION:Begins at sundown the evening before. The reading of the Megill
+ ah is the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shushan-purim-20290302@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290302
+DTEND;VALUE=DATE:20290303
+SUMMARY:Shushan Purim
+DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
+ ities.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-20290331@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290331
+DTEND;VALUE=DATE:20290401
+SUMMARY:Pesach (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Freedom\,
+  seven days (eight outside Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-seder-20290331@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290331
+DTEND;VALUE=DATE:20290401
+SUMMARY:Pesach (First Seder)
+DESCRIPTION:Begins at sundown the evening before. The first Seder takes pla
+ ce this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-1-20290401@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290401
+DTEND;VALUE=DATE:20290402
+SUMMARY:Pesach (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-2-20290402@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290402
+DTEND;VALUE=DATE:20290403
+SUMMARY:Pesach (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-3-20290403@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290403
+DTEND;VALUE=DATE:20290404
+SUMMARY:Pesach (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-4-20290404@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290404
+DTEND;VALUE=DATE:20290405
+SUMMARY:Pesach (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-final-20290406@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290406
+DTEND;VALUE=DATE:20290407
+SUMMARY:Pesach (Final Days)
+DESCRIPTION:Begins at sundown the evening before. The seventh (and outside 
+ Israel eighth) day of Pesach.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hashoah-20290412@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290412
+DTEND;VALUE=DATE:20290413
+SUMMARY:Yom HaShoah
+DESCRIPTION:Begins at sundown the evening before. Holocaust Remembrance Day
+  (27 Nisan\, moved to the preceding Thursday when it would fall on Friday 
+ or Saturday)\; siren at 10:00 in Israel.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hazikaron-20290418@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290418
+DTEND;VALUE=DATE:20290419
+SUMMARY:Yom HaZikaron
+DESCRIPTION:Begins at sundown the evening before. Israel's Remembrance Day 
+ (4 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-haatzmaut-20290419@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290419
+DTEND;VALUE=DATE:20290420
+SUMMARY:Yom HaAtzmaut
+DESCRIPTION:Begins at sundown the evening before. Israel's Independence Day
+  (5 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-lag-baomer-20290503@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290503
+DTEND;VALUE=DATE:20290504
+SUMMARY:Lag BaOmer
+DESCRIPTION:Begins at sundown the evening before. The 33rd day of the Omer\
+ , a minor festival.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-yerushalayim-20290513@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290513
+DTEND;VALUE=DATE:20290514
+SUMMARY:Yom Yerushalayim
+DESCRIPTION:Begins at sundown the evening before. Jerusalem Day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-20290520@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290520
+DTEND;VALUE=DATE:20290521
+SUMMARY:Shavuot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Weeks\; a
+ ll-night learning begins the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-2-20290521@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290521
+DTEND;VALUE=DATE:20290522
+SUMMARY:Shavuot (Second Day)
+DESCRIPTION:Begins at sundown the evening before. The second day of Shavuot
+  (kept as a single day in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shivaasar-btammuz-20290701@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290701
+DTEND;VALUE=DATE:20290702
+SUMMARY:Shiva Asar b'Tammuz (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tisha-bav-20290722@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290722
+DTEND;VALUE=DATE:20290723
+SUMMARY:Tisha B'Av (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast of the Ninth of 
+ Av.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bav-20290727@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290727
+DTEND;VALUE=DATE:20290728
+SUMMARY:Tu B'Av
+DESCRIPTION:Begins at sundown the evening before. A minor festival of love.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-20290910@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290910
+DTEND;VALUE=DATE:20290911
+SUMMARY:Rosh Hashanah (Day 1)
+DESCRIPTION:Begins at sundown the evening before. The Jewish new year\; sec
+ ond day follows immediately.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-2-20290911@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290911
+DTEND;VALUE=DATE:20290912
+SUMMARY:Rosh Hashanah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The second day of Rosh Ha
+ shanah.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tzom-gedaliah-20290912@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290912
+DTEND;VALUE=DATE:20290913
+SUMMARY:Tzom Gedaliah (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-20290919@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290919
+DTEND;VALUE=DATE:20290920
+SUMMARY:Yom Kippur
+DESCRIPTION:Begins at sundown the evening before. The Day of Atonement\, a 
+ 25-hour fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-erev-20290919@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290919
+DTEND;VALUE=DATE:20290920
+SUMMARY:Yom Kippur (Erev)
+DESCRIPTION:Begins at sundown the evening before. Kol Nidre is chanted this
+  evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-sukkot-20290924@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290924
+DTEND;VALUE=DATE:20290925
+SUMMARY:Sukkot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Booths\, 
+ seven days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-1-20290925@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290925
+DTEND;VALUE=DATE:20290926
+SUMMARY:Sukkot (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-2-20290926@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290926
+DTEND;VALUE=DATE:20290927
+SUMMARY:Sukkot (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-3-20290927@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290927
+DTEND;VALUE=DATE:20290928
+SUMMARY:Sukkot (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-4-20290928@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290928
+DTEND;VALUE=DATE:20290929
+SUMMARY:Sukkot (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-5-20290929@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290929
+DTEND;VALUE=DATE:20290930
+SUMMARY:Sukkot (Chol haMoed\, Day 5)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-6-20290930@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290930
+DTEND;VALUE=DATE:20291001
+SUMMARY:Sukkot (Chol haMoed\, Day 6)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shmini-atzeret-20291001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291001
+DTEND;VALUE=DATE:20291002
+SUMMARY:Shmini Atzeret
+DESCRIPTION:Begins at sundown the evening before. The eighth-day assembly.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-simchat-torah-20291002@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291002
+DTEND;VALUE=DATE:20291003
+SUMMARY:Simchat Torah
+DESCRIPTION:Begins at sundown the evening before. The Torah cycle concludes
+  and restarts (kept on Shmini Atzeret in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day1-20291202@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291202
+DTEND;VALUE=DATE:20291203
+SUMMARY:Hanukkah (First Day)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-20291202@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291202
+DTEND;VALUE=DATE:20291203
+SUMMARY:Hanukkah (First Night)
+DESCRIPTION:Begins at sundown the evening before. The eight-day festival be
+ gins this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20291203@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291203
+DTEND;VALUE=DATE:20291204
+SUMMARY:Hanukkah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20291204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291204
+DTEND;VALUE=DATE:20291205
+SUMMARY:Hanukkah (Day 3)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20291205@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291205
+DTEND;VALUE=DATE:20291206
+SUMMARY:Hanukkah (Day 4)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20291206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291206
+DTEND;VALUE=DATE:20291207
+SUMMARY:Hanukkah (Day 5)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20291207@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291207
+DTEND;VALUE=DATE:20291208
+SUMMARY:Hanukkah (Day 6)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20291208@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291208
+DTEND;VALUE=DATE:20291209
+SUMMARY:Hanukkah (Day 7)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20291209@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291209
+DTEND;VALUE=DATE:20291210
+SUMMARY:Hanukkah (Day 8)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-asarah-btevet-20291216@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291216
+DTEND;VALUE=DATE:20291217
+SUMMARY:Asarah b'Tevet (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bishvat-20300119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300119
+DTEND;VALUE=DATE:20300120
+SUMMARY:Tu BiShvat
+DESCRIPTION:Begins at sundown the evening before. The new year of the trees
+ .
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-taanit-esther-20300318@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300318
+DTEND;VALUE=DATE:20300319
+SUMMARY:Ta'anit Esther (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast before Purim.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-purim-20300319@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300319
+DTEND;VALUE=DATE:20300320
+SUMMARY:Purim
+DESCRIPTION:Begins at sundown the evening before. The reading of the Megill
+ ah is the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shushan-purim-20300320@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300320
+DTEND;VALUE=DATE:20300321
+SUMMARY:Shushan Purim
+DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
+ ities.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-20300418@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300418
+DTEND;VALUE=DATE:20300419
+SUMMARY:Pesach (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Freedom\,
+  seven days (eight outside Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-seder-20300418@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300418
+DTEND;VALUE=DATE:20300419
+SUMMARY:Pesach (First Seder)
+DESCRIPTION:Begins at sundown the evening before. The first Seder takes pla
+ ce this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-1-20300419@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300419
+DTEND;VALUE=DATE:20300420
+SUMMARY:Pesach (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-2-20300420@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300420
+DTEND;VALUE=DATE:20300421
+SUMMARY:Pesach (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-3-20300421@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300421
+DTEND;VALUE=DATE:20300422
+SUMMARY:Pesach (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-chol-4-20300422@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300422
+DTEND;VALUE=DATE:20300423
+SUMMARY:Pesach (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Pesac
+ h.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-pesach-final-20300424@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300424
+DTEND;VALUE=DATE:20300425
+SUMMARY:Pesach (Final Days)
+DESCRIPTION:Begins at sundown the evening before. The seventh (and outside 
+ Israel eighth) day of Pesach.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hashoah-20300430@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300430
+DTEND;VALUE=DATE:20300501
+SUMMARY:Yom HaShoah
+DESCRIPTION:Begins at sundown the evening before. Holocaust Remembrance Day
+  (27 Nisan\, moved to the preceding Thursday when it would fall on Friday 
+ or Saturday)\; siren at 10:00 in Israel.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-hazikaron-20300507@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300507
+DTEND;VALUE=DATE:20300508
+SUMMARY:Yom HaZikaron
+DESCRIPTION:Begins at sundown the evening before. Israel's Remembrance Day 
+ (4 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-haatzmaut-20300508@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300508
+DTEND;VALUE=DATE:20300509
+SUMMARY:Yom HaAtzmaut
+DESCRIPTION:Begins at sundown the evening before. Israel's Independence Day
+  (5 Iyar with the statutory shifts).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-lag-baomer-20300521@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300521
+DTEND;VALUE=DATE:20300522
+SUMMARY:Lag BaOmer
+DESCRIPTION:Begins at sundown the evening before. The 33rd day of the Omer\
+ , a minor festival.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-yerushalayim-20300531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300531
+DTEND;VALUE=DATE:20300601
+SUMMARY:Yom Yerushalayim
+DESCRIPTION:Begins at sundown the evening before. Jerusalem Day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-20300607@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300607
+DTEND;VALUE=DATE:20300608
+SUMMARY:Shavuot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Weeks\; a
+ ll-night learning begins the evening before.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shavuot-2-20300608@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300608
+DTEND;VALUE=DATE:20300609
+SUMMARY:Shavuot (Second Day)
+DESCRIPTION:Begins at sundown the evening before. The second day of Shavuot
+  (kept as a single day in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shivaasar-btammuz-20300718@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300718
+DTEND;VALUE=DATE:20300719
+SUMMARY:Shiva Asar b'Tammuz (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tisha-bav-20300808@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300808
+DTEND;VALUE=DATE:20300809
+SUMMARY:Tisha B'Av (Fast)
+DESCRIPTION:Begins at sundown the evening before. The fast of the Ninth of 
+ Av.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tu-bav-20300814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300814
+DTEND;VALUE=DATE:20300815
+SUMMARY:Tu B'Av
+DESCRIPTION:Begins at sundown the evening before. A minor festival of love.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-20300928@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300928
+DTEND;VALUE=DATE:20300929
+SUMMARY:Rosh Hashanah (Day 1)
+DESCRIPTION:Begins at sundown the evening before. The Jewish new year\; sec
+ ond day follows immediately.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-rosh-hashanah-2-20300929@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300929
+DTEND;VALUE=DATE:20300930
+SUMMARY:Rosh Hashanah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The second day of Rosh Ha
+ shanah.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-tzom-gedaliah-20300930@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300930
+DTEND;VALUE=DATE:20301001
+SUMMARY:Tzom Gedaliah (Fast)
+DESCRIPTION:Begins at sundown the evening before. A minor fast from dawn to
+  nightfall.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-20301007@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301007
+DTEND;VALUE=DATE:20301008
+SUMMARY:Yom Kippur
+DESCRIPTION:Begins at sundown the evening before. The Day of Atonement\, a 
+ 25-hour fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-yom-kippur-erev-20301007@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301007
+DTEND;VALUE=DATE:20301008
+SUMMARY:Yom Kippur (Erev)
+DESCRIPTION:Begins at sundown the evening before. Kol Nidre is chanted this
+  evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-sukkot-20301012@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301012
+DTEND;VALUE=DATE:20301013
+SUMMARY:Sukkot (First Day)
+DESCRIPTION:Begins at sundown the evening before. The Festival of Booths\, 
+ seven days.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-1-20301013@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301013
+DTEND;VALUE=DATE:20301014
+SUMMARY:Sukkot (Chol haMoed\, Day 1)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-2-20301014@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301014
+DTEND;VALUE=DATE:20301015
+SUMMARY:Sukkot (Chol haMoed\, Day 2)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-3-20301015@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301015
+DTEND;VALUE=DATE:20301016
+SUMMARY:Sukkot (Chol haMoed\, Day 3)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-4-20301016@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301016
+DTEND;VALUE=DATE:20301017
+SUMMARY:Sukkot (Chol haMoed\, Day 4)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-5-20301017@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301017
+DTEND;VALUE=DATE:20301018
+SUMMARY:Sukkot (Chol haMoed\, Day 5)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-chol-hamoed-6-20301018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301018
+DTEND;VALUE=DATE:20301019
+SUMMARY:Sukkot (Chol haMoed\, Day 6)
+DESCRIPTION:Begins at sundown the evening before. Intermediate day of Sukko
+ t.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-shmini-atzeret-20301019@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301019
+DTEND;VALUE=DATE:20301020
+SUMMARY:Shmini Atzeret
+DESCRIPTION:Begins at sundown the evening before. The eighth-day assembly.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-simchat-torah-20301020@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301020
+DTEND;VALUE=DATE:20301021
+SUMMARY:Simchat Torah
+DESCRIPTION:Begins at sundown the evening before. The Torah cycle concludes
+  and restarts (kept on Shmini Atzeret in Israel).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day1-20301221@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301221
+DTEND;VALUE=DATE:20301222
+SUMMARY:Hanukkah (First Day)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-20301221@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301221
+DTEND;VALUE=DATE:20301222
+SUMMARY:Hanukkah (First Night)
+DESCRIPTION:Begins at sundown the evening before. The eight-day festival be
+ gins this evening.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20301222@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301222
+DTEND;VALUE=DATE:20301223
+SUMMARY:Hanukkah (Day 2)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20301223@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301223
+DTEND;VALUE=DATE:20301224
+SUMMARY:Hanukkah (Day 3)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20301224@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301224
+DTEND;VALUE=DATE:20301225
+SUMMARY:Hanukkah (Day 4)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20301225@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301225
+DTEND;VALUE=DATE:20301226
+SUMMARY:Hanukkah (Day 5)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20301226@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301226
+DTEND;VALUE=DATE:20301227
+SUMMARY:Hanukkah (Day 6)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20301227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301227
+DTEND;VALUE=DATE:20301228
+SUMMARY:Hanukkah (Day 7)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-hanukkah-day-20301228@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301228
+DTEND;VALUE=DATE:20301229
+SUMMARY:Hanukkah (Day 8)
+DESCRIPTION:Begins at sundown the evening before. The rededication of the T
+ emple.
+END:VEVENT
+END:VCALENDAR

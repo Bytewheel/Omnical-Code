@@ -1,0 +1,1015 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-orthodox-christmas-20260107@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260107
+DTEND;VALUE=DATE:20260108
+SUMMARY:Nativity of Christ (Christmas)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The second-greatest feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theophany-20260119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260119
+DTEND;VALUE=DATE:20260120
+SUMMARY:Theophany (Epiphany) of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-triodion-20260201@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260201
+DTEND;VALUE=DATE:20260202
+SUMMARY:Triodion begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The preparatory season before Great Le
+ nt.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-meeting-20260215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260215
+DTEND;VALUE=DATE:20260216
+SUMMARY:Meeting of the Lord (Presentation)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-great-lent-20260223@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260223
+DTEND;VALUE=DATE:20260224
+SUMMARY:Great Lent begins (Clean Monday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Great Fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lazarus-saturday-20260404@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260404
+DTEND;VALUE=DATE:20260405
+SUMMARY:Lazarus Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-palm-sunday-20260405@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+SUMMARY:Palm Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-annunciation-20260407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260407
+DTEND;VALUE=DATE:20260408
+SUMMARY:Annunciation of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-friday-20260410@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260411
+SUMMARY:Great and Holy Friday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The burial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-saturday-20260411@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260411
+DTEND;VALUE=DATE:20260412
+SUMMARY:Great and Holy Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pascha-20260412@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260412
+DTEND;VALUE=DATE:20260413
+SUMMARY:Holy Pascha (Easter)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-ascension-20260521@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260522
+SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20260531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+SUMMARY:Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-all-saints-20260607@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260607
+DTEND;VALUE=DATE:20260608
+SUMMARY:All Saints Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
+ les' Fast begins the next day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-apostles-fast-20260608@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20260609
+SUMMARY:Apostles' Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-fast-20260814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:Dormition Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to the Dormition\, Aug 28 civil (
+ Aug 15 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-transfiguration-20260819@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260820
+SUMMARY:Transfiguration of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-20260828@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:Dormition of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-nativity-20260921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:Nativity of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-cross-20260927@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nativity-fast-20261128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Nativity Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Christmas\, Jan 7 civil (Dec 2
+ 5 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-entry-20261204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Entry of the Theotokos into the Temple
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-christmas-20270107@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270108
+SUMMARY:Nativity of Christ (Christmas)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The second-greatest feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theophany-20270119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:Theophany (Epiphany) of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-meeting-20270215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Meeting of the Lord (Presentation)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-triodion-20270221@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Triodion begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The preparatory season before Great Le
+ nt.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-great-lent-20270315@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Great Lent begins (Clean Monday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Great Fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-annunciation-20270407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:Annunciation of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lazarus-saturday-20270424@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:Lazarus Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-palm-sunday-20270425@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Palm Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-friday-20270430@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Great and Holy Friday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The burial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-saturday-20270501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Great and Holy Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pascha-20270502@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Holy Pascha (Easter)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-ascension-20270610@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270610
+DTEND;VALUE=DATE:20270611
+SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20270620@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-all-saints-20270627@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270627
+DTEND;VALUE=DATE:20270628
+SUMMARY:All Saints Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
+ les' Fast begins the next day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-apostles-fast-20270628@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270628
+DTEND;VALUE=DATE:20270629
+SUMMARY:Apostles' Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-fast-20270814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270814
+DTEND;VALUE=DATE:20270815
+SUMMARY:Dormition Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to the Dormition\, Aug 28 civil (
+ Aug 15 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-transfiguration-20270819@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270819
+DTEND;VALUE=DATE:20270820
+SUMMARY:Transfiguration of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-20270828@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270828
+DTEND;VALUE=DATE:20270829
+SUMMARY:Dormition of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-nativity-20270921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270921
+DTEND;VALUE=DATE:20270922
+SUMMARY:Nativity of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-cross-20270927@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270927
+DTEND;VALUE=DATE:20270928
+SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nativity-fast-20271128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271128
+DTEND;VALUE=DATE:20271129
+SUMMARY:Nativity Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Christmas\, Jan 7 civil (Dec 2
+ 5 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-entry-20271204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271204
+DTEND;VALUE=DATE:20271205
+SUMMARY:Entry of the Theotokos into the Temple
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-christmas-20280107@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280107
+DTEND;VALUE=DATE:20280108
+SUMMARY:Nativity of Christ (Christmas)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The second-greatest feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theophany-20280119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280119
+DTEND;VALUE=DATE:20280120
+SUMMARY:Theophany (Epiphany) of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-triodion-20280206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280206
+DTEND;VALUE=DATE:20280207
+SUMMARY:Triodion begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The preparatory season before Great Le
+ nt.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-meeting-20280215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280215
+DTEND;VALUE=DATE:20280216
+SUMMARY:Meeting of the Lord (Presentation)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-great-lent-20280228@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280228
+DTEND;VALUE=DATE:20280229
+SUMMARY:Great Lent begins (Clean Monday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Great Fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-annunciation-20280407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280407
+DTEND;VALUE=DATE:20280408
+SUMMARY:Annunciation of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lazarus-saturday-20280408@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280408
+DTEND;VALUE=DATE:20280409
+SUMMARY:Lazarus Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-palm-sunday-20280409@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280409
+DTEND;VALUE=DATE:20280410
+SUMMARY:Palm Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-friday-20280414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280414
+DTEND;VALUE=DATE:20280415
+SUMMARY:Great and Holy Friday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The burial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-saturday-20280415@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280415
+DTEND;VALUE=DATE:20280416
+SUMMARY:Great and Holy Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pascha-20280416@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280416
+DTEND;VALUE=DATE:20280417
+SUMMARY:Holy Pascha (Easter)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-ascension-20280525@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280525
+DTEND;VALUE=DATE:20280526
+SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20280604@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280604
+DTEND;VALUE=DATE:20280605
+SUMMARY:Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-all-saints-20280611@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280611
+DTEND;VALUE=DATE:20280612
+SUMMARY:All Saints Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
+ les' Fast begins the next day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-apostles-fast-20280612@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280612
+DTEND;VALUE=DATE:20280613
+SUMMARY:Apostles' Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-fast-20280814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280814
+DTEND;VALUE=DATE:20280815
+SUMMARY:Dormition Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to the Dormition\, Aug 28 civil (
+ Aug 15 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-transfiguration-20280819@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280819
+DTEND;VALUE=DATE:20280820
+SUMMARY:Transfiguration of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-20280828@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280828
+DTEND;VALUE=DATE:20280829
+SUMMARY:Dormition of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-nativity-20280921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280921
+DTEND;VALUE=DATE:20280922
+SUMMARY:Nativity of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-cross-20280927@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280927
+DTEND;VALUE=DATE:20280928
+SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nativity-fast-20281128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281128
+DTEND;VALUE=DATE:20281129
+SUMMARY:Nativity Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Christmas\, Jan 7 civil (Dec 2
+ 5 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-entry-20281204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281204
+DTEND;VALUE=DATE:20281205
+SUMMARY:Entry of the Theotokos into the Temple
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-christmas-20290107@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290107
+DTEND;VALUE=DATE:20290108
+SUMMARY:Nativity of Christ (Christmas)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The second-greatest feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theophany-20290119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290119
+DTEND;VALUE=DATE:20290120
+SUMMARY:Theophany (Epiphany) of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-triodion-20290128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290128
+DTEND;VALUE=DATE:20290129
+SUMMARY:Triodion begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The preparatory season before Great Le
+ nt.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-meeting-20290215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290215
+DTEND;VALUE=DATE:20290216
+SUMMARY:Meeting of the Lord (Presentation)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-great-lent-20290219@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290219
+DTEND;VALUE=DATE:20290220
+SUMMARY:Great Lent begins (Clean Monday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Great Fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lazarus-saturday-20290331@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290331
+DTEND;VALUE=DATE:20290401
+SUMMARY:Lazarus Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-palm-sunday-20290401@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290401
+DTEND;VALUE=DATE:20290402
+SUMMARY:Palm Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-friday-20290406@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290406
+DTEND;VALUE=DATE:20290407
+SUMMARY:Great and Holy Friday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The burial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-annunciation-20290407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290407
+DTEND;VALUE=DATE:20290408
+SUMMARY:Annunciation of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-saturday-20290407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290407
+DTEND;VALUE=DATE:20290408
+SUMMARY:Great and Holy Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pascha-20290408@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290408
+DTEND;VALUE=DATE:20290409
+SUMMARY:Holy Pascha (Easter)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-ascension-20290517@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290517
+DTEND;VALUE=DATE:20290518
+SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20290527@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290527
+DTEND;VALUE=DATE:20290528
+SUMMARY:Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-all-saints-20290603@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290603
+DTEND;VALUE=DATE:20290604
+SUMMARY:All Saints Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
+ les' Fast begins the next day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-apostles-fast-20290604@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290604
+DTEND;VALUE=DATE:20290605
+SUMMARY:Apostles' Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-fast-20290814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290814
+DTEND;VALUE=DATE:20290815
+SUMMARY:Dormition Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to the Dormition\, Aug 28 civil (
+ Aug 15 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-transfiguration-20290819@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290819
+DTEND;VALUE=DATE:20290820
+SUMMARY:Transfiguration of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-20290828@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290828
+DTEND;VALUE=DATE:20290829
+SUMMARY:Dormition of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-nativity-20290921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290921
+DTEND;VALUE=DATE:20290922
+SUMMARY:Nativity of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-cross-20290927@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290927
+DTEND;VALUE=DATE:20290928
+SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nativity-fast-20291128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291128
+DTEND;VALUE=DATE:20291129
+SUMMARY:Nativity Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Christmas\, Jan 7 civil (Dec 2
+ 5 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-entry-20291204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291204
+DTEND;VALUE=DATE:20291205
+SUMMARY:Entry of the Theotokos into the Temple
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-christmas-20300107@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300107
+DTEND;VALUE=DATE:20300108
+SUMMARY:Nativity of Christ (Christmas)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The second-greatest feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theophany-20300119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300119
+DTEND;VALUE=DATE:20300120
+SUMMARY:Theophany (Epiphany) of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-meeting-20300215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300215
+DTEND;VALUE=DATE:20300216
+SUMMARY:Meeting of the Lord (Presentation)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-triodion-20300217@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300217
+DTEND;VALUE=DATE:20300218
+SUMMARY:Triodion begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The preparatory season before Great Le
+ nt.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-great-lent-20300311@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300311
+DTEND;VALUE=DATE:20300312
+SUMMARY:Great Lent begins (Clean Monday)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Great Fast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-annunciation-20300407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300407
+DTEND;VALUE=DATE:20300408
+SUMMARY:Annunciation of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-lazarus-saturday-20300420@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300420
+DTEND;VALUE=DATE:20300421
+SUMMARY:Lazarus Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-palm-sunday-20300421@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300421
+DTEND;VALUE=DATE:20300422
+SUMMARY:Palm Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-friday-20300426@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300426
+DTEND;VALUE=DATE:20300427
+SUMMARY:Great and Holy Friday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The burial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-holy-saturday-20300427@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300427
+DTEND;VALUE=DATE:20300428
+SUMMARY:Great and Holy Saturday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pascha-20300428@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300428
+DTEND;VALUE=DATE:20300429
+SUMMARY:Holy Pascha (Easter)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-ascension-20300606@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300606
+DTEND;VALUE=DATE:20300607
+SUMMARY:Ascension of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-pentecost-20300616@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300616
+DTEND;VALUE=DATE:20300617
+SUMMARY:Pentecost
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-all-saints-20300623@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300623
+DTEND;VALUE=DATE:20300624
+SUMMARY:All Saints Sunday
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. The Sunday after Pentecost\; the Apost
+ les' Fast begins the next day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-apostles-fast-20300624@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300624
+DTEND;VALUE=DATE:20300625
+SUMMARY:Apostles' Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Jul 12 civil (Jun 29 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-fast-20300814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300814
+DTEND;VALUE=DATE:20300815
+SUMMARY:Dormition Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to the Dormition\, Aug 28 civil (
+ Aug 15 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-transfiguration-20300819@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300819
+DTEND;VALUE=DATE:20300820
+SUMMARY:Transfiguration of the Lord
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-dormition-20300828@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300828
+DTEND;VALUE=DATE:20300829
+SUMMARY:Dormition of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-nativity-20300921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300921
+DTEND;VALUE=DATE:20300922
+SUMMARY:Nativity of the Theotokos
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-cross-20300927@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300927
+DTEND;VALUE=DATE:20300928
+SUMMARY:Exaltation of the Holy Cross
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-nativity-fast-20301128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301128
+DTEND;VALUE=DATE:20301129
+SUMMARY:Nativity Fast begins
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Runs to Christmas\, Jan 7 civil (Dec 2
+ 5 Julian).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-theotokos-entry-20301204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301204
+DTEND;VALUE=DATE:20301205
+SUMMARY:Entry of the Theotokos into the Temple
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier.
+END:VEVENT
+END:VCALENDAR
