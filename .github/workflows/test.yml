@@ -271,11 +271,37 @@ jobs:
           cargo build --release
           ./target/release/rustical support-bundle --stdout --no-config | grep '^commit:'
 
+      # NB: no `working-directory` inherited here. The workflow-level
+      # `defaults.run.working-directory: rustical` would run this step from
+      # inside the submodule, so `tar … rustical` looked for
+      # rustical/rustical and died with "Cannot stat" (and the gate step's
+      # ./scripts/… path would miss the outer repo entirely). Step-level
+      # working-directory replaces the default rather than nesting under it
+      # — the build step's explicit `rustical` above is what proves that —
+      # so `.` here is the workspace root, which is where both paths live.
       - name: Pack the source at that same commit
+        working-directory: .
         run: |
           set -euo pipefail
+          # actions/checkout leaves a submodule's .git as a *gitfile* — a
+          # one-line pointer into the superproject's .git/modules — so a tar
+          # of the submodule carries a pointer to files it does not carry,
+          # and `git rev-parse HEAD` inside the unpacked tree fails. Absorb
+          # the git dir into rustical/.git first: the tarball is then a
+          # self-contained repo, which is what the gate's clause 2 needs.
+          # (A `git archive` would strip .git entirely — the job's own
+          # fetch-depth: 0 note explains why that is not used either.)
+          git submodule absorbgitdirs rustical
+          test -d rustical/.git
           tar czf /tmp/source.tar.gz --exclude=target rustical
           echo "packed $(tar tzf /tmp/source.tar.gz | wc -l) entries"
 
       - name: §10.3 gate — the offer matches the binary, and the offer builds
+        working-directory: .
+        # SQLX_OFFLINE, again: the gate's clause 4 builds the *unpacked
+        # tarball* in this step's fresh shell — without the env var the
+        # sqlx::query! macros demand a live DATABASE_URL and the clause
+        # fails on a runner that has none.
+        env:
+          SQLX_OFFLINE: "true"
         run: ./scripts/source-offer-gate.sh rustical/target/release/rustical /tmp/source.tar.gz
