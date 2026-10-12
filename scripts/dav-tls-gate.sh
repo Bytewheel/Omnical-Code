@@ -34,6 +34,20 @@ expect_ok() {
 # ── 1. The crate builds and its own tests pass ──────────────────────────────
 head_ "1. dav-tls builds and its unit tests pass"
 
+# NB: the build is a separate step, and that is load-bearing. `cargo test`
+# alone never produces target/release/dav-tls — the crate has no integration
+# tests, so cargo builds only the test harness under target/release/deps/,
+# and on a clean runner (CI) there is no leftover binary to find. This gate
+# was first run on a machine that had `cargo build --release` in its target
+# cache, which masked exactly that: CI failed with "no binary at …" while
+# the same script passed locally.
+if (cd "$DL_DIR" && SQLX_OFFLINE=true cargo build --release) > "$OUT/build.log" 2>&1; then
+  ok "cargo build --release"
+else
+  no "cargo build --release failed:"
+  sed 's/^/        /' "$OUT/build.log" | tail -20
+fi
+
 if (cd "$DL_DIR" && SQLX_OFFLINE=true cargo test --release) > "$OUT/test.log" 2>&1; then
   ran=$(grep -oE '^test result: ok\. [0-9]+ passed' "$OUT/test.log" | grep -oE '[0-9]+' | head -1)
   ok "cargo test: $ran passed"
