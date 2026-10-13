@@ -199,4 +199,120 @@ default_group = ""              # "" = no auto group (2026-09-07 decision)
 rate_limit_per_hour = 10        # per-IP; plus a fixed global bucket 60/h
 EOF
 
-echo "rendered $n SMTP accounts, $m IMAP accounts, rsvp_secret from pass" >&2
+# §18.41 push mirrors: the aphy Default feed — canonical masters stamped
+# with ORGANIZER/CREATED (aphy's week/day grids drop ORGANIZER-less events,
+# which is every event khal writes) plus the MP02 instance feed. The aphy
+# CalDAV password is DISTINCT from the web-login password in the parent
+# pass entry (secrets/aphy.io/burningserenity) — it lives in its own
+# sub-entry, and the username is the email form the phone uses.
+APHY_DAV_USER="burningserenity@aphy.io"
+APHY_DAV_PASS="$(pass show secrets/aphy.io/burningserenity/dav | head -1)"
+[ -n "$APHY_DAV_PASS" ] || {
+	echo "!! pass entry 'secrets/aphy.io/burningserenity/dav' missing or empty — aborting render" >&2
+	exit 1
+}
+
+cat <<EOF
+
+# §18.41 push mirrors into aphy (Cyrus/Roundcube) — the two-calendar
+# layout. This deployment runs tenancy, and the serve-path background loop
+# is single-tenant only, so the cadence is cron on this box:
+#   */30 * * * * /usr/sbin/rustical --config-file /etc/rustical/config.toml mirror sync
+# enabled = false therefore — the CLI works regardless of it.
+#
+# Default = the MP02's feed (phone_feed_only: no recurring masters, no
+#           ORGANIZER — aphy's week/day gate keeps the feed off the web
+#           grids; the phone files instances at their own stamps).
+# omnical = the web calendar (canonical, ORGANIZER-stamped: renders in
+#           week/day, series ops intact).
+[mirror]
+enabled = false
+
+[[mirror.targets]]
+name = "personal-to-default"
+principal = "nfcalaway@novo-ordo.com"
+calendar = "personal"
+url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/Default/"
+username = "$APHY_DAV_USER"
+password = '$APHY_DAV_PASS'
+organizer = "mailto:burningserenity@aphy.io"
+phone_feed_only = true
+phone_instances = true
+horizon_days = 90
+interval_secs = 1800
+
+[[mirror.targets]]
+name = "liturgical-to-default"
+principal = "nfcalaway@novo-ordo.com"
+calendar = "cec120ff-36a1-4787-bca1-ff4dbb6f4be4"
+url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/Default/"
+username = "$APHY_DAV_USER"
+password = '$APHY_DAV_PASS'
+organizer = "mailto:burningserenity@aphy.io"
+phone_feed_only = true
+phone_instances = false
+horizon_days = 90
+interval_secs = 1800
+
+[[mirror.targets]]
+name = "personal-to-omnical"
+principal = "nfcalaway@novo-ordo.com"
+calendar = "personal"
+url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
+username = "$APHY_DAV_USER"
+password = '$APHY_DAV_PASS'
+organizer = "mailto:burningserenity@aphy.io"
+phone_instances = false
+horizon_days = 90
+interval_secs = 1800
+
+[[mirror.targets]]
+name = "liturgical-to-omnical"
+principal = "nfcalaway@novo-ordo.com"
+calendar = "cec120ff-36a1-4787-bca1-ff4dbb6f4be4"
+url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
+username = "$APHY_DAV_USER"
+password = '$APHY_DAV_PASS'
+organizer = "mailto:burningserenity@aphy.io"
+phone_instances = false
+horizon_days = 90
+interval_secs = 1800
+
+[[mirror.targets]]
+name = "carltonaudio-personal-to-omnical"
+principal = "nicholas@carltonaudio"
+calendar = "Personal"
+url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
+username = "$APHY_DAV_USER"
+password = '$APHY_DAV_PASS'
+organizer = "mailto:burningserenity@aphy.io"
+phone_instances = false
+horizon_days = 90
+interval_secs = 1800
+
+[[mirror.targets]]
+name = "carltonaudio-cas-to-omnical"
+principal = "nicholas@carltonaudio"
+calendar = "CAS"
+url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
+username = "$APHY_DAV_USER"
+password = '$APHY_DAV_PASS'
+organizer = "mailto:burningserenity@aphy.io"
+phone_instances = false
+horizon_days = 90
+interval_secs = 1800
+
+[[mirror.targets]]
+name = "hawksnest-internal-shared-to-omnical"
+principal = "nicholas@hawksnestsoftware"
+calendar = "Internal Shared"
+url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
+username = "$APHY_DAV_USER"
+password = '$APHY_DAV_PASS'
+organizer = "mailto:burningserenity@aphy.io"
+phone_instances = false
+horizon_days = 90
+interval_secs = 1800
+EOF
+
+echo "rendered $n SMTP accounts, $m IMAP accounts, rsvp_secret + 7 aphy mirror targets from pass" >&2
