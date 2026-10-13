@@ -280,7 +280,7 @@ interval_secs = 1800
 
 [[mirror.targets]]
 name = "carltonaudio-personal-to-omnical"
-principal = "nicholas@carltonaudio"
+principal = "nicholas@carltonaudio.com"
 calendar = "Personal"
 url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
 username = "$APHY_DAV_USER"
@@ -292,7 +292,7 @@ interval_secs = 1800
 
 [[mirror.targets]]
 name = "carltonaudio-cas-to-omnical"
-principal = "nicholas@carltonaudio"
+principal = "nicholas@carltonaudio.com"
 calendar = "CAS"
 url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
 username = "$APHY_DAV_USER"
@@ -304,7 +304,7 @@ interval_secs = 1800
 
 [[mirror.targets]]
 name = "hawksnest-internal-shared-to-omnical"
-principal = "nicholas@hawksnestsoftware"
+principal = "nicholas@hawksnestsoftware.com"
 calendar = "Internal Shared"
 url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
 username = "$APHY_DAV_USER"
