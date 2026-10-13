@@ -1,7 +1,7 @@
 # Omnical — test + lint
 #
-# Runs the fork's own test suite. The integration baseline is **121** tests in
-# tests/run_integration_tests.rs, re-derived 2026-10-12. That number is the
+# Runs the fork's own test suite. The integration baseline is **122** tests in
+# tests/run_integration_tests.rs, re-derived 2026-10-13. That number is the
 # safety net for the tenancy refactor in PLAN_DEPLOYMENTS.md §6.1: the
 # `make_app` -> `make_app_for` extraction MUST pass it with zero test edits.
 # A test edit during a refactor means behaviour changed.
@@ -40,6 +40,10 @@
 # `test_export_dailyview_unarmed_ignores_param`,
 # `test_export_dailyview_all_day_pass`), additions only, digest re-derived
 # in the same commit.
+#
+# 2026-10-13: deliberately 121 -> 122 — the calendar-tile fold addition
+# (`test_calendar_tiles_fold_individually_and_banners_open_their_tile`),
+# addition only, digest re-derived in the same commit.
 #
 # SQLX_OFFLINE=true is REQUIRED, not optional: 42 compile-time-checked
 # `sqlx::query!` macros exist and the .sqlx/ query cache (70 files) is
@@ -140,7 +144,7 @@ jobs:
           # coverage. The integration runner is a separate test target, so
           # assert it directly rather than inferring from the workspace run.
           #
-          # 121, not 118 — see the header for how the floor tracks deliberate
+          # 122, not 121 — see the header for how the floor tracks deliberate
           # additions. `listed` is cross-checked against `n` so a *renamed* or
           # *removed* test is caught even if a replacement keeps the count up:
           # the tenancy refactor's promise is "zero test edits", and an edit
@@ -150,8 +154,8 @@ jobs:
           n=$(grep -oE "^test result: ok\. [0-9]+" /tmp/integration.log \
               | awk '{s+=$4} END {print s+0}')
           echo "integration tests passed: $n"
-          if [ "$n" -ne 121 ]; then
-            echo "::error::the integration baseline is 121 tests; $n ran. A refactor must"
+          if [ "$n" -ne 122 ]; then
+            echo "::error::the integration baseline is 122 tests; $n ran. A refactor must"
             echo "::error::not change this number, and a change here means a test was"
             echo "::error::added, deleted or renamed. Update this file in the same commit"
             echo "::error::if that was deliberate."
@@ -170,7 +174,7 @@ jobs:
           # values, so a pin computed in one locale was unpassable in the other.
           # Byte order has no such opinions and is identical everywhere, which is
           # the whole requirement for a value that gets pasted between machines.
-          expected_digest=c8bb7123285d9a4e679befb4054c9f444efd759f5649cc02870e78073d84164b
+          expected_digest=d89c6bb0c7bd8ca40d3a949a7f6439fa5f8bb986303d6e0d8c25bda1b3433c13
           listed=$(cargo test --test run_integration_tests -- --list 2>/dev/null \
               | grep -oE '^integration_tests::.*: test$' | LC_ALL=C sort)
           count=$(printf '%s\n' "$listed" | grep -c .)
