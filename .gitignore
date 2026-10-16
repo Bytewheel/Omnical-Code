@@ -26,6 +26,13 @@
 /build/openwrt/
 /build/lib/
 
+# clean-build-artifacts.sh (02:45 cron) bookkeeping: its log, its flock file
+# and its per-run discovery list. Kept out of git for the same reason as the
+# caches it removes — they are machine-local state, not the product.
+/build/artifact-clean.log
+/build/.artifact-clean.lock
+/build/.gc-scan.*
+
 # Any target/ dir. rustical/ is a submodule so it has its own ignore rules;
 # these cover dav-tls/ and anything else in-tree.
 /target/

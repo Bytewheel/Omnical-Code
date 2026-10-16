@@ -95,7 +95,7 @@ same install. Actually running the Compose channel under Docker or Podman is a
 - `packaging/native/` — the tarball channel: `install.sh` + the `omnical.service` template (§8.1)
 - `out/` — build artifacts (`rustical`, `dav-tls` = static aarch64-musl; `out/<target>/` for host builds)
 - `build/bin/` — zig-musl-cc wrappers (copied from router-nym) used as the cross C toolchain
-- `scripts/` — `build-rust.sh` (cross/host builds), `render-router-config.sh` (injects SMTP secrets from `pass`; rendered output never touches dev disk), `nightly-backup.sh` (02:30 cron on the dev machine), `selfhost-gate.sh` (the rows 40-41 gate)
+- `scripts/` — `build-rust.sh` (cross/host builds), `render-router-config.sh` (injects SMTP secrets from `pass`; rendered output never touches dev disk), `nightly-backup.sh` (02:30 cron on the dev machine), `clean-build-artifacts.sh` (02:45 cron: deletes build caches idle ≥ 14 days — see `PLAN_BUILD_ARTIFACT_GC.md` in the plan repo; never touches `out/`, `rotation-drills/` or `build/bin`), `selfhost-gate.sh` (the rows 40-41 gate)
 
 ## Commands
 
