@@ -40,9 +40,24 @@ label = "Roman Catholic (1962 Missal)"
 file = "rc-1962.ics"
 
 [[groups.sets]]
+id = "rc-1962-fasting"
+label = "Roman Catholic (1962) — fasting & abstinence"
+file = "rc-1962-fasting.ics"
+
+[[groups.sets]]
+id = "rc-current-fasting"
+label = "Roman Catholic (current) — fasting & abstinence"
+file = "rc-current-fasting.ics"
+
+[[groups.sets]]
 id = "orthodox"
 label = "Orthodox (Julian calendar)"
 file = "orthodox.ics"
+
+[[groups.sets]]
+id = "orthodox-fasting"
+label = "Orthodox — fasting days"
+file = "orthodox-fasting.ics"
 
 [[groups.sets]]
 id = "anglican"
@@ -57,6 +72,11 @@ label = "Islam"
 id = "islam"
 label = "Islamic observances (tabular Hijri)"
 file = "islam.ics"
+
+[[groups.sets]]
+id = "islam-fasting"
+label = "Islamic fasting (Ramadan and the voluntary fasts)"
+file = "islam-fasting.ics"
 
 [[groups]]
 id = "judaism"
@@ -76,6 +96,11 @@ id = "hindu"
 label = "Hindu festivals"
 file = "hindu.ics"
 
+[[groups.sets]]
+id = "hindu-fasting"
+label = "Hindu fasting days (Ekadashi)"
+file = "hindu-fasting.ics"
+
 [[groups]]
 id = "buddhism"
 label = "Buddhism"
@@ -84,6 +109,11 @@ label = "Buddhism"
 id = "buddhist"
 label = "Buddhist observances"
 file = "buddhist.ics"
+
+[[groups.sets]]
+id = "buddhist-fasting"
+label = "Buddhist observance days (Uposatha)"
+file = "buddhist-fasting.ics"
 
 [[groups]]
 id = "sikhism"

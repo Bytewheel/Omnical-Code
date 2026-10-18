@@ -38,6 +38,15 @@ DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
  ities.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-judaism-taanit-bekhorot-20260401@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+SUMMARY:Ta'anit Bekhorot (Fast of the Firstborn)
+DESCRIPTION:Begins at sundown the evening before. A fast kept by firstborn 
+ males on the eve of Pesach.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-judaism-pesach-20260402@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20260402
@@ -438,6 +447,15 @@ DTEND;VALUE=DATE:20270325
 SUMMARY:Shushan Purim
 DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
  ities.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-taanit-bekhorot-20270421@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Ta'anit Bekhorot (Fast of the Firstborn)
+DESCRIPTION:Begins at sundown the evening before. A fast kept by firstborn 
+ males on the eve of Pesach.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-judaism-pesach-20270422@omnical
@@ -842,6 +860,15 @@ DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
  ities.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-judaism-taanit-bekhorot-20280410@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280410
+DTEND;VALUE=DATE:20280411
+SUMMARY:Ta'anit Bekhorot (Fast of the Firstborn)
+DESCRIPTION:Begins at sundown the evening before. A fast kept by firstborn 
+ males on the eve of Pesach.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-judaism-pesach-20280411@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20280411
@@ -1244,6 +1271,15 @@ DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
  ities.
 END:VEVENT
 BEGIN:VEVENT
+UID:hol-judaism-taanit-bekhorot-20290330@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290330
+DTEND;VALUE=DATE:20290331
+SUMMARY:Ta'anit Bekhorot (Fast of the Firstborn)
+DESCRIPTION:Begins at sundown the evening before. A fast kept by firstborn 
+ males on the eve of Pesach.
+END:VEVENT
+BEGIN:VEVENT
 UID:hol-judaism-pesach-20290331@omnical
 DTSTAMP:20260101T000000Z
 DTSTART;VALUE=DATE:20290331
@@ -1644,6 +1680,15 @@ DTEND;VALUE=DATE:20300321
 SUMMARY:Shushan Purim
 DESCRIPTION:Begins at sundown the evening before. Purim as kept in walled c
  ities.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-judaism-taanit-bekhorot-20300417@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300417
+DTEND;VALUE=DATE:20300418
+SUMMARY:Ta'anit Bekhorot (Fast of the Firstborn)
+DESCRIPTION:Begins at sundown the evening before. A fast kept by firstborn 
+ males on the eve of Pesach.
 END:VEVENT
 BEGIN:VEVENT
 UID:hol-judaism-pesach-20300418@omnical

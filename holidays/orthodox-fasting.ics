@@ -1,0 +1,4835 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260102@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260102
+DTEND;VALUE=DATE:20260103
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-eve-of-the-theophany-strict-fast-20260118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260118
+DTEND;VALUE=DATE:20260119
+SUMMARY:Eve of the Theophany (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the g
+ reat blessing of the waters is kept.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260121@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260121
+DTEND;VALUE=DATE:20260122
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260123
+DTEND;VALUE=DATE:20260124
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260128
+DTEND;VALUE=DATE:20260129
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260130@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260130
+DTEND;VALUE=DATE:20260131
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260211@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260211
+DTEND;VALUE=DATE:20260212
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260213
+DTEND;VALUE=DATE:20260214
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260225@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260225
+DTEND;VALUE=DATE:20260226
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260227
+DTEND;VALUE=DATE:20260228
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260304@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260304
+DTEND;VALUE=DATE:20260305
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260306@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260306
+DTEND;VALUE=DATE:20260307
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260311@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260311
+DTEND;VALUE=DATE:20260312
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260313@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260313
+DTEND;VALUE=DATE:20260314
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260318@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260318
+DTEND;VALUE=DATE:20260319
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260320@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260321
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260325@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260325
+DTEND;VALUE=DATE:20260326
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260327@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260327
+DTEND;VALUE=DATE:20260328
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260401@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260403@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260408@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260408
+DTEND;VALUE=DATE:20260409
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-friday-strict-fast-20260410@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260411
+SUMMARY:Great & Holy Friday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the b
+ urial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-saturday-strict-fast-20260411@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260411
+DTEND;VALUE=DATE:20260412
+SUMMARY:Great & Holy Saturday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the L
+ ord descends to hades.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260422@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260422
+DTEND;VALUE=DATE:20260423
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260424@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260424
+DTEND;VALUE=DATE:20260425
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260429@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260429
+DTEND;VALUE=DATE:20260430
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260506@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260506
+DTEND;VALUE=DATE:20260507
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260508@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260508
+DTEND;VALUE=DATE:20260509
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260513@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260514
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260515@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260520@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260520
+DTEND;VALUE=DATE:20260521
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260522@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260527@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260528
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260529@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260530
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260610@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260612@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260613
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260617@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260618
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260619@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260624@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260624
+DTEND;VALUE=DATE:20260625
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260626@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260701@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260703@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260708@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260708
+DTEND;VALUE=DATE:20260709
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260710@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260715@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260717@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260722@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260722
+DTEND;VALUE=DATE:20260723
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260724@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260729@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260731@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260805@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260805
+DTEND;VALUE=DATE:20260806
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260807@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260812@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260812
+DTEND;VALUE=DATE:20260813
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260819@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260820
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260821@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260826@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260827
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260828@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260902@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260904@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260909@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-beheading-of-st-john-the-baptist-strict-fast-20260
+ 911@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Beheading of St John the Baptist (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260916@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260918@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260923@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20260925@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-exaltation-of-the-holy-cross-strict-fast-20260927@
+ omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+SUMMARY:Exaltation of the Holy Cross (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\, kept 
+ although a Great Feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20260930@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261002@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261007@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261009@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261014@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261016@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261021@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261023@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261028@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261030@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261104@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261106@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261111@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261113@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261120@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261125@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261127@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261202@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261209@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261211@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261216@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261218@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261223@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20261225@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20261230@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270106@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-eve-of-the-theophany-strict-fast-20270118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Eve of the Theophany (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the g
+ reat blessing of the waters is kept.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270120@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270122@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270127@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270128
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270129@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270203@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270203
+DTEND;VALUE=DATE:20270204
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270205@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270210@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270212@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270217@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270219@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270303@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270305@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270317@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270319@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270324@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270326@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270331@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270402@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270409@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270416@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270421@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270423@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270428@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-friday-strict-fast-20270430@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Great & Holy Friday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the b
+ urial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-saturday-strict-fast-20270501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Great & Holy Saturday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the L
+ ord descends to hades.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270512@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270514@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270519@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270521@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270526@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270528@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270602@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270603
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270604@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270609@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270609
+DTEND;VALUE=DATE:20270610
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270611@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270616@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270617
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270618@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270619
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270630@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270630
+DTEND;VALUE=DATE:20270701
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270702@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270707@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270707
+DTEND;VALUE=DATE:20270708
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270709@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270714@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270714
+DTEND;VALUE=DATE:20270715
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270716@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270721@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270721
+DTEND;VALUE=DATE:20270722
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270723@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270728@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270728
+DTEND;VALUE=DATE:20270729
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270730@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270730
+DTEND;VALUE=DATE:20270731
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270804@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270804
+DTEND;VALUE=DATE:20270805
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270806@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270806
+DTEND;VALUE=DATE:20270807
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270811@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270811
+DTEND;VALUE=DATE:20270812
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270813@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270818@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270820@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270825@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270827@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270827
+DTEND;VALUE=DATE:20270828
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270901@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270903@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270903
+DTEND;VALUE=DATE:20270904
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270908@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270908
+DTEND;VALUE=DATE:20270909
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270910@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-beheading-of-st-john-the-baptist-strict-fast-20270
+ 911@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270911
+DTEND;VALUE=DATE:20270912
+SUMMARY:Beheading of St John the Baptist (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270915@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270917@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270918
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270922@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270922
+DTEND;VALUE=DATE:20270923
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20270924@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-exaltation-of-the-holy-cross-strict-fast-20270927@
+ omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270927
+DTEND;VALUE=DATE:20270928
+SUMMARY:Exaltation of the Holy Cross (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\, kept 
+ although a Great Feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20270929@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270929
+DTEND;VALUE=DATE:20270930
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271002
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271006@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271006
+DTEND;VALUE=DATE:20271007
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271008@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271008
+DTEND;VALUE=DATE:20271009
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271013@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271013
+DTEND;VALUE=DATE:20271014
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271015@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271020@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271020
+DTEND;VALUE=DATE:20271021
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271022@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271022
+DTEND;VALUE=DATE:20271023
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271027@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271027
+DTEND;VALUE=DATE:20271028
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271029@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271103@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271103
+DTEND;VALUE=DATE:20271104
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271110@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271110
+DTEND;VALUE=DATE:20271111
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271112@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271112
+DTEND;VALUE=DATE:20271113
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271117@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271117
+DTEND;VALUE=DATE:20271118
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271119
+DTEND;VALUE=DATE:20271120
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271124@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271124
+DTEND;VALUE=DATE:20271125
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271126@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271126
+DTEND;VALUE=DATE:20271127
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271201@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271201
+DTEND;VALUE=DATE:20271202
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271203@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271204
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271208@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271208
+DTEND;VALUE=DATE:20271209
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271210@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271210
+DTEND;VALUE=DATE:20271211
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271215
+DTEND;VALUE=DATE:20271216
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271217@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271222@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271222
+DTEND;VALUE=DATE:20271223
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271224@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20271229@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271229
+DTEND;VALUE=DATE:20271230
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20271231@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280105
+DTEND;VALUE=DATE:20280106
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-eve-of-the-theophany-strict-fast-20280118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280118
+DTEND;VALUE=DATE:20280119
+SUMMARY:Eve of the Theophany (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the g
+ reat blessing of the waters is kept.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280119
+DTEND;VALUE=DATE:20280120
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280121@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280121
+DTEND;VALUE=DATE:20280122
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280126@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280126
+DTEND;VALUE=DATE:20280127
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280128
+DTEND;VALUE=DATE:20280129
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280202@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280202
+DTEND;VALUE=DATE:20280203
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280204
+DTEND;VALUE=DATE:20280205
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280216@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280216
+DTEND;VALUE=DATE:20280217
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280218@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280218
+DTEND;VALUE=DATE:20280219
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280301@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280301
+DTEND;VALUE=DATE:20280302
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280303@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280303
+DTEND;VALUE=DATE:20280304
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280308@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280308
+DTEND;VALUE=DATE:20280309
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280310@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280310
+DTEND;VALUE=DATE:20280311
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280315@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280315
+DTEND;VALUE=DATE:20280316
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280317@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280317
+DTEND;VALUE=DATE:20280318
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280322@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280322
+DTEND;VALUE=DATE:20280323
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280324@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280324
+DTEND;VALUE=DATE:20280325
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280329@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280329
+DTEND;VALUE=DATE:20280330
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280331@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280331
+DTEND;VALUE=DATE:20280401
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280405@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280405
+DTEND;VALUE=DATE:20280406
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280407
+DTEND;VALUE=DATE:20280408
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280412@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280412
+DTEND;VALUE=DATE:20280413
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-friday-strict-fast-20280414@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280414
+DTEND;VALUE=DATE:20280415
+SUMMARY:Great & Holy Friday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the b
+ urial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-saturday-strict-fast-20280415@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280415
+DTEND;VALUE=DATE:20280416
+SUMMARY:Great & Holy Saturday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the L
+ ord descends to hades.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280426@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280426
+DTEND;VALUE=DATE:20280427
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280428@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280428
+DTEND;VALUE=DATE:20280429
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280503@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280503
+DTEND;VALUE=DATE:20280504
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280505@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280505
+DTEND;VALUE=DATE:20280506
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280510@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280510
+DTEND;VALUE=DATE:20280511
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280512@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280512
+DTEND;VALUE=DATE:20280513
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280517@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280517
+DTEND;VALUE=DATE:20280518
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280519@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280519
+DTEND;VALUE=DATE:20280520
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280524@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280524
+DTEND;VALUE=DATE:20280525
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280526@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280526
+DTEND;VALUE=DATE:20280527
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280531
+DTEND;VALUE=DATE:20280601
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280602@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280602
+DTEND;VALUE=DATE:20280603
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280614@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280614
+DTEND;VALUE=DATE:20280615
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280616@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280616
+DTEND;VALUE=DATE:20280617
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280621@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280621
+DTEND;VALUE=DATE:20280622
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280623@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280623
+DTEND;VALUE=DATE:20280624
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280628@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280628
+DTEND;VALUE=DATE:20280629
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280630@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280630
+DTEND;VALUE=DATE:20280701
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280705@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280705
+DTEND;VALUE=DATE:20280706
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280707@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280707
+DTEND;VALUE=DATE:20280708
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280712@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280712
+DTEND;VALUE=DATE:20280713
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280714@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280714
+DTEND;VALUE=DATE:20280715
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280719@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280719
+DTEND;VALUE=DATE:20280720
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280721@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280721
+DTEND;VALUE=DATE:20280722
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280726@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280726
+DTEND;VALUE=DATE:20280727
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280728@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280728
+DTEND;VALUE=DATE:20280729
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280802@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280802
+DTEND;VALUE=DATE:20280803
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280804@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280804
+DTEND;VALUE=DATE:20280805
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280809@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280809
+DTEND;VALUE=DATE:20280810
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280811@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280811
+DTEND;VALUE=DATE:20280812
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280816@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280816
+DTEND;VALUE=DATE:20280817
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280818@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280818
+DTEND;VALUE=DATE:20280819
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280823@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280823
+DTEND;VALUE=DATE:20280824
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280825@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280825
+DTEND;VALUE=DATE:20280826
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280830@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280830
+DTEND;VALUE=DATE:20280831
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280901@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280901
+DTEND;VALUE=DATE:20280902
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280906@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280906
+DTEND;VALUE=DATE:20280907
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280908@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280908
+DTEND;VALUE=DATE:20280909
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-beheading-of-st-john-the-baptist-strict-fast-20280
+ 911@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280911
+DTEND;VALUE=DATE:20280912
+SUMMARY:Beheading of St John the Baptist (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280913@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280913
+DTEND;VALUE=DATE:20280914
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280915@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280915
+DTEND;VALUE=DATE:20280916
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20280920@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280920
+DTEND;VALUE=DATE:20280921
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280922@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280922
+DTEND;VALUE=DATE:20280923
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-exaltation-of-the-holy-cross-strict-fast-20280927@
+ omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280927
+DTEND;VALUE=DATE:20280928
+SUMMARY:Exaltation of the Holy Cross (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\, kept 
+ although a Great Feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20280929@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280929
+DTEND;VALUE=DATE:20280930
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281004@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281004
+DTEND;VALUE=DATE:20281005
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281006@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281006
+DTEND;VALUE=DATE:20281007
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281011@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281011
+DTEND;VALUE=DATE:20281012
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281013@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281013
+DTEND;VALUE=DATE:20281014
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281018
+DTEND;VALUE=DATE:20281019
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281020@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281020
+DTEND;VALUE=DATE:20281021
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281025@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281025
+DTEND;VALUE=DATE:20281026
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281027@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281027
+DTEND;VALUE=DATE:20281028
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281101
+DTEND;VALUE=DATE:20281102
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281103@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281103
+DTEND;VALUE=DATE:20281104
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281108@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281108
+DTEND;VALUE=DATE:20281109
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281110@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281110
+DTEND;VALUE=DATE:20281111
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281115@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281115
+DTEND;VALUE=DATE:20281116
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281117@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281117
+DTEND;VALUE=DATE:20281118
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281122@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281122
+DTEND;VALUE=DATE:20281123
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281124@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281124
+DTEND;VALUE=DATE:20281125
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281129@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281129
+DTEND;VALUE=DATE:20281130
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281201@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281201
+DTEND;VALUE=DATE:20281202
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281206
+DTEND;VALUE=DATE:20281207
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281208@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281208
+DTEND;VALUE=DATE:20281209
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281213
+DTEND;VALUE=DATE:20281214
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281215
+DTEND;VALUE=DATE:20281216
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281220@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281220
+DTEND;VALUE=DATE:20281221
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281222@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281222
+DTEND;VALUE=DATE:20281223
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20281227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281227
+DTEND;VALUE=DATE:20281228
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20281229@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281229
+DTEND;VALUE=DATE:20281230
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290103@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290103
+DTEND;VALUE=DATE:20290104
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290105
+DTEND;VALUE=DATE:20290106
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-eve-of-the-theophany-strict-fast-20290118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290118
+DTEND;VALUE=DATE:20290119
+SUMMARY:Eve of the Theophany (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the g
+ reat blessing of the waters is kept.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290119
+DTEND;VALUE=DATE:20290120
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290124@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290124
+DTEND;VALUE=DATE:20290125
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290126@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290126
+DTEND;VALUE=DATE:20290127
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290207@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290207
+DTEND;VALUE=DATE:20290208
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290209@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290209
+DTEND;VALUE=DATE:20290210
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290221@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290221
+DTEND;VALUE=DATE:20290222
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290223@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290223
+DTEND;VALUE=DATE:20290224
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290228@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290228
+DTEND;VALUE=DATE:20290301
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290302@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290302
+DTEND;VALUE=DATE:20290303
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290307@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290307
+DTEND;VALUE=DATE:20290308
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290309@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290309
+DTEND;VALUE=DATE:20290310
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290314@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290314
+DTEND;VALUE=DATE:20290315
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290316@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290316
+DTEND;VALUE=DATE:20290317
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290321@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290321
+DTEND;VALUE=DATE:20290322
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290323@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290323
+DTEND;VALUE=DATE:20290324
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290328@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290328
+DTEND;VALUE=DATE:20290329
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290330@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290330
+DTEND;VALUE=DATE:20290331
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290404@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290404
+DTEND;VALUE=DATE:20290405
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-friday-strict-fast-20290406@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290406
+DTEND;VALUE=DATE:20290407
+SUMMARY:Great & Holy Friday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the b
+ urial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-saturday-strict-fast-20290407@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290407
+DTEND;VALUE=DATE:20290408
+SUMMARY:Great & Holy Saturday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the L
+ ord descends to hades.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290418@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290418
+DTEND;VALUE=DATE:20290419
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290420@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290420
+DTEND;VALUE=DATE:20290421
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290425@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290425
+DTEND;VALUE=DATE:20290426
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290427@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290427
+DTEND;VALUE=DATE:20290428
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290502@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290502
+DTEND;VALUE=DATE:20290503
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290504@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290504
+DTEND;VALUE=DATE:20290505
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290509@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290509
+DTEND;VALUE=DATE:20290510
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290511@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290511
+DTEND;VALUE=DATE:20290512
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290516@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290516
+DTEND;VALUE=DATE:20290517
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290518@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290518
+DTEND;VALUE=DATE:20290519
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290523@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290523
+DTEND;VALUE=DATE:20290524
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290525@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290525
+DTEND;VALUE=DATE:20290526
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290606@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290606
+DTEND;VALUE=DATE:20290607
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290608@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290608
+DTEND;VALUE=DATE:20290609
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290613@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290613
+DTEND;VALUE=DATE:20290614
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290615@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290615
+DTEND;VALUE=DATE:20290616
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290620@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290620
+DTEND;VALUE=DATE:20290621
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290622@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290622
+DTEND;VALUE=DATE:20290623
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290627@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290627
+DTEND;VALUE=DATE:20290628
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290629@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290629
+DTEND;VALUE=DATE:20290630
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290704@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290704
+DTEND;VALUE=DATE:20290705
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290706@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290706
+DTEND;VALUE=DATE:20290707
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290711@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290711
+DTEND;VALUE=DATE:20290712
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290713@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290713
+DTEND;VALUE=DATE:20290714
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290718@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290718
+DTEND;VALUE=DATE:20290719
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290720@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290720
+DTEND;VALUE=DATE:20290721
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290725@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290725
+DTEND;VALUE=DATE:20290726
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290727@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290727
+DTEND;VALUE=DATE:20290728
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290801@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290801
+DTEND;VALUE=DATE:20290802
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290803@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290803
+DTEND;VALUE=DATE:20290804
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290808@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290808
+DTEND;VALUE=DATE:20290809
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290810@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290810
+DTEND;VALUE=DATE:20290811
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290815@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290815
+DTEND;VALUE=DATE:20290816
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290817@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290817
+DTEND;VALUE=DATE:20290818
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290822@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290822
+DTEND;VALUE=DATE:20290823
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290824@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290824
+DTEND;VALUE=DATE:20290825
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290829@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290829
+DTEND;VALUE=DATE:20290830
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290831@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290831
+DTEND;VALUE=DATE:20290901
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290905@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290905
+DTEND;VALUE=DATE:20290906
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290907@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290907
+DTEND;VALUE=DATE:20290908
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-beheading-of-st-john-the-baptist-strict-fast-20290
+ 911@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290911
+DTEND;VALUE=DATE:20290912
+SUMMARY:Beheading of St John the Baptist (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290912@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290912
+DTEND;VALUE=DATE:20290913
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290914@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290914
+DTEND;VALUE=DATE:20290915
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290919@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290919
+DTEND;VALUE=DATE:20290920
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290921@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290921
+DTEND;VALUE=DATE:20290922
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20290926@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290926
+DTEND;VALUE=DATE:20290927
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-exaltation-of-the-holy-cross-strict-fast-20290927@
+ omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290927
+DTEND;VALUE=DATE:20290928
+SUMMARY:Exaltation of the Holy Cross (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\, kept 
+ although a Great Feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20290928@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290928
+DTEND;VALUE=DATE:20290929
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291003@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291003
+DTEND;VALUE=DATE:20291004
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291005@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291005
+DTEND;VALUE=DATE:20291006
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291010@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291010
+DTEND;VALUE=DATE:20291011
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291012@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291012
+DTEND;VALUE=DATE:20291013
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291017@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291017
+DTEND;VALUE=DATE:20291018
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291019@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291019
+DTEND;VALUE=DATE:20291020
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291024@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291024
+DTEND;VALUE=DATE:20291025
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291026@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291026
+DTEND;VALUE=DATE:20291027
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291031@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291031
+DTEND;VALUE=DATE:20291101
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291102@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291102
+DTEND;VALUE=DATE:20291103
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291107@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291107
+DTEND;VALUE=DATE:20291108
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291109@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291109
+DTEND;VALUE=DATE:20291110
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291114
+DTEND;VALUE=DATE:20291115
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291116@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291116
+DTEND;VALUE=DATE:20291117
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291121@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291121
+DTEND;VALUE=DATE:20291122
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291123
+DTEND;VALUE=DATE:20291124
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291128
+DTEND;VALUE=DATE:20291129
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291130@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291130
+DTEND;VALUE=DATE:20291201
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291205@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291205
+DTEND;VALUE=DATE:20291206
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291207@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291207
+DTEND;VALUE=DATE:20291208
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291212@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291212
+DTEND;VALUE=DATE:20291213
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291214@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291214
+DTEND;VALUE=DATE:20291215
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291219@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291219
+DTEND;VALUE=DATE:20291220
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291221@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291221
+DTEND;VALUE=DATE:20291222
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20291226@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291226
+DTEND;VALUE=DATE:20291227
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20291228@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291228
+DTEND;VALUE=DATE:20291229
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300102@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300102
+DTEND;VALUE=DATE:20300103
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300104@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300104
+DTEND;VALUE=DATE:20300105
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-eve-of-the-theophany-strict-fast-20300118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300118
+DTEND;VALUE=DATE:20300119
+SUMMARY:Eve of the Theophany (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the g
+ reat blessing of the waters is kept.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300123
+DTEND;VALUE=DATE:20300124
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300125@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300125
+DTEND;VALUE=DATE:20300126
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300130@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300130
+DTEND;VALUE=DATE:20300131
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300201@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300201
+DTEND;VALUE=DATE:20300202
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300206
+DTEND;VALUE=DATE:20300207
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300208@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300208
+DTEND;VALUE=DATE:20300209
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300213
+DTEND;VALUE=DATE:20300214
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300215
+DTEND;VALUE=DATE:20300216
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300227
+DTEND;VALUE=DATE:20300228
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300301@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300301
+DTEND;VALUE=DATE:20300302
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300313@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300313
+DTEND;VALUE=DATE:20300314
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300315@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300315
+DTEND;VALUE=DATE:20300316
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300320@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300320
+DTEND;VALUE=DATE:20300321
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300322@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300322
+DTEND;VALUE=DATE:20300323
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300327@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300327
+DTEND;VALUE=DATE:20300328
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300329@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300329
+DTEND;VALUE=DATE:20300330
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300403@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300403
+DTEND;VALUE=DATE:20300404
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300405@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300405
+DTEND;VALUE=DATE:20300406
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300410@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300410
+DTEND;VALUE=DATE:20300411
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300412@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300412
+DTEND;VALUE=DATE:20300413
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300417@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300417
+DTEND;VALUE=DATE:20300418
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300419@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300419
+DTEND;VALUE=DATE:20300420
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300424@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300424
+DTEND;VALUE=DATE:20300425
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-friday-strict-fast-20300426@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300426
+DTEND;VALUE=DATE:20300427
+SUMMARY:Great & Holy Friday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the b
+ urial of Christ.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-great-&-holy-saturday-strict-fast-20300427@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300427
+DTEND;VALUE=DATE:20300428
+SUMMARY:Great & Holy Saturday (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\; the L
+ ord descends to hades.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300508@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300508
+DTEND;VALUE=DATE:20300509
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300510@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300510
+DTEND;VALUE=DATE:20300511
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300515@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300515
+DTEND;VALUE=DATE:20300516
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300517@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300517
+DTEND;VALUE=DATE:20300518
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300522@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300522
+DTEND;VALUE=DATE:20300523
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300524@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300524
+DTEND;VALUE=DATE:20300525
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300529@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300529
+DTEND;VALUE=DATE:20300530
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300531
+DTEND;VALUE=DATE:20300601
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300605@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300605
+DTEND;VALUE=DATE:20300606
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300607@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300607
+DTEND;VALUE=DATE:20300608
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300612@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300612
+DTEND;VALUE=DATE:20300613
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300614@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300614
+DTEND;VALUE=DATE:20300615
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300626@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300626
+DTEND;VALUE=DATE:20300627
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300628@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300628
+DTEND;VALUE=DATE:20300629
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300703@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300703
+DTEND;VALUE=DATE:20300704
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300705@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300705
+DTEND;VALUE=DATE:20300706
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300710@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300710
+DTEND;VALUE=DATE:20300711
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300712@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300712
+DTEND;VALUE=DATE:20300713
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300717@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300717
+DTEND;VALUE=DATE:20300718
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300719@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300719
+DTEND;VALUE=DATE:20300720
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300724@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300724
+DTEND;VALUE=DATE:20300725
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300726@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300726
+DTEND;VALUE=DATE:20300727
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300731@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300731
+DTEND;VALUE=DATE:20300801
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300802@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300802
+DTEND;VALUE=DATE:20300803
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300807@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300807
+DTEND;VALUE=DATE:20300808
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300809@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300809
+DTEND;VALUE=DATE:20300810
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300814
+DTEND;VALUE=DATE:20300815
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300816@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300816
+DTEND;VALUE=DATE:20300817
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300821@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300821
+DTEND;VALUE=DATE:20300822
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300823@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300823
+DTEND;VALUE=DATE:20300824
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300828@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300828
+DTEND;VALUE=DATE:20300829
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300830@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300830
+DTEND;VALUE=DATE:20300831
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300904@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300904
+DTEND;VALUE=DATE:20300905
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300906@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300906
+DTEND;VALUE=DATE:20300907
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-beheading-of-st-john-the-baptist-strict-fast-20300
+ 911@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300911
+DTEND;VALUE=DATE:20300912
+SUMMARY:Beheading of St John the Baptist (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300913@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300913
+DTEND;VALUE=DATE:20300914
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300918@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300918
+DTEND;VALUE=DATE:20300919
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20300920@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300920
+DTEND;VALUE=DATE:20300921
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20300925@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300925
+DTEND;VALUE=DATE:20300926
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-exaltation-of-the-holy-cross-strict-fast-20300927@
+ omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300927
+DTEND;VALUE=DATE:20300928
+SUMMARY:Exaltation of the Holy Cross (strict fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks. A strict fast day\, kept 
+ although a Great Feast.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301002@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301002
+DTEND;VALUE=DATE:20301003
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301004@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301004
+DTEND;VALUE=DATE:20301005
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301009@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301009
+DTEND;VALUE=DATE:20301010
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301011@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301011
+DTEND;VALUE=DATE:20301012
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301016@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301016
+DTEND;VALUE=DATE:20301017
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301018
+DTEND;VALUE=DATE:20301019
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301023@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301023
+DTEND;VALUE=DATE:20301024
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301025@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301025
+DTEND;VALUE=DATE:20301026
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301030@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301030
+DTEND;VALUE=DATE:20301031
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301101
+DTEND;VALUE=DATE:20301102
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301106@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301106
+DTEND;VALUE=DATE:20301107
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301108@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301108
+DTEND;VALUE=DATE:20301109
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301113@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301113
+DTEND;VALUE=DATE:20301114
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301115@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301115
+DTEND;VALUE=DATE:20301116
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301120@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301120
+DTEND;VALUE=DATE:20301121
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301122@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301122
+DTEND;VALUE=DATE:20301123
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301127@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301127
+DTEND;VALUE=DATE:20301128
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301129@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301129
+DTEND;VALUE=DATE:20301130
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301204
+DTEND;VALUE=DATE:20301205
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301206
+DTEND;VALUE=DATE:20301207
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301211@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301211
+DTEND;VALUE=DATE:20301212
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301213
+DTEND;VALUE=DATE:20301214
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301218@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301218
+DTEND;VALUE=DATE:20301219
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301220@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301220
+DTEND;VALUE=DATE:20301221
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-wednesday-fast-20301225@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301225
+DTEND;VALUE=DATE:20301226
+SUMMARY:Wednesday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-orthodox-fasting-friday-fast-20301227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301227
+DTEND;VALUE=DATE:20301228
+SUMMARY:Friday (weekly fast)
+DESCRIPTION:Old (Julian) Calendar observance\; churches on the New Calendar
+  keep fixed feasts 13 days earlier. Wednesdays and Fridays are kept as fas
+ t days all year\, except in the fast-free weeks.
+END:VEVENT
+END:VCALENDAR

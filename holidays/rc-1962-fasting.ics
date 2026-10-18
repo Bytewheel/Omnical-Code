@@ -1,0 +1,4579 @@
+BEGIN:VCALENDAR
+PRODID:-//omnical//holiday-sets//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260102@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260102
+DTEND;VALUE=DATE:20260103
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260109@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260109
+DTEND;VALUE=DATE:20260110
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260116@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260116
+DTEND;VALUE=DATE:20260117
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260123
+DTEND;VALUE=DATE:20260124
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260130@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260130
+DTEND;VALUE=DATE:20260131
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260206
+DTEND;VALUE=DATE:20260207
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260213
+DTEND;VALUE=DATE:20260214
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20260218@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260218
+DTEND;VALUE=DATE:20260219
+SUMMARY:Ash Wednesday (Obligatory Complete Fast & Abstinence)
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260219@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260219
+DTEND;VALUE=DATE:20260220
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260220@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260220
+DTEND;VALUE=DATE:20260221
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260221@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260221
+DTEND;VALUE=DATE:20260222
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260223@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260223
+DTEND;VALUE=DATE:20260224
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260224@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260224
+DTEND;VALUE=DATE:20260225
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260225@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260225
+DTEND;VALUE=DATE:20260226
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260226@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260226
+DTEND;VALUE=DATE:20260227
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260227@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260227
+DTEND;VALUE=DATE:20260228
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260228@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260228
+DTEND;VALUE=DATE:20260301
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260302@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260302
+DTEND;VALUE=DATE:20260303
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260303@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260303
+DTEND;VALUE=DATE:20260304
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260304@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260304
+DTEND;VALUE=DATE:20260305
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260305@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260305
+DTEND;VALUE=DATE:20260306
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260306@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260306
+DTEND;VALUE=DATE:20260307
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260307@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260307
+DTEND;VALUE=DATE:20260308
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260309@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260309
+DTEND;VALUE=DATE:20260310
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260310@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260310
+DTEND;VALUE=DATE:20260311
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260311@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260311
+DTEND;VALUE=DATE:20260312
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260312@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260312
+DTEND;VALUE=DATE:20260313
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260313@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260313
+DTEND;VALUE=DATE:20260314
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260314@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260314
+DTEND;VALUE=DATE:20260315
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260316@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260317@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260317
+DTEND;VALUE=DATE:20260318
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260318@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260318
+DTEND;VALUE=DATE:20260319
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260319@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260319
+DTEND;VALUE=DATE:20260320
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260320@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260321
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260321@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260321
+DTEND;VALUE=DATE:20260322
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260323@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260323
+DTEND;VALUE=DATE:20260324
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260324@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260324
+DTEND;VALUE=DATE:20260325
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260325@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260325
+DTEND;VALUE=DATE:20260326
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260326@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260326
+DTEND;VALUE=DATE:20260327
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260327@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260327
+DTEND;VALUE=DATE:20260328
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260328@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260328
+DTEND;VALUE=DATE:20260329
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260330@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260330
+DTEND;VALUE=DATE:20260331
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20260331@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260331
+DTEND;VALUE=DATE:20260401
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20260403@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+SUMMARY:Obligatory Complete Fast & Abstinence
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260404@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260404
+DTEND;VALUE=DATE:20260405
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The f
+ ast ends at noon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260417@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260417
+DTEND;VALUE=DATE:20260418
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260424@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260424
+DTEND;VALUE=DATE:20260425
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260501@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260508@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260508
+DTEND;VALUE=DATE:20260509
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260515@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260522@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260523@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260527@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260528
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260529@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260530
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260530@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260531
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260605@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260612@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260613
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260619@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260626@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260703@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260710@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260717@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260724@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260731@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260807@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260814@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260821@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260828@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260904@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260911@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20260918@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260923@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260925@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20260926@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20260926
+DTEND;VALUE=DATE:20260927
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261002@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261009@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261016@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261023@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261030@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261106@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261113@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261120@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261127@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20261211@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20261216@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20261218@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20261219@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20261224@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Christmas.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270108@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270115@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270122@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270129@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270205@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20270210@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Ash Wednesday (Obligatory Complete Fast & Abstinence)
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270211@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270212@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270213@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270215@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270216@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270217@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270218@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270219
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270219@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270220@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270222@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270223@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270224@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270225@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270226@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270227@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270301@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270302@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270303@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270304@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270305@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270306@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270308@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270309@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270310@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270311@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270312@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270313@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270315@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270316@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270316
+DTEND;VALUE=DATE:20270317
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270317@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270318@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270319@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270320@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270322@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20270323@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20270326@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Obligatory Complete Fast & Abstinence
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270327@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The f
+ ast ends at noon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270409@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270416@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270423@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270423
+DTEND;VALUE=DATE:20270424
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270430@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270507@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270514@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270515@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270519@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270521@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270522@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270528@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270604@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270611@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270618@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270619
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270625@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270702@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270702
+DTEND;VALUE=DATE:20270703
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270709@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270716@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270723@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270730@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270730
+DTEND;VALUE=DATE:20270731
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270806@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270806
+DTEND;VALUE=DATE:20270807
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270813@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270820@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270820
+DTEND;VALUE=DATE:20270821
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270827@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270827
+DTEND;VALUE=DATE:20270828
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270903@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270903
+DTEND;VALUE=DATE:20270904
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270910@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270910
+DTEND;VALUE=DATE:20270911
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20270917@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270918
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270922@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270922
+DTEND;VALUE=DATE:20270923
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270924@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270924
+DTEND;VALUE=DATE:20270925
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20270925@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271001@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271002
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271008@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271008
+DTEND;VALUE=DATE:20271009
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271015@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271022@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271022
+DTEND;VALUE=DATE:20271023
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271029@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271029
+DTEND;VALUE=DATE:20271030
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271112@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271112
+DTEND;VALUE=DATE:20271113
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271119
+DTEND;VALUE=DATE:20271120
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271126@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271126
+DTEND;VALUE=DATE:20271127
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271203@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271204
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271210@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271210
+DTEND;VALUE=DATE:20271211
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20271215@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271215
+DTEND;VALUE=DATE:20271216
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20271217@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20271218
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20271218@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271218
+DTEND;VALUE=DATE:20271219
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20271224@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Christmas.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20271231@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20271231
+DTEND;VALUE=DATE:20280101
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280107@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280107
+DTEND;VALUE=DATE:20280108
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280114@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280114
+DTEND;VALUE=DATE:20280115
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280121@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280121
+DTEND;VALUE=DATE:20280122
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280128@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280128
+DTEND;VALUE=DATE:20280129
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280204@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280204
+DTEND;VALUE=DATE:20280205
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280211@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280211
+DTEND;VALUE=DATE:20280212
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280218@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280218
+DTEND;VALUE=DATE:20280219
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280225@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280225
+DTEND;VALUE=DATE:20280226
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20280301@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280301
+DTEND;VALUE=DATE:20280302
+SUMMARY:Ash Wednesday (Obligatory Complete Fast & Abstinence)
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280302@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280302
+DTEND;VALUE=DATE:20280303
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280303@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280303
+DTEND;VALUE=DATE:20280304
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280304@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280304
+DTEND;VALUE=DATE:20280305
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280306@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280306
+DTEND;VALUE=DATE:20280307
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280307@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280307
+DTEND;VALUE=DATE:20280308
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280308@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280308
+DTEND;VALUE=DATE:20280309
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280309@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280309
+DTEND;VALUE=DATE:20280310
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280310@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280310
+DTEND;VALUE=DATE:20280311
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280311@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280311
+DTEND;VALUE=DATE:20280312
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280313@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280313
+DTEND;VALUE=DATE:20280314
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280314@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280314
+DTEND;VALUE=DATE:20280315
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280315@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280315
+DTEND;VALUE=DATE:20280316
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280316@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280316
+DTEND;VALUE=DATE:20280317
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280317@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280317
+DTEND;VALUE=DATE:20280318
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280318@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280318
+DTEND;VALUE=DATE:20280319
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280320@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280320
+DTEND;VALUE=DATE:20280321
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280321@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280321
+DTEND;VALUE=DATE:20280322
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280322@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280322
+DTEND;VALUE=DATE:20280323
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280323@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280323
+DTEND;VALUE=DATE:20280324
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280324@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280324
+DTEND;VALUE=DATE:20280325
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280325@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280325
+DTEND;VALUE=DATE:20280326
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280327@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280327
+DTEND;VALUE=DATE:20280328
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280328@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280328
+DTEND;VALUE=DATE:20280329
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280329@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280329
+DTEND;VALUE=DATE:20280330
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280330@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280330
+DTEND;VALUE=DATE:20280331
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280331@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280331
+DTEND;VALUE=DATE:20280401
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280401@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280401
+DTEND;VALUE=DATE:20280402
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280403@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280403
+DTEND;VALUE=DATE:20280404
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280404@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280404
+DTEND;VALUE=DATE:20280405
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280405@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280405
+DTEND;VALUE=DATE:20280406
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280406@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280406
+DTEND;VALUE=DATE:20280407
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280407@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280407
+DTEND;VALUE=DATE:20280408
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280408@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280408
+DTEND;VALUE=DATE:20280409
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280410@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280410
+DTEND;VALUE=DATE:20280411
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20280411@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280411
+DTEND;VALUE=DATE:20280412
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20280414@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280414
+DTEND;VALUE=DATE:20280415
+SUMMARY:Obligatory Complete Fast & Abstinence
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280415@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280415
+DTEND;VALUE=DATE:20280416
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The f
+ ast ends at noon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280428@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280428
+DTEND;VALUE=DATE:20280429
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280505@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280505
+DTEND;VALUE=DATE:20280506
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280512@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280512
+DTEND;VALUE=DATE:20280513
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280519@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280519
+DTEND;VALUE=DATE:20280520
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280526@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280526
+DTEND;VALUE=DATE:20280527
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280602@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280602
+DTEND;VALUE=DATE:20280603
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280603@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280603
+DTEND;VALUE=DATE:20280604
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280607@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280607
+DTEND;VALUE=DATE:20280608
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280609@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280609
+DTEND;VALUE=DATE:20280610
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280610@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280610
+DTEND;VALUE=DATE:20280611
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280616@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280616
+DTEND;VALUE=DATE:20280617
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280623@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280623
+DTEND;VALUE=DATE:20280624
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280630@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280630
+DTEND;VALUE=DATE:20280701
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280707@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280707
+DTEND;VALUE=DATE:20280708
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280714@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280714
+DTEND;VALUE=DATE:20280715
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280721@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280721
+DTEND;VALUE=DATE:20280722
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280728@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280728
+DTEND;VALUE=DATE:20280729
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280804@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280804
+DTEND;VALUE=DATE:20280805
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280811@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280811
+DTEND;VALUE=DATE:20280812
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280818@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280818
+DTEND;VALUE=DATE:20280819
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280825@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280825
+DTEND;VALUE=DATE:20280826
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280901@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280901
+DTEND;VALUE=DATE:20280902
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280908@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280908
+DTEND;VALUE=DATE:20280909
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280915@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280915
+DTEND;VALUE=DATE:20280916
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280920@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280920
+DTEND;VALUE=DATE:20280921
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280922@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280922
+DTEND;VALUE=DATE:20280923
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20280923@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280923
+DTEND;VALUE=DATE:20280924
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20280929@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20280929
+DTEND;VALUE=DATE:20280930
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281006@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281006
+DTEND;VALUE=DATE:20281007
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281013@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281013
+DTEND;VALUE=DATE:20281014
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281020@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281020
+DTEND;VALUE=DATE:20281021
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281027@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281027
+DTEND;VALUE=DATE:20281028
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281103@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281103
+DTEND;VALUE=DATE:20281104
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281110@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281110
+DTEND;VALUE=DATE:20281111
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281117@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281117
+DTEND;VALUE=DATE:20281118
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281124@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281124
+DTEND;VALUE=DATE:20281125
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281201@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281201
+DTEND;VALUE=DATE:20281202
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281208@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281208
+DTEND;VALUE=DATE:20281209
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281215
+DTEND;VALUE=DATE:20281216
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20281220@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281220
+DTEND;VALUE=DATE:20281221
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20281222@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281222
+DTEND;VALUE=DATE:20281223
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20281223@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281223
+DTEND;VALUE=DATE:20281224
+SUMMARY:Vigil of Christmas (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Christmas.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20281229@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20281229
+DTEND;VALUE=DATE:20281230
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290105@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290105
+DTEND;VALUE=DATE:20290106
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290112@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290112
+DTEND;VALUE=DATE:20290113
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290119@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290119
+DTEND;VALUE=DATE:20290120
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290126@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290126
+DTEND;VALUE=DATE:20290127
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290202@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290202
+DTEND;VALUE=DATE:20290203
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290209@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290209
+DTEND;VALUE=DATE:20290210
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20290214@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290214
+DTEND;VALUE=DATE:20290215
+SUMMARY:Ash Wednesday (Obligatory Complete Fast & Abstinence)
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290215@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290215
+DTEND;VALUE=DATE:20290216
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290216@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290216
+DTEND;VALUE=DATE:20290217
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290217@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290217
+DTEND;VALUE=DATE:20290218
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290219@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290219
+DTEND;VALUE=DATE:20290220
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290220@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290220
+DTEND;VALUE=DATE:20290221
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290221@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290221
+DTEND;VALUE=DATE:20290222
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290222@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290222
+DTEND;VALUE=DATE:20290223
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290223@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290223
+DTEND;VALUE=DATE:20290224
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290224@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290224
+DTEND;VALUE=DATE:20290225
+SUMMARY:Ember Day of Lent (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290226@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290226
+DTEND;VALUE=DATE:20290227
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290227@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290227
+DTEND;VALUE=DATE:20290228
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290228@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290228
+DTEND;VALUE=DATE:20290301
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290301@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290301
+DTEND;VALUE=DATE:20290302
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290302@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290302
+DTEND;VALUE=DATE:20290303
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290303@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290303
+DTEND;VALUE=DATE:20290304
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290305@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290305
+DTEND;VALUE=DATE:20290306
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290306@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290306
+DTEND;VALUE=DATE:20290307
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290307@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290307
+DTEND;VALUE=DATE:20290308
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290308@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290308
+DTEND;VALUE=DATE:20290309
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290309@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290309
+DTEND;VALUE=DATE:20290310
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290310@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290310
+DTEND;VALUE=DATE:20290311
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290312@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290312
+DTEND;VALUE=DATE:20290313
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290313@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290313
+DTEND;VALUE=DATE:20290314
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290314@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290314
+DTEND;VALUE=DATE:20290315
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290315@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290315
+DTEND;VALUE=DATE:20290316
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290316@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290316
+DTEND;VALUE=DATE:20290317
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290317@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290317
+DTEND;VALUE=DATE:20290318
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290319@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290319
+DTEND;VALUE=DATE:20290320
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290320@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290320
+DTEND;VALUE=DATE:20290321
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290321@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290321
+DTEND;VALUE=DATE:20290322
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290322@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290322
+DTEND;VALUE=DATE:20290323
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290323@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290323
+DTEND;VALUE=DATE:20290324
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290324@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290324
+DTEND;VALUE=DATE:20290325
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290326@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290326
+DTEND;VALUE=DATE:20290327
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20290327@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290327
+DTEND;VALUE=DATE:20290328
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20290330@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290330
+DTEND;VALUE=DATE:20290331
+SUMMARY:Obligatory Complete Fast & Abstinence
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290331@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290331
+DTEND;VALUE=DATE:20290401
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The f
+ ast ends at noon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290413@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290413
+DTEND;VALUE=DATE:20290414
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290420@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290420
+DTEND;VALUE=DATE:20290421
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290427@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290427
+DTEND;VALUE=DATE:20290428
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290504@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290504
+DTEND;VALUE=DATE:20290505
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290511@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290511
+DTEND;VALUE=DATE:20290512
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290518@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290518
+DTEND;VALUE=DATE:20290519
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290519@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290519
+DTEND;VALUE=DATE:20290520
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290523@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290523
+DTEND;VALUE=DATE:20290524
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290525@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290525
+DTEND;VALUE=DATE:20290526
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290526@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290526
+DTEND;VALUE=DATE:20290527
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290601@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290601
+DTEND;VALUE=DATE:20290602
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290608@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290608
+DTEND;VALUE=DATE:20290609
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290615@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290615
+DTEND;VALUE=DATE:20290616
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290622@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290622
+DTEND;VALUE=DATE:20290623
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290629@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290629
+DTEND;VALUE=DATE:20290630
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290706@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290706
+DTEND;VALUE=DATE:20290707
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290713@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290713
+DTEND;VALUE=DATE:20290714
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290720@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290720
+DTEND;VALUE=DATE:20290721
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290727@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290727
+DTEND;VALUE=DATE:20290728
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290803@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290803
+DTEND;VALUE=DATE:20290804
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290810@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290810
+DTEND;VALUE=DATE:20290811
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290817@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290817
+DTEND;VALUE=DATE:20290818
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290824@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290824
+DTEND;VALUE=DATE:20290825
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290831@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290831
+DTEND;VALUE=DATE:20290901
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290907@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290907
+DTEND;VALUE=DATE:20290908
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290914@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290914
+DTEND;VALUE=DATE:20290915
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290919@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290919
+DTEND;VALUE=DATE:20290920
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290921@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290921
+DTEND;VALUE=DATE:20290922
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20290922@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290922
+DTEND;VALUE=DATE:20290923
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20290928@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20290928
+DTEND;VALUE=DATE:20290929
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291005@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291005
+DTEND;VALUE=DATE:20291006
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291012@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291012
+DTEND;VALUE=DATE:20291013
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291019@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291019
+DTEND;VALUE=DATE:20291020
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291026@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291026
+DTEND;VALUE=DATE:20291027
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291102@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291102
+DTEND;VALUE=DATE:20291103
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291109@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291109
+DTEND;VALUE=DATE:20291110
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291116@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291116
+DTEND;VALUE=DATE:20291117
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291123@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291123
+DTEND;VALUE=DATE:20291124
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291130@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291130
+DTEND;VALUE=DATE:20291201
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291207@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291207
+DTEND;VALUE=DATE:20291208
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291214@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291214
+DTEND;VALUE=DATE:20291215
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20291219@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291219
+DTEND;VALUE=DATE:20291220
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20291221@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291221
+DTEND;VALUE=DATE:20291222
+SUMMARY:Ember Day of Advent (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20291222@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291222
+DTEND;VALUE=DATE:20291223
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20291224@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291224
+DTEND;VALUE=DATE:20291225
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Christmas.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20291228@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20291228
+DTEND;VALUE=DATE:20291229
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300104@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300104
+DTEND;VALUE=DATE:20300105
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300111@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300111
+DTEND;VALUE=DATE:20300112
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300118@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300118
+DTEND;VALUE=DATE:20300119
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300125@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300125
+DTEND;VALUE=DATE:20300126
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300201@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300201
+DTEND;VALUE=DATE:20300202
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300208@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300208
+DTEND;VALUE=DATE:20300209
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300215@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300215
+DTEND;VALUE=DATE:20300216
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300222@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300222
+DTEND;VALUE=DATE:20300223
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300301@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300301
+DTEND;VALUE=DATE:20300302
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20300306@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300306
+DTEND;VALUE=DATE:20300307
+SUMMARY:Ash Wednesday (Obligatory Complete Fast & Abstinence)
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300307@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300307
+DTEND;VALUE=DATE:20300308
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300308@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300308
+DTEND;VALUE=DATE:20300309
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300309@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300309
+DTEND;VALUE=DATE:20300310
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300311@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300311
+DTEND;VALUE=DATE:20300312
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300312@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300312
+DTEND;VALUE=DATE:20300313
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300313@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300313
+DTEND;VALUE=DATE:20300314
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300314@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300314
+DTEND;VALUE=DATE:20300315
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300315@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300315
+DTEND;VALUE=DATE:20300316
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300316@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300316
+DTEND;VALUE=DATE:20300317
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Lent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300318@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300318
+DTEND;VALUE=DATE:20300319
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300319@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300319
+DTEND;VALUE=DATE:20300320
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300320@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300320
+DTEND;VALUE=DATE:20300321
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300321@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300321
+DTEND;VALUE=DATE:20300322
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300322@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300322
+DTEND;VALUE=DATE:20300323
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300323@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300323
+DTEND;VALUE=DATE:20300324
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300325@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300325
+DTEND;VALUE=DATE:20300326
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300326@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300326
+DTEND;VALUE=DATE:20300327
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300327@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300327
+DTEND;VALUE=DATE:20300328
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300328@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300328
+DTEND;VALUE=DATE:20300329
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300329@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300329
+DTEND;VALUE=DATE:20300330
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300330@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300330
+DTEND;VALUE=DATE:20300331
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300401@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300401
+DTEND;VALUE=DATE:20300402
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300402@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300402
+DTEND;VALUE=DATE:20300403
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300403@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300403
+DTEND;VALUE=DATE:20300404
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300404@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300404
+DTEND;VALUE=DATE:20300405
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300405@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300405
+DTEND;VALUE=DATE:20300406
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300406@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300406
+DTEND;VALUE=DATE:20300407
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300408@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300408
+DTEND;VALUE=DATE:20300409
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300409@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300409
+DTEND;VALUE=DATE:20300410
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300410@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300410
+DTEND;VALUE=DATE:20300411
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300411@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300411
+DTEND;VALUE=DATE:20300412
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300412@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300412
+DTEND;VALUE=DATE:20300413
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300413@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300413
+DTEND;VALUE=DATE:20300414
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300415@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300415
+DTEND;VALUE=DATE:20300416
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-fast-partial-abstinence-20300416@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300416
+DTEND;VALUE=DATE:20300417
+SUMMARY:Traditional Fast & Partial Abstinence
+DESCRIPTION:A day of fast and partial abstinence: one full meal (meat allow
+ ed at that meal only) and two small meatless collations.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-complete-fast-abstinence-20300419@omnica
+ l
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300419
+DTEND;VALUE=DATE:20300420
+SUMMARY:Obligatory Complete Fast & Abstinence
+DESCRIPTION:Fast and complete abstinence: one full meal and two small meatl
+ ess collations\, with no flesh meat. Ash Wednesday and Good Friday are the
+  Church's universal days of fast and abstinence (Code of Canon Law\, can. 
+ 1251-1252).
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300420@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300420
+DTEND;VALUE=DATE:20300421
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The f
+ ast ends at noon.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300503@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300503
+DTEND;VALUE=DATE:20300504
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300510@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300510
+DTEND;VALUE=DATE:20300511
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300517@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300517
+DTEND;VALUE=DATE:20300518
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300524@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300524
+DTEND;VALUE=DATE:20300525
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300531@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300531
+DTEND;VALUE=DATE:20300601
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300607@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300607
+DTEND;VALUE=DATE:20300608
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300608@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300608
+DTEND;VALUE=DATE:20300609
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300612@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300612
+DTEND;VALUE=DATE:20300613
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300614@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300614
+DTEND;VALUE=DATE:20300615
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300615@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300615
+DTEND;VALUE=DATE:20300616
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Pentecost.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300621@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300621
+DTEND;VALUE=DATE:20300622
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300628@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300628
+DTEND;VALUE=DATE:20300629
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300705@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300705
+DTEND;VALUE=DATE:20300706
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300712@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300712
+DTEND;VALUE=DATE:20300713
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300719@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300719
+DTEND;VALUE=DATE:20300720
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300726@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300726
+DTEND;VALUE=DATE:20300727
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300802@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300802
+DTEND;VALUE=DATE:20300803
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300809@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300809
+DTEND;VALUE=DATE:20300810
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300816@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300816
+DTEND;VALUE=DATE:20300817
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300823@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300823
+DTEND;VALUE=DATE:20300824
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300830@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300830
+DTEND;VALUE=DATE:20300831
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300906@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300906
+DTEND;VALUE=DATE:20300907
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300913@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300913
+DTEND;VALUE=DATE:20300914
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300918@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300918
+DTEND;VALUE=DATE:20300919
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300920@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300920
+DTEND;VALUE=DATE:20300921
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20300921@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300921
+DTEND;VALUE=DATE:20300922
+SUMMARY:Ember Day of September (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of September.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20300927@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20300927
+DTEND;VALUE=DATE:20300928
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301004@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301004
+DTEND;VALUE=DATE:20301005
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301011@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301011
+DTEND;VALUE=DATE:20301012
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301018@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301018
+DTEND;VALUE=DATE:20301019
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301025@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301025
+DTEND;VALUE=DATE:20301026
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301101@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301101
+DTEND;VALUE=DATE:20301102
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301108@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301108
+DTEND;VALUE=DATE:20301109
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301115@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301115
+DTEND;VALUE=DATE:20301116
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301122@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301122
+DTEND;VALUE=DATE:20301123
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301129@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301129
+DTEND;VALUE=DATE:20301130
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301206@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301206
+DTEND;VALUE=DATE:20301207
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301213@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301213
+DTEND;VALUE=DATE:20301214
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20301218@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301218
+DTEND;VALUE=DATE:20301219
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20301220@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301220
+DTEND;VALUE=DATE:20301221
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20301221@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301221
+DTEND;VALUE=DATE:20301222
+SUMMARY:Ember Day of Advent (Traditional Complete Fast & Abstinence)
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. Ember
+  Day of Advent.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-traditional-complete-fast-abstinence-20301224@omnic
+ al
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301224
+DTEND;VALUE=DATE:20301225
+SUMMARY:Traditional Complete Fast & Abstinence
+DESCRIPTION:A day of fast and complete abstinence: one full meal and two sm
+ all meatless collations\, with no flesh meat — the 1962 discipline. The v
+ igil of Christmas.
+END:VEVENT
+BEGIN:VEVENT
+UID:hol-rc-1962-fasting-obligatory-abstinence-20301227@omnical
+DTSTAMP:20260101T000000Z
+DTSTART;VALUE=DATE:20301227
+DTEND;VALUE=DATE:20301228
+SUMMARY:Obligatory Abstinence
+DESCRIPTION:A day of complete abstinence from flesh meat. Every Friday is a
+  penitential day (can. 1250-1251)\; outside Lent the episcopal conference 
+ may substitute another penance.
+END:VEVENT
+END:VCALENDAR

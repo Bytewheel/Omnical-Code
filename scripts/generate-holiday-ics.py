@@ -849,6 +849,11 @@ def set_judaism():
             "The reading of the Megillah is the evening before.")
         add(s[adar] + datetime.timedelta(days=14), "Shushan Purim", "shushan-purim",
             "Purim as kept in walled cities.")
+        fast_firstborn = s["Nisan"] + datetime.timedelta(days=13)  # 14 Nisan
+        if fast_firstborn.weekday() == 5:  # Shabbat → the preceding Thursday
+            fast_firstborn -= datetime.timedelta(days=2)
+        add(fast_firstborn, "Ta'anit Bekhorot (Fast of the Firstborn)", "taanit-bekhorot",
+            "A fast kept by firstborn males on the eve of Pesach.")
         add(s["Nisan"] + datetime.timedelta(days=14), "Pesach (First Seder)", "pesach-seder",
             "The first Seder takes place this evening.")
         add(s["Nisan"] + datetime.timedelta(days=14), "Pesach (First Day)", "pesach",
@@ -940,6 +945,41 @@ def set_islam():
             "The Hajj's day of standing; a recommended fast for non-pilgrims.")
         add(islamic_to_civil(hy, 12, 10), "Eid al-Adha", "eid-al-adha",
             "The festival of the sacrifice; with the three days of Tashreeq.", days=4)
+    return events
+
+
+# ==========================================================================
+# Islam — the fasting observances.  The obligatory fast is the whole of
+# Ramadan (Qur'an 2:183-185), held dawn-to-dusk each day of the month; the
+# voluntary fasts of Ashura and the Day of Arafah are recommended.  TABULAR
+# Hijri, like the main set (±1 day vs local sightings).
+# ==========================================================================
+
+_ISLAM_FAST_NOTE = ("Tabular Hijri date; actual dates follow local moon "
+                    "sightings and may differ by ±1 day.")
+
+
+def set_islam_fasting():
+    events = []
+    lo = datetime.date(YEARS[0], 1, 1)
+    hi = datetime.date(YEARS[-1], 12, 31)
+
+    def add(date, name, slug, desc="", days=1):
+        if lo <= date <= hi:
+            events.append(Event(date, name, slug, _ISLAM_FAST_NOTE + " " + desc,
+                                days=days))
+
+    for hy in range(1446, 1453):
+        # Ramadan is fixed at 30 days in the tabular scheme (odd month).
+        add(islamic_to_civil(hy, 9, 1), "Ramadan (month of obligatory fast)",
+            "ramadan-fast",
+            "Fasting is obligatory each day of the month, from dawn to sunset.",
+            days=30)
+        add(islamic_to_civil(hy, 1, 10), "Ashura (voluntary fast)", "ashura-fast",
+            "A recommended voluntary fast (10 Muharram).")
+        add(islamic_to_civil(hy, 12, 9), "Day of Arafah (recommended fast)",
+            "arafah-fast",
+            "A recommended fast for those not on the Hajj (9 Dhul-Hijjah).")
     return events
 
 
@@ -1168,6 +1208,71 @@ def set_sikh():
                                 "The sun's sidereal entry into Aries — the Khalsa "
                                 "was founded by Guru Gobind Singh in 1699 "
                                 "(solar, accurate)."))
+    return events
+
+
+# ==========================================================================
+# Hindu and Buddhist fasting observances — Ekadashi (the 11th lunar day of
+# each fortnight) and Uposatha (the four lunar phase days).  Computed from
+# the same panchang-lite machinery as the festival sets (±1 day).
+# ==========================================================================
+
+def _ekadashi_days(year):
+    """The Ekadashi days of `year`: the 11th tithi of the waxing fortnight
+    (tithi 10) and of the waning fortnight (tithi 25) at sunrise."""
+    out = []
+    for d in _days(datetime.date(year, 1, 1), datetime.date(year, 12, 31)):
+        if tithi_at_sunrise(d) in (10, 25):
+            out.append(d)
+    return out
+
+
+def _elong_sunrise(d):
+    """The moon-sun elongation (degrees) at ~06:00 IST on civil date d."""
+    jd = _date_to_jd(d) + (6.0 - 5.5) / 24.0
+    return (_moon_longitude(jd) - _sun_longitude(jd)) % 360
+
+
+def _crossed(a, b, target):
+    """Did the elongation pass `target` (upward, mod 360) between a and b?"""
+    return (a - target) % 360 > (b - target) % 360
+
+
+def _uposatha_days(year):
+    """The Theravada Uposatha days of `year`: the civil day whose sunrise
+    first passes each lunar phase — new moon (0°), first quarter (90°),
+    full moon (180°) and last quarter (270°)."""
+    phases = (0.0, 90.0, 180.0, 270.0)
+    hits = []
+    prev = _elong_sunrise(datetime.date(year, 1, 1))
+    for d in _days(datetime.date(year, 1, 1), datetime.date(year, 12, 31)):
+        e = _elong_sunrise(d)
+        if any(_crossed(prev, e, t) for t in phases):
+            hits.append(d)
+        prev = e
+    return hits
+
+
+def set_hindu_fasting():
+    """Ekadashi — the fortnightly 11th-day fast of many Hindu traditions."""
+    events = []
+    for y in YEARS:
+        for d in _ekadashi_days(y):
+            events.append(Event(d, "Ekadashi (fasting day)", "ekadashi",
+                                INDIA_NOTE + " The 11th tithi of the fortnight, "
+                                "kept as a fast (vrat) by many Hindus."))
+    return events
+
+
+def set_buddhist_fasting():
+    """Uposatha — the four lunar observance days of each month."""
+    events = []
+    for y in YEARS:
+        for d in _uposatha_days(y):
+            events.append(Event(d, "Uposatha (observance day)", "uposatha",
+                                INDIA_NOTE + " A lunar observance day (new moon, "
+                                "full moon or a quarter moon); lay devotees keep "
+                                "the Eight Precepts, and many fast."))
     return events
 
 
@@ -1961,6 +2066,235 @@ _RC1962_COMMEM = {
 
 
 # ==========================================================================
+# Roman Catholic — the law of fasting and abstinence (1962 and current).
+#
+# Authoritative source for the pre-Novus-Ordo discipline: Angelus Press,
+# *The 1962 Roman Catholic Daily Missal* — its "Rules of Fast and
+# Abstinence" reproduce the 1917 Code of Canon Law canons 1250-1254 as that
+# law stood after the 1940s-1950s reductions, and are the standard
+# traditionalist statement of the 1962 observance.  The current law is the
+# 1983 Code of Canon Law cc. 1249-1253 (with Pope Paul VI's *Paenitemini*).
+#
+# The 1962 discipline: fast AND complete abstinence (one full meal plus two
+# small collations, no flesh meat) on Ash Wednesday, the Fridays and
+# Saturdays of Lent (Good Friday; Holy Saturday until noon), the Ember Days
+# (Wednesday, Friday, Saturday of each of the four Ember weeks), and the
+# Vigils of Pentecost and Christmas; fast AND partial abstinence (meat at
+# the one full meal) on the remaining weekdays of Lent; and complete
+# abstinence (no flesh meat, no fast) on every Friday of the year.
+#
+# Each set resolves ONE event per day by a priority stack: the
+# still-obligatory minimum on top (Ash Wednesday and Good Friday), the
+# fuller traditional fast-and-abstinence days next, the partial-abstinence
+# Lenten weekdays below, and the recurring weekly Friday abstinence at the
+# very bottom of the stack.
+# ==========================================================================
+
+
+def _days(lo, hi):
+    """Every civil date from lo through hi inclusive."""
+    d = lo
+    while d <= hi:
+        yield d
+        d += datetime.timedelta(days=1)
+
+
+def _lit_summaries(events):
+    """date -> the casefolded concatenation of a liturgical set's summaries
+    on that date — the lookup the naming rule (is this fasting day already
+    named in the corresponding liturgical calendar?) reads."""
+    m = {}
+    for e in events:
+        m.setdefault(e.dtstart, []).append(e.summary.casefold())
+    return {d: " ".join(s) for d, s in m.items()}
+
+
+def _third_sunday_of_september(y):
+    """The 1962 autumn (Michaelmas) Ember week hangs off the THIRD Sunday of
+    September (not Holy Cross Day itself — Divinum Officium's 1962 Ordo)."""
+    d = datetime.date(y, 9, 1)
+    while d.weekday() != 6:
+        d += datetime.timedelta(days=1)
+    return d + datetime.timedelta(days=14)
+
+
+_F_PRIO = {  # per-day priority stack; lower wins
+    "obligatory-complete": 0,
+    "traditional-complete": 1,
+    "traditional-partial": 2,
+    "obligatory-abstinence": 3,
+}
+
+_F_LABEL = {
+    "obligatory-complete": "Obligatory Complete Fast & Abstinence",
+    "traditional-complete": "Traditional Complete Fast & Abstinence",
+    "traditional-partial": "Traditional Fast & Partial Abstinence",
+    "obligatory-abstinence": "Obligatory Abstinence",
+}
+
+_F_SLUG = {
+    "obligatory-complete": "obligatory-complete-fast-abstinence",
+    "traditional-complete": "traditional-complete-fast-abstinence",
+    "traditional-partial": "traditional-fast-partial-abstinence",
+    "obligatory-abstinence": "obligatory-abstinence",
+}
+
+_F_DESC = {
+    "obligatory-complete":
+        "Fast and complete abstinence: one full meal and two small meatless "
+        "collations, with no flesh meat. Ash Wednesday and Good Friday are the "
+        "Church's universal days of fast and abstinence "
+        "(Code of Canon Law, can. 1251-1252).",
+    "traditional-complete":
+        "A day of fast and complete abstinence: one full meal and two small "
+        "meatless collations, with no flesh meat — the 1962 discipline.",
+    "traditional-partial":
+        "A day of fast and partial abstinence: one full meal (meat allowed at "
+        "that meal only) and two small meatless collations.",
+    "obligatory-abstinence":
+        "A day of complete abstinence from flesh meat. Every Friday is a "
+        "penitential day (can. 1250-1251); outside Lent the episcopal "
+        "conference may substitute another penance.",
+}
+
+
+def _resolve_penance(cands):
+    """One candidate wins per date: the lowest priority (list index) value.
+    A candidate is (date, priority, type, day_name, keyword, description)."""
+    best = {}
+    for c in cands:
+        if c[0] not in best or c[1] < best[c[0]][1]:
+            best[c[0]] = c
+    return list(best.values())
+
+
+def _penance_events(cands, lit, labels, slugs):
+    """Build Events from the resolved candidates.  The naming rule: a day
+    whose specific name is already in the liturgical calendar keeps only the
+    generic type label; otherwise it is shown as "Name (Type)".  The
+    anonymous recurring days (the Lenten ferias, the weekly Fridays) carry
+    day_name=None and keep the bare type label."""
+    by_key = {}
+    for c in cands:
+        by_key[(c[0], c[2])] = c  # one candidate per (date, type)
+    events = []
+    for d, _prio, typ, day_name, keyword, desc in _resolve_penance(list(by_key.values())):
+        named = (keyword is None) or (keyword not in lit.get(d, ""))
+        summary = f"{day_name} ({labels[typ]})" if (day_name and named) else labels[typ]
+        events.append(Event(d, summary, slugs[typ], desc))
+    return events
+
+
+def set_rc_1962_fasting():
+    """The 1962 law of fast and abstinence, one event per day, resolved by the
+    priority stack above onto the Angelus Press statement of the discipline."""
+    lit = _lit_summaries(set_rc_1962())
+    TD = datetime.timedelta
+    cands = []
+
+    def add(date, typ, day_name=None, keyword=None, desc=None):
+        cands.append((date, _F_PRIO[typ], typ, day_name, keyword, desc or _F_DESC[typ]))
+
+    for y in YEARS:
+        easter = easter_gregorian(y)
+        ash = easter - TD(days=46)
+        good_friday = easter - TD(days=2)
+        holy_saturday = easter - TD(days=1)
+        pentecost = easter + TD(days=49)
+
+        # top of the stack: the still-obligatory two days
+        add(ash, "obligatory-complete", "Ash Wednesday", "ash wednesday")
+        add(good_friday, "obligatory-complete", "Good Friday", "good friday")
+
+        # traditional fast and complete abstinence: Lent's Fridays/Saturdays
+        for d in _days(ash, holy_saturday):
+            if d.weekday() in (4, 5):
+                extra = " The fast ends at noon." if d == holy_saturday else ""
+                add(d, "traditional-complete", desc=_F_DESC["traditional-complete"] + extra)
+
+        # the four Ember weeks (Wednesday, Friday, Saturday each)
+        for dname, days in [
+            ("Ember Day of Advent", _ember_days(_advent_first(y) + TD(days=14))),
+            ("Ember Day of Lent", _ember_days(easter - TD(days=42))),
+            ("Ember Day of Pentecost",
+             [pentecost + TD(days=n) for n in (3, 5, 6)]),
+            ("Ember Day of September",
+             _ember_days(_third_sunday_of_september(y))),
+        ]:
+            for d in days:
+                add(d, "traditional-complete", dname, "ember day",
+                    _F_DESC["traditional-complete"] + f" {dname}.")
+
+        # the two fast-and-abstinence vigils Still standing in 1962
+        add(pentecost - TD(days=1), "traditional-complete", "Vigil of Pentecost",
+            "vigil of pentecost",
+            _F_DESC["traditional-complete"] + " The vigil of Pentecost.")
+        christmas_vigil = datetime.date(y, 12, 24)
+        if christmas_vigil.weekday() == 6:  # a Sunday: anticipated to the 23rd
+            christmas_vigil -= TD(days=1)
+        add(christmas_vigil, "traditional-complete", "Vigil of Christmas",
+            "vigil of christmas",
+            _F_DESC["traditional-complete"] + " The vigil of Christmas.")
+
+        # traditional fast and partial abstinence: the remaining Lent weekdays
+        # (Monday-Thursday, from the morrow of Ash Wednesday through Tuesday
+        # of Holy Week; Spy Wednesday and the Triduum sit in the liturgy).
+        for d in _days(ash + TD(days=1), easter - TD(days=5)):
+            if d.weekday() in (0, 1, 2, 3):
+                add(d, "traditional-partial")
+
+# bottom of the stack: the recurring weekly Friday abstinence
+        # (which yields to a solemnity and to the paschal and Christmas octaves)
+        for d in _days(datetime.date(y, 1, 1), datetime.date(y, 12, 31)):
+            if d.weekday() != 4:
+                continue
+            if d == datetime.date(y, 12, 25) or easter <= d <= easter + TD(days=6):
+                continue
+            add(d, "obligatory-abstinence")
+
+    return _penance_events(cands, lit, _F_LABEL, _F_SLUG)
+
+
+def set_rc_current_fasting():
+    """The current (Novus Ordo) law: fast and abstinence on Ash Wednesday and
+    Good Friday (can. 1252); abstinence on every Friday (can. 1251)."""
+    lit = _lit_summaries(set_rc_current())
+    TD = datetime.timedelta
+    labels = {"fast-abstinence": "Obligatory Fast & Abstinence",
+              "abstinence": "Obligatory Abstinence"}
+    prionos = {"fast-abstinence": 0, "abstinence": 1}
+    slugs = {"fast-abstinence": "obligatory-fast-abstinence",
+             "abstinence": "obligatory-abstinence"}
+    descs = {
+        "fast-abstinence":
+            "Fasting and abstinence: one full meal and two smaller meals, no "
+            "flesh meat (Code of Canon Law, can. 1252).",
+        "abstinence":
+            "Abstinence from flesh meat. Every Friday is a penitential day "
+            "(can. 1251); outside Lent the episcopal conference may commute it "
+            "to another penance.",
+    }
+    cands = []
+
+    def add(date, typ, day_name=None, keyword=None, desc=None):
+        cands.append((date, prionos[typ], typ, day_name, keyword, desc or descs[typ]))
+
+    for y in YEARS:
+        easter = easter_gregorian(y)
+        ash = easter - TD(days=46)
+        good_friday = easter - TD(days=2)
+        add(ash, "fast-abstinence", "Ash Wednesday", "ash wednesday")
+        add(good_friday, "fast-abstinence", "Good Friday", "good friday")
+        for d in _days(datetime.date(y, 1, 1), datetime.date(y, 12, 31)):
+            if d.weekday() != 4:
+                continue
+            if d == datetime.date(y, 12, 25) or easter <= d <= easter + TD(days=6):
+                continue  # a solemnity, or the paschal octave: no abstinence
+            add(d, "abstinence")
+    return _penance_events(cands, lit, labels, slugs)
+
+
+# ==========================================================================
 # Orthodox (Julian reckoning, converted to civil dates; the New Calendar
 # alternative is named in every description).  The Great Feasts, the fasting
 # seasons' bounds and Holy Week.
@@ -2114,6 +2448,93 @@ def set_orthodox():
             elif d not in great_feasts:
                 add(d, f"{_ordinal(n)} Sunday after Pentecost", f"pentecost-{n}")
             d += datetime.timedelta(days=7)
+    return events
+
+
+# ==========================================================================
+# Orthodox — the fast (Julian reckoning, civil-converted).  The weekly
+# Wednesday-and-Friday fast resolved by a priority stack: the named
+# strict-fast days on top, the recurring weekly fast at the bottom.  The four
+# fast seasons' bounds are single "begins" events in the liturgical set; this
+# set carries the day-by-day discipline.  Sources: the Typikon (Triodion and
+# Pentecostarion); the civil dates verified against oca.org / goarch.org.
+# ==========================================================================
+
+_ORTH_FAST_NOTE = ("Old (Julian) Calendar observance; churches on the New "
+                   "Calendar keep fixed feasts 13 days earlier. Wednesdays "
+                   "and Fridays are kept as fast days all year, except in "
+                   "the fast-free weeks.")
+
+
+def _orthodox_fast_free(year):
+    """The days on which the weekly Wednesday/Friday fast does not hold:
+    Bright Week (Pascha week), the week after Pentecost, the days of
+    Christmastide (Christmas through the eve-day of Theophany), the fast-free
+    week after the Sunday of the Publican and the Pharisee, and Cheesefare
+    (meat-free) week before Great Lent."""
+    TD = datetime.timedelta
+    pascha = easter_julian(year)
+    free = set()
+    for d in _days(pascha, pascha + TD(days=6)):            # Bright Week
+        free.add(d)
+    for d in _days(pascha + TD(days=50), pascha + TD(days=56)):  # after Pentecost
+        free.add(d)
+    for d in _days(datetime.date(year, 1, 7), datetime.date(year, 1, 17)):
+        free.add(d)                                         # Christmastide
+    for d in _days(pascha - TD(days=69), pascha - TD(days=63)):  # Publican week
+        free.add(d)
+    for d in _days(pascha - TD(days=55), pascha - TD(days=49)):  # Cheesefare week
+        free.add(d)
+    return free
+
+
+def set_orthodox_fasting():
+    """The Orthodox fast: one event per day.  The strict single fast days —
+    the Eve of the Theophany, the Beheading of St John the Baptist, the
+    Exaltation of the Holy Cross, Great and Holy Friday, Great and Holy
+    Saturday — sit on top of the stack; the recurring Wednesday-and-Friday
+    fast sits at its bottom."""
+    TD = datetime.timedelta
+    lo, hi = datetime.date(YEARS[0], 1, 1), datetime.date(YEARS[-1], 12, 31)
+    strict = {}   # date -> (name, note)
+    weekly = {}   # date -> weekday number (2=Wed, 4=Fri)
+
+    for y in YEARS:
+        pascha = easter_julian(y)
+        for d, name, note in [
+            (pascha - TD(days=2), "Great & Holy Friday",
+             "A strict fast day; the burial of Christ."),
+            (pascha - TD(days=1), "Great & Holy Saturday",
+             "A strict fast day; the Lord descends to hades."),
+        ]:
+            if lo <= d <= hi:
+                strict[d] = (f"{name} (strict fast)", note)
+        for m, dd, name, note in [
+            (1, 5, "Eve of the Theophany",
+             "A strict fast day; the great blessing of the waters is kept."),
+            (8, 29, "Beheading of St John the Baptist",
+             "A strict fast day."),
+            (9, 14, "Exaltation of the Holy Cross",
+             "A strict fast day, kept although a Great Feast."),
+        ]:
+            for base in (y - 1, y + 1):   # fixed Julian dates straddle the year
+                d = datetime.date(base, m, dd) + TD(days=13)
+                if lo <= d <= hi:
+                    strict[d] = (f"{name} (strict fast)", note)
+        free = _orthodox_fast_free(y)
+        for d in _days(datetime.date(y, 1, 1), datetime.date(y, 12, 31)):
+            if d.weekday() in (2, 4) and d not in free:
+                weekly[d] = d.weekday()
+
+    events = []
+    for d in sorted(set(strict) | set(weekly)):
+        if d in strict:
+            name, note = strict[d]
+            events.append(Event(d, name, slugify(name), _ORTH_FAST_NOTE + " " + note))
+        else:
+            wd = "Wednesday" if weekly[d] == 2 else "Friday"
+            events.append(Event(d, f"{wd} (weekly fast)", f"{wd.lower()}-fast",
+                                _ORTH_FAST_NOTE))
     return events
 
 
@@ -2399,9 +2820,24 @@ label = "Roman Catholic (1962 Missal)"
 file = "rc-1962.ics"
 
 [[groups.sets]]
+id = "rc-1962-fasting"
+label = "Roman Catholic (1962) — fasting & abstinence"
+file = "rc-1962-fasting.ics"
+
+[[groups.sets]]
+id = "rc-current-fasting"
+label = "Roman Catholic (current) — fasting & abstinence"
+file = "rc-current-fasting.ics"
+
+[[groups.sets]]
 id = "orthodox"
 label = "Orthodox (Julian calendar)"
 file = "orthodox.ics"
+
+[[groups.sets]]
+id = "orthodox-fasting"
+label = "Orthodox — fasting days"
+file = "orthodox-fasting.ics"
 
 [[groups.sets]]
 id = "anglican"
@@ -2416,6 +2852,11 @@ label = "Islam"
 id = "islam"
 label = "Islamic observances (tabular Hijri)"
 file = "islam.ics"
+
+[[groups.sets]]
+id = "islam-fasting"
+label = "Islamic fasting (Ramadan and the voluntary fasts)"
+file = "islam-fasting.ics"
 
 [[groups]]
 id = "judaism"
@@ -2435,6 +2876,11 @@ id = "hindu"
 label = "Hindu festivals"
 file = "hindu.ics"
 
+[[groups.sets]]
+id = "hindu-fasting"
+label = "Hindu fasting days (Ekadashi)"
+file = "hindu-fasting.ics"
+
 [[groups]]
 id = "buddhism"
 label = "Buddhism"
@@ -2443,6 +2889,11 @@ label = "Buddhism"
 id = "buddhist"
 label = "Buddhist observances"
 file = "buddhist.ics"
+
+[[groups.sets]]
+id = "buddhist-fasting"
+label = "Buddhist observance days (Uposatha)"
+file = "buddhist-fasting.ics"
 
 [[groups]]
 id = "sikhism"
@@ -2721,6 +3172,78 @@ def self_test():
         if want_desc and want_desc not in e.description:
             raise SystemExit(f"SELF-TEST FAILED: orthodox {d} '{e.summary}' "
                              f"description lacks '{want_desc}': {e.description}")
+    # The 1962 fast-and-abstinence set — priority-resolved one-event-per-day,
+    # verified against the Angelus Press statement of the 1962 discipline.
+    rc62f = {}
+    for e in set_rc_1962_fasting():
+        rc62f.setdefault(e.dtstart, []).append(e)
+    for date, want_summary, want_desc in [
+        ("20260218", "Ash Wednesday (Obligatory Complete Fast & Abstinence)",
+         "Ash Wednesday and Good Friday are the Church's universal days"),
+        ("20260403", "Obligatory Complete Fast & Abstinence", None),   # Good Friday
+        ("20260404", "Traditional Complete Fast & Abstinence", "ends at noon"),  # Holy Sat
+        ("20260221", "Traditional Complete Fast & Abstinence", None),   # a Lent Saturday
+        ("20260219", "Traditional Fast & Partial Abstinence", None),    # a Lent Thursday
+        ("20260102", "Obligatory Abstinence", None),                    # a Friday of the year
+        ("20260523", "Traditional Complete Fast & Abstinence", "vigil of Pentecost"),
+        ("20260923", "Ember Day of September (Traditional Complete Fast & Abstinence)", None),
+        ("20261216", "Traditional Complete Fast & Abstinence", "Ember Day of Advent"),
+        ("20281223", "Vigil of Christmas (Traditional Complete Fast & Abstinence)", None),
+    ]:
+        d = datetime.date(int(date[:4]), int(date[4:6]), int(date[6:]))
+        es = rc62f.get(d, [])
+        if len(es) != 1:
+            raise SystemExit(f"SELF-TEST FAILED: rc-1962-fasting {d} has "
+                             f"{[e.summary for e in es]} (expected exactly one)")
+        e = es[0]
+        if e.summary != want_summary:
+            raise SystemExit(f"SELF-TEST FAILED: rc-1962-fasting {d} is '{e.summary}', "
+                             f"expected '{want_summary}'")
+        if want_desc and want_desc not in e.description:
+            raise SystemExit(f"SELF-TEST FAILED: rc-1962-fasting {d} description "
+                             f"lacks '{want_desc}': {e.description}")
+    # The current (Novus Ordo) set: Ash Wednesday/Good Friday fast; Fridays.
+    rccf = {}
+    for e in set_rc_current_fasting():
+        rccf.setdefault(e.dtstart, []).append(e)
+    for date, want in [
+        ("20260218", "Obligatory Fast & Abstinence"),
+        ("20260403", "Obligatory Fast & Abstinence"),
+        ("20260102", "Obligatory Abstinence"),
+    ]:
+        d = datetime.date(int(date[:4]), int(date[4:6]), int(date[6:]))
+        es = rccf.get(d, [])
+        if len(es) != 1 or es[0].summary != want:
+            raise SystemExit(f"SELF-TEST FAILED: rc-current-fasting {d}: "
+                             f"{[e.summary for e in es]}")
+    # Orthodox fasting: the weekly Wednesday/Friday fast never intrudes on the
+    # fast-free Bright Week, and the strict days carry their names.
+    orthf = {}
+    for e in set_orthodox_fasting():
+        orthf.setdefault(e.dtstart, []).append(e)
+    for date, want in [
+        ("20260118", "Eve of the Theophany (strict fast)"),
+        ("20260911", "Beheading of St John the Baptist (strict fast)"),
+        ("20260927", "Exaltation of the Holy Cross (strict fast)"),
+        ("20260617", "Wednesday (weekly fast)"),
+    ]:
+        d = datetime.date(int(date[:4]), int(date[4:6]), int(date[6:]))
+        es = orthf.get(d, [])
+        if not any(e.summary == want for e in es):
+            raise SystemExit(f"SELF-TEST FAILED: orthodox-fasting {d} lacks "
+                             f"'{want}' (has {[e.summary for e in es]})")
+    for d in _days(datetime.date(2026, 4, 13), datetime.date(2026, 4, 18)):  # Bright Week 2026
+        if d in orthf:
+            raise SystemExit(f"SELF-TEST FAILED: orthodox-fasting kept a fast in "
+                             f"Bright Week ({d})")
+    # The recurring lunar fasts: Ekadashi rides the 11th tithi; Uposatha
+    # lands on the four phase days (~4 a lunar month).
+    for set_fn, lo, hi in [(set_hindu_fasting, 21, 27), (set_buddhist_fasting, 44, 52)]:
+        ev = set_fn()
+        n2026 = sum(1 for e in ev if e.dtstart.year == 2026)
+        if not (lo <= n2026 <= hi):
+            raise SystemExit(f"SELF-TEST FAILED: {set_fn.__name__} 2026 count "
+                             f"{n2026} outside {lo}-{hi}")
     # Hebrew structural sweep
     for y in range(5700, 5861):
         if hebrew_year_length(y) not in (353, 354, 355, 383, 384, 385):
@@ -2736,9 +3259,15 @@ def main():
     sets = [
         ("us", set_us), ("canada", set_canada), ("uk", set_uk), ("china", set_china),
         ("rc-current", set_rc_current), ("rc-1962", set_rc_1962),
-        ("orthodox", set_orthodox), ("anglican", set_anglican),
-        ("islam", set_islam), ("judaism", set_judaism),
-        ("hindu", set_hindu), ("buddhist", set_buddhist), ("sikh", set_sikh),
+        ("rc-1962-fasting", set_rc_1962_fasting),
+        ("rc-current-fasting", set_rc_current_fasting),
+        ("orthodox", set_orthodox), ("orthodox-fasting", set_orthodox_fasting),
+        ("anglican", set_anglican),
+        ("islam", set_islam), ("islam-fasting", set_islam_fasting),
+        ("judaism", set_judaism),
+        ("hindu", set_hindu), ("hindu-fasting", set_hindu_fasting),
+        ("buddhist", set_buddhist), ("buddhist-fasting", set_buddhist_fasting),
+        ("sikh", set_sikh),
     ]
     print(f"writing holiday sets for {YEARS[0]}-{YEARS[-1]} into {os.path.abspath(OUT_DIR)}:")
     total = 0
