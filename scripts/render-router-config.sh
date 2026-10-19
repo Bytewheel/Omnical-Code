@@ -244,7 +244,7 @@ interval_secs = 1800
 [[mirror.targets]]
 name = "liturgical-to-default"
 principal = "nfcalaway@novo-ordo.com"
-calendar = "cec120ff-36a1-4787-bca1-ff4dbb6f4be4"
+calendar = "Liturgical"
 url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/Default/"
 username = "$APHY_DAV_USER"
 password = '$APHY_DAV_PASS'
@@ -269,7 +269,7 @@ interval_secs = 1800
 [[mirror.targets]]
 name = "liturgical-to-omnical"
 principal = "nfcalaway@novo-ordo.com"
-calendar = "cec120ff-36a1-4787-bca1-ff4dbb6f4be4"
+calendar = "Liturgical"
 url = "https://dav.aphy.app/dav/calendars/user/burningserenity@aphy.io/omnical/"
 username = "$APHY_DAV_USER"
 password = '$APHY_DAV_PASS'
